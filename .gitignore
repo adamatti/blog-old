@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 Makefile
 .deploy_key
+Gemfile.lock
