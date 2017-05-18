@@ -3,7 +3,4 @@ rvm:
 - 2.2.0
 sudo: false
 script: bundle exec rake deploy
-before_install:
-- openssl aes-256-cbc -K $encrypted_5b9675ad0a89_key -iv $encrypted_5b9675ad0a89_iv
-  -in .deploy_key.enc -out .deploy_key -d
-- chmod 600 .deploy_key  
+
