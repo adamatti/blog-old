@@ -3,6 +3,7 @@ rvm:
 - 2.2.0
 sudo: false
 script: bundle exec rake deploy
-env:
-  global:
-    secure: LYGKTK7SVYhr/VuIK2v6r2GVojo2o+uxSwmqzw2qQ2TQKsV52BotDBJpZ00Nzbwnx920J0ImQdRWlCAmd6v6x7PQJHXxCPOgfelL++bH5TVeeRXODX+C+Kh7VarblFMk0uLnN/0L8kfpTaQjfzb9cX+R94wEmP0/buulw7eEcIj0XBsWqiqeUB6jcW39GZs/zAdhQjX/gxr954ozcBlAaPkKH5He7WSymexiTQgzeXRQAOucFb+DGULlUoeyeYZLMw5Ib+8a5remmJqyIQdTBamnFIE5MgvtzmtLf9+XCrjJtOlWBpF5Ba4J5nQvbFpGf9OizJo7U6bo5aMCO8Q1O8N2w0eOQ470BuARw4638uz6FIzW3404SxktFnxjMC0AitT9KdtGFUijIiR1txmNDZrHKtY836HepYGtSTWF/GAqZ8O4nF//Z+sn99P77FZ+W6jlfbQYsFBf9GHYBf46K/4LDRWf2V1mNtD3hrTyuWGOVRtDe21yZzS21eEptOliZ8UERWM5oqtgqzN1j3GDaOe3F1zu50ElN7QiYw5HYG6PVP5geVeZRDzAECrjRPBWnu7OUzMiccNFlRIzprbfd7pig9F8il4e38o97VyutYnPx22PAvhYShJ8JL4clPiebIWTucKt5liQx3BgoZpDyzgxcCiBd60q0ipH1ggW4+w=
+before_install:
+- openssl aes-256-cbc -K $encrypted_5b9675ad0a89_key -iv $encrypted_5b9675ad0a89_iv
+  -in .deploy_key.enc -out .deploy_key -d
+- chmod 600 .deploy_key  
