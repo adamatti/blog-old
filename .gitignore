@@ -1,5 +1,11 @@
-_site
-.sass-cache
-.jekyll-metadata
-Makefile
 .deploy_key
+.jekyll-metadata
+.sass-cache
+_config.yml
+_site
+about.md
+build.sh
+Gemfile
+Gemfile.lock
+index.md
+Makefile
