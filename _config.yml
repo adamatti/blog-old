@@ -1,9 +1,9 @@
 title: Adamatti - blog pessoal
 email: adamatti@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante. 
+  Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://adamatti.github.io/blog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adamatti
 github_username:  adamatti
 disqus:
