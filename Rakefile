@@ -40,4 +40,24 @@ Rake::Jekyll::GitDeployTask.new(:deploy) do |t|
   }
   # Use the default committer (configured in git) when available.
   t.override_committer = true
+
+  # Use URL of the 'origin' remote to fetch/push the built site into. If env.
+  # variable GH_TOKEN is set, then it adds it as a userinfo to the URL.
+  t.remote_url = -> {
+    url = `git config remote.origin.url`.strip.gsub(/^git:/, 'https:')
+    next url.gsub(%r{^https://([^/]+)/(.*)$}, 'git@\1:\2') if ssh_key_file?
+    next url.gsub(%r{^https://}, "https://#{ENV['GH_TOKEN']}@") if ENV.key? 'GH_TOKEN'
+    next url
+  }
+  # Skip commit and push when building a pull request, env. variable
+  # SKIP_DEPLOY represents truthy, or env. variable SOURCE_BRANCH is set, but
+  # does not match TRAVIS_BRANCH.
+  t.skip_deploy = -> {
+    ENV['TRAVIS_PULL_REQUEST'].to_i > 0 ||
+      %w[yes y true 1].include?(ENV['SKIP_DEPLOY'].to_s.downcase) ||
+      (ENV['SOURCE_BRANCH'] && ENV['SOURCE_BRANCH'] != ENV['TRAVIS_BRANCH'])
+  }
+  # Path of the private SSH key to be used for communication with the
+  # repository defined by remote_url.
+  t.ssh_key_file = '.deploy_key'
 end
