@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-05-18T13:48:40+00:00</updated><id>/</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante. 
+</subtitle><entry><title type="html">Test with Markdown</title><link href="/jekyll/update/2017/05/17/md.html" rel="alternate" type="text/html" title="Test with Markdown" /><published>2017-05-17T22:01:15+00:00</published><updated>2017-05-17T22:01:15+00:00</updated><id>/jekyll/update/2017/05/17/md</id><content type="html" xml:base="/jekyll/update/2017/05/17/md.html">&lt;p&gt;test &lt;a href=&quot;http://www.google.com&quot;&gt;google&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;force travis&lt;/p&gt;
+
+&lt;p&gt;force 2&lt;/p&gt;</content><author><name></name></author><summary type="html">test google force travis force 2</summary></entry><entry><title type="html">Test with Asciidoc</title><link href="/jekyll/update/2017/05/17/adoc.html" rel="alternate" type="text/html" title="Test with Asciidoc" /><published>2017-05-17T22:01:15+00:00</published><updated>2017-05-17T22:01:15+00:00</updated><id>/jekyll/update/2017/05/17/adoc</id><content type="html" xml:base="/jekyll/update/2017/05/17/adoc.html">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;test &lt;a href=&quot;http://www.google.com&quot;&gt;google&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">test google</summary></entry></feed>
