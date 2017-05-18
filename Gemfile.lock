@@ -54,6 +54,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  asciidoctor (= 1.5.5)
   jekyll (= 3.4.3)
   jekyll-asciidoc
   jekyll-feed (~> 0.6)
