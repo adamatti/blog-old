@@ -6,6 +6,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adamatti
 github_username:  adamatti
+disqus:
+  shortname: adamatti
+google_analytics: UA-1039281-11
+minima:
+  date_format: "%Y-%m-%-d %H:%M"
 
 # Build settings
 markdown: kramdown
