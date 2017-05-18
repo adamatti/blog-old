@@ -6,3 +6,4 @@ categories: jekyll update
 summary: post de teste2
 ---
 test [google](http://www.google.com)
+force travis
