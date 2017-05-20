@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Novo Blog"
+date:   2017-05-19 00:00:00 -0300
+categories: ruby
+summary: Novo Blog criado
+tags:
+  - ruby
+  - jekyll
+---
+
+Buenas... começo aqui minha terceira tentativa de blog :-)
+
+### Histórico
+Criei http://adamatti.blogspot.com.br[o primeiro] em 2006... mas tem pouca coisa técnica... foi usado mais como rede social do que blog
+
+http://adamatti.tumblr.com[O segundo] foi criado em 2013. Agora mais técnico, mas ainda é mais um wiki pessoal para guardar minhas notas do que um blog. E ninguém usa o tumblr como blog :-P
+
+### Motivação
+Curto acompanhar o conteúdo compartilhado por outros, acho que eu posso colaborar um pouco com a comunidade com coisas que eu já sei.
+
+Professores meus de faculdade como o https://blog.danielwildt.com[Daniel Wildt] e o https://medium.com/@diogo.lucas[Diogo Lucas] seguem compartilhando até hoje.
+
+E é massa para o ego quando um post recebe 30 mil acessos (como o do http://marcelo-cure.blogspot.com.br/2016/09/rest-anti-patterns.html[Marcelo Cure]).
+
+Outro ponto é quando você presencia a discussão de algum ponto que você já postou, é só apontar as pessoas para o link.
+
+E por último mas não menos importante, ensinar tbm é uma forma de aprender, de organizar as ideias.
+
+### "Ah, mas pq em português?"
+Minha meta é só compartilhar e registrar conhecimento. Não estou buscando visibilidade internacional por agora. Já tem muito conteúdo em inglês, mas pouco em português. Acho que eu posso ajudar um pouco nisso.
+
+### Futuro / frequência
+A atividade de postar conteúdo tem que ser prazerosa, então vou fazer enquanto der vontade. Que seja eterno enquanto dure.
+
+Pretendo no mínimo 1 por mês, ideal 1 por semana. Nirvana é talvez um dia escrever um livro como o https://github.com/waldemarnt/building-testable-apis-with-nodejs[Waldermar sobre node] ou como o https://github.com/gomex/docker-para-desenvolvedores[Gomex sobre docker].
+
+Talvez um dia youtube ou podcast, vai saber...
+
+### "Pq github.io e não wordpress / blogspot / etc?"
+Requisito era escrever os posts em http://asciidoctor.org[asciidoc] (#chupaMarkdown), o mais dev friendly possível. E que não tivesse limitações, me deixasse manipular o html / js / css totalmente.
+
+Como já tinha colocado https://github.com/adamatti/adamatti.github.io[o resume] no github e curtí o resultado, a escolha natural foi o https://jekyllrb.com/[jekyll]
+
+### Jekyll
+O github não aceita qualquer plugin para rodar lá, então com a ajuda do pessoal do https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc] consegui fazer funcionar https://jekyllrb.com/[jekyll] + https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc] (https://github.com/asciidoctor/jekyll-asciidoc/issues/154[discussão] e http://eshepelyuk.github.io/2014/10/28/automate-github-pages-travisci.html[passo a passo]).
+
+Funciona assim: o código jekyll fica no https://github.com/adamatti/blog/tree/jekyll[branch jekyll], e o https://raw.githubusercontent.com/adamatti/blog/jekyll/.travis.yml[travis] roda https://raw.githubusercontent.com/adamatti/blog/jekyll/build.sh[um script de deploy] que gera a página estática no https://github.com/adamatti/blog/tree/gh-pages[branch gh-pages]. Curtí o resultado.
+
+### Sugestões
+Algum assunto que eu saiba que você gostaria de ver aqui? Algo que eu comentei em algum evento / mesa de bar?
+
+Você tem algum blog técnico que gostaria de compartilhar? Manda aí nos comentários.

@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Criando um chatbot"
+date:   2017-05-20 13:00:00 -0300
+categories: node
+summary: Hubot + RocketChat
+tags:
+  - node
+  - chatbot
+---
+*https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Muito_longo;_n%C3%A3o_li[TL/DR]* : Hubot é legal e bem simples :-)
+
+Bem simples o processo de criação de bots usando o hubot seguindo https://hubot.github.com/docs/[tutorial deles].
+
+### Requisitos
+* Ter https://nodejs.org[node] instalado
+* https://www.docker.com/[Docker] / https://docs.docker.com/compose/[Docker Compose] (facilita os testes)
+
+### Passos
+* Instalar o http://yeoman.io/[yeoman] (gerador de código) e generator-hubot: `npm install -g yo generator-hubot`
+* ir na pasta desejada, rodar `yo nomeDoBot`
+
+Com isso o http://yeoman.io/[yeoman] vai gerar os seguintes arquivos (https://github.com/adamatti/LearnHubot/commit/b2178220ccc994685f0862d105aa2b78f3a07a1c[ver resultado no github]):
+
+|=======
+| .editorconfig          | Descreve formato dos outros arquivos (ex: identação, charset). Vários editores suportam esse formato (ver a página do http://editorconfig.org/[editorConfig])
+| .gitignore             | Descritor de arquivos a não ser incluídos no repositório
+| Procfile               | Tem o comando que vai ser executado no https://heroku.com/[heroku] (se decidir fazer deploy lá)
+| Readme.md              | Documentação básica. Pode ser removido
+| pasta bin              | script para rodar o bot
+| external-scripts.json  | Outros scripts a serem carregados pelo hubot
+| hubot-scripts.json     | Antes os script do hubot deveriam ser colocados aqui, agora só precisam estar na pasta script
+| package.json           | Descritor de projeto node (dependências, etc)
+| scripts/example.coffee | Exemplo de script para o bot em http://coffeescript.org/[coffee script]
+|=======
+
+Agora é só iniciar o redis (instale ele na máquina local ou `docker run redis -p 6379`).
+
+E com o Redis rodando, executar o bot: `bin/hubot.cmd`.
+
+Com isso já dá para interagir com o bot. Exemplo: digite `nomeDoBot help` para ver comandos disponíveis.
+
+### Criando o primeiro script
+Criei https://raw.githubusercontent.com/adamatti/LearnHubot/master/scripts/adamatti.js[um exemplo de script bem simples] e zueiro para mostrar a sintaxe:
+
+[options="header"]
+|=======
+| Gatilho                     | Sintaxe                                           | Descrição
+| @nomeDoBot is it weekend?   | `robot.respond(/is it (weekend)\s?\?/i, msg => {` | Retorna se é fim de semana
+| lima (em qq parte da frase) | `robot.hear(/lima/i, res => {`                    | Retorna para o user q mandou o texto uma frase fixa
+| uma música                  | `robot.hear(/uma música/i, res =>{`               | Retorna para a sala uma música aleatória
+| ao entrar na sala           | `robot.enter(res => {`                            | Retorna uma frase fixa
+| ao sair da sala             | `robot.leave(res => {`                            | Retorna uma frase fixa
+| qq texto                    | `robot.listen(message => {`                       | Randomicamente 20% das vezes vai retornar uma frase fixa.
+|=======
+
+### Para um teste completo
+Para fazer o bot iteragir com um chat, criei um arquivo https://raw.githubusercontent.com/adamatti/LearnHubot/master/docker-compose.yml[docker-compose] com os containers:
+
+[options="header"]
+|=======
+|Nome do container | imagem      | descrição
+| cache            | redis       | cache (usado pelo bot)
+| db               | mongo       | banco (usado pelo rocketchat)
+| chat             | rocket.chat | instancia do chat
+| bot              | node (ver https://raw.githubusercontent.com/adamatti/LearnHubot/master/Dockerfile[Dockerfile]) | Usa a imagem base do node, copia o código e baixa as dependencias
+|=======
+
+Também no https://raw.githubusercontent.com/adamatti/LearnHubot/master/docker-compose.yml[docker-compose] estão as integrações entre containers, usando variáveis de ambiente.
+
+### Para rodar tudo
+O resultado final está disponível https://github.com/adamatti/LearnHubot[no github]. Só precisa:
+
+* Iniciar os containers: `docker-compose up --build -d`
+* acessar o rocket.chat: `http://localhost:80`
+* registre o primeiro usuário. Ele será o admin
+* crie um usuário para o bot, com username/name/pass = bot
+* e agora é só interagir com o bot
+
+### Próximos passos?
+Agora é escrever script úteis para ajudar em troubleshoot e tarefas do dia dia.
+
+E estudar https://nodered.org[node-red] para integrar com outras plataformas.
+
+Dúvidas? Sugestões? Deixe nos comentários.
