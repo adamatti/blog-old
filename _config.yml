@@ -10,7 +10,7 @@ disqus:
   shortname: http-adamatti-github-io-blog
 google_analytics: UA-1039281-11
 minima:
-  date_format: "%Y-%m-%-d %H:%M"
+  date_format: "%Y-%m-%-d"
 
 # Build settings
 markdown: kramdown
