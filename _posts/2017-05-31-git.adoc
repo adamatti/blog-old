@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "O básico sobre git"
+date:   2017-05-31 13:00:00 -0300
+categories: git
+summary: "Git: histórico, comandos, boas práticas, aplicativos"
+tags:
+  - git
+---
+Dado que algumas pessoas pessoas ainda enfrentam problemas com git, decidi escrever um post de 5 min sobre o tema para dar uma luz para o pessoal.
+
+> "Não, o git não é só um shell especial para windows" +
+> "Sim, git e github são coisas diferentes"
+
+### Histórico / Comparativos
+Segundo a https://pt.wikipedia.org/wiki/Git[Wikipedia], "Git foi criado pelo https://pt.wikipedia.org/wiki/Linus_Torvalds[Linus Torvald] para o desenvolvimento do https://pt.wikipedia.org/wiki/Linux_(n%C3%BAcleo)[kernel do linux]. 
+
+A grande sacada do git é que ele é um modelo de repositório distribuido. Diferente do https://www.visualstudio.com/tfs[TFS] que é um modelo centrado no servidor - onde se o servidor está fora ninguem consegue alterar código pq geralmente os plugins precisam sinalizar o lock do arquivo no servidor  - com git você consegue fazer acompanhamento de alterações sem um servidor mestre. Ex:
+
+[source,bash]
+----
+# vai para a pasta temporária 
+cd /tmp
+# cria uma pasta fake de projeto
+mkdir app
+cd app
+# inicia um repositório
+git init
+# cria um arquivo qualquer
+echo "meu arquivo de teste" > teste.txt
+# Marca a alteração na área "stage" do git
+git add teste.txt
+# Adiciona ela ao repositório
+git commit -m "Arquivo adicionado ao repositório"
+----
+
+E com isso você criou um repositório local, sem precisar de servidor. Dá para criar _branches_, fazer _merges_, etc e essas tarefas são executadas primeiramente local, só são publicadas para o repositório remoto quando requisitado (ex: usando `git push`)
+
+### Comandos básicos
+
+Usar o git por linha de comando ou usando alguma ferramenta visual é preferencia de cada desenvolvedor, mas eu particularmente acho mais produtivo usar git por linha de comando. Dentre os comandos mais usados:
+
+|=======
+| git init                                | inicia um repositório git. Só precisa ser executado 1x por repositório
+| git add nomeDoArquivoOuPasta            | marcar o arquivo/pasta alterado a ser persistido
+| git commit -m mensagem                  | efetua a alteração no repositório
+| git branch                              | mostra os branches e o _branch_ atual
+| git status -s                           | mostra o status das alterações (ex: arquivos marcados / alterados / excluidos)
+| git remote -v                           | mostra lista de repositórios remotos
+| git remote add apelido urlDoRepositorio | Cria um link para um repositório remoto. Necessário para subir o código para Github, Bitbucket, Heroku
+| git push                                | "empurra" as alterações locais para repositório remoto
+| git pull                                | baixa atualizações do repositório remoto
+|=======
+
+### Boas práticas
+* Fazer _commits_ pequenos e frequentes
+* Usar informações úteis nos _commits_
+* Estudar outros modelos (ex: _trunk base development_, http://nvie.com/posts/a-successful-git-branching-model/[git flow])
+* Não demorar para fazer _merge_ de _feature branches_ para o _future state_
+* Usar git rebase
+* Ter um plano de _CI_ que faça build+testes de todos os branches. Isso ajuda no _code review_ e verificações para não impactar o _branch_ principal 
+
+### Aplicativos
+Algumas sugestões para ver a arvore de alterações de modo gráfica:
+
+* gitk
+* https://www.gitkraken.com[GitKraken]
+* https://www.jetbrains.com/help/idea/2017.1/managing-changelists.html[Intellij Idea ChangeList]
+
+### Próximos passos
+Fazer _track_ de projetos ou notas na máquina local? Publicar um projeto para o github ou bitbucket? Fazer deploy de uma aplicação para o heroku? Contribuir com um projeto _open source_? As possibilidades são infinitas.
+
+### Referencias
+* https://pt.wikipedia.org/wiki/Git[Wikipedia]
+* https://www.javacodegeeks.com/2013/05/git-explained-for-beginners.html[Git explained for beginners]
+* http://rogerdudler.github.io/git-guide[Complete guide]
+* https://www.alexkras.com/19-git-tips-for-everyday-use[19 Tips for Everyday use]
