@@ -12,12 +12,17 @@ google_analytics: UA-1039281-11
 minima:
   date_format: "%Y-%m-%-d"
 
+asciidoctor:
+  attributes:
+    - source-highlighter=pygments
+
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
   - jekyll-asciidoc
+  - pygments.rb
 exclude:
   - Gemfile
   - Gemfile.lock

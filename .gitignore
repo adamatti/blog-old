@@ -4,3 +4,4 @@ _site
 Makefile
 .deploy_key
 Gemfile.lock
+asciidoc-pygments.css
