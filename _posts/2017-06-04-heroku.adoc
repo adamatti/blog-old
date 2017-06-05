@@ -1,0 +1,89 @@
+---
+layout: post
+title:  "O básico sobre heroku"
+date:   2017-06-04 13:00:00 -0300
+categories: git
+summary: "Heroku: deploy de apps na cloud"
+tags:
+  - heroku
+---
+Heroku é um https://pt.wikipedia.org/wiki/Plataforma_como_servi%C3%A7o[PaaS], Plataforma como serviço. Isso significa que você pode fazer _deploy_ de seus serviços sem se preocupar (ao menos inicialmente) com _configs_ de _hardware_ e sistema operacional. 
+
+Você só precisa se focar na aplicação e nos componentes de infra estrutura necessários (ex: banco de dados, cache, log, filas, etc)
+
+> Não é necessário conhecimento em docker
+
+### Criando uma conta
+
+O processo é bem simples. Antigamente precisava de cartão de crédito, hj só precisa de nome/sobrenome/email/empresa e confirmar o email.
+
+O https://www.heroku.com/pricing[plano free] é limitado, mas ao mesmo tempo poderoso: ele permite criar quantas apps forem necessário, mas só uma pode rodar 24x7. O _default_ é a aplicação desligar depois de 30 min sem acesso. 
+
+### Criando uma aplicação, fazendo deploy
+
+Para criar uma https://dashboard.heroku.com/new-app[nova app], a única informação requerida é a região (US or EU). O nome da aplicação é opcional (se não informar o heroku gera um nome aleatório).
+
+Sobre https://devcenter.heroku.com/categories/language-support[linguagens], o Heroku suporta Ruby, Python, Node, Php, Go, Java (e outras linguagens da JVM como scala / clojure / groovy). Mas é possível usar buildpacks de terceiros para outras linguagens, como https://github.com/HashNuke/heroku-buildpack-elixir[elixir], https://github.com/AdmitHub/meteor-buildpack-horse[meteor], etc 
+
+### Fazendo deploy
+
+É possível fazer _deploy_ no heroku de várias formas, sendo as mais simples usar a ferramenta do heroku (heroku-cli), usar git ou dropbox.
+
+Por exemplo, para fazer deploy de uma https://github.com/heroku/node-hello[aplicação de exemplo em node] usando terminal:
+
+[source,bash]
+----
+# autenticar no heroku
+heroku login 
+#baixando código de exemplo e entrando na pasta
+git clone https://github.com/heroku/sushi-inc.git
+cd sushi-inc
+# criando vinculo git com heroku
+heroku git:remote -a nomeDaAppCriada
+# fazendo deploy usando git push
+git push heroku
+----
+
+Agora você pode acessar a aplicação usando http://nomeDaAppCriada.herokuapp.com
+
+PS: caso tenha problema para executar a app, mude o package.json com:
+
+[source,javascript]
+----
+...
+"scripts": {
+    "start" : "node index.js"
+}
+...
+----
+
+
+*Pontos importantes:* 
+
+* Heroku faz cache do framework de execução (ex: versão do node / java). Por exemplo, para mudar a versão do node a ser usado é só mudar a sessão _engines_ no package.json.
+* Ele tbm faz cache das dependências. Se o descritor não for alterado ele não precisa baixar as dependências novamente (ex: node_modules, bower_components)
+* Heroku já fornece https. Você só precisa alterar sua app para forçar esse uso (se necessário)
+
+### Add Ons
+Ok, mas como estender minha aplicação no heroku? Bom, o Heroku tem parceria com https://elements.heroku.com/addons[~150 serviços]. Eles podem ser adicionados na aba _resources_ dentro da app desejada.
+
+* Precisa de até 500mb de mongo? De graça na https://elements.heroku.com/addons/mongolab[mLabs]
+* Cache? 30 mb de graça na https://elements.heroku.com/addons/rediscloud[redis cloud]. E dá para plugar um https://elements.heroku.com/addons/redismonitor[monitor] tbm.
+* Logs? https://elements.heroku.com/addons/logentries[Log Entries]
+* Monitoramento? https://elements.heroku.com/addons/newrelic[NewRelic]
+
+Importante salientar que o Heroku é criador do padrão https://12factor.net/pt_br[The Twelve-Factor], logo, os addons estarão disponíveis através de https://12factor.net/pt_br/config[variáveis de ambiente]. Por exemplo, para usar um banco da mLabs a app precisa pegar a URL da variável MONGOLAB_URI.
+
+*Você vai precisar informar o cartão de crédito para adicionar addons (mesmo escolhendo os gratuítos)*. 
+
+### Próximos passos
+* Você pode fazer alguns _deploys_ no Heroku e desfazer pelo painel de admin. É muito prático fazer um _rollback_;
+* https://devcenter.heroku.com/articles/pipelines[Pipelines]: você pode ter a versão dev/test/prod de uma app conectadas, e só precisa fazer _deploy_ de código para o primeiro passo. As promoções de ambiente podem ser feita pelo painel admin do heroku;
+* Estudar o https://devcenter.heroku.com/articles/heroku-cli[Heroku cli], para ver logs, conectar na app por ssh, etc;
+* Disponibilizar uma app com o https://developer.salesforce.com/blogs/developer-relations/2014/08/heroku-button-anyone-can-deploy-your-app.html[botão do Heroku]. O https://github.com/RocketChat/Rocket.Chat#heroku[Rocket.Chat] oferece essa feature. A https://github.com/adamatti/Wiki/blob/master/README.md[wiki] q eu criei de exemplo tbm;
+* Fazer deploy de suas _pet apps_ para lá. Eu tenho umas 20 apps lá, para busca de carros / imóveis (https://pt.wikipedia.org/wiki/Screen_scraping[Screen Scraper]), bot, wiki, controle de tasks, leitor do twitter, _fake apis_ (para teste), etc
+* Usar Heroku _on premise_ com o https://github.com/dokku/dokku[dokku] 
+
+### Referencias
+* link:/blog/git/2017/05/31/git.html[O básico sobre git]
+* https://12factor.net/pt_br[The Twelve-Factor App]
