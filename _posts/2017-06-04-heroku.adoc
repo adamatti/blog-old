@@ -6,6 +6,7 @@ categories: git
 summary: "Heroku: deploy de apps na cloud"
 tags:
   - heroku
+  - git
 ---
 Heroku é um https://pt.wikipedia.org/wiki/Plataforma_como_servi%C3%A7o[PaaS], Plataforma como serviço. Isso significa que você pode fazer _deploy_ de seus serviços sem se preocupar (ao menos inicialmente) com _configs_ de _hardware_ e sistema operacional. 
 
