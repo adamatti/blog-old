@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://adamatti.github.io/blog/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adamatti.github.io/blog/blog/" rel="alternate" type="text/html" /><updated>2017-06-05T01:06:15+00:00</updated><id>https://adamatti.github.io/blog/blog/</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://adamatti.github.io/blog/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adamatti.github.io/blog/blog/" rel="alternate" type="text/html" /><updated>2017-06-05T16:26:00+00:00</updated><id>https://adamatti.github.io/blog/blog/</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
 </subtitle><entry><title type="html">O básico sobre heroku</title><link href="https://adamatti.github.io/blog/blog/git/2017/06/04/heroku.html" rel="alternate" type="text/html" title="O básico sobre heroku" /><published>2017-06-04T16:00:00+00:00</published><updated>2017-06-04T16:00:00+00:00</updated><id>https://adamatti.github.io/blog/blog/git/2017/06/04/heroku</id><content type="html" xml:base="https://adamatti.github.io/blog/blog/git/2017/06/04/heroku.html">&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Heroku é um &lt;a href=&quot;https://pt.wikipedia.org/wiki/Plataforma_como_servi%C3%A7o&quot;&gt;PaaS&lt;/a&gt;, Plataforma como serviço. Isso significa que você pode fazer &lt;em&gt;deploy&lt;/em&gt; de seus serviços sem se preocupar (ao menos inicialmente) com &lt;em&gt;configs&lt;/em&gt; de &lt;em&gt;hardware&lt;/em&gt; e sistema operacional.&lt;/p&gt;
 &lt;/div&gt;
@@ -303,6 +303,9 @@ git commit -m &lt;span class=&quot;tok-s2&quot;&gt;&amp;quot;Arquivo adicionado 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.alexkras.com/19-git-tips-for-everyday-use&quot;&gt;19 Tips for Everyday use&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://examples.javacodegeeks.com/software-development/git/git-commands-tutorial&quot;&gt;Git Commands Tutorial&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
