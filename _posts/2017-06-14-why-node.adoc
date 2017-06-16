@@ -1,0 +1,159 @@
+---
+layout: post
+title:  "Node: iniciando"
+date:   2017-06-14 13:00:00 -0300
+categories: node
+summary: "Primeiros passos com node, ferramentas, pq de node"
+tags:
+  - node
+  - javascript
+---
+
+Iniciar em node é bem simples. Tendo o pacode instalado (https://nodejs.org/en/download/[installer aqui]), ele já vem com o NPM (gerenciador de pacodes do node).
+
+Um hello world seria: 
+
+[source,javascript]
+----
+//Não precisa de ";" no final
+console.log("Hello World") 
+----
+
+E para executar só precisa rodar: 
+
+[source,bash]
+----
+node nomeDoArquivoCriado.js
+----
+
+### Ok, e como estruturar um projeto?
+Criando do zero, vc pode rodar `npm init`, esse modo iterativo vai criar um arquivo `package.json` onde ficam as definições de _scripts_ a serem executados, dependencias, etc. 
+
+O `package.json` é similar ao pom.xml (java), Gemfile (ruby), entre outros.
+
+O arquivo gerado com `npm init` é similar a:
+
+[source,javascript]
+----
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+----
+
+Porém, só o conteudo abaixo é obrigatório: 
+[source,javascript]
+----
+{
+  "scripts" : {
+    "start" : "node index.js"
+  }
+}
+----
+
+Agora para rodar é só chamar `npm start` (o _npm_ vai procurar o _script_ "start" no `package.json`)
+
+### E como incluir dependencias?
+
+Fácil. Exemplo: `npm install log4js --save`. Nota: nas novas versões do _npm_ a _flag_ `--save` não será necessária.
+
+O `package.json` vai ser atualizado com a dependencia: 
+
+[source,javascript]
+----
+{
+  ...
+  "dependencies": {
+    "log4js": "^1.1.1"
+  }
+}
+----
+
+...e para chamar no código fica: 
+
+[source,javascript]
+----
+const log4js = require("log4js"), //a função "require" serve como import
+	  logger = log4js.getLogger("index")
+
+logger.debug("Hello world")
+----
+
+### E como posso iniciar minha API?
+Dá uma olhada na http://expressjs.com/pt-br/guide/routing.html[documentação do express], está em português mesmo.
+
+Futuramente vale estudar o hapi ou o koa. Tem um https://www.airpair.com/node.js/posts/nodejs-framework-comparison-express-koa-hapi[comparativo aqui].
+
+### Que IDE eu posso usar?
+Recomendo o https://code.visualstudio.com/[Visual Studio Code]. Possui _syntax highlight_, _debug_ com _break points_, é leve, tem plugins, é gratuíto, integrado com _git_.
+
+Se vc estiver disposto a pagar, tem o https://www.jetbrains.com/webstorm[WebStorm] da JetBrains (mesma empresa do Intellij).
+
+### Pq node? Onde usar? Cases
+
+Bom, eu explico isso nesse vídeo:
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lqLacSh47PA" frameborder="0" allowfullscreen></iframe>
+++++
+
+### Como gerar telas?
+Hmm, esse assunto é muito amplo e varia dependendo da _lib_ selecionada.
+
+Para quem curte a abordagem _rails_, dá para dar uma estudada no http://yeoman.io[yeoman]. Se for fazer algo manual, recomendo dar uma olhada no http://www.embeddedjs.com/[ejs]. Tem um tutorial rápido de ejs + express http://robdodson.me/how-to-use-ejs-in-express[aqui].
+
+### E sobre testes?
+Tbm é um assunto amplo, pois temos vários tipos de teste (ex: _end to end_, unitário, etc).
+
+Para testes de API dá para usar o http://frisbyjs.com[Frisby], testes unitários recomendo o https://mochajs.org[mocha] ou https://jasmine.github.io[jasmine].
+
+Particularmente eu curto mais testes _end to end_ com _docker-compose_ (assunto para um post futuro).
+
+### http://coffeescript.org[CoffeeScript]? https://www.typescriptlang.org[TypeScript]? https://clojurescript.org[ClojureScript]?
+
+O node / javascript é uma linguagem interpretada, isto é, ela não é compilada. 
+
+Então, http://coffeescript.org[CoffeeScript] / https://www.typescriptlang.org[TypeScript] / https://clojurescript.org[ClojureScript] são https://en.wikipedia.org/wiki/Source-to-source_compiler[transpiladores]: formas diferentes de escrever o javascript, para ser menos verboso, fazer checagem de tipo, etc. Mas no fim o código gerado ainda vai ser javascript.
+
+Eu particularmente prefiro usar javascript direto, é mais fácil para _debugar_ / fazer _troubleshooting_ depois. Mas isso é opção de cada dev/time. 
+
+### Next Steps
+* Ver o livro do grande http://walde.co[Waldemar Neto]: http://walde.co/2017/04/05/lancamento-livro-construindo-apis-testaveis-com-node-js/[construindo apis testaveis com node.js] [
+https://github.com/waldemarnt/building-testable-apis-with-nodejs[github] |
+https://leanpub.com/construindo-apis-testaveis-com-nodejs[leanpub] |
+https://www.youtube.com/watch?v=ELnbNjJQhUc[youtube]
+]
+* Acompanhar algum meetup. Em Porto Alegre temos [
+https://www.meetup.com/pt-BR/Node-js-Porto-Alegre-Meetup[meetup] |
+https://github.com/node-poa/Meetups[github] |
+http://twitter.com/nodejspoa[twitter]
+]
+* Grupos no http://slack.com[slack] [
+https://node-js.slack.com[global] |
+https://nodebr.slack.com[nodeBR]
+]
+* Talvez link:/blog/node/2017/05/20/hubot.html[criar um chatbot]? Fazer _deploy_ do projeto no link:/blog/git/2017/06/04/heroku.html[heroku]?
+
+### ... e um pouco de humor
+* https://codetalks.net/como-%C3%A9-programar-em-javascript-em-2016-9c9b3c12cea8[Como é programar em JavaScript em 2016] [
+https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.cx19ga9vu[original]
+]
+* https://www.destroyallsoftware.com/talks/wat[Wat - Destroy All Software]
+
+### Referencias
+* http://www.wintellect.com/devcenter/dbanister/stop-fighting-node-js-in-the-enterprise[Stop fighting Node.js in the enterprise]
+* https://medium.com/@nodesource/the-enterprise-node-community-987ab4221ef5[The (Enterprise) Node Community]
+* https://www.quora.com/Is-Node-js-declining-already[Is Node.js declining already]
+* https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js[Why The Hell Would I Use Node.js? A Case-by-Case Tutorial]
+* https://dev.to/reverentgeek/do-you-hate-javascript[Do you hate JavaScript?]
+* https://node.university/blog/502765/node-for-java-devs[Node for Java Developers]
+* https://nodesource.com/blog/the-21-most-awesome-awesome-lists-for-node-js-developers[21 awesome lists for devs]
+
+Dúvidas? Comentários? Algum assunto para detalhar melhor? Deixe o feedback nos comentários
