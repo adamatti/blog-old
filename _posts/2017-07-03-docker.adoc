@@ -1,0 +1,112 @@
+---
+layout: post
+title:  "Algumas notas sobre docker"
+date:   2017-07-03 13:00:00 -0300
+categories: docker
+summary: "Algumas notas sobre docker"
+tags:
+  - docker
+---
+
+Ok, não consegui manter o ritmo de uma semana (link:/blog/ruby/2017/05/19/newBlog.html[meta inicial]). Mas voltando...
+
+### Docker
+
+A algum tempo venho planejando falar algo sobre esse cara (o docker), mas ao mesmo tempo vejo que já tem _zilhões_ de vídeos/artigos falando sobre docker. E ainda tem pessoas q tem dúvidas sobre ele, então acho que ainda tem margem para falar mais um pouco :-)
+
+### Não sei nada de docker, por onde começo?
+
+Um dos vídeos mais ditáticos é o do https://www.youtube.com/user/linuxtipscanal[Linux tips]:
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0cDj7citEjE" frameborder="0" allowfullscreen></iframe>
+++++ 
+
+...e tem também o vídeo do https://twitter.com/gomex[Gomex]:
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0-AK020S1ak" frameborder="0" allowfullscreen></iframe>
+++++
+
+O https://twitter.com/gomex[Gomex] também escreveu um livro sobre Docker [ 
+https://github.com/gomex/docker-para-desenvolvedores[github] |
+https://leanpub.com/dockerparadesenvolvedores[leanpub]
+]
+
+### Ok, e o que mais?
+
+Bom, aqui eu tento transmitir os conhecimentos de um grande professor / arquiteto, https://medium.com/@diogo.lucas[Diogo Lucas]:
+
+1) O container docker é *imutável*. Toda vez que você parar ele e rodar denovo, ele terá o mesmo estado da primeira execução. Ele não guarda estado. Você pode ter _volumes_ mapeados para guardar dados (ex: banco de dados), mas logs ou outros dados não devem ser salvos dentro de um container. Levantar container e fazer uma configuração tbm não é uma boa prática (ex: rodar jboss com config especial feita em _runtime_).
+Configs devem ficar fora do container também... talvez variáveis de ambiente? (ver https://12factor.net/config[12 factors - config]).
+
+Outro ditado sobre o docker que chama a atenção a primeira vista: containers docker devem ser tratados como gado, e não como animais de estimação. Você não dá nome para gado. E não deve ter medo de matar um container e recriar. Se você dá nome para as instancias de containers (instancias, não imagens), tem algo errado aí...
+
+2) Uma imagem docker usa *camadas* (_layers_). Logo, ao criar uma imagem tem que ser pensado o que será reusado. Logo, incluir dependencias antes do código.
+
+Um exemplo: 
+
+[source,yml]
+----
+FROM node:latest
+
+RUN mkdir /app
+WORKDIR /app
+
+# Adiciona descritor de dependencias na imagem
+ADD package.json /app
+
+#baixa as dependencias na imagem
+RUN npm install
+
+#Adiciona o resto do código
+ADD . /app
+
+EXPOSE 80
+----
+
+Supondo um desenvolvimento "normal" nesse projeto node, mudanças de código serão rápidas pois o docker fará _cache_ da imagem node e das dependencias (descritas no _package.json_). A imagem só vai baixar as dependencias novamente se o _package.json_ for alterado. 
+
+3) Containers são *leves*. Ok, esse imagem deve estar _batida_, mas vamos denovo:
+
+image::http://zdnet2.cbsistatic.com/hub/i/r/2017/05/08/af178c5a-64dd-4900-8447-3abd739757e3/resize/770xauto/78abd09a8d41c182a28118ac0465c914/docker-vm-container.png[]
+
+Não são as _libs_ do _OS_ são reusadas, mas as imagens base também: instancias diferentes de containers que usam as mesmas imagens base / _layers_ no mesmo server compartilham essa memória. Dois containers em execução não são duas vezes o uso da memória.
+
+4) Containes são *reproduzíveis*. Sim, aquela história de "funciona na minha máquina" acabou. Não importa se o _host_ é _windows/linux/osx_, a execução do container deve ser igual.
+
+Imagine o cenário: você tem uma aplicação node / java que acessa banco mongo, um cache redis, filas usando rabbitmq... tudo isso pode ser simulado usando https://docs.docker.com/compose/[docker-compose], e se o CI for bem feito ele vai chamar só uma linha de execução (algo como `docker-compose run app meuComandoDeTeste`). Só configurar para rodar a cada _commit_, e em caso de erro é só reproduzir na máquina de _dev_ local.
+
+### Minha experiência
+
+Tinhamos dois modulos em um projeto, um em node usando mongo / redis / rabbitmq para API e persistência de dados, um módulo java usando http://camel.apache.org[Apache Camel] para rotas e integrações (ex: ftp, tcp, rest, etc)
+
+Pontos importantes:
+
+* Usavamos http://nvie.com/posts/a-successful-git-branching-model[gitflow] como modelo de _branch_, com configuração no https://br.atlassian.com/software/bamboo[bamboo] para efetuar CI a cada _commit_;
+* Os testes era focado em _end to end_, isto é, usando https://docs.docker.com/compose/[docker-compose] rodavamos a API "live" (conectando em instancias geradas das dependencias - mongo, redis, etc) e rodava os testes;
+* _Builds_ simultaneos não geravam problema;
+* Testes não eram demorados. Devido ao _cache_ do docker, testes do módulo node demoravam 7 segundos... e tinham vários testes 
+* Como nosso *environment* de prod era misto de _cloud_ e _on premise_ usando link:/blog/git/2017/06/04/heroku.html[heroku e dokku], nunca tivemos surpresas em prod já que nosso CI rodava exatamente o que era executado em prod 
+
+Quer saber mais sobre o projeto? Eu falo um pouco sobre ele aqui:
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1wZGSSaDMDo" frameborder="0" allowfullscreen></iframe>
+++++
+
+...e um pouco sobre a parte _event sourcing_ aqui: 
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ATWEXZkYgek" frameborder="0" allowfullscreen></iframe>
+++++
+
+### Próximos Passos / relacionados
+* https://www.youtube.com/watch?v=fscHSogDjes[Palestra - O Docker, o Compose e a AWS no Google Campus]
+* http://www.jancarloviray.com/blog/paas-comparison-2017-dokku-flynn-deis-kubernetes-docker-swarm[Comparação sobre PAAS: Dokku, Flynn, Deis, Kubernetes, Docker Swarm] (2017)
+* https://jaxenter.com/skills-machine-learning-big-data-cloud-computing-135037.html[DevOps engineers think Docker, Ansible and Kubernetes are the top 3 tools to learn]
+* https://diveintodocker.com/blog/the-3-biggest-wins-when-using-alpine-as-a-base-docker-image[The 3 Biggest Wins When Using Alpine as a Base Docker Image]
+
+### Feedbacks
+
+Comentários? Feedbacks? Dicas? Dúvidas? Faltou algo? Algo ficou confuso? Coloca um comentário aí ou manda um email
