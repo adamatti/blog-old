@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Algumas notas sobre docker</title>
+  <meta name="description" content="Ok, não consegui manter o ritmo de uma semana (meta inicial). Mas voltando&amp;#8230;&amp;#8203;">
+
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link rel="stylesheet" href="/blog/assets/share.css">
+  <link rel="stylesheet" href="/blog/asciidoc-pygments.css">
+  <link rel="canonical" href="https://adamatti.github.io/blog/blog/docker/2017/07/03/docker.html">
+  <link rel="alternate" type="application/rss+xml" title="Adamatti - blog pessoal" href="/blog/feed.xml">
+  
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1039281-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/blog/">Adamatti - blog pessoal</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/blog/sobre/">Sobre</a>
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/blog/tags/">Tags</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Algumas notas sobre docker</h1>
+    <p class="post-meta">
+      <time datetime="2017-07-03T16:00:00+00:00" itemprop="datePublished">
+        
+        2017-07-03
+      </time>
+      </p>
+  </header>
+  
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="paragraph">
+<p>Ok, não consegui manter o ritmo de uma semana (<a href="/blog/ruby/2017/05/19/newBlog.html">meta inicial</a>). Mas voltando&#8230;&#8203;</p>
+</div>
+<div class="sect2">
+<h3 id="docker">Docker</h3>
+<div class="paragraph">
+<p>A algum tempo venho planejando falar algo sobre esse cara (o docker), mas ao mesmo tempo vejo que já tem <em>zilhões</em> de vídeos/artigos falando sobre docker. E ainda tem pessoas q tem dúvidas sobre ele, então acho que ainda tem margem para falar mais um pouco :-)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="não-sei-nada-de-docker-por-onde-começo">Não sei nada de docker, por onde começo?</h3>
+<div class="paragraph">
+<p>Um dos vídeos mais ditáticos é o do <a href="https://www.youtube.com/user/linuxtipscanal">Linux tips</a>:</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0cDj7citEjE" frameborder="0" allowfullscreen></iframe>
+<div class="paragraph">
+<p>&#8230;&#8203;e tem também o vídeo do <a href="https://twitter.com/gomex">Gomex</a>:</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0-AK020S1ak" frameborder="0" allowfullscreen></iframe>
+<div class="paragraph">
+<p>O <a href="https://twitter.com/gomex">Gomex</a> também escreveu um livro sobre Docker [
+<a href="https://github.com/gomex/docker-para-desenvolvedores">github</a> |
+<a href="https://leanpub.com/dockerparadesenvolvedores">leanpub</a>
+]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ok-e-o-que-mais">Ok, e o que mais?</h3>
+<div class="paragraph">
+<p>Bom, aqui eu tento transmitir os conhecimentos de um grande professor / arquiteto, <a href="https://medium.com/@diogo.lucas">Diogo Lucas</a>:</p>
+</div>
+<div class="paragraph">
+<p>1) O container docker é <strong>imutável</strong>. Toda vez que você parar ele e rodar denovo, ele terá o mesmo estado da primeira execução. Ele não guarda estado. Você pode ter <em>volumes</em> mapeados para guardar dados (ex: banco de dados), mas logs ou outros dados não devem ser salvos dentro de um container. Levantar container e fazer uma configuração tbm não é uma boa prática (ex: rodar jboss com config especial feita em <em>runtime</em>).
+Configs devem ficar fora do container também&#8230;&#8203; talvez variáveis de ambiente? (ver <a href="https://12factor.net/config">12 factors - config</a>).</p>
+</div>
+<div class="paragraph">
+<p>Outro ditado sobre o docker que chama a atenção a primeira vista: containers docker devem ser tratados como gado, e não como animais de estimação. Você não dá nome para gado. E não deve ter medo de matar um container e recriar. Se você dá nome para as instancias de containers (instancias, não imagens), tem algo errado aí&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p>2) Uma imagem docker usa <strong>camadas</strong> (<em>layers</em>). Logo, ao criar uma imagem tem que ser pensado o que será reusado. Logo, incluir dependencias antes do código.</p>
+</div>
+<div class="paragraph">
+<p>Um exemplo:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="yml"><span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">FROM node:latest</span>
+
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">RUN mkdir /app</span>
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">WORKDIR /app</span>
+
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain"># Adiciona descritor de dependencias na imagem</span>
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">ADD package.json /app</span>
+
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">#baixa as dependencias na imagem</span>
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">RUN npm install</span>
+
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">#Adiciona o resto do código</span>
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">ADD . /app</span>
+
+<span class="tok-l tok-l-Scalar tok-l-Scalar-Plain">EXPOSE 80</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Supondo um desenvolvimento "normal" nesse projeto node, mudanças de código serão rápidas pois o docker fará <em>cache</em> da imagem node e das dependencias (descritas no <em>package.json</em>). A imagem só vai baixar as dependencias novamente se o <em>package.json</em> for alterado.</p>
+</div>
+<div class="paragraph">
+<p>3) Containers são <strong>leves</strong>. Ok, esse imagem deve estar <em>batida</em>, mas vamos denovo:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="http://zdnet2.cbsistatic.com/hub/i/r/2017/05/08/af178c5a-64dd-4900-8447-3abd739757e3/resize/770xauto/78abd09a8d41c182a28118ac0465c914/docker-vm-container.png" alt="docker vm container">
+</div>
+</div>
+<div class="paragraph">
+<p>Não são as <em>libs</em> do <em>OS</em> são reusadas, mas as imagens base também: instancias diferentes de containers que usam as mesmas imagens base / <em>layers</em> no mesmo server compartilham essa memória. Dois containers em execução não são duas vezes o uso da memória.</p>
+</div>
+<div class="paragraph">
+<p>4) Containes são <strong>reproduzíveis</strong>. Sim, aquela história de "funciona na minha máquina" acabou. Não importa se o <em>host</em> é <em>windows/linux/osx</em>, a execução do container deve ser igual.</p>
+</div>
+<div class="paragraph">
+<p>Imagine o cenário: você tem uma aplicação node / java que acessa banco mongo, um cache redis, filas usando rabbitmq&#8230;&#8203; tudo isso pode ser simulado usando <a href="https://docs.docker.com/compose/">docker-compose</a>, e se o CI for bem feito ele vai chamar só uma linha de execução (algo como <code>docker-compose run app meuComandoDeTeste</code>). Só configurar para rodar a cada <em>commit</em>, e em caso de erro é só reproduzir na máquina de <em>dev</em> local.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="minha-experiência">Minha experiência</h3>
+<div class="paragraph">
+<p>Tinhamos dois modulos em um projeto, um em node usando mongo / redis / rabbitmq para API e persistência de dados, um módulo java usando <a href="http://camel.apache.org">Apache Camel</a> para rotas e integrações (ex: ftp, tcp, rest, etc)</p>
+</div>
+<div class="paragraph">
+<p>Pontos importantes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Usavamos <a href="http://nvie.com/posts/a-successful-git-branching-model">gitflow</a> como modelo de <em>branch</em>, com configuração no <a href="https://br.atlassian.com/software/bamboo">bamboo</a> para efetuar CI a cada <em>commit</em>;</p>
+</li>
+<li>
+<p>Os testes era focado em <em>end to end</em>, isto é, usando <a href="https://docs.docker.com/compose/">docker-compose</a> rodavamos a API "live" (conectando em instancias geradas das dependencias - mongo, redis, etc) e rodava os testes;</p>
+</li>
+<li>
+<p><em>Builds</em> simultaneos não geravam problema;</p>
+</li>
+<li>
+<p>Testes não eram demorados. Devido ao <em>cache</em> do docker, testes do módulo node demoravam 7 segundos&#8230;&#8203; e tinham vários testes</p>
+</li>
+<li>
+<p>Como nosso <strong>environment</strong> de prod era misto de <em>cloud</em> e <em>on premise</em> usando <a href="/blog/git/2017/06/04/heroku.html">heroku e dokku</a>, nunca tivemos surpresas em prod já que nosso CI rodava exatamente o que era executado em prod</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Quer saber mais sobre o projeto? Eu falo um pouco sobre ele aqui:</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1wZGSSaDMDo" frameborder="0" allowfullscreen></iframe>
+<div class="paragraph">
+<p>&#8230;&#8203;e um pouco sobre a parte <em>event sourcing</em> aqui:</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ATWEXZkYgek" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="sect2">
+<h3 id="próximos-passos-relacionados">Próximos Passos / relacionados</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=fscHSogDjes">Palestra - O Docker, o Compose e a AWS no Google Campus</a></p>
+</li>
+<li>
+<p><a href="http://www.jancarloviray.com/blog/paas-comparison-2017-dokku-flynn-deis-kubernetes-docker-swarm">Comparação sobre PAAS: Dokku, Flynn, Deis, Kubernetes, Docker Swarm</a> (2017)</p>
+</li>
+<li>
+<p><a href="https://jaxenter.com/skills-machine-learning-big-data-cloud-computing-135037.html">DevOps engineers think Docker, Ansible and Kubernetes are the top 3 tools to learn</a></p>
+</li>
+<li>
+<p><a href="https://diveintodocker.com/blog/the-3-biggest-wins-when-using-alpine-as-a-base-docker-image">The 3 Biggest Wins When Using Alpine as a Base Docker Image</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="feedbacks">Feedbacks</h3>
+<div class="paragraph">
+<p>Comentários? Feedbacks? Dicas? Dúvidas? Faltou algo? Algo ficou confuso? Coloca um comentário aí ou manda um email</p>
+</div>
+</div>
+  </div>
+  <div class="share-page">
+    Compartilhar [
+    <a href="https://twitter.com/intent/tweet?text=Algumas notas sobre docker&url=https://adamatti.github.io/blog/docker/2017/07/03/docker.html&via=adamatti&related=adamatti" rel="nofollow" target="_blank">Twitter</a> | 
+    <a href="https://facebook.com/sharer.php?u=https://adamatti.github.io/blog/docker/2017/07/03/docker.html" rel="nofollow" target="_blank">Facebook</a> |
+    <a href="https://plus.google.com/share?url=https://adamatti.github.io/blog/docker/2017/07/03/docker.html" rel="nofollow" target="_blank">Google+</a> |
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=/docker/2017/07/03/docker.html&title=Algumas notas sobre docker&summary=Algumas notas sobre docker&source=http://adamatti.github.io/blog">Linkedin</a> ]
+</div>
+
+
+  
+    
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://adamatti.github.io/blog/blog/docker/2017/07/03/docker.html';
+      this.page.identifier = 'https://adamatti.github.io/blog/blog/docker/2017/07/03/docker.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://http-adamatti-github-io-blog.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Adamatti - blog pessoal</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Adamatti - blog pessoal
+            
+            </li>
+            
+            <li><a href="mailto:adamatti@gmail.com">adamatti@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/adamatti"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">adamatti</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/adamatti"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">adamatti</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
