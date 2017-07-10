@@ -1,0 +1,166 @@
+---
+layout: post
+title:  "Groovy, Gradle, Spock"
+date:   2017-07-09 13:00:00 -0300
+categories: groovy
+summary: "Groovy: ecossistema, highlights"
+tags:
+  - groovy
+  - gradle
+  - spock
+---
+
+Eu já uso a linguagem http://groovy-lang.org/[Groovy] a alguns anos, em diferentes empresas e diferentes projetos em produção. Vários arquitetos do meu circulo de amizade também usam groovy em produção.
+
+A idéia desse _post_ é mostrar algumas referencias, pontos fortes, vantagens, e convencer mais pessoas a terem os benefícios dessa ferramenta.
+
+*Versão super resumida*: http://groovy-lang.org/[Groovy] é uma _lib_ que você inclui em projetos java e com isso possibilita escrever código menos verboso (ex: sem ";", `return`, DTOs menores, etc), possibilita programação funcional (ver http://groovy-lang.org/closures.html[closures]) e extende as classes java existente (ver http://groovy-lang.org/closures.html[closures] para lista / mapa / URL, _parser_ de http://groovy-lang.org/processing-xml.html[XML] / http://groovy-lang.org/json.html[Json]). 
+
+Se você já sabe java já sabe 70% de _groovy_. E _groovy_ é uma daquelas coisas que quando você começa a usar é difícil voltar.
+
+No https://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-2016/[report feito pela rebellabs] de 2016, _groovy_ é mais usado que scala!
+
+image::https://zeroturnaround.com/wp-content/uploads/2016/07/TnT-2016-podium-jvm-languages-v1.jpg[link=https://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-2016/] 
+
+### Groovy x Java
+
+Nessa parte, concordo muito com os pontos levantados por http://www.slideshare.net/paulk_asert[Paul King]:
+
+* Java é muito verboso
+* Complicado para usar programação funcional
+* Demora para evoluir (ver https://en.wikipedia.org/wiki/Java_version_history[wikipedia])
+* Java é muito complexo para algumas situações
+* Groovy fornece mais flexibilidade, melhor concorrencia
+
+Olhe essa conversão de código java para código groovy:
+
+++++
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/cKnLncITiHQvgI?startSlide=15" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/paulk_asert/groovy-tutorial" title="Groovy Tutorial" target="_blank">Groovy Tutorial</a> </strong> de <strong><a target="_blank" href="//www.slideshare.net/paulk_asert">Paul King</a></strong> </div>
+++++
+
+Não tá convencido ainda? Olha esse código de manipulação de arquivo:
+
+++++
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/cKnLncITiHQvgI?startSlide=72" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/paulk_asert/groovy-tutorial" title="Groovy Tutorial" target="_blank">Groovy Tutorial</a> </strong> de <strong><a target="_blank" href="//www.slideshare.net/paulk_asert">Paul King</a></strong> </div>
+++++
+
+e nos slides 80-82 ele mostra como fazer com xml.
+
+Sql? Olha os slides 90-92.
+
+
+'''
+
+### Alguns _snippets_ de código
+
+|=======
+| *Java* | *Groovy*
+| https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/1_vo_java.groovy[vo] | https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/1_vo.groovy[vo]
+| https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/2_list_java.groovy[list] | https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/2_list.groovy[list]
+| https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/3_map_java.groovy[map] | https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/3_map.groovy[map]
+| https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/4_file_java.groovy[file] | https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/4_file.groovy[file]
+| | https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/5_url.groovy[url]
+| | https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/6_metaclass.groovy[metaclass]
+| | https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/7_xml.groovy[xml]
+| | https://github.com/adamatti/RSJUG_03_Ago_16/blob/master/groovy/8_json.groovy[json]
+|=======
+
+Todos os arquivos estão disponíveis no https://github.com/adamatti/RSJUG_03_Ago_16/tree/master/groovy[github]
+
+PS: _post_ ia ficar muito extenso se eu incluisse todos os códigos aqui. Mas concordo que ficou ruim de ver. Dica: baixa o código do https://github.com/adamatti/RSJUG_03_Ago_16/tree/master/groovy[github] e vê local
+
+'''
+
+### Ecossistema do groovy?
+
+Teve uma apresentação na http://gr8conf.org/[g8conf] sobre o ecossistema do groovy:
+
+++++
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/4lQw76hsoj6kM3?startSlide=3" 
+    width="595" 
+    height="485" 
+    frameborder="0" 
+    marginwidth="0" 
+    marginheight="0" 
+    scrolling="no" 
+    style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> 
+</iframe>
+<div style="margin-bottom:5px">
+    <strong> <a href="//www.slideshare.net/aalmiray/gr8conf-groovy-ecosystem" title="Gr8conf - The Groovy Ecosystem Revisited" target="_blank">Gr8conf - The Groovy Ecosystem Revisited</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/aalmiray">Andres Almiray</a></strong>
+</div>
+++++
+
+Sim, tá um pouco desatualizada, mas dá para dar uma idéia.
+
+*Highlights*:
+
+* https://gradle.org[Gradle]: todas as facilidades do https://maven.apache.org[Maven], com a flexibilidade do http://ant.apache.org[Ant]. E não precisa de XML. E pode fazer qualquer coisa que a linguagem java/groovy permitem
+* http://sdkman.io/index.html[SDKMan]: gerenciador de SDKs para Maven, Ant, Java, Groovy, Scala, Clojure, etc
+* https://grails.org[Grails]: _akas groovy on rails_. Super junção do Spring + Hibernate + Gradle + Groovy + boas práticas. Dá uma olhada no https://docs.grails.org/latest/guide/GORM.html[GORM] e vê o poder disso
+* http://spockframework.org/[Spock]: Framework de testes. Tipo jUnit, mas com o poder do groovy + BDD e outras coisas.  
+* http://gebish.org/[Geb]: extensão do Spock para testes de tela. Tipo http://www.seleniumhq.org/[Selenium].
+* http://sparkjava.com[Spark Java]: Framework tipo http://www.sinatrarb.com/[Sinatra] para criar aplicações web / APIs. Muito mais leve que https://projects.spring.io/spring-boot[Spring boot] 
+* http://www.gpars.org[GPars]: Framework para concorrencia e paralelismo
+
+'''
+
+### E quem usa _Groovy_?
+
+O http://www.slideshare.net/paulk_asert[Paul King] mostra isso na apresentação dele:
+
+++++
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/aWfH07QkojiZNt?startSlide=150" 
+    width="595" 
+    height="485" 
+    frameborder="0" 
+    marginwidth="0" 
+    marginheight="0" 
+    scrolling="no" 
+    style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" 
+    allowfullscreen> 
+</iframe>
+<div style="margin-bottom:5px">
+    <strong> 
+        <a href="//www.slideshare.net/paulk_asert/awesome-groovy" title="awesome groovy" target="_blank">awesome groovy</a> </strong> de <strong><a target="_blank" href="//www.slideshare.net/paulk_asert">Paul King</a>
+    </strong>
+</div>
+++++
+
+'''
+
+### Ok... quem usa groovy no Brasil?
+
+O http://www.slideshare.net/loboweissmann[Henrique Weissmann] mostra isso na apresentação dele:
+
+++++
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/1HSWHBZogacq17?startSlide=11" 
+    width="595" 
+    height="485" 
+    frameborder="0" 
+    marginwidth="0" 
+    marginheight="0" 
+    scrolling="no" 
+    style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> 
+</iframe>
+<div style="margin-bottom:5px">
+    <strong>
+        <a href="//www.slideshare.net/loboweissmann/slides-final-41029521" title="Alta produtividade em Java EE com Groovy e Grails" target="_blank">Alta produtividade em Java EE com Groovy e Grails</a></strong> de <strong><a target="_blank" href="//www.slideshare.net/loboweissmann">Henrique Weissmann</a>
+    </strong>
+</div>
+++++
+
+'''
+
+### Next Steps
+* Olhar projetos em _groovy_. Tenho vários no https://github.com/adamatti?utf8=%E2%9C%93&tab=repositories&q=&type=&language=groovy[github]
+* Aprender https://gradle.org[Gradle]. Tem alguns exemplos https://github.com/adamatti/RSJUG_03_Ago_16/tree/master/gradle[no meu github]. E tem a https://www.eventials.com/Globalcode/gradle-o-melhor-amigo-no-build-do-seu-software/[apresentação do Felipe Mamud] no TDC Florianópolis.
+* Aprender https://grails.org[Grails]. Mais exemplos no https://github.com/adamatti/RSJUG_03_Ago_16/tree/master/grails[github]
+* Aprender http://spockframework.org/[Spock] (para testes). Projeto completo https://github.com/adamatti/LearnSpock[aqui]. E esse https://rskupnik.github.io/tdd-with-spock-groovy-and-java[artigo]
+
+'''
+
+### Referencias:
+* https://github.com/adamatti/awesome/blob/master/groovy.adoc[Awesome List]
+* http://groovy-lang.org/ecosystem.html[Ecosystem]
+
+Curtiu o _post_? Não curtiu? Achou mais ou menos? Dúvidas / perguntas / sugestões? Deixa um comentário aí. 
