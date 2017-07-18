@@ -18,9 +18,9 @@ Não... não esse CAP. Vamos a https://pt.wikipedia.org/wiki/Teorema_CAP[Wikiped
 ""
 Teorema do CAP, também chamado de http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf[Teorema de Brewer], afirma que é impossível que o armazenamento de dados distribuído forneça simultaneamente mais de duas das três garantias seguintes: 
 
-* *Consistência*: Cada leitura recebe a escrita mais recente ou um erro
+* *Consistência (Consistency)*: Cada leitura recebe a escrita mais recente ou um erro
 * *Disponibilidade (Availability*): Cada pedido recebe uma resposta (sem erro) - sem garantia de que contém a escrita mais recente
-* *Partição*: O sistema continua a funcionar apesar de um número arbitrário de mensagens serem descartadas (ou atrasadas) pela rede entre nós
+* *Tolerância a particionamentos (Partition tolerance)*: O sistema continua a funcionar apesar de um número arbitrário de mensagens serem descartadas (ou atrasadas) pela rede entre nós
 
 Nenhum sistema distribuído está protegido contra falhas de rede, portanto, a *partição* geralmente deve ser tolerada. Na presença de partições, são dadas duas opções: *consistência* ou *disponibilidade*. 
 
@@ -29,32 +29,32 @@ Ao escolher *consistência* em relação à disponibilidade, o sistema retornar�
 Ao escolher *disponibilidade* sobre consistência, o sistema sempre processará a consulta e tentará retornar a versão disponível mais recente da informação, mesmo que não possa garantir que ela esteja atualizada devido às partições.
 ""
 
-*Versão super resumida*: bancos de dados só podem escoler 2 dos 3 elementos. É matemáticamente impossível ter os 3.
+*Versão super resumida*: bancos de dados só podem escolher 2 dos 3 elementos. É matemáticamente impossível ter os 3.
 
 '''
 
 ### E onde os bancos de dados atuais se encaixam?
 
-Vamos a figura:
+Vamos à figura:
 
 image::http://www.mysoftkey.com/wp-content/uploads/2016/09/cap-theorem-triangle.png[align=center]
 
 
-* *Consistência + _Availability_*: como exemplos temos bancos de dados relacionais (Oracle, MySql, Postgre, MS SQL Server, etc). Tendo CA, eles não tem Partição. Eles podem ter replicação, mas não partição. E aqui temos toda a parte de transação, locks de banco, etc
+* *_Consistency_ + _Availability_*: como exemplos temos bancos de dados relacionais (Oracle, MySql, Postgre, MS SQL Server, etc). Tendo CA, eles não tem _Partition Tolerance_. Eles podem ter replicação, mas não partição. E aqui temos toda a parte de transação, _locks_ de banco, etc
 
 O banco de dados grafo https://neo4j.com[neo4j] também está nesse quadrante, assim como o https://www.torodb.com[ToroDB].
 
-* *Consistência + Partição*: a maioria dos bancos noSql estão aqui. Eles podem ser chave-valor (https://redis.io/[Redis]), tabulares (https://hbase.apache.org[hbase] do http://hadoop.apache.org/[Hadoop]) e orientados a documento (https://www.mongodb.com/[mongo]). 
+* *_Consistency_ + _Partition Tolerance_*: a maioria dos bancos noSql estão aqui. Eles podem ser chave-valor (https://redis.io/[Redis]), tabulares (https://hbase.apache.org[hbase] do http://hadoop.apache.org/[Hadoop]) e orientados a documento (https://www.mongodb.com/[mongo]). 
 
-Mesmo sacrificando disponibilidade isso não deveria ser um problema se usado corretamente. Ex: fazer a aplicação conectar em todo o _cluster_, reconectar em caso de problema no nodo.
+Mesmo sacrificando disponibilidade isso não deveria ser um problema se usado corretamente. Ex: fazer a aplicação conhecer todos os membros _cluster_, mudar o nodo em caso do atual falhar (e remover ele da lista de nodos válidos).
 
-* *Partição + _Availability_*: aqui o mais conhecido é o http://cassandra.apache.org/[Cassandra], usado pelo netflix. Não tenho experiencia com bancos PA, mas do que eu pude ver você pode selecionar a consistência durante a operação. Ex: views do youtube - não teria muito problema se retornasse 1004 ou 1007 _views_.
+* *_Partition Tolerance_ + _Availability_*: aqui o mais conhecido é o http://cassandra.apache.org/[Cassandra], usado pelo netflix. Não tenho experiencia com bancos PA, mas do que eu pude ver você pode selecionar a consistência durante a operação. Ex: views do youtube - não teria muito problema se retornasse 1004 ou 1007 _views_.
 
 ### Considerações
 
 * RDBMS não fazem uso de computação distribuída, limitando a escalabilidade por _hardware_;
 * As vantagens dos bancos noSql vão alem da sintaxe, já que eles fazem uso de partição / cluster;
-* Bancos como https://www.mongodb.com/[mongodb] não fazem uso de transação (_commit_ / _rollback_). E nem possuem isso no _roadmap_. Para melhor uso desses bancos, deve ser usado um _approach_ mais https://www.youtube.com/watch?v=ATWEXZkYgek[Event Sourcing], onde não tenha alteração / exclusão de dados.
+* Bancos como https://www.mongodb.com/[mongodb] não fazem uso de transação (_commit_ / _rollback_). E nem possuem isso no _roadmap_. Para melhor uso desses bancos, pode ser usado um _approach_ de https://www.youtube.com/watch?v=ATWEXZkYgek[_Event Sourcing_], onde não tenha alteração / exclusão de dados. Além de _event sourcing_ ainda tem controles de consistência otimistas, tipo o que os http://couchdb.apache.org/[_Couch_]-_like_ utilizam.
 * Divisão de _hardware_ é algo a ser considerado para melhor performance. Ex: em bancos como https://hbase.apache.org[hbase], é melhor ter múltiplos HDs menores do que um grande SSD, para paralelismo de IO;
 * O modelo de dados pode ser implementado em diferentes bases do CAP, como é o caso de bancos de dados tabulares: CA com https://www.vertica.com/[Vertica], CP com https://hbase.apache.org[HBase], PA com http://cassandra.apache.org/[Cassandra].
 
@@ -64,5 +64,8 @@ Mesmo sacrificando disponibilidade isso não deveria ser um problema se usado co
 * http://www.jrobertoaraujo.com/2017/01/03/teorema-cap[Teorema Cap]
 * https://pt.slideshare.net/Celio12/nosql-base-vs-acid-e-teorema-cap[NoSQL, Base VS ACID e Teorema CAP]
 * http://www.geati.ifc-camboriu.edu.br/wiki/index.php/Exemplo_explicativo_do_Teorema_CAP[Exemplo explicativo do Teorema CAP]
+
+### Updates
+Obrigado especial ao https://twitter.com/PEdrArthur[@PEdrArthur] pelo _review_ e dicas. 
 
 Dúvidas? comentários? Sugestões? Ficou claro o conteúdo? Deixa um comentário aí abaixo.
