@@ -149,13 +149,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Consistência</strong>: Cada leitura recebe a escrita mais recente ou um erro</p>
+<p><strong>Consistência (Consistency)</strong>: Cada leitura recebe a escrita mais recente ou um erro</p>
 </li>
 <li>
 <p><strong>Disponibilidade (Availability</strong>): Cada pedido recebe uma resposta (sem erro) - sem garantia de que contém a escrita mais recente</p>
 </li>
 <li>
-<p><strong>Partição</strong>: O sistema continua a funcionar apesar de um número arbitrário de mensagens serem descartadas (ou atrasadas) pela rede entre nós</p>
+<p><strong>Tolerância a particionamentos (Partition tolerance)</strong>: O sistema continua a funcionar apesar de um número arbitrário de mensagens serem descartadas (ou atrasadas) pela rede entre nós</p>
 </li>
 </ul>
 </div>
@@ -171,13 +171,13 @@
 </blockquote>
 </div>
 <div class="paragraph">
-<p><strong>Versão super resumida</strong>: bancos de dados só podem escoler 2 dos 3 elementos. É matemáticamente impossível ter os 3.</p>
+<p><strong>Versão super resumida</strong>: bancos de dados só podem escolher 2 dos 3 elementos. É matemáticamente impossível ter os 3.</p>
 </div>
 <hr>
 <div class="sect2">
 <h3 id="e-onde-os-bancos-de-dados-atuais-se-encaixam">E onde os bancos de dados atuais se encaixam?</h3>
 <div class="paragraph">
-<p>Vamos a figura:</p>
+<p>Vamos à figura:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -187,7 +187,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Consistência + <em>Availability</em></strong>: como exemplos temos bancos de dados relacionais (Oracle, MySql, Postgre, MS SQL Server, etc). Tendo CA, eles não tem Partição. Eles podem ter replicação, mas não partição. E aqui temos toda a parte de transação, locks de banco, etc</p>
+<p><strong><em>Consistency</em> + <em>Availability</em></strong>: como exemplos temos bancos de dados relacionais (Oracle, MySql, Postgre, MS SQL Server, etc). Tendo CA, eles não tem <em>Partition Tolerance</em>. Eles podem ter replicação, mas não partição. E aqui temos toda a parte de transação, <em>locks</em> de banco, etc</p>
 </li>
 </ul>
 </div>
@@ -197,17 +197,17 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Consistência + Partição</strong>: a maioria dos bancos noSql estão aqui. Eles podem ser chave-valor (<a href="https://redis.io/">Redis</a>), tabulares (<a href="https://hbase.apache.org">hbase</a> do <a href="http://hadoop.apache.org/">Hadoop</a>) e orientados a documento (<a href="https://www.mongodb.com/">mongo</a>).</p>
+<p><strong><em>Consistency</em> + <em>Partition Tolerance</em></strong>: a maioria dos bancos noSql estão aqui. Eles podem ser chave-valor (<a href="https://redis.io/">Redis</a>), tabulares (<a href="https://hbase.apache.org">hbase</a> do <a href="http://hadoop.apache.org/">Hadoop</a>) e orientados a documento (<a href="https://www.mongodb.com/">mongo</a>).</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Mesmo sacrificando disponibilidade isso não deveria ser um problema se usado corretamente. Ex: fazer a aplicação conectar em todo o <em>cluster</em>, reconectar em caso de problema no nodo.</p>
+<p>Mesmo sacrificando disponibilidade isso não deveria ser um problema se usado corretamente. Ex: fazer a aplicação conhecer todos os membros <em>cluster</em>, mudar o nodo em caso do atual falhar (e remover ele da lista de nodos válidos).</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Partição + <em>Availability</em></strong>: aqui o mais conhecido é o <a href="http://cassandra.apache.org/">Cassandra</a>, usado pelo netflix. Não tenho experiencia com bancos PA, mas do que eu pude ver você pode selecionar a consistência durante a operação. Ex: views do youtube - não teria muito problema se retornasse 1004 ou 1007 <em>views</em>.</p>
+<p><strong><em>Partition Tolerance</em> + <em>Availability</em></strong>: aqui o mais conhecido é o <a href="http://cassandra.apache.org/">Cassandra</a>, usado pelo netflix. Não tenho experiencia com bancos PA, mas do que eu pude ver você pode selecionar a consistência durante a operação. Ex: views do youtube - não teria muito problema se retornasse 1004 ou 1007 <em>views</em>.</p>
 </li>
 </ul>
 </div>
@@ -223,7 +223,7 @@
 <p>As vantagens dos bancos noSql vão alem da sintaxe, já que eles fazem uso de partição / cluster;</p>
 </li>
 <li>
-<p>Bancos como <a href="https://www.mongodb.com/">mongodb</a> não fazem uso de transação (<em>commit</em> / <em>rollback</em>). E nem possuem isso no <em>roadmap</em>. Para melhor uso desses bancos, deve ser usado um <em>approach</em> mais <a href="https://www.youtube.com/watch?v=ATWEXZkYgek">Event Sourcing</a>, onde não tenha alteração / exclusão de dados.</p>
+<p>Bancos como <a href="https://www.mongodb.com/">mongodb</a> não fazem uso de transação (<em>commit</em> / <em>rollback</em>). E nem possuem isso no <em>roadmap</em>. Para melhor uso desses bancos, pode ser usado um <em>approach</em> de <a href="https://www.youtube.com/watch?v=ATWEXZkYgek"><em>Event Sourcing</em></a>, onde não tenha alteração / exclusão de dados. Além de <em>event sourcing</em> ainda tem controles de consistência otimistas, tipo o que os <a href="http://couchdb.apache.org/"><em>Couch</em></a>-<em>like</em> utilizam.</p>
 </li>
 <li>
 <p>Divisão de <em>hardware</em> é algo a ser considerado para melhor performance. Ex: em bancos como <a href="https://hbase.apache.org">hbase</a>, é melhor ter múltiplos HDs menores do que um grande SSD, para paralelismo de IO;</p>
@@ -254,6 +254,12 @@
 <p><a href="http://www.geati.ifc-camboriu.edu.br/wiki/index.php/Exemplo_explicativo_do_Teorema_CAP">Exemplo explicativo do Teorema CAP</a></p>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="updates">Updates</h3>
+<div class="paragraph">
+<p>Obrigado especial ao <a href="https://twitter.com/PEdrArthur">@PEdrArthur</a> pelo <em>review</em> e dicas.</p>
 </div>
 <div class="paragraph">
 <p>Dúvidas? comentários? Sugestões? Ficou claro o conteúdo? Deixa um comentário aí abaixo.</p>
