@@ -106,6 +106,7 @@ Quer saber mais sobre o projeto? Eu falo um pouco sobre ele aqui:
 * http://www.jancarloviray.com/blog/paas-comparison-2017-dokku-flynn-deis-kubernetes-docker-swarm[Comparação sobre PAAS: Dokku, Flynn, Deis, Kubernetes, Docker Swarm] (2017)
 * https://jaxenter.com/skills-machine-learning-big-data-cloud-computing-135037.html[DevOps engineers think Docker, Ansible and Kubernetes are the top 3 tools to learn]
 * https://diveintodocker.com/blog/the-3-biggest-wins-when-using-alpine-as-a-base-docker-image[The 3 Biggest Wins When Using Alpine as a Base Docker Image]
+* https://developer.ibm.com/dwblog/2016/what-is-docker-containers/[What is Docker? A Primer on the Benefits of Containers for Applications]
 
 ### Feedbacks
 
