@@ -6,6 +6,7 @@ categories: devops
 summary: "Casos e técnicas para implementar CI / CD"
 tags:
   - devops
+  - docker
   - ContinuousDelivery
   - ContinuousDeployment
 ---
