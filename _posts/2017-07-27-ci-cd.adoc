@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Continuous Integration, delivery and deployment"
+date:   2017-07-27 13:00:00 -0300
+categories: devops
+summary: "Casos e técnicas para implementar CI / CD"
+tags:
+  - devops
+  - ContinuousDelivery
+  - ContinuousDeployment
+---
+
+++++
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.125% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BXCQkv3htbD/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Meetup docker e microserviços</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Marcelo Adamatti (@mpadamatti) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-07-27T03:41:37+00:00">Jul 26, 2017 at 8:41pm PDT</time></p></div></blockquote>
+<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+++++
+
+Essa semana eu palestrei no _meetup_ https://www.meetup.com/pt-BR/Microservices-Porto-Alegre/events/241200393/[microservices] e https://www.meetup.com/pt-BR/Docker-Porto-Alegre/events/241362067/[docker] (foi um evento só, mas as fotos e comentários estão espalhados nos dois) sobre o tema "_Continuous Integration, delivery and deployment_" - Integração / Entrega / implantação contínua. 
+
+A missão foi falar de alguns _cases_, exemplos de código de como fazer isso com https://docs.docker.com/compose/[_docker compose_] e técnicas para entregar mais rápido e com qualidade para produção.
+
+### Para quem foi no evento
+
+Estou disponibilizando os slides no http://slides.com/adamatti/ci_cd[slides.com] e https://docs.google.com/presentation/d/1Tztt0xBpwP14o-RVHk-6J8ngZhPIcs3bfGm1-9gEGxI/edit?usp=sharing[google drive]. O exemplo de código já está no https://github.com/adamatti/SampleTalkCICD[github].
+
+Algumas das coisas demonstradas:
+
+* Ferramentas
+** o _docker compose_ está https://raw.githubusercontent.com/adamatti/SampleTalkCICD/master/docker-compose.yml[aqui]. O comando para rodar os testes se resume a `docker-compose run test`. E como mencionado, não se deve expor todas as portas. 
+** O código para fazer _deploy_ / testes no https://travis-ci.org/adamatti/SampleTalkCICD[travis] está https://raw.githubusercontent.com/adamatti/SampleTalkCICD/master/.travis.yml[aqui] 
+** Jenkins 2? ver https://raw.githubusercontent.com/adamatti/SampleTalkCICD/master/Jenkinsfile[aqui]
+** https://bitbucket.org/[Bitbucket]? Tem também, disponível https://raw.githubusercontent.com/adamatti/SampleTalkCICD/master/bitbucket-pipelines.yml[aqui]. Lembrando que no https://bitbucket.org/[Bitbucket] não dá para executar _docker compose_. Ainda.
+* Sobre exemplos de código com http://groovy-lang.org[groovy] e http://spockframework.org[spock]
+** Um exemplo de _API rest_ pode ser visto no https://raw.githubusercontent.com/adamatti/SampleTalkCICD/master/src/main/groovy/adamatti/view/OrderView.groovy[OrderView]. Exemplo usando http://sparkjava.com[Spark Java], que é baseado no http://www.sinatrarb.com/[Sinatra] do Ruby, similar ao http://expressjs.com/pt-br[express] do node e http://flask.pocoo.org[flask] / https://bottlepy.org[bottle] do python. Testes no https://raw.githubusercontent.com/adamatti/SampleTalkCICD/master/src/test/groovy/adamatti/OrderSpec.groovy[OrderSpec]
+** _Business rule engine_ ou "motor de regra de negócios" pode ser visto no https://raw.githubusercontent.com/adamatti/SampleTalkCICD/master/src/test/groovy/adamatti/BusinessRulesSpec.groovy[BusinessRulesSpec]
+** _Circuit Breaker_ no https://raw.githubusercontent.com/adamatti/SampleTalkCICD/master/src/main/groovy/adamatti/service/CircuitService.groovy[CircuitService]
+* E sobre outros exemplos
+** Como meu _approach_ para fazer _deploy_ do https://adamatti.github.io/blog/[blog] no github usando https://jekyllrb.com/[jekyll] e http://asciidoctor.org[asciidoc], ver o blog https://github.com/adamatti/blog[aqui]. O código jekyll está no branch https://github.com/adamatti/blog/tree/jekyll[jekyll], a cada _commit_ é executado o https://travis-ci.org[travis] (ver o https://raw.githubusercontent.com/adamatti/blog/jekyll/.travis.yml[descritor]) e código gerado vai para https://github.com/adamatti/blog/tree/gh-pages[gh-pages]
+
+### E sobre as referências / técnicas?
+
+* Conceitos: https://en.wikipedia.org/wiki/Continuous_integration[Integração Contínua], https://en.wikipedia.org/wiki/Continuous_delivery[Entrega Contínua], http://blog.justdigital.com.br/devops-qual-a-diferencas-entre-continuous-delivery-continuous-integration-e-continuous-deployment/[Implantação Contínua] e https://en.wikipedia.org/wiki/Continuous_operation[Operação Contínua]. Diferenças podem ser vistar nos _posts_ da http://cms.codeship.com/continuous-integration-essentials[codeship] e http://scmquest.com/continuous-integration-vs-continuous-delivery-vs-continuous-deployment[scmQuest]. E o https://martinfowler.com/bliki/ContinuousIntegrationCertification.html[certificado de CI do Martin Fowler]
+* Cases: o principal é o do https://pt.stackoverflow.com/[Stack Overflow], descrito no http://hipsters.tech/tecnologias-na-stackoverflow-hipsters-46/[hispters.tech] (_podcast_). _Spoiler_ : eles não usam _microservices_, _cloud_ ou testes
+* _Feature toggles_, ver a https://www.infoq.com/br/presentations/feature-toggles-os-2-lados-do-poder[apresentação do Sacha no TDC]. E https://martinfowler.com/bliki/CanaryRelease.html[_Canary Release_]
+* http://gatilhokosmico.com.br/2017/07/17/qual-futuro-do-sysadmin/[_Podcast_ do Gomex] que ele fala de TDD nos componentes do google. Na real o tema principal é "qual o futuro do sysadmin?"
+* Microserviços: https://www.oreilly.com/ideas/the-evolution-of-scalable-microservices[Microlitos], http://shiroyasha.io/monorepos-monoliths-in-disguise.html[monorepos] e https://martinfowler.com/articles/microservice-testing/[testes em microserviços]
+* Padronização e documentação: http://jsonapi.org[json api], https://swagger.io[swagger] e https://apiary.io[apiary]
+* _Monitoring_: acabei não falando na apresentação, mas fiz um exemplo com https://www.influxdata.com/[influxdb] + https://grafana.com/[grafana]. Coloquei no https://github.com/adamatti/LearnInflux[github] já.
+* _Databases_: ver técnicas de migração no https://dzone.com/articles/why-you-should-adopt-continuous-integration-for-th[DZone]. Já vi projetos com http://www.liquibase.org[liquibase] e https://github.com/afloyd/mongo-migrate[mongo-migrate]
+* _Service Discovery_: foi falado no _meetup_ sobre o https://www.consul.io/[consul] e https://github.com/Netflix/eureka[eureka]. Eu achei legal https://www.youtube.com/watch?v=BThkk5zv0DE[esse _approach_ do Derek Slager], de ambiente de desenvolvimento compartilhado (mais ou menos em 29 mins). Imagina poder testar a API em prod junto com as outras APIs, só passando a info da API escolhida no _http header_?
+* _ChatOps_: o http://hello.heroku.com/e/36622/ntent-blog-utm-term-chatops-ga/ctlq6v/647759919[Heroku disponibilizou o dele] essa semana.
+* Sobre o _approach_ de testes (priorizar serviços e não unitário), ver o _post_ do https://medium.com/@diogo.lucas/the-test-pyramid-revisited-3d281b34c105[Diogo Lucas] 
+* https://12factor.net/pt_br/[12 factors], os requisitos para _cloud native_ criados pelo http://heroku.com[Heroku]. O Gomex fez exemplos em docker de cara um dos items no https://github.com/gomex/exemplo-12factor-docker[github dele].
+
+Dúvidas sobre o http://heroku.com[Heroku]? Dá uma olhada link:/blog/git/2017/06/04/heroku.html[nesse post] 
+
+### Próximos passos
+* Se o _deploy_ é complicado, faça com mais frequência. Ver esse https://semaphoreci.com/community/tutorials/continuous-integration[artigo]
+* https://techbeacon.com/how-sell-continuous-delivery-business[Como vender CD para o _Business_]. Foco no `Each year, businesses lose $3 trillion dollars in failed IT projects`
+* https://www.youworthapp.com/s/salary/continuous-integration/yearly/week[Mercado de trabalho paga mais para quem sabe CI]
+
+Agradecimentos especiais ao pessoal da https://www.zenvia.com/[Zenvia] que fez um _podcast_ de CI/CD interno.
+
+### Sobre algumas perguntas / comentários do evento
+
+* "Como ir rápidamente para outros projetos?" -  Eu uso o https://github.com/rupa/z[Z] 
+* "Ah, você gosta de automatizar tudo?" - Sim. Tenho 22 aplicações pessoais no http://heroku.com[Heroku]. https://pt.wikipedia.org/wiki/Screen_scraping[Screen Scrapers] para coletar dados de carros e imóveis, https://github.com/adamatti/wiki[_wiki_], https://github.com/adamatti/tasks[_tasks_], _reports_ do trello... E até um módulo para rodar _scripts_ dos _devs_ (que chamamos carinhosamente de "estagiário"). Algumas _UIs_ para APIs. Coisas desse tipo. 
+* "Como você criou o _mindmap_?" - usei o http://www.xmind.net[xmind]. Posso mandar o arquivo em _pvt_
+* "Quanto tempo levou para aprender tudo isso?" - esse item dá um _post_. Eu curto o que eu faço, aprendo coisas novas todos os dias.
+
+'''  
+
+Comentários? Sugestões? Algo que eu possa melhorar para próximas _talks_? Algo para continuar? Deixe um comentário aí embaixo!
