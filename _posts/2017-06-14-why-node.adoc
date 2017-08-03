@@ -155,5 +155,6 @@ https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.cx
 * https://dev.to/reverentgeek/do-you-hate-javascript[Do you hate JavaScript?]
 * https://node.university/blog/502765/node-for-java-devs[Node for Java Developers]
 * https://nodesource.com/blog/the-21-most-awesome-awesome-lists-for-node-js-developers[21 awesome lists for devs]
+* https://medium.com/@nodejs/google-intel-and-twitter-talk-node-js-aa3407b17143[Google, Intel, and Twitter Talk Node.js — User Perspectives on Mobile, Containers, Cloud & Why They Contribute to the Project]
 
 Dúvidas? Comentários? Algum assunto para detalhar melhor? Deixe o feedback nos comentários
