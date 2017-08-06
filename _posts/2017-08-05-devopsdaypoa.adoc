@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "DevopsDay Porto Alegre"
+date:   2017-08-05 13:00:00 -0300
+categories: devops
+summary: "DevopsDay Porto Alegre"
+tags:
+  - devops
+  - eventos
+---
+
+E nesse fim se semana teve http://poa.devopsdays.com.br[DevopsDay Porto Alegre].
+
+Meus slides já estão disponíveis no https://docs.google.com/presentation/d/1d5vLiWjJ-_kVPtICkwdjF5LiwKJFveZzsGPMG_C3CHc/edit?usp=sharing[google drive] e https://slides.com/adamatti/cicd-devopsdaypoa[slides.com], repo no https://github.com/adamatti/SampleTalkCICD[github]. Todas as referencias foram listadas no link:/blog/devops/2017/07/27/ci-cd.html[nesse post].
+
+A http://poa.devopsdays.com.br/#programacao[programação do evento] estava muito legal, http://poa.devopsdays.com.br/#palestrantes[palestrantes] de alto nível. Se você foi no evento deixe seu no https://joind.in/event/devopsday-porto-alegre/schedule/list[joind]. Se não foi, as palestras estarão disponibilizadas no https://joind.in/event/devopsday-porto-alegre/schedule/list[mesmo link]. 
+
+Parabéns a coordenação e palestrantes, e até o próximo ano.
+
+++++
+<blockquote class="twitter-tweet" data-lang="pt" align="center">
+<p lang="pt" dir="ltr">Muito obrigado pessoal do <a href="https://twitter.com/poadevopsday">@poadevopsday</a> !!<br>Evento muito foda 😎✌ <a href="https://twitter.com/hashtag/nofilter?src=hash">#nofilter</a> <a href="https://t.co/KmyYzBMY8m">pic.twitter.com/KmyYzBMY8m</a></p>&mdash; Felipe Dias (@ZielinskiFelipe) <a href="https://twitter.com/ZielinskiFelipe/status/893973861510860800">5 de agosto de 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
