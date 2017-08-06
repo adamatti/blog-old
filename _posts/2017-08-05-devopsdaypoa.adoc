@@ -23,3 +23,6 @@ Parabéns a coordenação e palestrantes, e até o próximo ano.
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 ++++
 
+### Links
+* http://poa.devopsdays.com.br[Página do Evento]
+* https://twitter.com/search?l=&q=from%3Apoadevopsday%20since%3A2017-08-04%20until%3A2017-08-07&src=typd[Tweets do dia]
