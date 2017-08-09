@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://adamatti.github.io/blog/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adamatti.github.io/blog/blog/" rel="alternate" type="text/html" /><updated>2017-08-06T17:09:19+00:00</updated><id>https://adamatti.github.io/blog/blog/</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://adamatti.github.io/blog/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adamatti.github.io/blog/blog/" rel="alternate" type="text/html" /><updated>2017-08-09T19:24:23+00:00</updated><id>https://adamatti.github.io/blog/blog/</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
 </subtitle><entry><title type="html">DevopsDay Porto Alegre</title><link href="https://adamatti.github.io/blog/blog/devops/2017/08/05/devopsdaypoa.html" rel="alternate" type="text/html" title="DevopsDay Porto Alegre" /><published>2017-08-05T16:00:00+00:00</published><updated>2017-08-05T16:00:00+00:00</updated><id>https://adamatti.github.io/blog/blog/devops/2017/08/05/devopsdaypoa</id><content type="html" xml:base="https://adamatti.github.io/blog/blog/devops/2017/08/05/devopsdaypoa.html">&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;E nesse fim se semana teve &lt;a href=&quot;http://poa.devopsdays.com.br&quot;&gt;DevopsDay Porto Alegre&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -1236,6 +1236,9 @@ git commit -m &lt;span class=&quot;tok-s2&quot;&gt;&amp;quot;Arquivo adicionado 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SWYqp7iY_Tc&quot;&gt;Git &amp;amp; GitHub Crash Course For Beginners (32 mins)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/git-tips/tips&quot;&gt;Git tips&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
