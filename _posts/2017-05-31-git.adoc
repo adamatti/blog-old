@@ -77,3 +77,4 @@ Fazer _track_ de projetos ou notas na máquina local? Publicar um projeto para o
 * https://www.alexkras.com/19-git-tips-for-everyday-use[19 Tips for Everyday use]
 * https://examples.javacodegeeks.com/software-development/git/git-commands-tutorial[Git Commands Tutorial]
 * https://www.youtube.com/watch?v=SWYqp7iY_Tc[Git & GitHub Crash Course For Beginners (32 mins)]
+* https://github.com/git-tips/tips[Git tips]
