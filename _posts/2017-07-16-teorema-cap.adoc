@@ -52,7 +52,8 @@ Mesmo sacrificando disponibilidade isso não deveria ser um problema se usado co
 
 ### Considerações
 
-* RDBMS não fazem uso de computação distribuída, limitando a escalabilidade por _hardware_;
+* +++<strike>+++RDBMS não fazem uso de computação distribuída, limitando a escalabilidade por _hardware_+++</strike>+++;
+** Update: bancos como https://cloud.google.com/spanner/[Google Cloud Spanner], https://www.cockroachlabs.com/[CockroachDB], https://aws.amazon.com/rds/auror[Amazon Aurora] são exceções a essa regra (tks *alanhoff* do http://nodebr.slack.com[nodebr])
 * As vantagens dos bancos noSql vão alem da sintaxe, já que eles fazem uso de partição / cluster;
 * Bancos como https://www.mongodb.com/[mongodb] não fazem uso de transação (_commit_ / _rollback_). E nem possuem isso no _roadmap_. Para melhor uso desses bancos, pode ser usado um _approach_ de https://www.youtube.com/watch?v=ATWEXZkYgek[_Event Sourcing_], onde não tenha alteração / exclusão de dados. Além de _event sourcing_ ainda tem controles de consistência otimistas, tipo o que os http://couchdb.apache.org/[_Couch_]-_like_ utilizam.
 * Divisão de _hardware_ é algo a ser considerado para melhor performance. Ex: em bancos como https://hbase.apache.org[hbase], é melhor ter múltiplos HDs menores do que um grande SSD, para paralelismo de IO;
