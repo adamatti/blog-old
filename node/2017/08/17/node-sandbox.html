@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Node Sandbox</title>
+  <meta name="description" content="Dia 10/08 eu estava palestrando em uma software house de Porto Alegre do porquê de node. E se você ainda tem essa dúvida recomento ver o post do Luis de Por ...">
+
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link rel="stylesheet" href="/blog/assets/share.css">
+  <link rel="stylesheet" href="/blog/asciidoc-pygments.css">
+  <link rel="canonical" href="https://adamatti.github.io/blog/blog/node/2017/08/17/node-sandbox.html">
+  <link rel="alternate" type="application/rss+xml" title="Adamatti - blog pessoal" href="/blog/feed.xml">
+  
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1039281-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/blog/">Adamatti - blog pessoal</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/blog/sobre/">Sobre</a>
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/blog/tags/">Tags</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Node Sandbox</h1>
+    <p class="post-meta">
+      <time datetime="2017-08-17T16:00:00+00:00" itemprop="datePublished">
+        
+        2017-08-17
+      </time>
+      </p>
+  </header>
+  
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="paragraph">
+<p>Dia 10/08 eu estava palestrando em uma <em>software house</em> de Porto Alegre <a href="/blog/node/2017/06/14/why-node.html">do porquê de node</a>. E se você ainda tem essa dúvida recomento ver o <em>post</em> do <a href="https://imasters.com.br/perfil/luizfernando">Luis</a> de <a href="https://imasters.com.br/desenvolvimento/por-que-stanford-trocou-java-por-javascript">Por que Stanford trocou Java por JavaScript?</a>.</p>
+</div>
+<div class="paragraph">
+<p>Acabei criando vários pequenos exemplos para mostrar benefícios, <em>libs</em>, <em>cases</em>. O resultado está disponível no <a href="https://github.com/adamatti/SandboxNode">github</a>. Vários tem <a href="https://docs.docker.com/compose/">docker-compose</a> (para <a href="https://redis.io/">Redis</a>, <a href="https://www.mongodb.com/">Mongo</a>, <a href="https://www.rabbitmq.com/">RabbitMQ</a>) e <em>scripts</em> no <code>package.json</code>.</p>
+</div>
+<div class="paragraph">
+<p>Compartilho aqui também com um pouco mais de detalhamento.</p>
+</div>
+<div class="sect2">
+<h3 id="exemplos-básicos">Exemplos básicos</h3>
+<div class="paragraph">
+<p><strong>1)</strong> Um exemplo bem básico de server sem usar libs:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">http</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;http&#39;</span><span class="tok-p">),</span>
+      <span class="tok-nx">hostname</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;127.0.0.1&#39;</span><span class="tok-p">,</span>
+      <span class="tok-nx">port</span> <span class="tok-o">=</span> <span class="tok-mi">3000</span>
+
+<span class="tok-kr">const</span> <span class="tok-nx">server</span> <span class="tok-o">=</span> <span class="tok-nx">http</span><span class="tok-p">.</span><span class="tok-nx">createServer</span><span class="tok-p">((</span><span class="tok-nx">req</span><span class="tok-p">,</span><span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">statusCode</span> <span class="tok-o">=</span> <span class="tok-mi">200</span>
+    <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">setHeader</span><span class="tok-p">(</span><span class="tok-s1">&#39;Content-Type&#39;</span><span class="tok-p">,</span><span class="tok-s1">&#39;text/plain&#39;</span><span class="tok-p">)</span>
+    <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">end</span><span class="tok-p">(</span><span class="tok-s2">&quot;Hello world\n&quot;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-nx">port</span><span class="tok-p">,</span> <span class="tok-nx">hostname</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-sb">`Server running at http://</span><span class="tok-si">${</span><span class="tok-nx">hostname</span><span class="tok-si">}</span><span class="tok-sb">:</span><span class="tok-si">${</span><span class="tok-nx">port</span><span class="tok-si">}</span><span class="tok-sb">/`</span><span class="tok-p">)</span>
+<span class="tok-p">})</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Simple/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Simple/index.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>2)</strong> Brincando com o <a href="http://nodebr.com/como-usar-o-repl-do-nodejs/">Repl</a></p>
+</div>
+<div class="paragraph">
+<p>Crie um arquivo <code>sample.js</code> com o conteúdo:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kd">function</span> <span class="tok-nx">hello</span><span class="tok-p">(</span><span class="tok-nx">msg</span><span class="tok-p">){</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;Número de argumentos: &quot;</span><span class="tok-p">,</span> <span class="tok-nx">arguments</span><span class="tok-p">.</span><span class="tok-nx">length</span><span class="tok-p">)</span>
+    <span class="tok-k">return</span> <span class="tok-sb">`Hello </span><span class="tok-si">${</span><span class="tok-nx">msg</span><span class="tok-si">}</span><span class="tok-sb">`</span>
+<span class="tok-p">}</span>
+
+<span class="tok-nx">module</span><span class="tok-p">.</span><span class="tok-nx">exports</span> <span class="tok-o">=</span> <span class="tok-p">{</span>
+    <span class="tok-nx">hello</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Repl/sample.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Repl/sample.js</a></p>
+</div>
+<div class="paragraph">
+<p>Agora na terminal, execute <code>node</code>. Com isso você pode iteragir com o código. Exemplo:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kd">var</span> <span class="tok-nx">x</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s2">&quot;./sample&quot;</span><span class="tok-p">)</span>
+<span class="tok-nx">x</span><span class="tok-p">.</span><span class="tok-nx">hello</span><span class="tok-p">(</span><span class="tok-s2">&quot;adamatti&quot;</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Tente chamar a função <code>hello</code> com mais argumentos ou sem nenhum. Talvez por isso o pessoal ache que javascript é meio zuado :-)</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>3)</strong> <em>Cache</em> de função</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">memoize</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s2">&quot;memoize&quot;</span><span class="tok-p">)</span>
+
+<span class="tok-kd">function</span> <span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-p">,</span><span class="tok-nx">cb</span><span class="tok-p">){</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;chamou a função real: &quot;</span><span class="tok-p">,</span><span class="tok-nx">n</span><span class="tok-p">)</span>
+	<span class="tok-k">if</span> <span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-o">==</span><span class="tok-mi">0</span> <span class="tok-o">||</span> <span class="tok-nx">n</span><span class="tok-o">==</span><span class="tok-mi">1</span><span class="tok-p">){</span>
+		<span class="tok-k">return</span> <span class="tok-nx">cb</span><span class="tok-p">(</span><span class="tok-kc">null</span><span class="tok-p">,</span><span class="tok-mi">1</span><span class="tok-p">)</span>
+	<span class="tok-p">}</span>
+
+	<span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">,(</span><span class="tok-nx">err</span><span class="tok-p">,</span><span class="tok-nx">result</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+        <span class="tok-nx">cb</span><span class="tok-p">(</span><span class="tok-kc">null</span><span class="tok-p">,</span> <span class="tok-nx">result</span> <span class="tok-o">*</span> <span class="tok-nx">n</span> <span class="tok-p">)</span>
+    <span class="tok-p">})</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kr">const</span> <span class="tok-nx">arr</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-mi">1</span><span class="tok-p">,</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-mi">1</span><span class="tok-p">,</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-mi">1</span><span class="tok-p">,</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-mi">1</span><span class="tok-p">,</span><span class="tok-mi">2</span><span class="tok-p">]</span>
+<span class="tok-kr">const</span> <span class="tok-nx">f</span> <span class="tok-o">=</span> <span class="tok-nx">memoize</span><span class="tok-p">(</span><span class="tok-nx">factorial</span><span class="tok-p">)</span>
+
+<span class="tok-k">for</span> <span class="tok-p">(</span><span class="tok-kd">var</span> <span class="tok-nx">i</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-nx">i</span><span class="tok-o">&lt;</span><span class="tok-nx">arr</span><span class="tok-p">.</span><span class="tok-nx">length</span> <span class="tok-p">;</span> <span class="tok-nx">i</span><span class="tok-o">++</span><span class="tok-p">){</span>
+    <span class="tok-nx">f</span><span class="tok-p">(</span><span class="tok-nx">arr</span><span class="tok-p">[</span><span class="tok-nx">i</span><span class="tok-p">],</span> <span class="tok-p">(</span><span class="tok-nx">err</span><span class="tok-p">,</span><span class="tok-nx">result</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+        <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;fatorial - &quot;</span><span class="tok-p">,</span><span class="tok-nx">arr</span><span class="tok-p">[</span><span class="tok-nx">i</span><span class="tok-p">],</span><span class="tok-s2">&quot;: &quot;</span><span class="tok-p">,</span><span class="tok-nx">result</span><span class="tok-p">)</span>
+    <span class="tok-p">})</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Memoize/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Memoize/index.js</a></p>
+</div>
+<div class="paragraph">
+<p>Atenção especial para a linha <code>const f = memoize(factorial)</code>. A função <code>factorial</code> é passada por parametro para a função <code>memoize</code>, retornando uma nova função que faz <em>cache</em> das chamadas. Dá para plugar isso com <a href="https://redis.io/">Redis</a> também.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>4)</strong> Acesso a banco - Mongo</p>
+</div>
+<div class="paragraph">
+<p>Exemplo simples com listagem e inserção.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-c1">//REFERENCES https://github.com/Automattic/monk</span>
+
+<span class="tok-kr">const</span> <span class="tok-nx">db</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;monk&#39;</span><span class="tok-p">)(</span><span class="tok-s1">&#39;localhost/mydb&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-kr">const</span> <span class="tok-nx">users</span> <span class="tok-o">=</span> <span class="tok-nx">db</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s1">&#39;users&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-nx">users</span><span class="tok-p">.</span><span class="tok-nx">find</span><span class="tok-p">({}).</span><span class="tok-nx">then</span><span class="tok-p">(</span><span class="tok-nx">data</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;List of users: &quot;</span><span class="tok-p">)</span>
+
+    <span class="tok-k">for</span><span class="tok-p">(</span><span class="tok-kd">var</span> <span class="tok-nx">i</span> <span class="tok-o">=</span> <span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-nx">i</span> <span class="tok-o">&lt;</span> <span class="tok-nx">data</span><span class="tok-p">.</span><span class="tok-nx">length</span><span class="tok-p">;</span> <span class="tok-nx">i</span><span class="tok-o">++</span><span class="tok-p">){</span>
+        <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;User &quot;</span><span class="tok-p">,</span><span class="tok-nx">data</span><span class="tok-p">[</span><span class="tok-nx">i</span><span class="tok-p">])</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">users</span><span class="tok-p">.</span><span class="tok-nx">insert</span><span class="tok-p">({</span><span class="tok-nx">name</span><span class="tok-o">:</span><span class="tok-s2">&quot;Marcelo&quot;</span><span class="tok-p">})</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Mongo/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Mongo/index.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>5)</strong> Acesso a banco - Redis</p>
+</div>
+<div class="paragraph">
+<p>A cada vez que o código é executado o contador é incrementado.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-c1">//REFERENCES: https://github.com/mjackson/then-redis</span>
+
+<span class="tok-kr">const</span> <span class="tok-nx">createClient</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;then-redis&#39;</span><span class="tok-p">).</span><span class="tok-nx">createClient</span><span class="tok-p">,</span>
+      <span class="tok-nx">db</span> <span class="tok-o">=</span> <span class="tok-nx">createClient</span><span class="tok-p">(</span><span class="tok-s1">&#39;tcp://localhost:6379&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-nx">db</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s2">&quot;count&quot;</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">value</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span> <span class="tok-p">(</span><span class="tok-s2">&quot;Current count is &quot;</span><span class="tok-p">,</span><span class="tok-nx">value</span><span class="tok-p">)</span>
+
+    <span class="tok-nx">value</span> <span class="tok-o">=</span> <span class="tok-nx">value</span> <span class="tok-o">||</span> <span class="tok-mi">0</span><span class="tok-p">;</span>
+    <span class="tok-nx">db</span><span class="tok-p">.</span><span class="tok-nx">set</span><span class="tok-p">(</span><span class="tok-s2">&quot;count&quot;</span><span class="tok-p">,</span><span class="tok-nb">parseInt</span><span class="tok-p">(</span><span class="tok-nx">value</span><span class="tok-p">)</span> <span class="tok-o">+</span> <span class="tok-mi">1</span><span class="tok-p">)</span>
+<span class="tok-p">})</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Redis/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Redis/index.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>6)</strong> Exemplo com <em>Promise</em> e <a href="http://bluebirdjs.com">Bluebird</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">logger</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s2">&quot;log4js&quot;</span><span class="tok-p">).</span><span class="tok-nx">getLogger</span><span class="tok-p">(),</span>
+    <span class="tok-nb">Promise</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s2">&quot;bluebird&quot;</span><span class="tok-p">)</span>
+
+<span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">level</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;debug&#39;</span>
+
+<span class="tok-kd">function</span> <span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-p">){</span>
+	<span class="tok-k">if</span> <span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-o">==</span><span class="tok-mi">0</span> <span class="tok-o">||</span> <span class="tok-nx">n</span><span class="tok-o">==</span><span class="tok-mi">1</span><span class="tok-p">){</span>
+		<span class="tok-k">return</span> <span class="tok-nb">Promise</span><span class="tok-p">.</span><span class="tok-nx">resolve</span><span class="tok-p">(</span><span class="tok-mi">1</span><span class="tok-p">);</span>
+	<span class="tok-p">}</span>
+
+	<span class="tok-k">return</span> <span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">result</span> <span class="tok-o">=&gt;</span> <span class="tok-nx">result</span> <span class="tok-o">*</span> <span class="tok-nx">n</span><span class="tok-p">)</span>
+<span class="tok-p">}</span>
+
+<span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">debug</span><span class="tok-p">(</span><span class="tok-s2">&quot;start&quot;</span><span class="tok-p">)</span>
+<span class="tok-kr">const</span> <span class="tok-nx">range</span> <span class="tok-o">=</span> <span class="tok-nb">Array</span><span class="tok-p">.</span><span class="tok-nx">from</span><span class="tok-p">({</span><span class="tok-nx">length</span><span class="tok-o">:</span> <span class="tok-mi">1000</span><span class="tok-p">},</span> <span class="tok-p">(</span><span class="tok-nx">_</span><span class="tok-p">,</span> <span class="tok-nx">i</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-nx">i</span><span class="tok-p">)</span>
+
+<span class="tok-k">return</span> <span class="tok-nb">Promise</span><span class="tok-p">.</span><span class="tok-nx">map</span><span class="tok-p">(</span><span class="tok-nx">range</span><span class="tok-p">,</span> <span class="tok-nx">i</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+	<span class="tok-k">return</span> <span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">i</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">result</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+		<span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">trace</span><span class="tok-p">(</span><span class="tok-nx">i</span> <span class="tok-o">+</span> <span class="tok-s2">&quot; =&gt; &quot;</span> <span class="tok-o">+</span> <span class="tok-nx">result</span><span class="tok-p">)</span>
+	<span class="tok-p">})</span>
+<span class="tok-p">}).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">debug</span><span class="tok-p">(</span><span class="tok-s2">&quot;all done&quot;</span><span class="tok-p">)</span>
+<span class="tok-p">}).</span><span class="tok-k">catch</span><span class="tok-p">(</span><span class="tok-nx">err</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">error</span><span class="tok-p">(</span><span class="tok-s2">&quot;Error: &quot;</span><span class="tok-p">,</span><span class="tok-nx">err</span><span class="tok-p">)</span>
+<span class="tok-p">})</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Promise/test2.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Promise/test2.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>7)</strong> Exemplo de programação funcional com ramdajs.com[Ramda]</p>
+</div>
+<div class="paragraph">
+<p>Vale conferir o artigo de <a href="http://fr.umio.us/why-ramda/">porquê do Ramda</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">R</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s2">&quot;ramda&quot;</span><span class="tok-p">)</span>
+
+<span class="tok-kd">var</span> <span class="tok-nx">incomplete</span> <span class="tok-o">=</span> <span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">filter</span><span class="tok-p">(</span><span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">where</span><span class="tok-p">({</span><span class="tok-nx">complete</span><span class="tok-o">:</span> <span class="tok-kc">false</span><span class="tok-p">}))</span>
+<span class="tok-kd">var</span> <span class="tok-nx">sortByDate</span> <span class="tok-o">=</span> <span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">sortBy</span><span class="tok-p">(</span><span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">prop</span><span class="tok-p">(</span><span class="tok-s1">&#39;dueDate&#39;</span><span class="tok-p">))</span>
+<span class="tok-kd">var</span> <span class="tok-nx">sortByDateDescend</span> <span class="tok-o">=</span> <span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">compose</span><span class="tok-p">(</span><span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">reverse</span><span class="tok-p">,</span> <span class="tok-nx">sortByDate</span><span class="tok-p">)</span>
+<span class="tok-kd">var</span> <span class="tok-nx">importantFields</span> <span class="tok-o">=</span> <span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">project</span><span class="tok-p">([</span><span class="tok-s1">&#39;title&#39;</span><span class="tok-p">,</span> <span class="tok-s1">&#39;dueDate&#39;</span><span class="tok-p">])</span>
+<span class="tok-kd">var</span> <span class="tok-nx">groupByUser</span> <span class="tok-o">=</span> <span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">partition</span><span class="tok-p">(</span><span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">prop</span><span class="tok-p">(</span><span class="tok-s1">&#39;username&#39;</span><span class="tok-p">))</span>
+<span class="tok-kd">var</span> <span class="tok-nx">activeByUser</span> <span class="tok-o">=</span> <span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">compose</span><span class="tok-p">(</span><span class="tok-nx">groupByUser</span><span class="tok-p">,</span> <span class="tok-nx">incomplete</span><span class="tok-p">)</span>
+<span class="tok-kd">var</span> <span class="tok-nx">topDataAllUsers</span> <span class="tok-o">=</span> <span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">compose</span><span class="tok-p">(</span><span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">mapObj</span><span class="tok-p">(</span><span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">compose</span><span class="tok-p">(</span><span class="tok-nx">importantFields</span><span class="tok-p">,</span> <span class="tok-nx">R</span><span class="tok-p">.</span><span class="tok-nx">take</span><span class="tok-p">(</span><span class="tok-mi">5</span><span class="tok-p">),</span> <span class="tok-nx">sortByDateDescend</span><span class="tok-p">)),</span> <span class="tok-nx">activeByUser</span><span class="tok-p">)</span>
+
+<span class="tok-kd">var</span> <span class="tok-nx">tasks</span> <span class="tok-o">=</span> <span class="tok-p">[</span>
+    <span class="tok-p">{</span>
+        <span class="tok-nx">username</span><span class="tok-o">:</span> <span class="tok-s1">&#39;Scott&#39;</span><span class="tok-p">,</span>
+        <span class="tok-nx">title</span><span class="tok-o">:</span> <span class="tok-s1">&#39;Add `mapObj`&#39;</span><span class="tok-p">,</span>
+        <span class="tok-nx">dueDate</span><span class="tok-o">:</span> <span class="tok-s1">&#39;2014-06-09&#39;</span><span class="tok-p">,</span>
+        <span class="tok-nx">complete</span><span class="tok-o">:</span> <span class="tok-kc">false</span><span class="tok-p">,</span>
+        <span class="tok-nx">effort</span><span class="tok-o">:</span> <span class="tok-s1">&#39;low&#39;</span><span class="tok-p">,</span>
+        <span class="tok-nx">priority</span><span class="tok-o">:</span> <span class="tok-s1">&#39;medium&#39;</span>
+    <span class="tok-p">},</span>
+    <span class="tok-p">{</span>
+        <span class="tok-nx">username</span><span class="tok-o">:</span> <span class="tok-s1">&#39;Michael&#39;</span><span class="tok-p">,</span>
+        <span class="tok-nx">title</span><span class="tok-o">:</span> <span class="tok-s1">&#39;Finish algebraic types&#39;</span><span class="tok-p">,</span>
+        <span class="tok-nx">dueDate</span><span class="tok-o">:</span> <span class="tok-s1">&#39;2014-06-15&#39;</span><span class="tok-p">,</span>
+        <span class="tok-nx">complete</span><span class="tok-o">:</span> <span class="tok-kc">true</span><span class="tok-p">,</span>
+        <span class="tok-nx">effort</span><span class="tok-o">:</span> <span class="tok-s1">&#39;high&#39;</span><span class="tok-p">,</span>
+        <span class="tok-nx">priority</span><span class="tok-o">:</span> <span class="tok-s1">&#39;high&#39;</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">]</span>
+
+<span class="tok-kd">var</span> <span class="tok-nx">results</span> <span class="tok-o">=</span> <span class="tok-nx">incomplete</span><span class="tok-p">(</span><span class="tok-nx">tasks</span><span class="tok-p">)</span>
+<span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-nx">results</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Ramda/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Ramda/index.js</a></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="exemplos-web">Exemplos web</h3>
+<div class="paragraph">
+<p><strong>8)</strong> <a href="http://expressjs.com/pt-br/">Express</a></p>
+</div>
+<div class="paragraph">
+<p>Sim, porque todo artigo de <em>node</em> tem que ter <a href="http://expressjs.com/pt-br/">express</a> :-)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-c1">//REFERENCE</span>
+<span class="tok-c1">//  http://expressjs.com/pt-br/starter/hello-world.html</span>
+<span class="tok-c1">//  https://www.npmjs.com/package/log4js</span>
+<span class="tok-kr">const</span> <span class="tok-nx">express</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;express&#39;</span><span class="tok-p">),</span>
+      <span class="tok-nx">app</span> <span class="tok-o">=</span> <span class="tok-nx">express</span><span class="tok-p">(),</span>
+      <span class="tok-nx">logger</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;log4js&#39;</span><span class="tok-p">).</span><span class="tok-nx">getLogger</span><span class="tok-p">()</span>
+
+<span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">level</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;trace&#39;</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s1">&#39;/&#39;</span><span class="tok-p">,</span>  <span class="tok-p">(</span><span class="tok-nx">req</span><span class="tok-p">,</span> <span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">trace</span><span class="tok-p">(</span><span class="tok-s1">&#39;Home called&#39;</span><span class="tok-p">)</span>
+    <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">send</span><span class="tok-p">(</span><span class="tok-s1">&#39;Hello World!&#39;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-mi">3001</span><span class="tok-p">,</span>  <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+  <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">info</span><span class="tok-p">(</span><span class="tok-s1">&#39;Example app listening on port 3001!&#39;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Express/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Express/index.js</a></p>
+</div>
+<div class="paragraph">
+<p><a href="http://expressjs.com/pt-br/">Express</a> foi uma das primeiras <em>libs</em> para <em>node</em>, mas ele não suporta <em>promises</em> e outras coisas novas.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>9)</strong> <em>Template Engine</em> com <a href="http://www.embeddedjs.com/">Ejs</a></p>
+</div>
+<div class="paragraph">
+<p>Ejs: Para quem está acostumado com o <a href="http://jeromejaglale.com/doc/java/spring/mvc">Spring MVC</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">express</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;express&#39;</span><span class="tok-p">),</span>
+      <span class="tok-nx">app</span> <span class="tok-o">=</span> <span class="tok-nx">express</span><span class="tok-p">()</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">set</span><span class="tok-p">(</span><span class="tok-s1">&#39;view engine&#39;</span><span class="tok-p">,</span> <span class="tok-s1">&#39;ejs&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s1">&#39;/&#39;</span><span class="tok-p">,</span> <span class="tok-kd">function</span><span class="tok-p">(</span><span class="tok-nx">req</span><span class="tok-p">,</span> <span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-p">{</span>
+    <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">render</span><span class="tok-p">(</span><span class="tok-s1">&#39;index&#39;</span><span class="tok-p">,{</span><span class="tok-nx">name</span><span class="tok-o">:</span> <span class="tok-s2">&quot;Adamatti&quot;</span><span class="tok-p">})</span>
+<span class="tok-p">});</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-mi">8080</span><span class="tok-p">)</span>
+<span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s1">&#39;Started - 8080&#39;</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Ejs/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Ejs/index.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>10)</strong> <a href="http://koajs.com/">Koa</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-c1">//REFERENCES</span>
+<span class="tok-c1">// http://koajs.com/#introduction</span>
+
+<span class="tok-kr">const</span> <span class="tok-nx">Koa</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;koa&#39;</span><span class="tok-p">);</span>
+<span class="tok-kr">const</span> <span class="tok-nx">app</span> <span class="tok-o">=</span> <span class="tok-k">new</span> <span class="tok-nx">Koa</span><span class="tok-p">();</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">use</span><span class="tok-p">(</span><span class="tok-nx">async</span> <span class="tok-nx">ctx</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+  <span class="tok-nx">ctx</span><span class="tok-p">.</span><span class="tok-nx">body</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;Hello World&#39;</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-mi">3000</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Koa/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Koa/index.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>11)</strong> <a href="https://hapijs.com">Hapi</a></p>
+</div>
+<div class="paragraph">
+<p>Entre <a href="http://expressjs.com/pt-br/">Express</a>, <a href="http://koajs.com/">Koa</a> e <a href="https://hapijs.com">Hapi</a>, o <a href="https://hapijs.com">Hapi</a> é meu preferido.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-s1">&#39;use strict&#39;</span><span class="tok-p">;</span>
+
+<span class="tok-kr">const</span> <span class="tok-nx">Hapi</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;hapi&#39;</span><span class="tok-p">),</span>
+      <span class="tok-nx">server</span> <span class="tok-o">=</span> <span class="tok-k">new</span> <span class="tok-nx">Hapi</span><span class="tok-p">.</span><span class="tok-nx">Server</span><span class="tok-p">()</span>
+
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">connection</span><span class="tok-p">({</span> <span class="tok-nx">port</span><span class="tok-o">:</span> <span class="tok-mi">3002</span><span class="tok-p">,</span> <span class="tok-nx">host</span><span class="tok-o">:</span> <span class="tok-s1">&#39;localhost&#39;</span> <span class="tok-p">})</span>
+
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">route</span><span class="tok-p">({</span>
+    <span class="tok-nx">method</span><span class="tok-o">:</span> <span class="tok-s1">&#39;GET&#39;</span><span class="tok-p">,</span>
+    <span class="tok-nx">path</span><span class="tok-o">:</span> <span class="tok-s1">&#39;/&#39;</span><span class="tok-p">,</span>
+    <span class="tok-nx">handler</span><span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-nx">request</span><span class="tok-p">,</span> <span class="tok-nx">reply</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+        <span class="tok-nx">reply</span><span class="tok-p">(</span><span class="tok-s1">&#39;Hello!&#39;</span><span class="tok-p">)</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">route</span><span class="tok-p">({</span>
+    <span class="tok-nx">method</span><span class="tok-o">:</span> <span class="tok-s1">&#39;GET&#39;</span><span class="tok-p">,</span>
+    <span class="tok-nx">path</span><span class="tok-o">:</span> <span class="tok-s1">&#39;/{name}&#39;</span><span class="tok-p">,</span>
+    <span class="tok-nx">handler</span><span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-nx">request</span><span class="tok-p">,</span> <span class="tok-nx">reply</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+        <span class="tok-nx">reply</span><span class="tok-p">(</span><span class="tok-s1">&#39;Hello, &#39;</span> <span class="tok-o">+</span> <span class="tok-nb">encodeURIComponent</span><span class="tok-p">(</span><span class="tok-nx">request</span><span class="tok-p">.</span><span class="tok-nx">params</span><span class="tok-p">.</span><span class="tok-nx">name</span><span class="tok-p">)</span> <span class="tok-o">+</span> <span class="tok-s1">&#39;!&#39;</span><span class="tok-p">)</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">start</span><span class="tok-p">(</span><span class="tok-nx">err</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-k">if</span> <span class="tok-p">(</span><span class="tok-nx">err</span><span class="tok-p">)</span> <span class="tok-p">{</span>
+        <span class="tok-k">throw</span> <span class="tok-nx">err</span><span class="tok-p">;</span>
+    <span class="tok-p">}</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-sb">`Server running at: </span><span class="tok-si">${</span><span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">info</span><span class="tok-p">.</span><span class="tok-nx">uri</span><span class="tok-si">}</span><span class="tok-sb">`</span><span class="tok-p">)</span>
+<span class="tok-p">})</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Hapi/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Hapi/index.js</a></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="em-frameworks-em-de-teste"><em>Frameworks</em> de teste</h3>
+<div class="paragraph">
+<p><strong>12)</strong> <a href="https://mochajs.org">Mocha</a></p>
+</div>
+<div class="paragraph">
+<p>O <a href="https://mochajs.org">Mocha</a> é o <a href="http://junit.org">JUnit</a> do node;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">assert</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;assert&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-nx">describe</span><span class="tok-p">(</span><span class="tok-s1">&#39;Array&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+  <span class="tok-nx">describe</span><span class="tok-p">(</span><span class="tok-s1">&#39;#indexOf()&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+
+    <span class="tok-nx">it</span><span class="tok-p">(</span><span class="tok-s1">&#39;should return -1 when the value is not present&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+      <span class="tok-nx">assert</span><span class="tok-p">.</span><span class="tok-nx">equal</span><span class="tok-p">(</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">,</span> <span class="tok-p">[</span><span class="tok-mi">1</span><span class="tok-p">,</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-mi">3</span><span class="tok-p">].</span><span class="tok-nx">indexOf</span><span class="tok-p">(</span><span class="tok-mi">4</span><span class="tok-p">));</span>
+    <span class="tok-p">})</span>
+
+  <span class="tok-p">})</span>
+<span class="tok-p">})</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Mocha/test/test.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Mocha/test/test.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>13)</strong> <a href="http://frisbyjs.com/">Frisby</a></p>
+</div>
+<div class="paragraph">
+<p>Para testes de API:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">app</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s2">&quot;../index&quot;</span><span class="tok-p">),</span>
+      <span class="tok-nx">frisby</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;frisby&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-nx">frisby</span><span class="tok-p">.</span><span class="tok-nx">create</span><span class="tok-p">(</span><span class="tok-s1">&#39;List orders&#39;</span><span class="tok-p">)</span>
+    <span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s1">&#39;http://localhost:3000/orders&#39;</span><span class="tok-p">)</span>
+    <span class="tok-p">.</span><span class="tok-nx">expectStatus</span><span class="tok-p">(</span><span class="tok-mi">200</span><span class="tok-p">)</span>
+    <span class="tok-p">.</span><span class="tok-nx">expectHeaderContains</span><span class="tok-p">(</span><span class="tok-s1">&#39;content-type&#39;</span><span class="tok-p">,</span> <span class="tok-s1">&#39;application/json&#39;</span><span class="tok-p">)</span>
+    <span class="tok-p">.</span><span class="tok-nx">expectJSONTypes</span><span class="tok-p">(</span><span class="tok-mi">0</span><span class="tok-p">,{</span>
+        <span class="tok-s2">&quot;id&quot;</span><span class="tok-o">:</span> <span class="tok-nb">String</span>
+    <span class="tok-p">})</span>
+<span class="tok-p">.</span><span class="tok-nx">toss</span><span class="tok-p">()</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Frisby/test/contract-spec.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Frisby/test/contract-spec.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>14)</strong> <a href="https://cucumber.io/">Cucumber</a></p>
+</div>
+<div class="paragraph">
+<p>Para testes com <a href="https://pt.wikipedia.org/wiki/Behavior_Driven_Development">BDD</a>. Os requisitos são descritos com arquivos <code>.feature</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="feature"><span class="tok-k">Feature:</span><span class="tok-nf"> Order Processing</span>
+<span class="tok-nf">  </span><span class="tok-k">Scenario Outline:</span><span class="tok-nf"> Submit an order</span>
+<span class="tok-k">    Given </span><span class="tok-nf">an order - id: </span><span class="tok-nv">&lt;id&gt;</span><span class="tok-nf"></span>
+<span class="tok-nf">    </span><span class="tok-k">When </span><span class="tok-nf">I submit it - region: </span><span class="tok-nv">&lt;region&gt;</span><span class="tok-nf"></span>
+<span class="tok-nf">    </span><span class="tok-k">Then </span><span class="tok-nf">I receive a response - msg: </span><span class="tok-nv">&lt;msg&gt;</span><span class="tok-nf"></span>
+<span class="tok-nf">  </span><span class="tok-k">Examples:</span>
+<span class="tok-k">    |</span><span class="tok-nv"> id</span><span class="tok-k">     |</span><span class="tok-nv"> region</span><span class="tok-k"> |</span><span class="tok-nv"> msg</span><span class="tok-k">              |</span><span class="tok-nf"></span>
+<span class="tok-k">    |</span><span class="tok-s"> submit</span><span class="tok-k"> |</span><span class="tok-s"> US</span><span class="tok-k">     |</span><span class="tok-s"> Order is ok</span><span class="tok-k">      |</span><span class="tok-nf"></span>
+<span class="tok-k">    |</span><span class="tok-s"> cancel</span><span class="tok-k"> |</span><span class="tok-s"> US</span><span class="tok-k">     |</span><span class="tok-s"> Unable to cancel</span><span class="tok-k"> |</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Cucumber/features/order.feature" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Cucumber/features/order.feature</a></p>
+</div>
+<div class="paragraph">
+<p>&#8230;&#8203;e o código <em>node</em> para responder isso fica:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">expect</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;expect.js&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-nx">module</span><span class="tok-p">.</span><span class="tok-nx">exports</span> <span class="tok-o">=</span> <span class="tok-kd">function</span><span class="tok-p">()</span> <span class="tok-p">{</span>
+    <span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-nx">Given</span><span class="tok-p">(</span><span class="tok-sr">/^an order \- id: (.*)$/</span><span class="tok-p">,</span> <span class="tok-kd">function</span> <span class="tok-p">(</span><span class="tok-nx">id</span><span class="tok-p">)</span> <span class="tok-p">{</span>
+        <span class="tok-c1">//TODO implement</span>
+    <span class="tok-p">})</span>
+
+    <span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-nx">When</span><span class="tok-p">(</span><span class="tok-sr">/^I submit it \- region: (.*)$/</span><span class="tok-p">,</span> <span class="tok-kd">function</span> <span class="tok-p">(</span><span class="tok-nx">region</span><span class="tok-p">)</span> <span class="tok-p">{</span>
+        <span class="tok-c1">//TODO implement</span>
+    <span class="tok-p">})</span>
+
+    <span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-nx">Then</span><span class="tok-p">(</span><span class="tok-sr">/^I receive a response \- msg: (.*)$/</span><span class="tok-p">,</span> <span class="tok-kd">function</span> <span class="tok-p">(</span><span class="tok-nx">msg</span><span class="tok-p">)</span> <span class="tok-p">{</span>
+        <span class="tok-c1">//TODO implement</span>
+        <span class="tok-nx">expect</span><span class="tok-p">(</span><span class="tok-kc">true</span><span class="tok-p">).</span><span class="tok-nx">to</span><span class="tok-p">.</span><span class="tok-nx">eql</span><span class="tok-p">(</span><span class="tok-kc">true</span><span class="tok-p">)</span>
+    <span class="tok-p">})</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Cucumber/features/step_definitions/orderStepDefinition.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Cucumber/features/step_definitions/orderStepDefinition.js</a></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="exemplos-avançados">Exemplos avançados</h3>
+<div class="paragraph">
+<p><strong>15)</strong> <a href="https://www.npmjs.com/package/cluster">Cluster</a></p>
+</div>
+<div class="paragraph">
+<p>Para iniciar processos <em>node</em> em multiplos processadores.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-c1">//REFERENCES https://www.npmjs.com/package/cluster</span>
+<span class="tok-kr">const</span> <span class="tok-nx">cluster</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;cluster/&#39;</span><span class="tok-p">),</span>
+      <span class="tok-nx">http</span>    <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;http&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-kd">function</span> <span class="tok-nx">app</span><span class="tok-p">(){</span>
+    <span class="tok-nx">http</span><span class="tok-p">.</span><span class="tok-nx">createServer</span><span class="tok-p">(</span><span class="tok-kd">function</span><span class="tok-p">(</span><span class="tok-nx">req</span><span class="tok-p">,</span> <span class="tok-nx">res</span><span class="tok-p">){</span>
+        <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s1">&#39;%s %s&#39;</span><span class="tok-p">,</span> <span class="tok-nx">req</span><span class="tok-p">.</span><span class="tok-nx">method</span><span class="tok-p">,</span> <span class="tok-nx">req</span><span class="tok-p">.</span><span class="tok-nx">url</span><span class="tok-p">)</span>
+        <span class="tok-kd">var</span> <span class="tok-nx">body</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;Hello World&#39;</span>
+        <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">writeHead</span><span class="tok-p">(</span><span class="tok-mi">200</span><span class="tok-p">,</span> <span class="tok-p">{</span> <span class="tok-s1">&#39;Content-Length&#39;</span><span class="tok-o">:</span> <span class="tok-nx">body</span><span class="tok-p">.</span><span class="tok-nx">length</span> <span class="tok-p">})</span>
+        <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">end</span><span class="tok-p">(</span><span class="tok-nx">body</span><span class="tok-p">)</span>
+    <span class="tok-p">})</span>
+<span class="tok-p">}</span>
+
+<span class="tok-nx">cluster</span><span class="tok-p">(</span><span class="tok-nx">app</span><span class="tok-p">)</span>
+  <span class="tok-p">.</span><span class="tok-nx">use</span><span class="tok-p">(</span><span class="tok-nx">cluster</span><span class="tok-p">.</span><span class="tok-nx">logger</span><span class="tok-p">(</span><span class="tok-s1">&#39;logs&#39;</span><span class="tok-p">))</span>
+  <span class="tok-p">.</span><span class="tok-nx">use</span><span class="tok-p">(</span><span class="tok-nx">cluster</span><span class="tok-p">.</span><span class="tok-nx">stats</span><span class="tok-p">())</span>
+  <span class="tok-p">.</span><span class="tok-nx">use</span><span class="tok-p">(</span><span class="tok-nx">cluster</span><span class="tok-p">.</span><span class="tok-nx">pidfiles</span><span class="tok-p">(</span><span class="tok-s1">&#39;pids&#39;</span><span class="tok-p">))</span>
+  <span class="tok-p">.</span><span class="tok-nx">use</span><span class="tok-p">(</span><span class="tok-nx">cluster</span><span class="tok-p">.</span><span class="tok-nx">cli</span><span class="tok-p">())</span>
+  <span class="tok-p">.</span><span class="tok-nx">use</span><span class="tok-p">(</span><span class="tok-nx">cluster</span><span class="tok-p">.</span><span class="tok-nx">repl</span><span class="tok-p">(</span><span class="tok-mi">8888</span><span class="tok-p">))</span>
+  <span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-mi">3000</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Cluster/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Cluster/index.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>16)</strong> <em>Events</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">EventEmitter</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;events&#39;</span><span class="tok-p">),</span>
+      <span class="tok-nx">events</span> <span class="tok-o">=</span> <span class="tok-k">new</span> <span class="tok-nx">EventEmitter</span><span class="tok-p">()</span>
+
+<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;app.started&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;App started&quot;</span><span class="tok-p">)</span>
+    <span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">emit</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.load.requested&quot;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.load.requested&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;Loading DB&quot;</span><span class="tok-p">)</span>
+    <span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">emit</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.loaded&quot;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.loaded&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;DB loaded&quot;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">emit</span><span class="tok-p">(</span><span class="tok-s2">&quot;app.started&quot;</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/Events/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/Events/index.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>17)</strong> Eventos com <a href="https://www.rabbitmq.com/">RabbitMQ</a></p>
+</div>
+<div class="paragraph">
+<p>O exemplo fica muito parecido com o anterior, mas funciona em ambiente distribuido. Melhor ver direto no <a href="https://github.com/adamatti/SandboxNode/tree/master/RabbitMQ">github</a></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="exemplos-das-em-libs-em-criadas-pela-a-href-https-github-com-agco-agco-a">Exemplos das <em>libs</em> criadas pela <a href="https://github.com/agco">AGCO</a></h3>
+<div class="paragraph">
+<p><strong>18)</strong> <a href="https://github.com/agco/harvesterjs">Harvester.js</a>, baseado em <a href="http://expressjs.com/pt-br/">Express</a></p>
+</div>
+<div class="paragraph">
+<p><em>Framework</em> para criar <a href="https://apievangelist.com/2014/01/07/what-is-a-hypermedia-api/">hypermedia apis</a> com <a href="https://www.mongodb.com">Mongo</a>. Ele dá o CRUD completo, filtro, pesquisa em entidades conectadas, <a href="https://www.w3schools.com/html/html5_serversentevents.asp">SSE</a>, etc. É um <em>fork</em> do <a href="https://github.com/fortunejs/fortune">fortune.js</a></p>
+</div>
+<div class="paragraph">
+<p>Dica: rodar o server abaixo + <a href="https://github.com/adamatti/SandboxNode/blob/master/HarvesterJs/send.js">send.js</a>. Daí é só chamar <a href="http://localhost:3000/orders?include=customer.country" class="bare">http://localhost:3000/orders?include=customer.country</a> no <em>browser</em>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-s1">&#39;use strict&#39;</span><span class="tok-p">;</span>
+<span class="tok-kr">const</span> <span class="tok-nx">Types</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;joi&#39;</span><span class="tok-p">),</span>
+      <span class="tok-nx">harvesterjs</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;harvesterjs&#39;</span><span class="tok-p">),</span>
+      <span class="tok-nx">options</span> <span class="tok-o">=</span> <span class="tok-p">{</span>
+          <span class="tok-nx">adapter</span><span class="tok-o">:</span> <span class="tok-s1">&#39;mongodb&#39;</span><span class="tok-p">,</span>
+          <span class="tok-nx">connectionString</span><span class="tok-o">:</span> <span class="tok-s1">&#39;mongodb://localhost:27017/agco&#39;</span><span class="tok-p">,</span>
+          <span class="tok-nx">oplogConnectionString</span><span class="tok-o">:</span> <span class="tok-s1">&#39;mongodb://localhost:27017/local&#39;</span><span class="tok-p">,</span>
+          <span class="tok-nx">inflect</span><span class="tok-o">:</span> <span class="tok-kc">true</span>
+      <span class="tok-p">},</span>
+      <span class="tok-nx">app</span> <span class="tok-o">=</span> <span class="tok-nx">harvesterjs</span><span class="tok-p">(</span><span class="tok-nx">options</span><span class="tok-p">)</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">resource</span><span class="tok-p">(</span><span class="tok-s1">&#39;order&#39;</span><span class="tok-p">,{</span>
+    <span class="tok-nx">description</span><span class="tok-o">:</span> <span class="tok-nx">Types</span><span class="tok-p">.</span><span class="tok-nx">required</span><span class="tok-p">().</span><span class="tok-nx">description</span><span class="tok-p">(</span><span class="tok-s1">&#39;Sample&#39;</span><span class="tok-p">),</span>
+    <span class="tok-nx">links</span><span class="tok-o">:</span> <span class="tok-p">{</span>
+        <span class="tok-nx">customer</span><span class="tok-o">:</span> <span class="tok-s1">&#39;customer&#39;</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">resource</span><span class="tok-p">(</span><span class="tok-s1">&#39;customer&#39;</span><span class="tok-p">,{</span>
+    <span class="tok-nx">name</span><span class="tok-o">:</span> <span class="tok-nx">Types</span><span class="tok-p">.</span><span class="tok-nx">required</span><span class="tok-p">().</span><span class="tok-nx">description</span><span class="tok-p">(</span><span class="tok-s1">&#39;Sample&#39;</span><span class="tok-p">),</span>
+    <span class="tok-nx">links</span><span class="tok-o">:</span> <span class="tok-p">{</span>
+        <span class="tok-nx">country</span><span class="tok-o">:</span> <span class="tok-s1">&#39;country&#39;</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">}).</span><span class="tok-nx">before</span><span class="tok-p">(</span><span class="tok-s1">&#39;customer&#39;</span><span class="tok-p">,</span> <span class="tok-kd">function</span><span class="tok-p">(</span><span class="tok-nx">req</span><span class="tok-p">)</span> <span class="tok-p">{</span>
+    <span class="tok-k">return</span> <span class="tok-k">this</span>
+<span class="tok-p">}).</span><span class="tok-nx">after</span><span class="tok-p">(</span><span class="tok-s1">&#39;customer&#39;</span><span class="tok-p">,</span><span class="tok-kd">function</span> <span class="tok-p">(</span><span class="tok-nx">req</span><span class="tok-p">,</span><span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-p">{</span>
+    <span class="tok-k">return</span> <span class="tok-k">this</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">resource</span><span class="tok-p">(</span><span class="tok-s1">&#39;country&#39;</span><span class="tok-p">,{</span>
+    <span class="tok-nx">name</span><span class="tok-o">:</span> <span class="tok-nx">Types</span><span class="tok-p">.</span><span class="tok-nx">required</span><span class="tok-p">().</span><span class="tok-nx">description</span><span class="tok-p">(</span><span class="tok-s1">&#39;Sample&#39;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-mi">3000</span><span class="tok-p">,</span><span class="tok-kd">function</span><span class="tok-p">(){</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;App started on 3000&quot;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/HarvesterJs/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/HarvesterJs/index.js</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>19)</strong> <a href="https://github.com/agco/hapi-harvester">Hapi-harvester</a></p>
+</div>
+<div class="paragraph">
+<p>Similar ao <a href="https://github.com/agco/harvesterjs">harvester.js</a>, mas baseado no <a href="https://hapijs.com">Hapi</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span class="tok-s1">&#39;use strict&#39;</span>
+
+<span class="tok-c1">// dependencies</span>
+<span class="tok-kr">const</span> <span class="tok-nx">Hapi</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;hapi&#39;</span><span class="tok-p">),</span>
+    <span class="tok-nx">Joi</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;joi&#39;</span><span class="tok-p">),</span>
+    <span class="tok-nx">url</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;url&#39;</span><span class="tok-p">),</span>
+    <span class="tok-nx">harvester</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;hapi-harvester&#39;</span><span class="tok-p">),</span>
+    <span class="tok-nx">susie</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;susie&#39;</span><span class="tok-p">)</span>
+
+<span class="tok-c1">// Configure hapi-harvester to use our dockerised instance of MongoDB</span>
+
+<span class="tok-c1">// Get the docker hostname</span>
+<span class="tok-kr">const</span> <span class="tok-nx">dockerHostName</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;127.0.0.1&#39;</span><span class="tok-p">,</span>
+    <span class="tok-c1">// use reference to docker host to create a connection URL to MongoDB</span>
+    <span class="tok-nx">mongoDbUrl</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;mongodb://&#39;</span> <span class="tok-o">+</span> <span class="tok-nx">dockerHostName</span> <span class="tok-o">+</span> <span class="tok-s1">&#39;/test&#39;</span><span class="tok-p">,</span>
+
+    <span class="tok-c1">// use reference to docker hostname to create a connection URL to the oplog</span>
+    <span class="tok-nx">mongoDbOplogUrl</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;mongodb://&#39;</span> <span class="tok-o">+</span> <span class="tok-nx">dockerHostName</span> <span class="tok-o">+</span> <span class="tok-s1">&#39;/local&#39;</span><span class="tok-p">,</span>
+
+    <span class="tok-c1">// configure the hapi-harvester adapter to use our dockerised MongoDB with replicasets enabled</span>
+    <span class="tok-nx">adapter</span> <span class="tok-o">=</span> <span class="tok-nx">harvester</span><span class="tok-p">.</span><span class="tok-nx">getAdapter</span><span class="tok-p">(</span><span class="tok-s1">&#39;mongodb&#39;</span><span class="tok-p">)({</span>
+        <span class="tok-nx">mongodbUrl</span><span class="tok-o">:</span> <span class="tok-nx">mongoDbUrl</span><span class="tok-p">,</span>
+        <span class="tok-nx">oplogConnectionString</span><span class="tok-o">:</span> <span class="tok-nx">mongoDbOplogUrl</span>
+    <span class="tok-p">})</span>
+
+<span class="tok-c1">//</span>
+<span class="tok-c1">// Start our hapi server with the hapi-harvester plugin</span>
+<span class="tok-c1">//</span>
+
+<span class="tok-c1">// create a hapi server</span>
+<span class="tok-kr">const</span> <span class="tok-nx">server</span> <span class="tok-o">=</span> <span class="tok-k">new</span> <span class="tok-nx">Hapi</span><span class="tok-p">.</span><span class="tok-nx">Server</span><span class="tok-p">()</span>
+
+<span class="tok-c1">// configure the port</span>
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">connection</span><span class="tok-p">({</span><span class="tok-nx">port</span><span class="tok-o">:</span> <span class="tok-mi">3000</span><span class="tok-p">})</span>
+
+<span class="tok-c1">// we need to register the hapi-harvester plugin before we can use it</span>
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">register</span><span class="tok-p">([</span>
+    <span class="tok-p">{</span>
+        <span class="tok-nx">register</span><span class="tok-o">:</span> <span class="tok-nx">harvester</span><span class="tok-p">,</span> <span class="tok-c1">// the hapi-harvester plugin &quot;required&quot; from above</span>
+        <span class="tok-nx">options</span><span class="tok-o">:</span> <span class="tok-p">{</span>
+            <span class="tok-nx">adapter</span> <span class="tok-c1">// use the MongoDB adapter created above</span>
+        <span class="tok-p">}</span>
+    <span class="tok-p">},</span>
+    <span class="tok-nx">susie</span> <span class="tok-p">],</span>  <span class="tok-c1">// for streaming SSE</span>
+    <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+
+        <span class="tok-c1">// Defining a model and default routes</span>
+
+        <span class="tok-c1">// first we need to define a schema for our model, using Joi for</span>
+        <span class="tok-c1">// validation</span>
+        <span class="tok-kr">const</span> <span class="tok-nx">brandSchema</span> <span class="tok-o">=</span> <span class="tok-p">{</span>
+            <span class="tok-nx">type</span><span class="tok-o">:</span> <span class="tok-s1">&#39;brands&#39;</span><span class="tok-p">,</span>
+            <span class="tok-nx">attributes</span><span class="tok-o">:</span> <span class="tok-p">{</span>
+                <span class="tok-nx">code</span><span class="tok-o">:</span> <span class="tok-nx">Joi</span><span class="tok-p">.</span><span class="tok-nx">string</span><span class="tok-p">(),</span>
+                <span class="tok-nx">description</span><span class="tok-o">:</span> <span class="tok-nx">Joi</span><span class="tok-p">.</span><span class="tok-nx">string</span><span class="tok-p">()</span>
+            <span class="tok-p">}</span>
+        <span class="tok-p">}</span>
+
+        <span class="tok-c1">// next we need a reference to our plugin so we can add routes.</span>
+        <span class="tok-kr">const</span> <span class="tok-nx">harvesterPlugin</span> <span class="tok-o">=</span> <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">plugins</span><span class="tok-p">[</span><span class="tok-s1">&#39;hapi-harvester&#39;</span><span class="tok-p">]</span>
+
+        <span class="tok-c1">// Using hapi-harvester&#39;s routes.all function we can add our schema and</span>
+        <span class="tok-c1">// then add all routes for our model to the hapi server.</span>
+        <span class="tok-nx">harvesterPlugin</span><span class="tok-p">.</span><span class="tok-nx">routes</span><span class="tok-p">.</span><span class="tok-nx">all</span><span class="tok-p">(</span><span class="tok-nx">brandSchema</span><span class="tok-p">).</span><span class="tok-nx">forEach</span><span class="tok-p">((</span><span class="tok-nx">route</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+            <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">route</span><span class="tok-p">(</span><span class="tok-nx">route</span><span class="tok-p">)</span>
+        <span class="tok-p">})</span>
+
+        <span class="tok-c1">// finally we can start the server</span>
+        <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">start</span><span class="tok-p">(()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+            <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s1">&#39;Using MongoDB at:&#39;</span><span class="tok-p">,</span> <span class="tok-nx">mongoDbUrl</span><span class="tok-p">)</span>
+            <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s1">&#39;Server running at:&#39;</span><span class="tok-p">,</span> <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">info</span><span class="tok-p">.</span><span class="tok-nx">uri</span><span class="tok-p">)</span>
+        <span class="tok-p">})</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/HapiHarvester/index.js" class="bare">https://github.com/adamatti/SandboxNode/blob/master/HapiHarvester/index.js</a></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="a-href-https-en-wikipedia-org-wiki-source-to-source_compiler-transpilers-a"><a href="https://en.wikipedia.org/wiki/Source-to-source_compiler">Transpilers</a></h3>
+<div class="paragraph">
+<p><strong>20)</strong> <a href="https://www.typescriptlang.org/">Typescript</a></p>
+</div>
+<div class="paragraph">
+<p>Exemplo básico com tipos, classes, etc</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="typescript"><span class="tok-kr">import</span> <span class="tok-o">*</span> <span class="tok-kr">as</span> <span class="tok-nx">express</span> <span class="tok-nx">from</span> <span class="tok-s2">&quot;express&quot;</span><span class="tok-p">;</span>
+
+<span class="tok-kr">const</span> <span class="tok-nx">app</span> <span class="tok-o">=</span> <span class="tok-nx">express</span><span class="tok-p">();</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s2">&quot;/&quot;</span><span class="tok-p">,</span>  <span class="tok-p">(</span><span class="tok-nx">req</span><span class="tok-p">,</span> <span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">send</span><span class="tok-p">(</span><span class="tok-s1">&#39;Hello World!&#39;</span><span class="tok-p">);</span>
+<span class="tok-p">})</span>
+
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-mi">3001</span><span class="tok-p">,</span>  <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+  <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s1">&#39;Example app listening on port 3001!&#39;</span><span class="tok-p">)</span>
+<span class="tok-p">})</span>
+
+<span class="tok-kr">class</span> <span class="tok-nx">Person</span> <span class="tok-p">{</span>
+    <span class="tok-nx">firstName</span>: <span class="tok-kt">string</span><span class="tok-p">;</span>
+    <span class="tok-nx">lastName</span>: <span class="tok-kt">string</span><span class="tok-p">;</span>
+
+    <span class="tok-kr">constructor</span><span class="tok-p">(</span><span class="tok-kr">public</span> <span class="tok-nx">fn</span>:<span class="tok-kt">string</span><span class="tok-p">,</span><span class="tok-kr">public</span> <span class="tok-nx">ln</span>:<span class="tok-kt">string</span><span class="tok-p">){</span>
+        <span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-nx">firstName</span> <span class="tok-o">=</span> <span class="tok-nx">fn</span><span class="tok-p">;</span>
+        <span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-nx">lastName</span> <span class="tok-o">=</span> <span class="tok-nx">ln</span><span class="tok-p">;</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">}</span>
+<span class="tok-kd">var</span> <span class="tok-nx">user</span> <span class="tok-o">=</span> <span class="tok-k">new</span> <span class="tok-nx">Person</span><span class="tok-p">(</span><span class="tok-s2">&quot;Marcelo&quot;</span><span class="tok-p">,</span><span class="tok-s2">&quot;Adamatti&quot;</span><span class="tok-p">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/TypeScript/index.ts" class="bare">https://github.com/adamatti/SandboxNode/blob/master/TypeScript/index.ts</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>21)</strong> <a href="http://coffeescript.org/">CoffeeScript</a></p>
+</div>
+<div class="paragraph">
+<p>Porquê alguns procuram ser ainda menos verboso.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="coffee"><span class="tok-nv">number = </span><span class="tok-mi">2</span>
+
+<span class="tok-nv">square = </span><span class="tok-nf">(x) -&gt;</span> <span class="tok-nx">x</span> <span class="tok-o">*</span> <span class="tok-nx">x</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/adamatti/SandboxNode/blob/master/CoffeScript/index.coffee" class="bare">https://github.com/adamatti/SandboxNode/blob/master/CoffeScript/index.coffee</a></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>22)</strong> <a href="https://github.com/clojure/clojurescript">ClojureScript</a></p>
+</div>
+<div class="paragraph">
+<p>Esse exemplo está separado em vários arquivos, melhor olhar no <a href="https://github.com/adamatti/SandboxNode/tree/master/Clojure">github</a>.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="outros">Outros</h3>
+<div class="paragraph">
+<p><strong>23)</strong> ChatBot</p>
+</div>
+<div class="paragraph">
+<p>Ver <em>post</em> completo <a href="/blog/node/2017/05/20/hubot.html">aqui</a></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="relacionados">Relacionados</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/blog/node/2017/06/14/why-node.html">porquê de node</a> dos primeiros</p>
+</li>
+</ul>
+</div>
+<hr>
+<div class="paragraph">
+<p>Dúvidas? Sugestões? Reclamações? <em>Feedbacks</em>? Aprendeu algo novo? Comenta aí!</p>
+</div>
+</div>
+  </div>
+  <div class="share-page">
+    Compartilhar [
+    <a href="https://twitter.com/intent/tweet?text=Node Sandbox&url=https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html&via=adamatti&related=adamatti" rel="nofollow" target="_blank">Twitter</a> | 
+    <a href="https://facebook.com/sharer.php?u=https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html" rel="nofollow" target="_blank">Facebook</a> |
+    <a href="https://plus.google.com/share?url=https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html" rel="nofollow" target="_blank">Google+</a> |
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=/node/2017/08/17/node-sandbox.html&title=Node Sandbox&summary=+23 Exemplos de código node&source=http://adamatti.github.io/blog">Linkedin</a> ]
+</div>
+
+
+  
+    
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://adamatti.github.io/blog/blog/node/2017/08/17/node-sandbox.html';
+      this.page.identifier = 'https://adamatti.github.io/blog/blog/node/2017/08/17/node-sandbox.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://http-adamatti-github-io-blog.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Adamatti - blog pessoal</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Adamatti - blog pessoal
+            
+            </li>
+            
+            <li><a href="mailto:adamatti@gmail.com">adamatti@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/adamatti"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">adamatti</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/adamatti"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">adamatti</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
