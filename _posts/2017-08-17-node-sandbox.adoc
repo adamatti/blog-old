@@ -1,0 +1,699 @@
+---
+layout: post
+title:  "Node Sandbox"
+date:   2017-08-17 13:00:00 -0300
+categories: node
+summary: "+23 Exemplos de código node"
+tags:
+  - node
+---
+
+Dia 10/08 eu estava palestrando em uma _software house_ de Porto Alegre link:/blog/node/2017/06/14/why-node.html[do porquê de node]. E se você ainda tem essa dúvida recomento ver o _post_ do https://imasters.com.br/perfil/luizfernando[Luis] de https://imasters.com.br/desenvolvimento/por-que-stanford-trocou-java-por-javascript[Por que Stanford trocou Java por JavaScript?]. 
+
+Acabei criando vários pequenos exemplos para mostrar benefícios, _libs_, _cases_. O resultado está disponível no https://github.com/adamatti/SandboxNode[github]. Vários tem https://docs.docker.com/compose/[docker-compose] (para https://redis.io/[Redis], https://www.mongodb.com/[Mongo], https://www.rabbitmq.com/[RabbitMQ]) e _scripts_ no `package.json`. 
+
+Compartilho aqui também com um pouco mais de detalhamento.
+
+### Exemplos básicos
+
+*1)* Um exemplo bem básico de server sem usar libs:
+
+[source,javascript]
+----
+const http = require('http'),
+      hostname = '127.0.0.1',
+      port = 3000
+
+const server = http.createServer((req,res) => {
+    res.statusCode = 200
+    res.setHeader('Content-Type','text/plain')
+    res.end("Hello world\n")
+})
+    
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`)
+})
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Simple/index.js
+
+'''
+
+*2)* Brincando com o http://nodebr.com/como-usar-o-repl-do-nodejs/[Repl]
+
+Crie um arquivo `sample.js` com o conteúdo: 
+
+[source,javascript]
+----
+function hello(msg){
+    console.log("Número de argumentos: ", arguments.length)
+    return `Hello ${msg}`
+}
+
+module.exports = {
+    hello
+}
+---- 
+Source: https://github.com/adamatti/SandboxNode/blob/master/Repl/sample.js
+
+Agora na terminal, execute `node`. Com isso você pode iteragir com o código. Exemplo: 
+
+[source,javascript]
+----
+var x = require("./sample")
+x.hello("adamatti")
+----
+
+Tente chamar a função `hello` com mais argumentos ou sem nenhum. Talvez por isso o pessoal ache que javascript é meio zuado :-)
+
+'''
+
+*3)* _Cache_ de função
+
+[source,javascript]
+----
+const memoize = require("memoize")
+
+function factorial(n,cb){
+    console.log("chamou a função real: ",n)
+	if (n==0 || n==1){
+		return cb(null,1)
+	} 
+
+	factorial(n-1,(err,result) => { 
+        cb(null, result * n ) 
+    })
+}
+
+const arr = [1,2,1,2,1,2,1,2]
+const f = memoize(factorial)
+
+for (var i=0; i<arr.length ; i++){
+    f(arr[i], (err,result) => {
+        console.log("fatorial - ",arr[i],": ",result)
+    })
+}
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Memoize/index.js
+
+Atenção especial para a linha `const f = memoize(factorial)`. A função `factorial` é passada por parametro para a função `memoize`, retornando uma nova função que faz _cache_ das chamadas. Dá para plugar isso com https://redis.io/[Redis] também.
+
+'''
+
+*4)* Acesso a banco - Mongo
+
+Exemplo simples com listagem e inserção.
+
+[source,javascript]
+----
+//REFERENCES https://github.com/Automattic/monk
+
+const db = require('monk')('localhost/mydb')
+
+const users = db.get('users')
+
+users.find({}).then(data => {
+    console.log("List of users: ")
+
+    for(var i = 0; i < data.length; i++){
+        console.log("User ",data[i])
+    }
+})
+
+users.insert({name:"Marcelo"})
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Mongo/index.js
+
+'''
+
+*5)* Acesso a banco - Redis
+
+A cada vez que o código é executado o contador é incrementado.
+
+[source,javascript]
+----
+//REFERENCES: https://github.com/mjackson/then-redis
+
+const createClient = require('then-redis').createClient,
+      db = createClient('tcp://localhost:6379')
+
+db.get("count").then( value => {
+    console.log ("Current count is ",value)
+
+    value = value || 0;
+    db.set("count",parseInt(value) + 1)
+})
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Redis/index.js
+
+'''
+
+*6)* Exemplo com _Promise_ e http://bluebirdjs.com[Bluebird]
+
+[source,javascript]
+----
+const logger = require("log4js").getLogger(),
+    Promise = require("bluebird")
+
+logger.level = 'debug'
+
+function factorial(n){
+	if (n==0 || n==1){
+		return Promise.resolve(1);
+	} 
+	
+	return factorial(n-1).then( result => result * n)
+}
+
+logger.debug("start")
+const range = Array.from({length: 1000}, (_, i) => i)
+
+return Promise.map(range, i => {
+	return factorial(i).then( result => {
+		logger.trace(i + " => " + result)
+	})
+}).then( () => {
+    logger.debug("all done")
+}).catch(err => {
+    logger.error("Error: ",err)
+})
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Promise/test2.js
+
+'''
+
+*7)* Exemplo de programação funcional com ramdajs.com[Ramda]
+
+Vale conferir o artigo de http://fr.umio.us/why-ramda/[porquê do Ramda]
+
+[source,javascript]
+----
+const R = require("ramda")
+
+var incomplete = R.filter(R.where({complete: false}))
+var sortByDate = R.sortBy(R.prop('dueDate'))
+var sortByDateDescend = R.compose(R.reverse, sortByDate)
+var importantFields = R.project(['title', 'dueDate'])
+var groupByUser = R.partition(R.prop('username'))
+var activeByUser = R.compose(groupByUser, incomplete)
+var topDataAllUsers = R.compose(R.mapObj(R.compose(importantFields, R.take(5), sortByDateDescend)), activeByUser)
+
+var tasks = [
+    {
+        username: 'Scott',
+        title: 'Add `mapObj`',
+        dueDate: '2014-06-09',
+        complete: false,
+        effort: 'low',
+        priority: 'medium'
+    }, 
+    {
+        username: 'Michael',
+        title: 'Finish algebraic types',
+        dueDate: '2014-06-15',
+        complete: true,
+        effort: 'high',
+        priority: 'high'
+    }
+]
+
+var results = incomplete(tasks)
+console.log(results)
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Ramda/index.js
+
+'''
+
+### Exemplos web
+
+*8)* http://expressjs.com/pt-br/[Express]
+
+Sim, porque todo artigo de _node_ tem que ter http://expressjs.com/pt-br/[express] :-)
+
+[source,javascript]
+----
+//REFERENCE 
+//  http://expressjs.com/pt-br/starter/hello-world.html
+//  https://www.npmjs.com/package/log4js
+const express = require('express'),
+      app = express(),
+      logger = require('log4js').getLogger()
+
+logger.level = 'trace'
+
+app.get('/',  (req, res) => {
+    logger.trace('Home called')
+    res.send('Hello World!')
+})
+
+app.listen(3001,  () => {
+  logger.info('Example app listening on port 3001!')
+})
+---- 
+Source: https://github.com/adamatti/SandboxNode/blob/master/Express/index.js
+
+http://expressjs.com/pt-br/[Express] foi uma das primeiras _libs_ para _node_, mas ele não suporta _promises_ e outras coisas novas.  
+
+'''
+
+*9)* _Template Engine_ com http://www.embeddedjs.com/[Ejs]
+
+Ejs: Para quem está acostumado com o http://jeromejaglale.com/doc/java/spring/mvc[Spring MVC]. 
+
+[source,javascript]
+----
+const express = require('express'),
+      app = express()
+
+app.set('view engine', 'ejs')
+
+app.get('/', function(req, res) {
+    res.render('index',{name: "Adamatti"})
+});
+
+app.listen(8080)
+console.log('Started - 8080')
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Ejs/index.js
+
+'''
+
+*10)* http://koajs.com/[Koa]
+
+[source,javascript]
+----
+//REFERENCES
+// http://koajs.com/#introduction
+
+const Koa = require('koa');
+const app = new Koa();
+
+app.use(async ctx => {
+  ctx.body = 'Hello World'
+})
+
+app.listen(3000)
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Koa/index.js
+
+'''
+
+*11)* https://hapijs.com[Hapi]
+
+Entre http://expressjs.com/pt-br/[Express], http://koajs.com/[Koa] e https://hapijs.com[Hapi], o https://hapijs.com[Hapi] é meu preferido. 
+
+[source,javascript]
+----
+'use strict';
+
+const Hapi = require('hapi'),
+      server = new Hapi.Server()
+
+server.connection({ port: 3002, host: 'localhost' })
+
+server.route({
+    method: 'GET',
+    path: '/',
+    handler: (request, reply) => {
+        reply('Hello!')
+    }
+})
+
+server.route({
+    method: 'GET',
+    path: '/{name}',
+    handler: (request, reply) => {
+        reply('Hello, ' + encodeURIComponent(request.params.name) + '!')
+    }
+})
+
+server.start(err => {
+    if (err) {
+        throw err;
+    }
+    console.log(`Server running at: ${server.info.uri}`)
+})
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Hapi/index.js
+
+'''
+
+### _Frameworks_ de teste
+
+*12)* https://mochajs.org[Mocha]
+
+O https://mochajs.org[Mocha] é o http://junit.org[JUnit] do node;
+
+[source,javascript]
+----
+const assert = require('assert')
+
+describe('Array', () => {
+  describe('#indexOf()', () => {
+    
+    it('should return -1 when the value is not present', () => {
+      assert.equal(-1, [1,2,3].indexOf(4));
+    })
+    
+  })
+})
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Mocha/test/test.js
+
+'''
+
+*13)* http://frisbyjs.com/[Frisby]
+
+Para testes de API:
+
+[source,javascript]
+----
+const app = require("../index"), 
+      frisby = require('frisby')
+
+frisby.create('List orders')
+    .get('http://localhost:3000/orders')
+    .expectStatus(200)
+    .expectHeaderContains('content-type', 'application/json')
+    .expectJSONTypes(0,{
+        "id": String
+    })
+.toss()
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Frisby/test/contract-spec.js
+
+'''
+
+*14)* https://cucumber.io/[Cucumber]
+
+Para testes com https://pt.wikipedia.org/wiki/Behavior_Driven_Development[BDD]. Os requisitos são descritos com arquivos `.feature`: 
+
+[source,feature]
+----
+Feature: Order Processing
+  Scenario Outline: Submit an order
+    Given an order - id: <id>
+    When I submit it - region: <region>
+    Then I receive a response - msg: <msg>
+  Examples:
+    | id     | region | msg              |
+    | submit | US     | Order is ok      |
+    | cancel | US     | Unable to cancel |
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Cucumber/features/order.feature 
+
+...e o código _node_ para responder isso fica:
+
+[source,javascript]
+----
+const expect = require('expect.js')
+
+module.exports = function() {
+    this.Given(/^an order \- id: (.*)$/, function (id) {
+        //TODO implement
+    })
+
+    this.When(/^I submit it \- region: (.*)$/, function (region) {
+        //TODO implement
+    })
+
+    this.Then(/^I receive a response \- msg: (.*)$/, function (msg) {
+        //TODO implement
+        expect(true).to.eql(true)
+    })
+}
+---- 
+Source: https://github.com/adamatti/SandboxNode/blob/master/Cucumber/features/step_definitions/orderStepDefinition.js
+
+'''
+
+### Exemplos avançados
+
+*15)* https://www.npmjs.com/package/cluster[Cluster]
+
+Para iniciar processos _node_ em multiplos processadores.
+
+[source,javascript]
+----
+//REFERENCES https://www.npmjs.com/package/cluster
+const cluster = require('cluster/'),
+      http    = require('http')
+
+function app(){
+    http.createServer(function(req, res){
+        console.log('%s %s', req.method, req.url)
+        var body = 'Hello World'
+        res.writeHead(200, { 'Content-Length': body.length })
+        res.end(body)
+    })
+}
+
+cluster(app)
+  .use(cluster.logger('logs'))
+  .use(cluster.stats())
+  .use(cluster.pidfiles('pids'))
+  .use(cluster.cli())
+  .use(cluster.repl(8888))
+  .listen(3000)
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Cluster/index.js
+
+'''
+
+*16)* _Events_
+
+[source,javascript]
+----
+const EventEmitter = require('events'),
+      events = new EventEmitter()
+
+events.on("app.started", () => {
+    console.log("App started")
+    events.emit("db.load.requested")
+})
+
+events.on("db.load.requested", () => {
+    console.log("Loading DB")
+    events.emit("db.loaded")
+})
+
+events.on("db.loaded", () => {
+    console.log("DB loaded")
+})
+
+events.emit("app.started") 
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/Events/index.js
+
+'''
+
+*17)* Eventos com https://www.rabbitmq.com/[RabbitMQ]
+
+O exemplo fica muito parecido com o anterior, mas funciona em ambiente distribuido. Melhor ver direto no https://github.com/adamatti/SandboxNode/tree/master/RabbitMQ[github]
+
+'''
+
+### Exemplos das _libs_ criadas pela https://github.com/agco[AGCO]
+
+*18)* https://github.com/agco/harvesterjs[Harvester.js], baseado em http://expressjs.com/pt-br/[Express]
+
+_Framework_ para criar https://apievangelist.com/2014/01/07/what-is-a-hypermedia-api/[hypermedia apis] com https://www.mongodb.com[Mongo]. Ele dá o CRUD completo, filtro, pesquisa em entidades conectadas, https://www.w3schools.com/html/html5_serversentevents.asp[SSE], etc. É um _fork_ do https://github.com/fortunejs/fortune[fortune.js]
+
+Dica: rodar o server abaixo + https://github.com/adamatti/SandboxNode/blob/master/HarvesterJs/send.js[send.js]. Daí é só chamar http://localhost:3000/orders?include=customer.country no _browser_. 
+
+[source,javascript]
+----
+'use strict';
+const Types = require('joi'),
+      harvesterjs = require('harvesterjs'),
+      options = {
+          adapter: 'mongodb',
+          connectionString: 'mongodb://localhost:27017/agco',
+          oplogConnectionString: 'mongodb://localhost:27017/local',
+          inflect: true
+      },
+      app = harvesterjs(options) 
+
+app.resource('order',{
+    description: Types.required().description('Sample'),
+    links: {
+        customer: 'customer'
+    }
+})
+
+app.resource('customer',{
+    name: Types.required().description('Sample'),
+    links: {
+        country: 'country'
+    }
+}).before('customer', function(req) {
+    return this
+}).after('customer',function (req,res) {
+    return this
+})
+
+app.resource('country',{
+    name: Types.required().description('Sample')
+})
+
+app.listen(3000,function(){
+    console.log("App started on 3000")
+})
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/HarvesterJs/index.js
+
+'''
+
+*19)* https://github.com/agco/hapi-harvester[Hapi-harvester]
+
+Similar ao https://github.com/agco/harvesterjs[harvester.js], mas baseado no https://hapijs.com[Hapi].
+
+[source,javascript]
+----
+'use strict'
+
+// dependencies
+const Hapi = require('hapi'),
+    Joi = require('joi'),
+    url = require('url'),
+    harvester = require('hapi-harvester'),
+    susie = require('susie')
+
+// Configure hapi-harvester to use our dockerised instance of MongoDB
+
+// Get the docker hostname
+const dockerHostName = '127.0.0.1',
+    // use reference to docker host to create a connection URL to MongoDB
+    mongoDbUrl = 'mongodb://' + dockerHostName + '/test',
+
+    // use reference to docker hostname to create a connection URL to the oplog
+    mongoDbOplogUrl = 'mongodb://' + dockerHostName + '/local',
+
+    // configure the hapi-harvester adapter to use our dockerised MongoDB with replicasets enabled
+    adapter = harvester.getAdapter('mongodb')({
+        mongodbUrl: mongoDbUrl,
+        oplogConnectionString: mongoDbOplogUrl
+    })
+
+//
+// Start our hapi server with the hapi-harvester plugin
+//
+
+// create a hapi server
+const server = new Hapi.Server()
+
+// configure the port
+server.connection({port: 3000})
+
+// we need to register the hapi-harvester plugin before we can use it
+server.register([
+    {
+        register: harvester, // the hapi-harvester plugin "required" from above
+        options: {
+            adapter // use the MongoDB adapter created above
+        }
+    },
+    susie ],  // for streaming SSE
+    () => {
+
+        // Defining a model and default routes
+
+        // first we need to define a schema for our model, using Joi for
+        // validation
+        const brandSchema = {
+            type: 'brands',
+            attributes: {
+                code: Joi.string(),
+                description: Joi.string()
+            }
+        }
+
+        // next we need a reference to our plugin so we can add routes.
+        const harvesterPlugin = server.plugins['hapi-harvester']
+
+        // Using hapi-harvester's routes.all function we can add our schema and
+        // then add all routes for our model to the hapi server.
+        harvesterPlugin.routes.all(brandSchema).forEach((route) => {
+            server.route(route)
+        })
+
+        // finally we can start the server
+        server.start(() => {
+            console.log('Using MongoDB at:', mongoDbUrl)
+            console.log('Server running at:', server.info.uri)
+        })
+    }
+)
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/HapiHarvester/index.js
+
+'''
+
+### https://en.wikipedia.org/wiki/Source-to-source_compiler[Transpilers]
+
+*20)* https://www.typescriptlang.org/[Typescript]
+
+Exemplo básico com tipos, classes, etc
+
+[source,typescript]
+----
+import * as express from "express";
+
+const app = express();
+
+app.get("/",  (req, res) => {
+    res.send('Hello World!');
+})
+
+app.listen(3001,  () => {
+  console.log('Example app listening on port 3001!')
+})
+
+class Person {
+    firstName: string;
+    lastName: string;
+
+    constructor(public fn:string,public ln:string){
+        this.firstName = fn;
+        this.lastName = ln;
+    }
+}
+var user = new Person("Marcelo","Adamatti");
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/TypeScript/index.ts
+
+'''
+
+*21)* http://coffeescript.org/[CoffeeScript]
+
+Porquê alguns procuram ser ainda menos verboso.
+
+[source,coffee]
+----
+number = 2
+
+square = (x) -> x * x
+----
+Source: https://github.com/adamatti/SandboxNode/blob/master/CoffeScript/index.coffee
+
+'''
+
+*22)* https://github.com/clojure/clojurescript[ClojureScript]
+
+Esse exemplo está separado em vários arquivos, melhor olhar no https://github.com/adamatti/SandboxNode/tree/master/Clojure[github].
+
+''' 
+
+### Outros
+
+*23)* ChatBot
+
+Ver _post_ completo link:/blog/node/2017/05/20/hubot.html[aqui] 
+
+'''
+
+### Relacionados
+* link:/blog/node/2017/06/14/why-node.html[porquê de node] dos primeiros
+
+'''
+
+Dúvidas? Sugestões? Reclamações? _Feedbacks_? Aprendeu algo novo? Comenta aí! 
