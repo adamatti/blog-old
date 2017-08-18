@@ -692,7 +692,7 @@ Ver _post_ completo link:/blog/node/2017/05/20/hubot.html[aqui]
 '''
 
 ### Relacionados
-* link:/blog/node/2017/06/14/why-node.html[porquê de node] dos primeiros
+* link:/blog/node/2017/06/14/why-node.html[porquê de node]
 
 '''
 
