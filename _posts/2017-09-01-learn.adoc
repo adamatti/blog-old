@@ -1,0 +1,149 @@
+---
+layout: post
+title:  "Como você aprende?"
+date:   2017-09-01 13:00:00 -0300
+categories: learn
+summary: "Como você aprende? Como se mantem atualizado? 9 dicas aqui"
+tags:
+  - learn
+---
+Esse _post_ é mais para galera de IT, mas algumas coisas se aplicam para outras áreas... 
+
+Como você aprende? Como vc se mantem atualizado? 
+
+### Um pouco de contexto
+
+Fiz essa pergunta a algumas pessoas e fiquei surpreso com a resposta. Isso que algumas pessoas queriam ser influenciadores!
+
+> "Eu acompanho notícias pelo Facebook" 
+
+Mas como evitar o https://www.youtube.com/watch?v=COgkI7GhFR0[efeito bolha]? O Facebook também não mostra todos os _feeds_. E algums acham ele mal, como na palestra de abertura do https://www.youtube.com/watch?v=8vtVmLviiGQ[BrazilJS].
+
+Por mais bizarro que isso possa parecer, é algo que eu posso ver nos meus compartilhamentos no https://hootsuite.com[HootSuite]: 70% dos cliques vem do Facebook. Bem depois vem Twitter / LinkedIn. 
+
+> "Eu procuro aquilo que eu quero no google" 
+
+Mas como você fica sabendo do que você não sabe que não sabe? Daquela nova _lib_, técnica, etc que outras empresas estão usando?
+
+Bom, aqui vai algumas dicas de como eu faço.
+
+### 1) Podcasts
+
+Para aproveitar o tempo do transito com algo útil. E dá para escutar em velocidade 1.5 / 2x.
+
+O http://guts-rs.blogspot.com.br/2017/08/dicas-de-podcasts-de-qualidade-e-testes.html[GUTS] publicou alguns esses dias. 
+
+Alguns do que eu acompanho:
+
+* https://hipsters.tech/feed/podcast[hipsters.tech]: um dos melhores sobre tecnologia. Boas entrevistas e debates.
+* https://www.npr.org/rss/podcast.php?id=510298[TED Radio Hour]: é do mesmo grupo dos https://www.ted.com/[vídeos], mas aqui tem algumas entrevistas extras, resumos, corelação de palestras de mesmo tema.
+* https://feeds.feedwrench.com/JavaScriptJabber.rss[JavaScript Jabber]: sobre js, em inglês
+* http://feeds.soundcloud.com/users/soundcloud:users:198038334/sounds.rss[ResumoCast]: Livros para empreendedores
+* http://feeds.soundcloud.com/users/soundcloud:users:17175875/sounds.rss[GunCast]: do http://gun.com.br/[Murilo Gun]. Algumas pessoas não gostam dele, mas curto alguns _insights_ e entrevistas (como a da https://soundcloud.com/murilogun/mujica[Tania Mujica]). Ele (O Murilo) usa muito o humor como aprendizado e criatividade, curto esse _approach_. Também disponível no https://soundcloud.com/murilogun[SoundCloud]
+* http://feeds.soundcloud.com/users/soundcloud:users:156582041/sounds.rss[Gabriel Goffi]: Anda meio parado. Fiquei sabendo dele pelo http://gun.com.br/[Murilo Gun]. Que por sinal, a http://hsweek.highstakes.co[High Stakes Week] acontece essa semana. É interessante o ponto de vista do Gabriel sobre alguns pontos.
+* https://jovemnerd.com.br/feed-nerdcast[NerdCast]: legal para saber de algumas coisas aleatórias.
+* http://feed.portalcafebrasil.com.br/tools/lidercast.xml[Lidercast Café Brasil]
+
+Sobre programas (android), eu uso o https://www.podbean.com/[podbean], mas vejo o pessoal falar bem do https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict&hl=pt[Podcast Addict] e https://play.google.com/store/apps/details?id=com.itunestoppodcastplayer.app&hl=pt_BR[Podcast Republic] 
+
+Tem algumas boas recomendações na _thread_ do  https://www.linkedin.com/feed/update/urn:li:activity:6301854395751555072/[Matheus de Souza].
+
+### 2) Audiobook
+
+Mesma idéia do _podcast_. Dica é usar o http://www.audible.com[Audible] da Amazon (O Spotify dos _audiobooks_). Ou baixar o áudio mesmo.
+
+### 3) Livros físicos
+
+image::https://cdn.pensador.com/img/frase/ch/ar/charles_jones_daqui_a_cinco_anos_voce_estara_bem_proxim_lkzeyq7.jpg[]
+
+Esses não precisam de muita explicação. 
+
+Algumas indicações (livros mais recentes que eu lí/re-lí):
+
+* https://www.amazon.com/60-Second-Leader-Everything-Leadership/dp/1841127450[60 seconds Leader]
+* https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447[Start with Why] - o livro https://www.youtube.com/watch?v=u4ZoJKF_VuA[desta talks]
+* https://www.amazon.com/Leaders-Eat-Last-Together-Others/dp/1591848016[Leaders eat last] - o livro https://www.youtube.com/watch?v=ReRcHdeUG9Y[desta talk]
+
+https://www.goodreads.com[Good Reads] é um bom site para fazer _tracking_ de livros e ver o que outros estão lendo.
+
+### 4) RSS, news
+
+Porquê não tem motivo ficar entrando nos _blogs_ de tempos em tempos para ver se tem atualizações.
+
+Dica fica para as páginas de engenharia, ver essa https://github.com/kilimchoi/engineering-blogs[_awesome list_]. E como leitor eu uso o https://feedly.com[Feedly].
+
+Vale também acessar o https://news.ycombinator.com/[Hacker News] 1x ao dia, https://www.reddit.com[Reddit] de tempo em tempo. Dá para criar boas listas com tópicos diversos (ex: _tools_, práticas)
+
+### 5) Redes sociais, chats
+
+Voltando ao ponto, não é bom se limitar ao http://www.facebook.com[Facebook], até porquê ele não mostra todos os feeds. Algumas dicas: 
+
+* No http://www.twitter.com[Twitter] você pode seguir outras pessoas, criar listas, enviar _direct messages_. E geralmente o pessoal responde.
+* http://www.slack.com[Slack]: um dos programas mais populares de chat, no mesmo grupo que o https://rocket.chat[Rocket Chat], https://www.hipchat.com[HipChat], https://www.hibox.co/pb[Hibox], http://gitter.im[Gitter]. Legal iteragir com a comunidade mais "_real time_", ver perguntas dos outros, etc. Alguns grupos de tecnologia listados https://github.com/adamatti/awesome/blob/master/slackLists.adoc[aqui nessa lista].
+* Sites de perguntas: https://www.quora.com[Quora], https://pt.stackoverflow.com[StackOverflow]
+* _Meetups_ remotos: tipo o https://virtualjug.com[Virtual Jug]
+
+### 6) Ensinar
+
+Como diz a pirâmide de Willian Glasser: 
+
+image::http://www.antroposofy.com.br/forum/wp-content/uploads/2016/08/piramide-de-aprendizado.jpg[]
+
+Tem várias oportunidades de palestrar em eventos (dica: http://www.thedevelopersconference.com.br[TDC], http://devday.rs/[devday], https://www.devopsdays.org[devops day]), https://www.meetup.com/pt-BR/[_meetups_], escrever um _blog_. Sobre escrever, tem esse texto legal do https://www.linkedin.com/feed/update/urn:li:activity:6305402130031263744[Matheus de Souza].
+
+Dentro da minha empresa atual temos espaço para Dojos, _Talks_, _PodCasts_ internos, _Mob Programming_, _Hacknights_. Compartilhar conhecimento é uma forma de reter e ampliar seus conhecimentos em uma área.
+
+*Nota*: Evite a http://somatorio.org/pt-br/post/sindrome_do_super_humano_invertido[Síndrome do Impostor]. Todos tem algo para compartilhar, você só será um bom palestrante "palestrando".  
+
+Isso pode ajudar: https://www.happymelly.com/art-of-public-speaking/[_How to Master the Art of Public Speaking_]
+
+Sobre escrever... Não é algo fácil mesmo... olha o disse o https://twitter.com/martinfowler/status/902555118951964673[Martin Fowler]:
+
++++
+<center>
+<blockquote class="twitter-tweet" data-lang="pt"><p lang="en" dir="ltr">If people watched me write, I think most would be surprised at how long I spend creating just the right code example (2 mornings so far)</p>&mdash; Martin Fowler (@martinfowler) <a href="https://twitter.com/martinfowler/status/902555118951964673">29 de agosto de 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
++++
+
+### 7) Cursos
+
+Alguns sites com cursos, a maioria gratuito:
+
+* https://www.katacoda.com[Katacoda]
+* https://pt.coursera.org[Coursera]
+* https://app.pluralsight.com[PluralSight]
+* https://scotch.io/[Scotch]
+* http://skillgun.com[Skill Gun]
+* https://br.udacity.com[Udacity]
+* https://www.udemy.com[Udemy]
+* https://miriadax.net[Miríada]
+
+Acho que aqui também se aplica ver eventos gravados, como o https://www.youtube.com/user/BrazilJS[BrazilJs] e http://www.thedevelopersconference.com.br/tdconline[TDC Online].
+
+### 8) _Mentoring_
+
+Como diz o http://www.gabrielgoffi.com[Gabriel Goffi] no segundo vídeo da http://hsweek.highstakes.co[High stakes week], você pode acompanhar um _mentor_ remotamente e de modo assíncrono em cursos, livros, mídia social (ex: twitter). Alguns chamam _mentors_ de "gurus", como mencionado no canal https://www.youtube.com/watch?v=HgxguRfcPFk[Me poupe] (sobre finanças). Ok, presencialmente é mais fácil, mas nem sempre é possível. 
+
+Outra dica legal é da Kathy Sierra no https://www.youtube.com/watch?v=FKTxC9pl-WM[Making Badass Developers]:
+
++++
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FKTxC9pl-WM?start=935" frameborder="0" allowfullscreen>
+</iframe>
+</center>
++++
+
+Versão resumida: tendo contato com códigos bons, você eventualmente vai escrever códigos melhores.
+
+### 9) Evitar a procrastinação
+
+Tem um https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator?language=en[baita vídeo no TED] sobre isso, e esse do https://www.engvid.com/stop-procrastinating-start-learning/[EngVid]. Moral da história: não enrolar e focar no aprendizado.
+
+### Se você ficou curioso sobre o https://hootsuite.com[HootSuite]
+
+É uma baita ferramenta para gerar conteúdo. Curto colocar _links_ de compartilhamento alí para espalhar nas redes sociais. E ele tem algoritmos para auto agendar os items em momentos onde é mais provável que as pessoas estejam lendo. Fora que é massa espaçar os compartilhamentos, para não ficar um lote grande quando eu paro para ver as notícias.
+
+'''
+
+E aí, curtiu as dicas? Tem alguma técnica ou _link_ diferente? Manda aí nos comentários.
