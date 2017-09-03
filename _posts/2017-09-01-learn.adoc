@@ -106,6 +106,10 @@ Sobre escrever... Não é algo fácil mesmo... olha o disse o https://twitter.co
 </center>
 +++
 
+O https://www.youtube.com/user/dwildt79/videos[Daniel Wildt] fez um https://www.youtube.com/watch?v=XsP0WSSFz5w[vídeo sobre palestras] semana passada.
+
+Outra dica: em alguns planos de carreira, é esperado que você influencie não só seu time, não só sua empresa... mas a industria. Olha esse exemplo da https://github.com/Coderockr/carreira/blob/master/LevelV.md[CodeRock]. 
+
 ### 7) Cursos
 
 Alguns sites com cursos, a maioria gratuito:
