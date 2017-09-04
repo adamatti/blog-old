@@ -140,6 +140,8 @@ Outra dica legal é da Kathy Sierra no https://www.youtube.com/watch?v=FKTxC9pl-
 
 Versão resumida: tendo contato com códigos bons, você eventualmente vai escrever códigos melhores.
 
+Update: http://www.bakadesuyo.com/2014/02/mentor[8 Steps To Getting The Perfect Mentor For You]
+
 ### 9) Evitar a procrastinação
 
 Tem um https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator?language=en[baita vídeo no TED] sobre isso, e esse do https://www.engvid.com/stop-procrastinating-start-learning/[EngVid]. Moral da história: não enrolar e focar no aprendizado.
