@@ -9,7 +9,7 @@ tags:
 ---
 Esse _post_ é mais para galera de IT, mas algumas coisas se aplicam para outras áreas... 
 
-Como você aprende? Como vc se mantem atualizado? 
+Como você aprende? Como você se mantem atualizado? 
 
 ### Um pouco de contexto
 
@@ -76,7 +76,7 @@ Vale também acessar o https://news.ycombinator.com/[Hacker News] 1x ao dia, htt
 
 ### 5) Redes sociais, chats
 
-Voltando ao ponto, não é bom se limitar ao http://www.facebook.com[Facebook], até porquê ele não mostra todos os feeds. Algumas dicas: 
+Voltando ao ponto, não é bom se limitar ao http://www.facebook.com[Facebook], até porquê ele não mostra todos os _feeds_. Algumas dicas: 
 
 * No http://www.twitter.com[Twitter] você pode seguir outras pessoas, criar listas, enviar _direct messages_. E geralmente o pessoal responde.
 * http://www.slack.com[Slack]: um dos programas mais populares de chat, no mesmo grupo que o https://rocket.chat[Rocket Chat], https://www.hipchat.com[HipChat], https://www.hibox.co/pb[Hibox], http://gitter.im[Gitter]. Legal iteragir com a comunidade mais "_real time_", ver perguntas dos outros, etc. Alguns grupos de tecnologia listados https://github.com/adamatti/awesome/blob/master/slackLists.adoc[aqui nessa lista].
