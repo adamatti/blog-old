@@ -1,0 +1,143 @@
+---
+layout: post
+title:  "Product Backlog"
+date:   2017-09-07 13:00:00 -0300
+categories: lean
+summary: "Como organizar o backlog"
+tags:
+  - lean
+---
+
+> 70% dos projetos falham. Custo com projetos que falham na economia americana é entre 50-150 bilhões de dolares por ano. 75% falham por falta de engajamento de gerentes _seniors_. Somente 2.5% das empresas completam 100% dos seus projetos. 
+
+Esses são só alguns pontos dos _post_ http://blog.mavenlink.com/21-shocking-project-management-statistics-that-explain-why-projects-continue-to-fail[_21 Shocking Project Management Statistics That Cost Business Owners Millions Each Year_].
+
+O site http://www.zdnet.com[ZDNet] fala que o http://www.zdnet.com/article/worldwide-cost-of-it-failure-revisited-3-trillion/[custo de projetos que falha no mundo é de 3 trilhões].
+
+O https://www.youtube.com/user/dwildt79/videos[Daniel Wildt] fez um vídeo semana passada sobre o porquê dos projetos falharem:
+
++++
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qCGeigndJhk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</center>
++++
+
+Nota: só descobri o vídeo depois que decidi escrever sobre o tópico :-)
+
+Mensagem super resumida do vídeo: principal motivo é falha de comunicação.
+
+'''
+
+A http://www.forbes.com[Forbes] lista alguns motivos no artigo https://www.forbes.com/sites/bernardmarr/2016/09/13/are-these-the-real-reasons-why-tech-projects-fail/#69d89f947320[_Are These The 7 Real Reasons Why Tech Projects Fail?_]
+
+* Resultado mal definido
+* Falta de liderança
+* Falta de responsabilidade
+* Comunicação Insuficiente
+* Sem plano
+* Falta de teste de usuário ou falha ao endereçar _feedback_
+* Resolver o problema errado
+
+'''
+
+O _site_ http://www.it-cortex.com/Stat_Failure_Cause.htm[IT cortext] mostra essa imagem:
+
+image::http://www.it-cortex.com/images/Failure_Cause_Survey.264.gif[align=center]
+
+Primeira causa principal: falta de comunicação.
+
+'''
+
+Uma última referência, que mostra um gráfico um pouco diferente, mas com o mesmo resultado, o _site Blueprint_ com o artigo http://www.blueprintsys.com/blog/pmi-survey-project-failure/[_The Most Valuable Survey Data on the Causes of Project Failure_] 
+
+image::http://www.blueprintsys.com/wp-content/uploads/2017/01/PMI-survey-2.png[align=center]
+
+Os primeiros itens, "mudança nas prioridades da organização" e "mudanças no objetivo do projeto", _IMO_, não são problema. Falhar antes e reagir à mudança é algo aceitável e esperado.
+
+Já os itens seguintes eu concordo: "obtenção de requisitos impreciso", "oportunidades e riscos não definidos", "visão ou objetivo do projeto inadequado". Em outras palavras, o papel do _Product Owner_ (ou o cara que faz a _interface_ com o usuário) assim como o papel do time em entender o que deve ser feito / entrege é de extrema importancia. 
+
+### Ok, e o que pode ser feito? 
+
+Resumidamente, está tudo no http://www.manifestoagil.com.br/[manifesto ágil]:
+
+> *Indivíduos e interações* mais que processos e ferramentas +
+> *Software em funcionamento* mais que documentação abrangente +
+> *Colaboração com o cliente* mais que negociação de contratos +
+> *Responder a mudanças* mais que seguir um plano
+
+Eu leio nas entrelinhas "comunicação", "qualidade" e "feito é melhor que perfeito", "comunicação" e "melhoria continua" (mudar o plano para seguir o caminho certo).
+
+'''
+
+Sobre requisitos, gosto muito do exercício do http://www.caroli.org/en/[Paulo Caroli] descrito na página do https://martinfowler.com/articles/lean-inception/tech-and-business-review.html[Martin Fowler], de exercitar com o time em cada _user story_ qual é a certeza tecnica e a certeza de negócio de cada item. Itens com baixos índices em um deles devem ser melhor esclarecidos (negócio) ou estudar a tecnologia / arquitetura. 
+
+image::https://martinfowler.com/articles/lean-inception/uncertainty.svg[width=50%,align=center]
+
+Com isso fica claro quais possíveis problemas / incertezas, qual _task_ dá mais retorno e deve ser priorizada, qual exige mais esforço. O resultado fica algo como:
+
+image::https://martinfowler.com/articles/lean-inception/sample-feature.svg[width=50%,align=center]
+
+O livro https://www.casadocodigo.com.br/products/livro-direto-ao-ponto[Direto ao ponto] é recomendado para essa etapa de _inception_. 
+
+'''
+
+_User stories_ devem possuir _definition of ready_ e _definition of done_, como descrito no http://blog.adaptworks.com.br/2012/12/definition-of-ready-qualidade-na-entrada-das-sprints/#.WbHwS3WGPqM[blog da adapworks].
+
+image::http://blog.adaptworks.com.br/wp-content/uploads/2012/12/Captura-de-Tela-2012-12-19-%C3%A0s-11.32.51.png[width=50%,align=center]
+
+Afinal, como pode ser desenvolvido algo que não está claro quando isso está pronto e quando pode ser começado?
+
+'''
+
+Segundo o https://www.linkedin.com/pulse/why-45-all-software-features-production-never-used-david-rice[artigo do David Rice], *45%* das _features_ de _software_ em produção nunca foram usadas. 
+
+Isso tem um efeito destrutivo no time de desenvolvimento. Olha essa https://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work?language=en[talk no TED to Dan Ariely]: 
+
++++
+<center>
+<iframe src="https://embed.ted.com/talks/lang/en/dan_ariely_what_makes_us_feel_good_about_our_work" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</center>
++++
+
+Versão resumida: é muito desmotivador ver seu trabalho ser destruído ou não usado. Ignorar o resultado é tão ruim quanto. +
+Outro ponto: as pessoas tendem a super valorizar o que elas constroem. Por isso é importante validar com os usuários o que eles acham dos resultados. 
+
+'''
+
+É importante falar de motivação também. No https://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work?language=en[vídeo do Dan] ele fala um pouco sobre isso, de porquê algumas pessoas escalam montanhas (um processo bem sofrido). 
+
+Em alguns times eu já ví acontecer a prática de "ah, se vocês entregarem o que foi planejado na _sprint_ e mais o requisito XYZ eu pago um churrasco". Isso parece o _candle problem_. Não conhece? Olha https://www.youtube.com/watch?v=rrkrvAUbU9Y[essa TED talk]: 
+
++++
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rrkrvAUbU9Y?rel=0" frameborder="0" allowfullscreen></iframe>
+</center>
++++
+
+Versão resumida: focar nesses 3 elementos: autonomia, domínio (_mastery_) e proposito.
+
+'''
+
+Como tudo na vida exige negociação, é importante esse vídeo do https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action[Simon Sinek] (o vídeo está na https://www.ted.com/playlists/180/the_10_most_popular_tedx_talks[lista de mais vistos]). 
+
+Quer implantar ágil no time e o time não vê valor? Quer usar uma nova ferramenta e o time não abraça? Você está indo direto com as soluções prontas (o que) ou você está fazendo as perguntas certas e explicando o porquê?
+
++++
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u4ZoJKF_VuA?rel=0" frameborder="0" allowfullscreen></iframe>
+</center>
++++ 
+
+'''
+
+### _Next steps?_
+
+Esse _post_ nasceu basicamente porque eu queria falar da metologia do https://martinfowler.com/articles/lean-inception/tech-and-business-review.html[Paulo Caroli] de organizar o _backlog_, mas acabei abordando outros assuntos relacionados. Também não queria abordar o básico do MVP e usar as imagens clássicas https://imasters.com.br/wp-content/uploads/2014/05/siso-1.png[do balanço], https://blog.deming.org/wp-content/uploads/2014/11/minimal-viable-product-henrik-kniberg.png[do carro], do https://cdn-images-1.medium.com/max/1600/1*2HSWmYBgW-74ipsJ2QnPVA.png[cortador de grama]... 
+
+Algumas referências adicionais:
+
+* https://blog.designa.com.br/direto-ao-ponto-entenda-o-conceito-de-mvp-3b8dc298e1f4[Direto ao ponto! Entenda o conceito de MVP]
+* http://blog.myscrumhalf.com/2014/04/10-dicas-para-melhorar-a-priorizacao-do-product-backlog[10 dicas para melhorar a priorização do Product Backlog]
+* https://www.atlassian.com/agile/estimation[_The secrets behind story points and agile estimation_]
+
+Ficou claro a mensagem? Tem algum gráfico diferente? Alguma opinião sobre os itens levantados? Manda aí nos comentários.
