@@ -69,7 +69,7 @@ Eu leio nas entrelinhas "comunicação", "qualidade" e "feito é melhor que perf
 
 '''
 
-Sobre requisitos, gosto muito do exercício do http://www.caroli.org/en/[Paulo Caroli] descrito na página do https://martinfowler.com/articles/lean-inception/tech-and-business-review.html[Martin Fowler], de exercitar com o time em cada _user story_ qual é a certeza tecnica e a certeza de negócio de cada item. Itens com baixos índices em um deles devem ser melhor esclarecidos (negócio) ou estudar a tecnologia / arquitetura. 
+Sobre requisitos, gosto muito do exercício do http://www.caroli.org/en/[Paulo Caroli] descrito na página do https://martinfowler.com/articles/lean-inception/tech-and-business-review.html[Martin Fowler], de exercitar com o time em cada _user story_ qual é a *certeza tecnica* e a *certeza de negócio* de cada item. Itens com baixos índices em um deles devem ser melhor esclarecidos (negócio) ou estudar a tecnologia / arquitetura. 
 
 image::https://martinfowler.com/articles/lean-inception/uncertainty.svg[width=50%,align=center]
 
@@ -81,7 +81,7 @@ O livro https://www.casadocodigo.com.br/products/livro-direto-ao-ponto[Direto ao
 
 '''
 
-_User stories_ devem possuir _definition of ready_ e _definition of done_, como descrito no http://blog.adaptworks.com.br/2012/12/definition-of-ready-qualidade-na-entrada-das-sprints/#.WbHwS3WGPqM[blog da adapworks].
+_User stories_ devem possuir *_definition of ready_* e *_definition of done_*, como descrito no http://blog.adaptworks.com.br/2012/12/definition-of-ready-qualidade-na-entrada-das-sprints/#.WbHwS3WGPqM[blog da adapworks].
 
 image::http://blog.adaptworks.com.br/wp-content/uploads/2012/12/Captura-de-Tela-2012-12-19-%C3%A0s-11.32.51.png[width=50%,align=center]
 
@@ -89,7 +89,7 @@ Afinal, como pode ser desenvolvido algo que não está claro quando isso está p
 
 '''
 
-Segundo o https://www.linkedin.com/pulse/why-45-all-software-features-production-never-used-david-rice[artigo do David Rice], *45%* das _features_ de _software_ em produção nunca foram usadas. 
+Segundo o https://www.linkedin.com/pulse/why-45-all-software-features-production-never-used-david-rice[artigo do David Rice], *45%* das _features_ de _software_ em produção *nunca foram usadas*. 
 
 Isso tem um efeito destrutivo no time de desenvolvimento. Olha essa https://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work?language=en[talk no TED to Dan Ariely]: 
 
@@ -104,7 +104,7 @@ Outro ponto: as pessoas tendem a super valorizar o que elas constroem. Por isso 
 
 '''
 
-É importante falar de motivação também. No https://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work?language=en[vídeo do Dan] ele fala um pouco sobre isso, de porquê algumas pessoas escalam montanhas (um processo bem sofrido). 
+É importante falar de *motivação* também. No https://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work?language=en[vídeo do Dan] ele fala um pouco sobre isso, de porquê algumas pessoas escalam montanhas (um processo bem sofrido). 
 
 Em alguns times eu já ví acontecer a prática de "ah, se vocês entregarem o que foi planejado na _sprint_ e mais o requisito XYZ eu pago um churrasco". Isso parece o _candle problem_. Não conhece? Olha https://www.youtube.com/watch?v=rrkrvAUbU9Y[essa TED talk]: 
 
@@ -118,7 +118,7 @@ Versão resumida: focar nesses 3 elementos: autonomia, domínio (_mastery_) e pr
 
 '''
 
-Como tudo na vida exige negociação, é importante esse vídeo do https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action[Simon Sinek] (o vídeo está na https://www.ted.com/playlists/180/the_10_most_popular_tedx_talks[lista de mais vistos]). 
+Como tudo na vida exige *negociação*, é importante esse vídeo do https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action[Simon Sinek] (o vídeo está na https://www.ted.com/playlists/180/the_10_most_popular_tedx_talks[lista de mais vistos]). 
 
 Quer implantar ágil no time e o time não vê valor? Quer usar uma nova ferramenta e o time não abraça? Você está indo direto com as soluções prontas (o que) ou você está fazendo as perguntas certas e explicando o porquê?
 
@@ -127,6 +127,38 @@ Quer implantar ágil no time e o time não vê valor? Quer usar uma nova ferrame
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u4ZoJKF_VuA?rel=0" frameborder="0" allowfullscreen></iframe>
 </center>
 +++ 
+
+'''
+
+*Update*: quase me esqueço de abordar esse tópico, os *débitos técnicos*. O https://twitter.com/klauswuestefeld[Klaus Wuestefeld] tem uma apresentação chamada "Os Nove Registros da Eficiência no Desenvolvimento de _Software_", achei https://pt.slideshare.net/dionatanmoura/os-nove-registros-da-eficincia-no-desenvolvimento-de-software[_slides_ do Dionatan Moura] sobre o assunto.  
+
++++
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/wtLRblf0tNEnh0?startSlide=14" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/dionatanmoura/os-nove-registros-da-eficincia-no-desenvolvimento-de-software" title="Os Nove Registros da Eficiência no Desenvolvimento de Software" target="_blank">Os Nove Registros da Eficiência no Desenvolvimento de Software</a> </strong> de <strong><a href="//www.slideshare.net/dionatanmoura" target="_blank">Dionatan Moura</a></strong> </div>
+</center>
++++
+
+A proposta é avaliar seu time de 0 a 5 em cada um dos itens e trabalhar nos de menor pontuação. A ideia do registro é que a capacidade do time é limitada ao registro mais fechado. 
+
+Legal ver que vários tópicos são sobre comunicação (clima do time, colaboração). Um dos pontos interessantes é o último, *qualidade*. Quanto de tempo seu time tem dedicado para trabalhar em débito técnico. Alguns times esperam isso ser priorizado em alguma _sprint_. Isso não acontece, nem nunca vai acontecer. Isso deve ser trabalhado em *todas* as _sprints_, tendo um percentual de alocação para isso. 
+
+Muito provavelmente você já ouviu a analogia da cozinha e limpeza da mesma. Você não deveria ter que pedir no restaurante para lavarem os pratos e panelas antes de fazer sua refeição, isso deveria ser feito sempre em todas as refeições. Mesma idéia para testes de _software_ e débitos técnicos.
+
+'''
+
+*Update 2*: Um outro ponto interessante é prover *visibilidade* para o cliente e pessoas do time. 
+
+image::https://i.ytimg.com/vi/RZ_444zLInk/maxresdefault.jpg[width=300, align=center]
+
+Imagine esses dois cenários:
+
+1) você chama um taxi/uber/cabify/99 pop (escolhe um) para ir até o aeroporto. O motorista chega em 5 mins, mas demora duas horas para levar você até o destino devido a congestionamento. Você vê todo o processo. A corrida dá X reais. 
+
+2) você chama o mesmo serviço (taxi) para ir ao mesmo destino (aeroporto). Desta vez, o motorista demora duas horas para chegar até você, pelo mesmo motivo: congestionamento. A corrida é feita em 5 mins. O preço é o mesmo X reais.
+
+Qual das duas opções você prefere? Qual das duas você vai ficar ok com o motorista? Qual vai ficar brabo?
+
+Moral da história: dê visibilidade. E quando eu lembrar quem fez essa analogia eu dou os créditos (não achei no google).
 
 '''
 
@@ -139,5 +171,6 @@ Algumas referências adicionais:
 * https://blog.designa.com.br/direto-ao-ponto-entenda-o-conceito-de-mvp-3b8dc298e1f4[Direto ao ponto! Entenda o conceito de MVP]
 * http://blog.myscrumhalf.com/2014/04/10-dicas-para-melhorar-a-priorizacao-do-product-backlog[10 dicas para melhorar a priorização do Product Backlog]
 * https://www.atlassian.com/agile/estimation[_The secrets behind story points and agile estimation_]
+* https://www.agilealliance.org/glossary/three-amigos[3 amigos] - técnica onde 3 pessoas avaliam uma _user storie_, um sendo o usuário (que problema vamos resolver?), um sendo o dev (como vamos resolver o problema) e _tester_ (como vamos testar, o que pode acontecer?)
 
 Ficou claro a mensagem? Tem algum gráfico diferente? Alguma opinião sobre os itens levantados? Manda aí nos comentários.
