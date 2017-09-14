@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/blog/assets/main.css">
   <link rel="stylesheet" href="/blog/assets/share.css">
   <link rel="stylesheet" href="/blog/asciidoc-pygments.css">
-  <link rel="canonical" href="https://adamatti.github.io/blog/blog/node/2017/08/17/node-sandbox.html">
+  <link rel="canonical" href="https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html">
   <link rel="alternate" type="application/rss+xml" title="Adamatti - blog pessoal" href="/blog/feed.xml">
   
   
@@ -172,13 +172,13 @@
       <span class="tok-nx">hostname</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;127.0.0.1&#39;</span><span class="tok-p">,</span>
       <span class="tok-nx">port</span> <span class="tok-o">=</span> <span class="tok-mi">3000</span>
 
-<span class="tok-kr">const</span> <span class="tok-nx">server</span> <span class="tok-o">=</span> <span class="tok-nx">http</span><span class="tok-p">.</span><span class="tok-nx">createServer</span><span class="tok-p">((</span><span class="tok-nx">req</span><span class="tok-p">,</span><span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-kr">const</span> <span class="tok-nx">server</span> <span class="tok-o">=</span> <span class="tok-nx">http</span><span class="tok-p">.</span><span class="tok-nx">createServer</span><span class="tok-p">((</span><span class="tok-nx">req</span><span class="tok-p">,</span><span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">statusCode</span> <span class="tok-o">=</span> <span class="tok-mi">200</span>
     <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">setHeader</span><span class="tok-p">(</span><span class="tok-s1">&#39;Content-Type&#39;</span><span class="tok-p">,</span><span class="tok-s1">&#39;text/plain&#39;</span><span class="tok-p">)</span>
     <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">end</span><span class="tok-p">(</span><span class="tok-s2">&quot;Hello world\n&quot;</span><span class="tok-p">)</span>
 <span class="tok-p">})</span>
 
-<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-nx">port</span><span class="tok-p">,</span> <span class="tok-nx">hostname</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-nx">port</span><span class="tok-p">,</span> <span class="tok-nx">hostname</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-sb">`Server running at http://</span><span class="tok-si">${</span><span class="tok-nx">hostname</span><span class="tok-si">}</span><span class="tok-sb">:</span><span class="tok-si">${</span><span class="tok-nx">port</span><span class="tok-si">}</span><span class="tok-sb">/`</span><span class="tok-p">)</span>
 <span class="tok-p">})</span></code></pre>
 </div>
@@ -234,7 +234,7 @@
 		<span class="tok-k">return</span> <span class="tok-nx">cb</span><span class="tok-p">(</span><span class="tok-kc">null</span><span class="tok-p">,</span><span class="tok-mi">1</span><span class="tok-p">)</span>
 	<span class="tok-p">}</span>
 
-	<span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">,(</span><span class="tok-nx">err</span><span class="tok-p">,</span><span class="tok-nx">result</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+	<span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">,(</span><span class="tok-nx">err</span><span class="tok-p">,</span><span class="tok-nx">result</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
         <span class="tok-nx">cb</span><span class="tok-p">(</span><span class="tok-kc">null</span><span class="tok-p">,</span> <span class="tok-nx">result</span> <span class="tok-o">*</span> <span class="tok-nx">n</span> <span class="tok-p">)</span>
     <span class="tok-p">})</span>
 <span class="tok-p">}</span>
@@ -243,7 +243,7 @@
 <span class="tok-kr">const</span> <span class="tok-nx">f</span> <span class="tok-o">=</span> <span class="tok-nx">memoize</span><span class="tok-p">(</span><span class="tok-nx">factorial</span><span class="tok-p">)</span>
 
 <span class="tok-k">for</span> <span class="tok-p">(</span><span class="tok-kd">var</span> <span class="tok-nx">i</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-nx">i</span><span class="tok-o">&lt;</span><span class="tok-nx">arr</span><span class="tok-p">.</span><span class="tok-nx">length</span> <span class="tok-p">;</span> <span class="tok-nx">i</span><span class="tok-o">++</span><span class="tok-p">){</span>
-    <span class="tok-nx">f</span><span class="tok-p">(</span><span class="tok-nx">arr</span><span class="tok-p">[</span><span class="tok-nx">i</span><span class="tok-p">],</span> <span class="tok-p">(</span><span class="tok-nx">err</span><span class="tok-p">,</span><span class="tok-nx">result</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">f</span><span class="tok-p">(</span><span class="tok-nx">arr</span><span class="tok-p">[</span><span class="tok-nx">i</span><span class="tok-p">],</span> <span class="tok-p">(</span><span class="tok-nx">err</span><span class="tok-p">,</span><span class="tok-nx">result</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
         <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;fatorial - &quot;</span><span class="tok-p">,</span><span class="tok-nx">arr</span><span class="tok-p">[</span><span class="tok-nx">i</span><span class="tok-p">],</span><span class="tok-s2">&quot;: &quot;</span><span class="tok-p">,</span><span class="tok-nx">result</span><span class="tok-p">)</span>
     <span class="tok-p">})</span>
 <span class="tok-p">}</span></code></pre>
@@ -270,7 +270,7 @@
 
 <span class="tok-kr">const</span> <span class="tok-nx">users</span> <span class="tok-o">=</span> <span class="tok-nx">db</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s1">&#39;users&#39;</span><span class="tok-p">)</span>
 
-<span class="tok-nx">users</span><span class="tok-p">.</span><span class="tok-nx">find</span><span class="tok-p">({}).</span><span class="tok-nx">then</span><span class="tok-p">(</span><span class="tok-nx">data</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">users</span><span class="tok-p">.</span><span class="tok-nx">find</span><span class="tok-p">({}).</span><span class="tok-nx">then</span><span class="tok-p">(</span><span class="tok-nx">data</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;List of users: &quot;</span><span class="tok-p">)</span>
 
     <span class="tok-k">for</span><span class="tok-p">(</span><span class="tok-kd">var</span> <span class="tok-nx">i</span> <span class="tok-o">=</span> <span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-nx">i</span> <span class="tok-o">&lt;</span> <span class="tok-nx">data</span><span class="tok-p">.</span><span class="tok-nx">length</span><span class="tok-p">;</span> <span class="tok-nx">i</span><span class="tok-o">++</span><span class="tok-p">){</span>
@@ -298,7 +298,7 @@
 <span class="tok-kr">const</span> <span class="tok-nx">createClient</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;then-redis&#39;</span><span class="tok-p">).</span><span class="tok-nx">createClient</span><span class="tok-p">,</span>
       <span class="tok-nx">db</span> <span class="tok-o">=</span> <span class="tok-nx">createClient</span><span class="tok-p">(</span><span class="tok-s1">&#39;tcp://localhost:6379&#39;</span><span class="tok-p">)</span>
 
-<span class="tok-nx">db</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s2">&quot;count&quot;</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">value</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">db</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s2">&quot;count&quot;</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">value</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span> <span class="tok-p">(</span><span class="tok-s2">&quot;Current count is &quot;</span><span class="tok-p">,</span><span class="tok-nx">value</span><span class="tok-p">)</span>
 
     <span class="tok-nx">value</span> <span class="tok-o">=</span> <span class="tok-nx">value</span> <span class="tok-o">||</span> <span class="tok-mi">0</span><span class="tok-p">;</span>
@@ -325,19 +325,19 @@
 		<span class="tok-k">return</span> <span class="tok-nb">Promise</span><span class="tok-p">.</span><span class="tok-nx">resolve</span><span class="tok-p">(</span><span class="tok-mi">1</span><span class="tok-p">);</span>
 	<span class="tok-p">}</span>
 
-	<span class="tok-k">return</span> <span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">result</span> <span class="tok-o">=&gt;</span> <span class="tok-nx">result</span> <span class="tok-o">*</span> <span class="tok-nx">n</span><span class="tok-p">)</span>
+	<span class="tok-k">return</span> <span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">n</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">result</span> <span class="tok-p">=&gt;</span> <span class="tok-nx">result</span> <span class="tok-o">*</span> <span class="tok-nx">n</span><span class="tok-p">)</span>
 <span class="tok-p">}</span>
 
 <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">debug</span><span class="tok-p">(</span><span class="tok-s2">&quot;start&quot;</span><span class="tok-p">)</span>
-<span class="tok-kr">const</span> <span class="tok-nx">range</span> <span class="tok-o">=</span> <span class="tok-nb">Array</span><span class="tok-p">.</span><span class="tok-nx">from</span><span class="tok-p">({</span><span class="tok-nx">length</span><span class="tok-o">:</span> <span class="tok-mi">1000</span><span class="tok-p">},</span> <span class="tok-p">(</span><span class="tok-nx">_</span><span class="tok-p">,</span> <span class="tok-nx">i</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-nx">i</span><span class="tok-p">)</span>
+<span class="tok-kr">const</span> <span class="tok-nx">range</span> <span class="tok-o">=</span> <span class="tok-nb">Array</span><span class="tok-p">.</span><span class="tok-nx">from</span><span class="tok-p">({</span><span class="tok-nx">length</span><span class="tok-o">:</span> <span class="tok-mi">1000</span><span class="tok-p">},</span> <span class="tok-p">(</span><span class="tok-nx">_</span><span class="tok-p">,</span> <span class="tok-nx">i</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-nx">i</span><span class="tok-p">)</span>
 
-<span class="tok-k">return</span> <span class="tok-nb">Promise</span><span class="tok-p">.</span><span class="tok-nx">map</span><span class="tok-p">(</span><span class="tok-nx">range</span><span class="tok-p">,</span> <span class="tok-nx">i</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
-	<span class="tok-k">return</span> <span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">i</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">result</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-k">return</span> <span class="tok-nb">Promise</span><span class="tok-p">.</span><span class="tok-nx">map</span><span class="tok-p">(</span><span class="tok-nx">range</span><span class="tok-p">,</span> <span class="tok-nx">i</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
+	<span class="tok-k">return</span> <span class="tok-nx">factorial</span><span class="tok-p">(</span><span class="tok-nx">i</span><span class="tok-p">).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-nx">result</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
 		<span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">trace</span><span class="tok-p">(</span><span class="tok-nx">i</span> <span class="tok-o">+</span> <span class="tok-s2">&quot; =&gt; &quot;</span> <span class="tok-o">+</span> <span class="tok-nx">result</span><span class="tok-p">)</span>
 	<span class="tok-p">})</span>
-<span class="tok-p">}).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-p">}).</span><span class="tok-nx">then</span><span class="tok-p">(</span> <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">debug</span><span class="tok-p">(</span><span class="tok-s2">&quot;all done&quot;</span><span class="tok-p">)</span>
-<span class="tok-p">}).</span><span class="tok-k">catch</span><span class="tok-p">(</span><span class="tok-nx">err</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-p">}).</span><span class="tok-k">catch</span><span class="tok-p">(</span><span class="tok-nx">err</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">error</span><span class="tok-p">(</span><span class="tok-s2">&quot;Error: &quot;</span><span class="tok-p">,</span><span class="tok-nx">err</span><span class="tok-p">)</span>
 <span class="tok-p">})</span></code></pre>
 </div>
@@ -411,12 +411,12 @@
 
 <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">level</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;trace&#39;</span>
 
-<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s1">&#39;/&#39;</span><span class="tok-p">,</span>  <span class="tok-p">(</span><span class="tok-nx">req</span><span class="tok-p">,</span> <span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">get</span><span class="tok-p">(</span><span class="tok-s1">&#39;/&#39;</span><span class="tok-p">,</span>  <span class="tok-p">(</span><span class="tok-nx">req</span><span class="tok-p">,</span> <span class="tok-nx">res</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">trace</span><span class="tok-p">(</span><span class="tok-s1">&#39;Home called&#39;</span><span class="tok-p">)</span>
     <span class="tok-nx">res</span><span class="tok-p">.</span><span class="tok-nx">send</span><span class="tok-p">(</span><span class="tok-s1">&#39;Hello World!&#39;</span><span class="tok-p">)</span>
 <span class="tok-p">})</span>
 
-<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-mi">3001</span><span class="tok-p">,</span>  <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">listen</span><span class="tok-p">(</span><span class="tok-mi">3001</span><span class="tok-p">,</span>  <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
   <span class="tok-nx">logger</span><span class="tok-p">.</span><span class="tok-nx">info</span><span class="tok-p">(</span><span class="tok-s1">&#39;Example app listening on port 3001!&#39;</span><span class="tok-p">)</span>
 <span class="tok-p">})</span></code></pre>
 </div>
@@ -464,7 +464,7 @@
 <span class="tok-kr">const</span> <span class="tok-nx">Koa</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;koa&#39;</span><span class="tok-p">);</span>
 <span class="tok-kr">const</span> <span class="tok-nx">app</span> <span class="tok-o">=</span> <span class="tok-k">new</span> <span class="tok-nx">Koa</span><span class="tok-p">();</span>
 
-<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">use</span><span class="tok-p">(</span><span class="tok-nx">async</span> <span class="tok-nx">ctx</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">app</span><span class="tok-p">.</span><span class="tok-nx">use</span><span class="tok-p">(</span><span class="tok-nx">async</span> <span class="tok-nx">ctx</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
   <span class="tok-nx">ctx</span><span class="tok-p">.</span><span class="tok-nx">body</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;Hello World&#39;</span>
 <span class="tok-p">})</span>
 
@@ -493,7 +493,7 @@
 <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">route</span><span class="tok-p">({</span>
     <span class="tok-nx">method</span><span class="tok-o">:</span> <span class="tok-s1">&#39;GET&#39;</span><span class="tok-p">,</span>
     <span class="tok-nx">path</span><span class="tok-o">:</span> <span class="tok-s1">&#39;/&#39;</span><span class="tok-p">,</span>
-    <span class="tok-nx">handler</span><span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-nx">request</span><span class="tok-p">,</span> <span class="tok-nx">reply</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">handler</span><span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-nx">request</span><span class="tok-p">,</span> <span class="tok-nx">reply</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
         <span class="tok-nx">reply</span><span class="tok-p">(</span><span class="tok-s1">&#39;Hello!&#39;</span><span class="tok-p">)</span>
     <span class="tok-p">}</span>
 <span class="tok-p">})</span>
@@ -501,12 +501,12 @@
 <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">route</span><span class="tok-p">({</span>
     <span class="tok-nx">method</span><span class="tok-o">:</span> <span class="tok-s1">&#39;GET&#39;</span><span class="tok-p">,</span>
     <span class="tok-nx">path</span><span class="tok-o">:</span> <span class="tok-s1">&#39;/{name}&#39;</span><span class="tok-p">,</span>
-    <span class="tok-nx">handler</span><span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-nx">request</span><span class="tok-p">,</span> <span class="tok-nx">reply</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">handler</span><span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-nx">request</span><span class="tok-p">,</span> <span class="tok-nx">reply</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
         <span class="tok-nx">reply</span><span class="tok-p">(</span><span class="tok-s1">&#39;Hello, &#39;</span> <span class="tok-o">+</span> <span class="tok-nb">encodeURIComponent</span><span class="tok-p">(</span><span class="tok-nx">request</span><span class="tok-p">.</span><span class="tok-nx">params</span><span class="tok-p">.</span><span class="tok-nx">name</span><span class="tok-p">)</span> <span class="tok-o">+</span> <span class="tok-s1">&#39;!&#39;</span><span class="tok-p">)</span>
     <span class="tok-p">}</span>
 <span class="tok-p">})</span>
 
-<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">start</span><span class="tok-p">(</span><span class="tok-nx">err</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">start</span><span class="tok-p">(</span><span class="tok-nx">err</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-k">if</span> <span class="tok-p">(</span><span class="tok-nx">err</span><span class="tok-p">)</span> <span class="tok-p">{</span>
         <span class="tok-k">throw</span> <span class="tok-nx">err</span><span class="tok-p">;</span>
     <span class="tok-p">}</span>
@@ -531,10 +531,10 @@
 <div class="content">
 <pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">assert</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;assert&#39;</span><span class="tok-p">)</span>
 
-<span class="tok-nx">describe</span><span class="tok-p">(</span><span class="tok-s1">&#39;Array&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
-  <span class="tok-nx">describe</span><span class="tok-p">(</span><span class="tok-s1">&#39;#indexOf()&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">describe</span><span class="tok-p">(</span><span class="tok-s1">&#39;Array&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
+  <span class="tok-nx">describe</span><span class="tok-p">(</span><span class="tok-s1">&#39;#indexOf()&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
 
-    <span class="tok-nx">it</span><span class="tok-p">(</span><span class="tok-s1">&#39;should return -1 when the value is not present&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">it</span><span class="tok-p">(</span><span class="tok-s1">&#39;should return -1 when the value is not present&#39;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
       <span class="tok-nx">assert</span><span class="tok-p">.</span><span class="tok-nx">equal</span><span class="tok-p">(</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">,</span> <span class="tok-p">[</span><span class="tok-mi">1</span><span class="tok-p">,</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-mi">3</span><span class="tok-p">].</span><span class="tok-nx">indexOf</span><span class="tok-p">(</span><span class="tok-mi">4</span><span class="tok-p">));</span>
     <span class="tok-p">})</span>
 
@@ -665,17 +665,17 @@
 <pre class="pygments highlight"><code data-lang="javascript"><span class="tok-kr">const</span> <span class="tok-nx">EventEmitter</span> <span class="tok-o">=</span> <span class="tok-nx">require</span><span class="tok-p">(</span><span class="tok-s1">&#39;events&#39;</span><span class="tok-p">),</span>
       <span class="tok-nx">events</span> <span class="tok-o">=</span> <span class="tok-k">new</span> <span class="tok-nx">EventEmitter</span><span class="tok-p">()</span>
 
-<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;app.started&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;app.started&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;App started&quot;</span><span class="tok-p">)</span>
     <span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">emit</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.load.requested&quot;</span><span class="tok-p">)</span>
 <span class="tok-p">})</span>
 
-<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.load.requested&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.load.requested&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;Loading DB&quot;</span><span class="tok-p">)</span>
     <span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">emit</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.loaded&quot;</span><span class="tok-p">)</span>
 <span class="tok-p">})</span>
 
-<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.loaded&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+<span class="tok-nx">events</span><span class="tok-p">.</span><span class="tok-nx">on</span><span class="tok-p">(</span><span class="tok-s2">&quot;db.loaded&quot;</span><span class="tok-p">,</span> <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
     <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s2">&quot;DB loaded&quot;</span><span class="tok-p">)</span>
 <span class="tok-p">})</span>
 
@@ -801,7 +801,7 @@
         <span class="tok-p">}</span>
     <span class="tok-p">},</span>
     <span class="tok-nx">susie</span> <span class="tok-p">],</span>  <span class="tok-c1">// for streaming SSE</span>
-    <span class="tok-p">()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-p">()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
 
         <span class="tok-c1">// Defining a model and default routes</span>
 
@@ -820,12 +820,12 @@
 
         <span class="tok-c1">// Using hapi-harvester&#39;s routes.all function we can add our schema and</span>
         <span class="tok-c1">// then add all routes for our model to the hapi server.</span>
-        <span class="tok-nx">harvesterPlugin</span><span class="tok-p">.</span><span class="tok-nx">routes</span><span class="tok-p">.</span><span class="tok-nx">all</span><span class="tok-p">(</span><span class="tok-nx">brandSchema</span><span class="tok-p">).</span><span class="tok-nx">forEach</span><span class="tok-p">((</span><span class="tok-nx">route</span><span class="tok-p">)</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+        <span class="tok-nx">harvesterPlugin</span><span class="tok-p">.</span><span class="tok-nx">routes</span><span class="tok-p">.</span><span class="tok-nx">all</span><span class="tok-p">(</span><span class="tok-nx">brandSchema</span><span class="tok-p">).</span><span class="tok-nx">forEach</span><span class="tok-p">((</span><span class="tok-nx">route</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
             <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">route</span><span class="tok-p">(</span><span class="tok-nx">route</span><span class="tok-p">)</span>
         <span class="tok-p">})</span>
 
         <span class="tok-c1">// finally we can start the server</span>
-        <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">start</span><span class="tok-p">(()</span> <span class="tok-o">=&gt;</span> <span class="tok-p">{</span>
+        <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">start</span><span class="tok-p">(()</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
             <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s1">&#39;Using MongoDB at:&#39;</span><span class="tok-p">,</span> <span class="tok-nx">mongoDbUrl</span><span class="tok-p">)</span>
             <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-s1">&#39;Server running at:&#39;</span><span class="tok-p">,</span> <span class="tok-nx">server</span><span class="tok-p">.</span><span class="tok-nx">info</span><span class="tok-p">.</span><span class="tok-nx">uri</span><span class="tok-p">)</span>
         <span class="tok-p">})</span>
@@ -928,9 +928,9 @@
   </div>
   <div class="share-page">
     Compartilhar [
-    <a href="https://twitter.com/intent/tweet?text=Node Sandbox&url=https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html&via=adamatti&related=adamatti" rel="nofollow" target="_blank">Twitter</a> | 
-    <a href="https://facebook.com/sharer.php?u=https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html" rel="nofollow" target="_blank">Facebook</a> |
-    <a href="https://plus.google.com/share?url=https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html" rel="nofollow" target="_blank">Google+</a> |
+    <a href="https://twitter.com/intent/tweet?text=Node Sandbox&url=https://adamatti.github.io/node/2017/08/17/node-sandbox.html&via=adamatti&related=adamatti" rel="nofollow" target="_blank">Twitter</a> | 
+    <a href="https://facebook.com/sharer.php?u=https://adamatti.github.io/node/2017/08/17/node-sandbox.html" rel="nofollow" target="_blank">Facebook</a> |
+    <a href="https://plus.google.com/share?url=https://adamatti.github.io/node/2017/08/17/node-sandbox.html" rel="nofollow" target="_blank">Google+</a> |
     <a href="http://www.linkedin.com/shareArticle?mini=true&url=/node/2017/08/17/node-sandbox.html&title=Node Sandbox&summary=+23 Exemplos de código node&source=http://adamatti.github.io/blog">Linkedin</a> ]
 </div>
 
@@ -941,8 +941,8 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'https://adamatti.github.io/blog/blog/node/2017/08/17/node-sandbox.html';
-      this.page.identifier = 'https://adamatti.github.io/blog/blog/node/2017/08/17/node-sandbox.html';
+      this.page.url = 'https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html';
+      this.page.identifier = 'https://adamatti.github.io/blog/node/2017/08/17/node-sandbox.html';
     };
 
     (function() {
