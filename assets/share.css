@@ -1,18 +1,21 @@
-.share-page {
-    text-align: right;
-    background: $secondary-color;
-    color: $light-color;
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin: 1.5 * $spacing-unit 0;
-
-    a {
-        font-weight: 700;
-        color: #fff;
-        margin-left: 10px;
-
-        &:hover {
-            border-bottom: 1px dashed #fff;
-        }
-    }
+#socialicons {
+    text-align: center;
+}
+#socialicons a{
+    background: #1756a9;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 1px 8px;
+    -webkit-border-radius: 17px; 
+    -moz-border-radius: 17px; 
+    border-radius: 17px; 
+}
+#socialicons a:hover{
+    background: HOVER_COLOR;
 }
