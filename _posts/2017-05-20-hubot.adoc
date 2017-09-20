@@ -3,7 +3,7 @@ layout: post
 title:  "Criando um chatbot"
 date:   2017-05-20 13:00:00 -0300
 categories: node
-summary: Hubot + RocketChat
+summary: Tutorial para criar um chatbot com Hubot + RocketChat
 tags:
   - node
   - chatbot

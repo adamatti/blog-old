@@ -3,7 +3,7 @@ layout: post
 title:  "Teorema CAP"
 date:   2017-07-16 13:00:00 -0300
 categories: database
-summary: "Teorema CAP, sobre bancos de dados"
+summary: "Sobre bancos de dados, benefícios e problemas de alguns modelos"
 tags:
   - database
 ---
