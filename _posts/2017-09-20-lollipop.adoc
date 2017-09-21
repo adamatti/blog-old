@@ -1,0 +1,114 @@
+---
+layout: post
+title:  "Liderança e Pirulitos"
+date:   2017-09-20 13:00:00 -0300
+categories: leadership
+summary: "Sobre liderança, ser lider, gratidão, efeito borboleta..."
+tags:
+  - leadership
+---
+
+Curto muito o tema liderança. Quem me conhece sabe que eu falo muito de https://en.wikipedia.org/wiki/Simon_Sinek[Simon Sinek] (o cara dos vídeos do https://www.youtube.com/watch?v=u4ZoJKF_VuA[_Start with why_] e https://www.youtube.com/watch?v=ReRcHdeUG9Y[_why leaders eat last_]), dos https://www.youtube.com/watch?v=aPwXeg8ThWI[níveis de liderança] explicados por http://www.johnmaxwell.com[John Maxwell], livros do http://phildourado.com[Phil Dourado]. 
+
+Dia 14/09 eu fiz uma _tech talk_ na empresa com o título "Liderança e Pirulitos". Ela foi inspirada no vídeo de mesmo nome do https://www.youtube.com/watch?v=hVCBrkrFrBE[Drew Dudley] no TEDx Toronto. É um vídeo rápido de 06 mins:
+
++++
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hVCBrkrFrBE?rel=0" frameborder="0" allowfullscreen>
+</iframe>
+</center>
++++ 
+
+O vídeo também está disponível em https://www.youtube.com/watch?v=0sYaq-wAC08[portugues].
+
+Nota: Não vou divulgar o meu vídeo aqui porque os exemplos citados são muito específicos da empresa atual. 
+
+Apesar desse vídeo ser pequeno, eu curto muito ele por 3 motivos:
+
+### 1) Pequenos gestos podem fazer grande diferença
+
+image::https://qph.ec.quoracdn.net/main-qimg-14a94bce553076e656ae8c28f331d4b5-c[align=center]
+
+No exemplo do vídeo a vida da moça mudou drasticamente: ela estava a ponto de desistir dos estudos e depois da "intervenção" ela decidiu continuar, e até manteve relacionamento com o cara que conheceu na fila de inscrição, vindo a casar no futuro.
+
+No meu caso, tive várias influencias profissionais, _feedbacks_ super importantes que me apontaram para esse caminho de liderança, apresentar em eventos, crescer como arquiteto... ver que na maioria das vezes os problemas são as pessoas, a parte técnica é fácilmente resolvida. Fica a dica, é muito importante estar aberto a _feedbacks_. Sobre escutar: http://theoatmeal.com/comics/believe[essa tirinha] sobre crenças me causou um "efeito pirulito" também.
+
+Outra história legal é a da https://en.wikipedia.org/wiki/Tilly_Smith[Tilly Smith], que salvou centenas de pessoas do tsunami de 2004. Ela reconheceu o padrão das ondas aprendido na escola, e com isso os funcionários do hotel tailandês esvaziaram a praia. Informação + decisão rápida + momento certo = todos salvos. Esse caso é melhor detalhado na notícia do https://noticias.uol.com.br/ultnot/reuters/2005/01/02/ult729u42865.jhtm[UOL] e no capitulo _decisions_ do livro https://www.amazon.com/60-Second-Leader-Everything-Leadership/dp/1841127450[60 seconds leader].
+
+### 2) Poucas pessoas se consideram lideres
+
+[, Simon Sinek]
+""
+I know many people at the senior most levels of organizations who are absolutely not leaders - They are authorities...
+And I know many people who are at the bottoms of organizations who have no authoritu and they are absolutely leaders.
+""
+
+https://en.wikipedia.org/wiki/Simon_Sinek[Simon Sinek] fala sobre isso nesse https://www.facebook.com/Mindset2Succeed/videos/903594459793773/[vídeo de 5 mins]:
+
++++
+<center>
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMindset2Succeed%2Fvideos%2F903594459793773%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true">
+</iframe>
+</center>
++++
+
+Mas se você tem tempo eu recomendo https://www.youtube.com/watch?v=ReRcHdeUG9Y[a talk toda de 45 mins]. Tem vários _insights_ sobre o modelo de liderança, a química da liderança (endorfina, dopamina, serotonina, ocitocida), o problema do _stress_ (cortisol). Esse vídeo foi _mind blowing_ para mim.
+
+E você? Se considera um líder?
+
+E o último ponto:
+
+### 3) Poucas pessoas expressam gratidão
+
+O quão feliz você está? Segundo o https://www.linkedin.com/pulse/want-happy-get-grateful-melissa-hughes-ph-d-/[blog da Melissa Hughes], a pergunta certa é "o quão grato você é?":
+
++++
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qFcytmMtqBY?rel=0" frameborder="0" allowfullscreen>
+</iframe>
+</center>
++++
+
+Já viu sobre https://www.youtube.com/watch?v=oHv6vTKD6lg[esse experimento]? É o primeiro episódio da _playlist_ https://www.youtube.com/playlist?list=PLzvRx_johoA94j1Jbq18J-fEaB_NgvcHn[_The Science of Happiness_]:
+
++++
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oHv6vTKD6lg?rel=0" frameborder="0" allowfullscreen>
+</iframe>
+</center>
++++
+
+Quem conseguiu fazer a ligação teve aumento da felicidade entre 4 e 19%!! 
+
+Minha lista de agradecimentos é meio infinita: todos os mestres/professores, antigos líderes, arquitetos, colegas, amigos, familiares... todos aqueles que acreditam na minha opinião e me pedem _feedback_. A vocês o meu muito obrigado.
+
+E você? Já teve sua vida mudada por alguém? Seu momento pirulito? Agradeceu a pessoa por isso? Se não... por que não? 
+
+### Concluindo...
+
+Deixo aqui três pensamentos:
+
+'''
+
+[,Jim Kwik]
+""
+If an egg is broken by an outside force, life ends. If broken by an inside force, life begins. Great things always begin from the inside.
+""
+
+'''
+
+[,Maya Angelou]
+""
+I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel
+""
+
+'''
+
+[,Kalu Ndukwe Kalu]
+""
+The things you do for yourself are gone when you are gone, but the things you do for others remain as your legacy.
+""
+
+'''
+
+Curtiu o post? Viu algum dos vídeos e quer trocar uma idéia? Deixe seu comentário!
