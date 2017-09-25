@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "GUTS-RS: evento de setembro"
+date:   2017-09-24 13:00:00 -0300
+categories: devops
+summary: "Apresentação sobre CI/CD no evento do GUTS-RS"
+tags:
+  - devops
+  - eventos
+---
+
+image::http://4.bp.blogspot.com/-nG45nd81jss/WRNducIxHmI/AAAAAAAAHQE/yr6AYSmwcTceEGgT2E540pOQbg2Sj6XaQCK4B/s196/Facebook%2BLogo.PNG[align=center]
+
+Dia 13 de setembro eu palestrei no https://www.facebook.com/gudetestes/[GUTS-RS] com o tema CI/CD. Muito legal ver auditório cheio com pessoas interessadas com o tema. 
+
+Agradecimento em especial para a coordenação que registrou um resumo no http://guts-rs.blogspot.com.br/2017/09/saiba-o-que-rolou-no-evento-de.html[_blog_] e https://www.facebook.com/pg/gudetestes/photos/?tab=album&album_id=1518444338215040[fotos]. E ao público que avaliou todos os quesitos com média acima de 4 (era de 1 a 5).
+
+Eu já havia falado sobre o tema no link:/blog/devops/2017/07/27/ci-cd.html[_meetup_ de docker + microserviços] e link:/blog/devops/2017/08/05/devopsdaypoa.html[DevopsDays POA], as referências estão disponíveis nos _posts_ anteriores. 
+
+Seguem os _slides_ usados no evento:
+
++++
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/3PuVmMhMc9PNWx" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/GUTS-RS/gutsrs-evento-setembro-2017-continuous-integration-delivery-e-deployment-o-que-so-e-o-que-isso-tem-a-ver-com-devops" title="[GUTS-RS] Evento Setembro 2017 - Continuous Integration, Delivery e Deployment, o que são e o que isso tem a ver com DevOps?" target="_blank">[GUTS-RS] Evento Setembro 2017 - Continuous Integration, Delivery e Deployment, o que são e o que isso tem a ver com DevOps?</a> </strong> from <strong><a href="//www.slideshare.net/GUTS-RS" target="_blank">GUTS-RS </a></strong> </div>
+</center>
++++
+
+### Referências adicionais
+* https://dev.to/apium_hub/some-devops-metrics-to-keep-an-eye-on[_Some devops metrics to keep an eye on_]
+* https://medium.com/@diogo.lucas/pipelines-and-tests-dc6942d839e2[_Pipelines and tests_]
