@@ -4,6 +4,9 @@ title: "Vertx: Minhas impressões"
 date: 2018-06-16 13:00:00 -0300
 categories: groovy vertx
 summary: "Callback hell no java?"
+tags:
+  - vertx
+  - reactive
 ---
 
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Vert.x_Logo.svg/220px-Vert.x_Logo.svg.png[align=center]
