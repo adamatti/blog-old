@@ -1,0 +1,83 @@
+---
+layout: post
+title: "Vertx: Minhas impressões"
+date: 2018-06-16 13:00:00 -0300
+categories: groovy vertx
+summary: "Callback hell no java?"
+---
+
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Vert.x_Logo.svg/220px-Vert.x_Logo.svg.png[align=center]
+
+Aproveitei a noite fria de sábado (tá 5°C em http://www.portoalegre.rs.gov.br[Porto Alegre]) para brincar com o _lib_ https://vertx.io[VertX]. Temos alguns microserviços na empresa usando essa _lib_, e vários https://www.techempower.com/benchmarks[_brenchmarks_] apontam que ele é muito rápido. 
+
+*Para quem não conhece*: https://vertx.io[VertX] é uma _lib_ para criar aplicações reativas, ou como dizem alguns colegas, "ele faz aquela coisa lá que tem no node" :-) +
+Foi criado em 2011, é descrito no https://vertx.io[site] como _event driven_, _non blocking_, poliglota (JVM, JavaScript) e "divertido". 
+
+""
+Os exemplos que eu criei estão disponíveis no https://github.com/adamatti/LearnVertx[github]. 
+""
+
+### Minhas Impressões: 
+
+* É parecido com o https://spring.io[Spring] em propósito, já que facilita integrações com outros _frameworks/libs_/serviços, como https://kafka.apache.org[Kafka], https://www.mongodb.com[Mongo], https://redis.io[Redis], etc. Veja a quantidade de módulos no https://mvnrepository.com/artifact/io.vertx[maven repository] já criados.
+* _Quick start_ é bem simples. Veja esses exemplos na https://en.wikipedia.org/wiki/Vert.x[wikipedia]. Um exemplo de servidor web se resume a:
+
+[source,java]
+----
+import io.vertx.core.AbstractVerticle;
+
+public class Server extends AbstractVerticle {
+  public void start() {
+    vertx.createHttpServer().requestHandler(req -> {
+      req.response()
+        .putHeader("content-type", "text/plain")
+        .end("Hello from Vert.x!");
+    }).listen(8080);
+  }
+}
+----
+
+Os https://github.com/adamatti/LearnVertx[exemplos que criei] ficaram entre 20-60 linhas.
+
+* Possui vários exemplos no https://github.com/vert-x3/vertx-examples[github deles]. O https://vertx.io/blog/posts/introduction-to-vertx.html[blog] também aponta para exemplos interessantes
+* Dependendo do codificador, podemos ter o http://callbackhell.com/[callback hell]: veja https://github.com/vert-x3/vertx-examples/blob/master/mongo-examples/src/main/java/io/vertx/examples/mongo/MongoClientVerticle.java#L40[esse exemplo com mongo]: 
+
+[source,java]
+----
+mongoClient.save("products", product1, id -> {
+    System.out.println("Inserted id: " + id.result());
+
+    mongoClient.find("products", new JsonObject().put("itemId", "12345"), res -> {
+        System.out.println("Name is " + res.result().get(0).getString("name"));
+
+        mongoClient.remove("products", new JsonObject().put("itemId", "12345"), rs -> {
+            if (rs.succeeded()) {
+            System.out.println("Product removed ");
+            }
+        });
+    });
+});
+----
+
+* Entre o https://github.com/vert-x3/vertx-examples/blob/master/web-client-examples/src/main/java/io/vertx/example/webclient/simple/Client.java[Http Client "Simple"] do VertX e o https://github.com/jgritman/httpbuilder[HttpBuilder], eu sigo com o segundo.
+* Achei o https://github.com/vert-x3/vertx-examples/blob/master/web-examples/src/main/java/io/vertx/example/web/helloworld/Server.java[Http Server] muito complexo comparado com o http://sparkjava.com[Spark Java] e https://ratpack.io[Ratpack].
+
+### Conclusão
+
+Tirando a questão https://www.techempower.com/benchmarks[_performance_] que é muito forte, eu ainda criaria microserviços usando outras opções (ex: http://groovy-lang.org[Groovy] + https://spring.io[Spring], https://nodejs.org/en/[Node]). 
+
+Não me entenda mal, eu curto sistemas reativos, https://slides.com/adamatti/decks/eventsourcing[falo sobre _event sourcing_]... Mas no caso do https://nodejs.org/en/[Node] toda a linguagem e ecosistema estão preparados para isso. E já sairam do _callback_, foram para http://bluebirdjs.com/docs/getting-started.html[Promises] e estão no https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/await[async/await], tornando sintaxe e sistemas reativos por natureza. 
+
+Programar reativo em java com _callback_ parece quase como "programador java programando funcional em scala", onde o resultado quase sempre não é programação funcional. É preciso uma mudança de paradigma (funcional x OO), e não só sintaxe. 
+
+Enfim, cada caso é um caso, cada problema exige uma solução diferente. 
+
+""
+E você leitor? Qual sua opinião sobre o https://vertx.io[VertX]?
+""
+
+### Outras referencias
+* http://escoffier.me/vertx-hol[Vert.x - From zero to (micro)-hero]
+* https://www.cubrid.org/blog/inside-vertx-comparison-with-nodejs[Inside VertX Comparison with Node.js]
+* https://www.reddit.com/r/vertx/[Vertx no Reddit]
+* https://github.com/vert-x3/vertx-awesome[Awesome list]
