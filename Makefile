@@ -1,5 +1,9 @@
 .DEFAULT_GOAL := run
 
+setup:
+	gem install jekyll bundler
+	bundle install
+
 .PHONY: build
 build:
 	#jekyll build
@@ -7,4 +11,4 @@ build:
 
 .PHONY: run
 run:
-	jekyll serve --watch --incremental
+	bundle exec jekyll serve --watch --incremental
