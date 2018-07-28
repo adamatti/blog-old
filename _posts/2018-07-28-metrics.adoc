@@ -1,0 +1,120 @@
+---
+layout: post
+title: "Métricas de código com gradle"
+date: 2018-07-28 13:00:00 -0300
+categories: metricas
+summary: "PMD, CheckStyle, FindBugs, CodeNarc, ..."
+tags:
+  - metricas
+  - gradle
+---
+
+image::https://www.extradigital.co.uk/marketing-assets/articles/articles-l/metrics-lg.png[align=center]
+
+#### Motivação
+
+Buscar algo simples, rápido e automatizado que mostre possíveis pontos de melhoria no código. 
+
+Não entrei a fundo em todas as ferramentas, era mais um https://www.scaledagileframework.com/spikes/[_spike_] para ver o que as ferramentas oferecem com as configurações padrões, e qual delas é mais interessante dedicar mais tempo.
+
+#### O que foi feito
+
+Peguei como base esse https://github.com/dwildt/badCodeDojoJavaProblems[código de dojo] do https://blog.danielwildt.com[Daniel] e segui https://dzone.com/articles/code-analysis-with-gradle[alguns artigos] de como obter métricas usando https://gradle.org[Gradle]. O resultado está https://github.com/adamatti/badCodeDojoJavaProblems/tree/metrics[nesse _fork_, no _branch metrics_]. Foco especial no https://raw.githubusercontent.com/adamatti/badCodeDojoJavaProblems/metrics/build.gradle[build.gradle].
+
+#### Como rodar o projeto
+
+*Requisitos*:
+
+* https://docs.docker.com[docker] / https://docs.docker.com/compose/[docker-compose] (opcional): para rodar o https://www.sonarqube.org[Sonar]
+* https://gradle.org[Gradle]: para rodar as analises
+
+[source,bash]
+----
+# Baixar o projeto
+git clone https://github.com/adamatti/badCodeDojoJavaProblems.git
+cd badCodeDojoJavaProblems
+
+# Mudar para o branch metrics
+git checkout metrics
+
+# Iniciar o sonar (opcional)
+docker-compose -f docker-compose.yml up -d
+
+# Rodar as verificações
+gradle check jacocoTestReport sonar
+----
+
+Os relatórios html estarão disponíveis na pasta `build/reports`, ou no Sonar (http://localhost:9000, default `admin/admin`).
+
+Você pode entrar no _marketplace_ do sonar (http://localhost:9000/admin/marketplace) e instalar plugins adicionais (recomendados: http://checkstyle.sourceforge.net[CheckStyle], http://findbugs.sourceforge.net/[FindBugs], Groovy - para o codenarc, PMD)
+
+#### Considerações sobre as ferramentas
+
+* http://checkstyle.sourceforge.net[CheckStyle] / https://pmd.github.io[PMD]: Regras e relatórios precisam ser configurados. Não vejo valor em quebrar um build se
+** Faltar um javadoc
+** Arquivo contem tab
+** Arquivo `package-info.java` ausente
+** Arquivo não termina com nova linha
+
+É, não curto muito https://en.wikipedia.org/wiki/Lint_(software)[lint], não acho que isso agrega valor.
+Achei poucas regras interessantes, dentre elas linha muito longa e _magic numbers_.
+
+* http://codenarc.sourceforge.net[CodeNarc]: só consegui fazer funcionar a validação em arquivos groovy. Necessita de mais tempo para uma configuração melhor.
+* http://checkstyle.sourceforge.net[CheckStyle] / https://spotbugs.github.io[SpotBugs]: acharam apenas 7 _warnings_, nenhum significativo
+* https://www.eclemma.org/jacoco/[Jacoco]: Relatório muito completo e detalhado, mostrando cobertura por linha, métodos, classes... Ainda que o exemplo usado não tenha testes.
+* https://www.sonarqube.org[Sonar]: é uma baita ferramenta! Dentre os pontos fortes:
+** muita informação e de forma organizada
+** _bugs_ priorizados
+** fácil navegação entre o código e os _bugs_ / _warnings_ / _code smells_
+** comparação entre analises
+** **Mostra uma das métricas mais importantes(IMO): https://blog.sonarsource.com/cognitive-complexity-because-testability-understandability[_cognitive complexity_]** 
+
+#### Ferramentas usadas:
+
+* https://www.eclemma.org/jacoco/[Jacoco]: cobertura de testes
+* http://checkstyle.sourceforge.net[CheckStyle]: estão disponíveis as configurações do https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml[google] e antiga https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/sun_checks.xml[Sun]. Tive problemas com a primeira (não investi tempo suficiente para entender / resolver), acabei usando a segunda
+* https://pmd.github.io[PMD]
+* http://findbugs.sourceforge.net/[FindBugs]
+* https://spotbugs.github.io[SpotBugs]: é uma continuação do [FindBugs], produziu os mesmos resultados. Mesmo assim, os dois estão habilitados no projeto (http://findbugs.sourceforge.net[FindBugs] e https://spotbugs.github.io[SpotBugs])
+* http://codenarc.sourceforge.net[CodeNarc]
+* https://www.sonarqube.org[Sonar]: para publicação dos resultados
+
+#### Ferramentas não usadas nesse momento
+
+* http://emma.sourceforge.net[Emma] / http://cobertura.github.io/cobertura[Cobertura]: o https://www.eclemma.org/jacoco[Jacoco] está gerando esse relatório
+* https://scan.coverity.com[Coverity]: apenas para projetos _Open Source_
+* https://github.com/clarkware/jdepend[JDepend]: por hora não é prioridade validar as dependencias
+* https://support.roguewave.com/documentation/klocwork/en/2018[Klocwork]: não parece trivial de plugar no projeto (ver por exemplo o https://support.roguewave.com/documentation/klocwork/en/current/kwgradlew[kwgradlew])
+
+#### Ferramentas pagas não avaliadas
+
+..mas disponíveis aqui se alguem quiser tentar:
+
+* https://www.veracode.com[Veracode]
+* https://www.checkmarx.com[Checkmarx]
+* https://www.ibm.com/security/application-security/appscan[IBM appscan]
+* https://software.microfocus.com/pt-br/products/static-code-analysis-sast/overview[Fortify]
+* https://www.sonatype.com[Sonatype]
+* https://www.blackducksoftware.com/technology/integrations[Blackduck]
+* https://snyk.io/docs/snyk-for-java[Snyk]
+
+#### Próximos passos
+
+* Avaliar outras ferramentas
+* Configurar melhor as ferramentas usadas
+* Procurar ferramentas similares para Javascript 
+* Evoluir o https://github.com/dclucas/metrics-tracker[metrics-tracker]
+
+#### Concluindo...
+
+Métricas automatizadas são "interessantes", e podem apontar partes de código mais complexas, apontar onde possívelmente tenha mais problemas. Mas não vão resolver problemas de _design_, qualidade, entrega de valor. Dito isso, eu focaria:
+
+* Ver opções de formatação automática, tipo https://editorconfig.org/[editor config] (ou mesmo configurações de _IDE_)
+* Sessões de _design_ / arquitetura / planejamento
+* Melhores _code reviews_
+* Convenções do time (ex: usar ou não https://en.wikipedia.org/wiki/Lint_(software)[lint]? http://www.annotatiomania.com/[Anotações]?)
+* Estudos de https://www.goodreads.com/book/show/3735293-clean-code[_clean code_], DDD, organização de código / classes
+* Testes funcionais: para garantir que as funcionalidades estão ok. Parece obvio, mas vejo muita gente focando só em teste unitário, considerando a "unidade" métodos.
+* Estudo de TDD. Só esse ponto já dá outro _post_. Acredito muito https://builttoadapt.io/why-tdd-489fdcdda05e[nessa visão _#goFastForever_], fazer certo da primeira vez. https://martinfowler.com/bliki/DesignStaminaHypothesis.html[Esse gráfico do Martin Fowler] também diz isso.
+
+E você leitor? Alguma verificação automatizada? Recomenda alguma métrica para focar? Como garantir qualidade de código para todos os níveis? Agradeço qualquer _feedback_.
