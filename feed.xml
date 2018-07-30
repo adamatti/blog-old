@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://adamatti.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adamatti.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-07-30T02:00:51+00:00</updated><id>https://adamatti.github.io/blog/</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://adamatti.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adamatti.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-07-30T03:52:07+00:00</updated><id>https://adamatti.github.io/blog/</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
 </subtitle><entry><title type="html">TDC SP 2018 - Trilha Microservices</title><link href="https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html" rel="alternate" type="text/html" title="TDC SP 2018 - Trilha Microservices" /><published>2018-07-29T16:00:00+00:00</published><updated>2018-07-29T16:00:00+00:00</updated><id>https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices</id><content type="html" xml:base="https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html">&lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
 &lt;img src=&quot;https://s3-sa-east-1.amazonaws.com/globalcodesp/tdc/2015/img/logo/logo-tdc-horizontal.svg&quot; alt=&quot;logo tdc horizontal&quot;&gt;
@@ -112,6 +112,9 @@
 &lt;li&gt;
 &lt;p&gt;Eu já conhecia o &lt;a href=&quot;https://istio.io&quot;&gt;Istio&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pessoal foi ao delirio com &lt;a href=&quot;https://twitter.com/dqo/status/584057756958728193&quot;&gt;essa imagem&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -155,13 +158,16 @@
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Palestra do &lt;a href=&quot;https://twitter.com/@_staticvoid&quot;&gt;Lucas&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Palestra do &lt;a href=&quot;https://twitter.com/@_staticvoid&quot;&gt;Lucas&lt;/a&gt; (achei original &lt;a href=&quot;https://lsantos.me/&quot;&gt;a página dele&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Falado sobre o &lt;a href=&quot;http://www.wercker.com&quot;&gt;Wercker&lt;/a&gt; (ainda prefiro o &lt;a href=&quot;https://jenkins.io/&quot;&gt;Jenkins&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Valeu muito por conhecer o plugin &lt;a href=&quot;https://gitlens.amod.io/&quot;&gt;GitLens&lt;/a&gt; para o vscode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slides &lt;a href=&quot;https://speakerdeck.com/khaosdoctor/ci-com-microsservicos&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
