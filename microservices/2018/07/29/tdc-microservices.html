@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TDC SP 2018 - Trilha Microservices</title>
+  <meta name="description" content="&amp;nbsp;">
+
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link rel="stylesheet" href="/blog/assets/share.css">
+  <link rel="stylesheet" href="/blog/asciidoc-pygments.css">
+  <link rel="canonical" href="https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html">
+  <link rel="alternate" type="application/rss+xml" title="Adamatti - blog pessoal" href="/blog/feed.xml">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1039281-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/blog/">Adamatti - blog pessoal</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/blog/sobre/">Sobre</a>
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/blog/tags/">Tags</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">TDC SP 2018 - Trilha Microservices</h1>
+    <p class="post-meta">
+      <time datetime="2018-07-29T16:00:00+00:00" itemprop="datePublished">
+        
+        2018-07-29
+      </time>
+      </p>
+  </header>
+  
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://s3-sa-east-1.amazonaws.com/globalcodesp/tdc/2015/img/logo/logo-tdc-horizontal.svg" alt="logo tdc horizontal">
+</div>
+</div>
+<div class="paragraph">
+<p>&nbsp;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Microservices não é para qualquer um, mas se você tem o problema certo, esta arquitetura pode ser uma ótima solução</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Descrição da trilha
+</div>
+</div>
+<div class="paragraph">
+<p>&nbsp;</p>
+</div>
+<div class="paragraph">
+<p>Dia 20/07 aconteceu <a href="http://www.thedevelopersconference.com.br/tdc/2018/saopaulo/trilha-microservices">a trilha de microservices</a> no TDC SP 2018. Acompanhamos a mesma pela transmissão online (tks TDC! tks <a href="https://www.zenvia.com/">Zenvia</a>!).</p>
+</div>
+<div class="paragraph">
+<p>Parabéns a coordenação pela seleção de palestras (<a href="https://twitter.com/morvanabonin">Morvana</a> / <a href="https://twitter.com/@yanaga">Yanaga</a> / <a href="https://twitter.com/@lazaropj">Lazaro</a>).</p>
+</div>
+<div class="paragraph">
+<p>Este <em>post</em> é para compartilhar minhas notas sobre as palestras.</p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="modular-monoliths-como-é-possível-organizar-sua-aplicação-para-habilitar-uma-arquitetura-distribuída">Modular Monoliths - Como é possível organizar sua aplicação para habilitar uma arquitetura distribuída</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Melhor palestra do dia IMO, parabéns ao <a href="https://twitter.com/@gutomcosta">Luiz Costa</a>.</p>
+</li>
+<li>
+<p>Vai ao encontro da descrição da trilha ("microservices não é para qualquer um")</p>
+</li>
+<li>
+<p>narrativa muito similar a uma <em>talk</em> do <a href="http://www.elemarjr.com/pt/">Elemar Jr</a> (outro baita palestrante), que também fala da importancia de módulos e DDD</p>
+</li>
+<li>
+<p>Ótimas menções a <a href="https://twitter.com/simonbrown/status/573072777147777024">Simon Brown</a>, <a href="https://www.martinfowler.com/bliki/FirstLaw.html">Martin Fowler</a>, <a href="https://twitter.com/unclebobmartin/status/118403913937453056">Uncle Bob</a></p>
+</li>
+<li>
+<p>Bons exemplos e caso de uso de DDD, separação de contexto</p>
+</li>
+<li>
+<p>Outros <em>links</em> que foram mencionados (e debatemos na empresa): <a href="https://8thlight.com/blog/uncle-bob/2011/11/22/Clean-Architecture.html"><em>Clean Architecture</em></a>, <a href="https://martinfowler.com/bliki/MonolithFirst.html"><em>Monolith First</em></a>, <a href="https://martinfowler.com/articles/dont-start-monolith.html"><em>Don&#8217;t start a monolith</em></a></p>
+</li>
+<li>
+<p>Slides disponíveis <a href="https://www.slideshare.net/gutomcosta/modular-monoliths-como-possvel-organizar-sua-aplicao-para-habilitar-uma-arquitetura-distribuda">aqui</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="consistência-de-dados-entre-microservices-é-possível">Consistência de dados entre microservices: é possível?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/elderjava">Elder Moraes</a></p>
+</li>
+<li>
+<p>Menção a <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway&#8217;s law</a></p>
+</li>
+<li>
+<p>Falou sobre Transação de compensação, <em>Event Sourcing</em>, <a href="https://medium.com/@carlosaugustograhl/transa%C3%A7%C3%B5es-distribu%C3%ADdas-em-micro-servi%C3%A7os-70568b378d77">Sagas</a>, <a href="http://fnproject.io/">Fn project</a> (<em>serveless</em>)</p>
+</li>
+<li>
+<p>Conclusão: questiono se estamos preparados para <em>serveless</em> 😊</p>
+</li>
+<li>
+<p>Slides disponíveis <a href="https://speakerdeck.com/eldermoraes/consistencia-de-dados-entre-microservices-e-possivel">aqui</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="telemetria-de-microsserviços">Telemetria de microsserviços</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/jfelipe90">Felipe Oliveira</a></p>
+</li>
+<li>
+<p>Palestra introdutória sobre telemetria, já usamos <a href="https://www.influxdata.com/">influx</a> / <a href="https://grafana.com/">grafana</a> / <a href="https://www.zabbix.com/">zabbix</a> na empresa.</p>
+</li>
+<li>
+<p>Slides disponíveis <a href="http://slides.com/jfelipe90/telemetria_microservices">aqui</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="introdução-a-service-mesh-com-istio">Introdução a Service Mesh com Istio</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/@jwendell">Jonh Wendell</a></p>
+</li>
+<li>
+<p>Foi na trilha stadium. IMO, não teve muita preparação do palestrante, que parecia perdido nos slides.</p>
+</li>
+<li>
+<p>Eu já conhecia o <a href="https://istio.io">Istio</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="desafios-de-segurança-em-arquitetura-de-microsserviços">Desafios de segurança em arquitetura de microsserviços</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra da <a href="https://twitter.com/@ThaiiBraga">Thaiane</a> e <a href="https://twitter.com/@amandasv__">Amanda</a></p>
+</li>
+<li>
+<p>Peguei a palestra na metade (demora no retorno do almoço). E sim, temos de falar mais sobre segurança, diversidade e minorias 👍</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="kiali-microservices-como-você-nunca-viu-antes">Kiali: Microservices como você nunca viu antes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://github.com/gbaufake">Guilherme</a> e <a href="https://twitter.com/@cfcosta_">Cainã</a></p>
+</li>
+<li>
+<p>Muito legal o <a href="https://github.com/kiali/kiali">Kiali</a> massa a visão gráfica dos serviços.</p>
+</li>
+<li>
+<p>Muito parecido com o <a href="http://actional.com">actional</a>, atualmente <a href="https://www.aurea.com/our-solutions/experience-solutions/cx-monitor/">cx-monitor</a></p>
+</li>
+<li>
+<p>Necessita o <a href="https://istio.io">Istio</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="ci-com-microsserviços">CI com Microsserviços</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/@_staticvoid">Lucas</a></p>
+</li>
+<li>
+<p>Falado sobre o <a href="http://www.wercker.com">Wercker</a> (ainda prefiro o <a href="https://jenkins.io/">Jenkins</a>)</p>
+</li>
+<li>
+<p>Valeu muito por conhecer o plugin <a href="https://gitlens.amod.io/">GitLens</a> para o vscode</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="como-bff-em-backend-for-frontend-em-pode-ser-seu-melhor-amigo-para-lidar-com-diferentes-em-frontends-em">Como BFF (<em>Backend for Frontend</em>) pode ser seu melhor amigo para lidar com diferentes <em>frontends</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/deividhf">Deivid</a> e <a href="https://twitter.com/@crisaltmann">Altmann</a></p>
+</li>
+<li>
+<p>Muito legal a <em>talk</em>, mas por lidar mais com <em>backend</em> ainda não tive essa necessidade. Mas vejo valor em usar BFF.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="sincronizando-dados-entre-microserviços-usando-o-debezium-e-apache-kafka">Sincronizando dados entre microserviços usando o Debezium e Apache Kafka</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/japoneizo">Eizo</a></p>
+</li>
+<li>
+<p><a href="http://debezium.io">Debezium</a> parece resolver o mesmo problema que o <a href="http://www.oracle.com/technetwork/middleware/goldengate/overview/index.html">Golden Gate</a> (ok, usando kafka e permitindo outros usos)</p>
+</li>
+<li>
+<p>Talvez seja útil para uma implementação de <a href="https://www.w3schools.com/htmL/html5_serversentevents.asp">SSE</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="como-a-olx-ganha-dinheiro-com-microservices">Como a OLX ganha dinheiro com Microservices</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do Sinval e <a href="https://twitter.com/@diogok">Diogo</a></p>
+</li>
+<li>
+<p>Cases são sempre legais, é massa ver o problema/oportunidades/desafios dos outros 😊</p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+  <div id="socialicons">
+    <a href="https://twitter.com/intent/tweet?text=TDC SP 2018 - Trilha Microservices&url=https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html&via=adamatti&related=adamatti" rel="nofollow" target="_blank">
+       <i class="fa fa-twitter"></i>
+    </a>
+    <a href="https://facebook.com/sharer.php?u=https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html" rel="nofollow" target="_blank">
+        <i class="fa fa-facebook"></i>
+    </a>
+    <a href="https://plus.google.com/share?url=https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html" rel="nofollow" target="_blank">
+        <i class="fa fa-google"></i>
+    </a>
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=/microservices/2018/07/29/tdc-microservices.html&title=TDC SP 2018 - Trilha Microservices&summary=Meu review sobre a trilha&source=http://adamatti.github.io/blog" rel="nofollow" target="_blank">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="mailto:adamatti@gmail.com?subject=TDC SP 2018 - Trilha Microservices" rel="nofollow" target="_blank">
+        <i class="fa fa-envelope"></i>
+    </a>
+</div>
+
+
+  
+    
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html';
+      this.page.identifier = 'https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://http-adamatti-github-io-blog.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Adamatti - blog pessoal</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Adamatti - blog pessoal
+            
+            </li>
+            
+            <li><a href="mailto:adamatti@gmail.com">adamatti@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/adamatti"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">adamatti</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/adamatti"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">adamatti</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
