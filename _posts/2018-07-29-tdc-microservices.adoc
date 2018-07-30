@@ -60,6 +60,7 @@ Este _post_ é para compartilhar minhas notas sobre as palestras.
 * Palestra do https://twitter.com/@jwendell[Jonh Wendell]
 * Foi na trilha stadium. IMO, não teve muita preparação do palestrante, que parecia perdido nos slides.
 * Eu já conhecia o https://istio.io[Istio]
+* Pessoal foi ao delirio com https://twitter.com/dqo/status/584057756958728193[essa imagem]
 
 '''
 
@@ -81,9 +82,10 @@ Este _post_ é para compartilhar minhas notas sobre as palestras.
 
 ### CI com Microsserviços
 
-* Palestra do https://twitter.com/@_staticvoid[Lucas]
+* Palestra do https://twitter.com/@_staticvoid[Lucas] (achei original https://lsantos.me/[a página dele])
 * Falado sobre o http://www.wercker.com[Wercker] (ainda prefiro o https://jenkins.io/[Jenkins])
 * Valeu muito por conhecer o plugin https://gitlens.amod.io/[GitLens] para o vscode
+* Slides https://speakerdeck.com/khaosdoctor/ci-com-microsservicos[aqui]
 
 '''
 
