@@ -1,0 +1,108 @@
+---
+layout: post
+title: "TDC SP 2018 - Trilha Microservices"
+date: 2018-07-29 13:00:00 -0300
+categories: microservices
+summary: "Meu review sobre a trilha"
+tags:
+  - microservices
+---
+
+image::https://s3-sa-east-1.amazonaws.com/globalcodesp/tdc/2015/img/logo/logo-tdc-horizontal.svg[align=center]
+&nbsp;
+
+[,Descrição da trilha]
+""
+Microservices não é para qualquer um, mas se você tem o problema certo, esta arquitetura pode ser uma ótima solução
+""
+&nbsp;
+
+Dia 20/07 aconteceu http://www.thedevelopersconference.com.br/tdc/2018/saopaulo/trilha-microservices[a trilha de microservices] no TDC SP 2018. Acompanhamos a mesma pela transmissão online (tks TDC! tks https://www.zenvia.com/[Zenvia]!). 
+
+Parabéns a coordenação pela seleção de palestras (https://twitter.com/morvanabonin[Morvana] / https://twitter.com/@yanaga[Yanaga] / https://twitter.com/@lazaropj[Lazaro]).
+
+Este _post_ é para compartilhar minhas notas sobre as palestras.
+
+'''
+
+#### Modular Monoliths - Como é possível organizar sua aplicação para habilitar uma arquitetura distribuída
+
+* Melhor palestra do dia IMO, parabéns ao https://twitter.com/@gutomcosta[Luiz Costa].
+* Vai ao encontro da descrição da trilha ("microservices não é para qualquer um")
+* narrativa muito similar a uma _talk_ do http://www.elemarjr.com/pt/[Elemar Jr] (outro baita palestrante), que também fala da importancia de módulos e DDD
+* Ótimas menções a https://twitter.com/simonbrown/status/573072777147777024[Simon Brown], https://www.martinfowler.com/bliki/FirstLaw.html[Martin Fowler], https://twitter.com/unclebobmartin/status/118403913937453056[Uncle Bob]
+* Bons exemplos e caso de uso de DDD, separação de contexto
+* Outros _links_ que foram mencionados (e debatemos na empresa): https://8thlight.com/blog/uncle-bob/2011/11/22/Clean-Architecture.html[_Clean Architecture_], https://martinfowler.com/bliki/MonolithFirst.html[_Monolith First_], https://martinfowler.com/articles/dont-start-monolith.html[_Don't start a monolith_]
+* Slides disponíveis https://www.slideshare.net/gutomcosta/modular-monoliths-como-possvel-organizar-sua-aplicao-para-habilitar-uma-arquitetura-distribuda[aqui]
+
+'''
+
+### Consistência de dados entre microservices: é possível?
+
+* Palestra do https://twitter.com/elderjava[Elder Moraes]
+* Menção a https://en.wikipedia.org/wiki/Conway%27s_law[Conway's law]
+* Falou sobre Transação de compensação, _Event Sourcing_, https://medium.com/@carlosaugustograhl/transa%C3%A7%C3%B5es-distribu%C3%ADdas-em-micro-servi%C3%A7os-70568b378d77[Sagas], http://fnproject.io/[Fn project] (_serveless_)
+* Conclusão: questiono se estamos preparados para _serveless_ 😊 
+* Slides disponíveis https://speakerdeck.com/eldermoraes/consistencia-de-dados-entre-microservices-e-possivel[aqui]
+
+'''
+
+### Telemetria de microsserviços
+
+* Palestra do https://twitter.com/jfelipe90[Felipe Oliveira]
+* Palestra introdutória sobre telemetria, já usamos https://www.influxdata.com/[influx] / https://grafana.com/[grafana] / https://www.zabbix.com/[zabbix] na empresa. 
+* Slides disponíveis http://slides.com/jfelipe90/telemetria_microservices[aqui]
+
+'''
+
+### Introdução a Service Mesh com Istio
+
+* Palestra do https://twitter.com/@jwendell[Jonh Wendell]
+* Foi na trilha stadium. IMO, não teve muita preparação do palestrante, que parecia perdido nos slides.
+* Eu já conhecia o https://istio.io[Istio]
+
+'''
+
+### Desafios de segurança em arquitetura de microsserviços 
+
+* Palestra da https://twitter.com/@ThaiiBraga[Thaiane] e https://twitter.com/@amandasv__[Amanda]
+* Peguei a palestra na metade (demora no retorno do almoço). E sim, temos de falar mais sobre segurança, diversidade e minorias 👍
+
+'''
+
+### Kiali: Microservices como você nunca viu antes 
+
+* Palestra do https://github.com/gbaufake[Guilherme] e https://twitter.com/@cfcosta_[Cainã]
+* Muito legal o https://github.com/kiali/kiali[Kiali] massa a visão gráfica dos serviços. 
+* Muito parecido com o http://actional.com[actional], atualmente https://www.aurea.com/our-solutions/experience-solutions/cx-monitor/[cx-monitor]
+* Necessita o https://istio.io[Istio]
+
+'''
+
+### CI com Microsserviços
+
+* Palestra do https://twitter.com/@_staticvoid[Lucas]
+* Falado sobre o http://www.wercker.com[Wercker] (ainda prefiro o https://jenkins.io/[Jenkins])
+* Valeu muito por conhecer o plugin https://gitlens.amod.io/[GitLens] para o vscode
+
+'''
+
+### Como BFF (_Backend for Frontend_) pode ser seu melhor amigo para lidar com diferentes _frontends_
+
+* Palestra do https://twitter.com/deividhf[Deivid] e https://twitter.com/@crisaltmann[Altmann]
+* Muito legal a _talk_, mas por lidar mais com _backend_ ainda não tive essa necessidade. Mas vejo valor em usar BFF. 
+
+'''
+
+### Sincronizando dados entre microserviços usando o Debezium e Apache Kafka
+
+* Palestra do https://twitter.com/japoneizo[Eizo]
+* http://debezium.io[Debezium] parece resolver o mesmo problema que o http://www.oracle.com/technetwork/middleware/goldengate/overview/index.html[Golden Gate] (ok, usando kafka e permitindo outros usos)
+* Talvez seja útil para uma implementação de https://www.w3schools.com/htmL/html5_serversentevents.asp[SSE]
+
+''' 
+
+### Como a OLX ganha dinheiro com Microservices
+
+* Palestra do Sinval e https://twitter.com/@diogok[Diogo]
+* Cases são sempre legais, é massa ver o problema/oportunidades/desafios dos outros 😊
