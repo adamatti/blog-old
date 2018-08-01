@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Modelo de aprendizado 70/20/10"
+date: 2018-07-31 13:00:00 -0300
+categories: learn
+summary: "O quanto você aprende sem fazer?"
+tags:
+  - learn
+---
+
+image::https://caputconsultoria.com.br/2016/wp-content/uploads/2014/11/70-20-10.jpg[align=center]
+
+Comentei hoje com alguns colegas uma pérola de sabedoria de https://twitter.com/ermathias[um antigo gerente], sobre o https://caputconsultoria.com.br/modelo-de-aprendizagem-702010/[10/20/70].
+
+Diz esse estudo que, aprendemos no máximo **10%** com treinamento formal (ex: leitura), **20%** vendo / falando com pessoas que sabem sobre o assunto e **70%** fazendo. 
+
+Logo, se você não tentar por sí (estou pensando em programação aqui, em testar novos _frameworks_ / libs / linguagens / ferramentas ) você pode aprender no máximo 30% de algum conteúdo.
+
+Espero que essa informação seja útil 👍
