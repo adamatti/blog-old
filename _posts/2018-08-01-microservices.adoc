@@ -1,0 +1,76 @@
+---
+layout: post
+title: "Microservices"
+date: 2018-08-01 00:00:00 -0300
+categories: microservices
+summary: "Alguns links, ferramentas e conceitos"
+tags:
+  - microservices
+---
+
+image::https://3.bp.blogspot.com/-ti55Je60LRk/WzozswNM73I/AAAAAAAA2OI/vzUQe7rU0sEVICsGCzN2khr-9RdXiTRJQCLcBGAs/s1600/Microservices_Mindmap.jpg[align=center]
+&nbsp;
+
+Um amigo solicitou algum material para aprender mais sobre micro serviços e eu acabei prometendo um _post_... aqui está, fiz um _dump_ dos meus favoritos e notas 🙂
+
+Esses são os _links_ que eu gostaria de saber no meu inicio com micro serviços:
+
+* Para uma visão geral, vale dar uma olhada nesse http://rogervdkimmenade.blogspot.com/2018/06/microservices-mindmap.html[_mindmap_], ou essa https://medium.com/microservices-in-practice/microservices-in-practice-7a3e85b6624c[introdução], ou https://www.javacodegeeks.com/2015/07/the-real-success-story-of-microservices-architectures.html[casos de sucesso]
+* Livros: https://blog.jordanrobinson.co.uk/building-microservices[_Building Microservices_], do https://samnewman.io[Sam Newman] é o principal
+* Artigos dos "papas" da programação: https://martinfowler.com/articles/microservices.html[Martin Fowler], https://sites.google.com/site/unclebobconsultingllc/[Uncle Bob], https://samnewman.io[Sam Newman]
+* Acompanhar nas redes sociais: https://twitter.com/unclebobmartin[Uncle Bob], https://twitter.com/martinfowler[Martin Fowler], https://twitter.com/samnewman[Sam Newman], https://twitter.com/morvanabonin[Morvana] (coordenadora da link:/blog/microservices/2018/07/29/tdc-microservices.html[trilha de micro serviços] no TDC)
+* Meetups e eventos: https://www.meetup.com/pt-BR/Arquitetura-de-TI-Porto-Alegre[ArqTI-POA], https://www.meetup.com/pt-BR/Microservices-Porto-Alegre[microservices], https://www.meetup.com/pt-BR/Docker-Porto-Alegre[docker], https://www.meetup.com/pt-BR/kubepoa/[kubernetes] são alguns dos que eu participo
+
+### APIs
+
+* http://marcelo-cure.blogspot.com/2016/05/versioning-apis.html[Versionamento de APIs]
+* http://marcelo-cure.blogspot.com/2016/09/rest-anti-patterns.html[_Anti patterns_] / https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/[_best practices_]
+* http://jsonapi.org[Padrão JSON API]
+* Consumir dados para o _frontend_ (multiplos serviços)? https://graphql.org[GraphQL] (https://www.howtographql.com[_how to_]) / http://restql.b2w.io[RestQL]
+* REST x RPC [
+https://apihandyman.io/do-you-really-know-why-you-prefer-rest-over-rpc[_Do you really know why you prefer REST over RPC?_] |
+https://apigility.org/documentation/api-primer/what-is-an-api[_what is an API_]
+]
+
+### Testes
+
+* https://medium.com/@diogo.lucas/system-tests-in-a-microservice-architecture-17f96ba20c41[_System tests in a microservice architecture_]
+* Fun: https://9gag.com/gag/aW12yy2[Debug de micro serviços]
+
+### Ferramentas / conceitos
+
+* https://youtu.be/ATWEXZkYgek?t=1h30m4s[Palestra: _Event Sourcing_], no _meetup_ de node
+* link:/blog/docker/2017/07/03/docker.html[Docker]
+* link:/blog/tag/continuousdelivery.html[CI/CD]
+
+++++
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="pt"><p lang="en" dir="ltr">2014 - We must adopt <a href="https://twitter.com/hashtag/microservices?src=hash&amp;ref_src=twsrc%5Etfw">#microservices</a> to solve all problems with monoliths<br>2016 - We must adopt <a href="https://twitter.com/hashtag/docker?src=hash&amp;ref_src=twsrc%5Etfw">#docker</a> to solve all problems with microservices<br>2018 - We must adopt <a href="https://twitter.com/hashtag/kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#kubernetes</a> to solve all problems with docker <a href="https://t.co/J8U1IUIECt">pic.twitter.com/J8U1IUIECt</a></p>&mdash; Bluecoders (@bluecoders) <a href="https://twitter.com/bluecoders/status/1022048897525587968?ref_src=twsrc%5Etfw">25 de julho de 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+### Palestras
+
+* https://www.youtube.com/watch?v=X0tjziAQfNQ[_10 Tips for failing badly at Microservices_], uma das melhores _talks_ sobre problemas em usar micro serviços. Muito de usar várias linguagens / _frameworks_ (coisas que parecem vantagens a primeira vista), monolitos, https://en.wikipedia.org/wiki/Conway%27s_law[lei de Conway], falta de versionamento, compartilhamento de banco 
+** O palestrante (David Schmitz) é muito bom na condução da palestra, na ironia, piadas sobre EJB, _buzz words_, entre outras
+* https://www.facebook.com/papodesysadmin/videos/1724773310950527/[Palestra do Nubank] no https://www.meetup.com/pt-BR/Arquitetura-de-TI-Porto-Alegre[ArqTI-POA]
+
+### Problemas
+
+* https://dzone.com/articles/understanding-the-8-fallacies-of-distributed-syste[_Understanding the 8 Fallacies of Distributed Systems_]
+* http://www.eduardopires.net.br/2018/07/microservices-por-que-voce-nao-deveria-ainda-utilizar[Microservices – Por que você não deveria (ainda) utilizar?]
+* Já assisti palestras onde foi recomendado não começar por micro serviços, mas sim monolitos com módulos bem definidos. Ví isso na palestra do http://www.elemarjr.com/pt/[Elemar Jr] e https://twitter.com/@gutomcosta[Luiz Costa] (anotei alguns _highlights_ do TDC link:/blog/microservices/2018/07/29/tdc-microservices.html[aqui])
+
+++++
+<blockquote class="twitter-tweet" data-lang="pt">
+<p lang="pt" dir="ltr">Microservices não surgiu para resolver um problema técnico, e sim de pessoas. Netflix quando começou a fazer microservices estava pensando como resolver o problema de delivery e organizações de times. Os ganhos técnicos são secundários.</p>&mdash; Weliff Lima (@weliff) <a href="https://twitter.com/weliff/status/1020792041780006914?ref_src=twsrc%5Etfw">21 de julho de 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+### Outros links relacionados
+
+* https://github.com/zalando/tailor[Tailor]: micro serviços no _frontend_
+* https://en.wikipedia.org/wiki/Conway%27s_law[lei de Conway], como a organização dos times afeta os micro serviços. Bonus: https://www.thoughtworks.com/pt/insights/blog/demystifying-conways-law[Demystifying Conway's law]
+
+'''
+
+Aceito contribuição de links / artigos / vídeos ou _feedbacks_ dos aqui postados 🙂
