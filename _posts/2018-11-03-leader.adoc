@@ -1,0 +1,173 @@
+---
+layout: post
+title: "Salve o líder, salve o mundo"
+date: 2018-11-03 00:00:00 -0300
+categories: leader
+summary: "Ou 'a liderança que eu acredito'"
+tags:
+  - leadership
+---
+
+image::https://orig00.deviantart.net/6f4b/f/2015/012/2/6/heroes__save_the_cheerleader____save_the_world____by_goldennightfall2-d8dpqj5.jpg[align=center,width=400,link="https://docs.google.com/presentation/d/17MKUQiaB4QcOkb_en7T2ZorMbdVLwtppp7lKb-OlKUk/edit?usp=sharing"]
+&nbsp;
+
+Está ficando recorrente nas minhas conversas de café / almoço o papel do líder, e o que eu espero de um líder. Eu espero mais de um líder, e acho que todas as pessoas deveriam buscar ser mais líder.
+
+Mas o que é um líder? O que é liderança? O que esperar do mesmo? Eu fiz https://docs.google.com/presentation/d/17MKUQiaB4QcOkb_en7T2ZorMbdVLwtppp7lKb-OlKUk/edit?usp=sharing[uma apresentação para alguns colegas sobre o tema] em Nov/2016, mas os _slides_ não tem todas as informações, logo, pretendo nesse _post_ falar mais sobre esse temas. 
+
+'''
+
+### _The 60 Second Leader_
+
+image::https://books.google.com.br/books/content?id=geDxCjBAUCsC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE716-D-hx5QqtfhLc1CttsZsoeD9Ra_4ms3qAP1PQM7h53RCJV2jMUzw24OJj8JLj69woNKFbvGauKjRDeVLmw8lFmrfk0IEUJsUAcBAoQWAyjAa-RXFJRCEVdrJBRCcZbtHj4rr[align=center,link="https://www.amazon.com/60-Second-Leader-Everything-Leadership/dp/1841127450"]
+
+Por volta de 2007, eu era um desenvolvedor 200% focado em código. Lidava muito bem com código, mas pouco com pessoas (ex: outros devs, testadores, analistas de negócio).
+
+Fiz um trabalho de _mentoring_ com um líder técnico (eu era o mentorado), e como atividade debatíamos os tópicos do livro https://www.amazon.com/60-Second-Leader-Everything-Leadership/dp/1841127450[_The 60 Second Leader_].
+
+Em resumo (tradução livre): 
+[,Introdução do livro The 60 Second Leader]
+""
+Faça uma lista de todas as coisas que te aborrece +
+NÃO FAÇA ISSO AOS OUTROS, NUNCA. +
+Fala uma outra lista com coisas que você gosta +
+FAÇA ISSO AOS OUTROS. SEMPRE!
+""
+
+Há vários _insights_ nesse livro para ser um líder melhor, dentre eles:
+
+* *Falha / resiliência*: melhoria continua. Você vai tropeçar no meio do caminho, mas o que importa é se você vai se levantar, e o que fazer para não cometer o mesmo erro. (parece o https://www.youtube.com/watch?v=_J0Ahh3UxbM[discurso do Rocky] isso?)
+* *Decisão*: conhece a história da pequena https://www.google.com.br/search?q=tilly+tsunami[Tilly e do Tsunami]? Uma criança de 10 anos sabendo do padrão de ondas do mar durante o Tsunami *salvou* várias pessoas da catástrofe. 
+* *Conexões*: dos maiores medos da humanidade (segundo uma pesquisa do NY times), a morte vem em terceiro. Andar numa sala lotada vem em segundo. Falar em público em vem primeiro lugar. 
+* *Sorte*: faça esse https://www.youtube.com/watch?v=IGQmdoK_ZfY[teste do gorila]. A sorte as vezes nada mais é de perceber a oportunidade que outros não perceberam
+* *Otimismo*: pq ninguem quer trabalhar para pessimistas
+* *Estratégia*: diz a sabedoria tribal de Dakota, "se você descobre que está montado em um cavalo morto, a melhor estratégia é desmontar. Claro, tem outras opções: mudar rios, montar um comitê para estudar cavalo morto... estudar como outras empresas montam cavalos mortos... mas depois de tudo isso você terá de desmontar"
+* *Competição*: aqui o livro fala sobre https://www.google.com.br/search?q=oceano+azul+e+vermelho[oceano azul e vermelho], sobre inovar x competir.
+* *Ação*: como natação, liderança não se aprende em livros (https://www.youtube.com/watch?v=71zNr6F6t2U[John Wayne] tem um ótimo método)
+* *Execução*: Auguste Rodin, quando perguntado como fazia cavalos em mármore, respondeu: "1) pegue um pedaço de mármore, 2) pegue suas ferramentas, 3) tire do mármore tudo aquilo q não parece com um cavalo"
+* *Gerenciamento*: Líder x Gerente, plano x visão, controle x inspiração
+* *Mudança*: ver sobre a https://pt.wikipedia.org/wiki/Teoria_das_janelas_quebradas[teoria das janelas quebradas], sobre como atuar nas pequenas coisas para passar uma melhor visão;
+* *Questões*: sobre a importância do questionar x fazer. Simon Sinek faz isso muito bem no https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action[Start with Why]
+* *Atenção*: você consegue atenção *dando* atenção.
+* *Motivação*: dizem os consultores McKinsey, pessoas querem acreditar nos seus chefes, querem ser necessários e riscos (não me dê tarefas, deixe-me tomar decisões)
+* *Alvos*: a importancia de métricas
+
+O livro ainda fala sobre inovação, cultura, Ego, humildade, medo, amor (falam muito do Disney aqui), presença, legado (não crie seguidores, crie líderes).
+
+*O que me caiu a ficha aqui é q há uma infinidade de _soft skills_ a serem trabalhadas por um líder. Que temos muitos chefes, e poucos líderes.*
+
+'''
+
+### Líderança e Pirulitos
+
+image::https://cdn-images-1.medium.com/max/800/1*5KOQoHeRHXfS-SkcyYK0jQ.png[align=center,width=300,link="/blog/leadership/2017/09/20/lollipop.html"]
+
+Basicamente o que foi falado no post link:/blog/leadership/2017/09/20/lollipop.html[Liderança e Pirulitos].
+
+*Poucas pessoas se consideram líderes!* Eu vejo pessoas puxando grandes iniciativas dentro da empresa, sendo chamadas para tantas outras que não fazem parte da sua "função" e ainda assim elas não se consideram líderes! 
+
+Vejo a mesma coisa de pessoas que sabem muito, falam bem, mas não querem ser palestrantes. Pessoal acha que essas _skills_ são 0 ou 1, não vêem que isso são coisas que devem ser praticadas e evoluídas. https://www.youtube.com/watch?v=RVmMeMcGc0Y[Fake it Till You Make it]!  
+
+'''
+
+### E o que são esses níveis?
+
+image::http://psychologyformarketers.com/wp-content/uploads/2014/05/5-levels-of-leadership1.jpg[align=center,width=200,link="http://psychologyformarketers.com/5-levels-leadership-john-maxwell/"]
+
+Gosto muito da explicação do https://www.youtube.com/watch?v=4KqL_1G8JD8[John Maxwel]:
+
+* No nível 1, a pessoa é só chefe. É onde se consegue a menor energia do time, e se faz várias coisas pessoais no horário de serviço
+* No nível 2, as pessoas querem seguir esse líder. Ele escuta, absorve, aprende. Eles sabem como servir e gostam de servir
+* No nível 3, ele é um líder efetivo. É como um guia turístico: "é melhor ir por aqui", cria _momentum_/impulso (diferença entre um trem embalado e um parado enfrentando uma muralha)
+* No nível 4, ele forma outros líderes
+* No nível 5, ele é respeitado por todos. E já esteve no nível 4 por muito tempo.
+
+https://www.youtube.com/watch?v=4KqL_1G8JD8[John Maxwel] fecha o vídeo dizendo: "você deve estar se perguntando, qual nível eu estou? ", e explica que esses níveis são a cada relação líder x liderado, com cada pessoa. 
+
+E que em resumo, liderança é *influência* . 
+
+'''
+
+### E pq os líderes comem por último (ou: a biologia do líder)
+
+image::https://3idx493qtj7e1jj23a311nfo-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/LEL-Cover-HighRes-600x903.jpg[align=center,width=150,link="https://startwithwhy.com/product/leaders-eat-last/"]
+
+A melhor definição de líder IMO vem do Simon Sinek, da talk https://www.youtube.com/watch?v=ReRcHdeUG9Y[Why Leaders Eat Last], onde ele fala sobre enzimas, biologia do líder, historia e pq no exército soldados estão dispostos a pular sobre uma bomba para salvar seu time. 
+
+Em resumo ele fala de:
+
+* *Endorfina*: quer se sentir bem com seu corpo? vá fazer exercício;
+* *Dopamina*: a satisfação de completar tarefas. Mas cuidado, Dopamina é extremamente viciante;
+* *Serotonina*: a enzima dos líderes. Faça as pessoas da sua volta ter orgulho de você, tenha orgulho das pessoas da sua volta
+* *Ocitocina*: o hormônio da empatia, e pq precisamos mais apertos de mão e contato
+* *Cortisol*: o hormônio do stress. Quando você está estressado, seu corpo libera Cortisol para preparar seu corpo para o perigo. Mas algumas funções do corpo são desligadas ao liberar Cortisol, como crescer cabelos / unhas ou anticorpos. Em outras palavras, chefes estressantes "matam" pessoas.
+
+[,Simon Sinek - tradução livre]
+""
+Liderança não é uma posição, não é um cargo. Liderança é uma decisão, uma escolha. Se você se importa com as pessoas da sua volta você se tornou um líder.
+""
+
+''' 
+
+### Liderança no mundo ágil
+
++++
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kVR2ZQxZIMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
++++
+
+O Luiz Parzianello cita 6 tipos de líder no vídeo acima (sendo os 3 primeiros não recomendados):
+
+* Tradicional / coercitiva: o chefão que manda
+* Modelador: deixa que eu faço que eu faço melhor
+* Afiliativo: o gerente que não entra em conflitos
+* Visionário: os que inspiram a mudança
+* Coach / servidor
+* Participativa
+
+Ele ainda fala no vídeo sobre fatores de motivação:
+
+* Propósito: encantar o funcionário com o que tem q ser feito
+* Possibilidade de desenvolver maestria
+* Autonomia
+
+E que o líder precisa:
+
+* Capacidade de inspirar pessoas
+* Capacidade de transformação, agente de mudança
+* Confiança: confiar no time e ser confiável
+* Fazer a diferença
+* Ser exemplo de tudo isso
+* Ir além
+
+'''
+
+### Em resumo
+
+image::http://fijisun.com.fj/wp-content/uploads/2016/09/Leader-680x365.jpg[align=center,link="http://fijisun.com.fj/2016/09/17/how-to-become-an-inspirational-leader/",width=200]
+
+Concordo com http://www.paraoaltoeavante.com.br/supercast-23-arquitetos/[a visão do Pedro Superti], que precisamos de mais arquitetos. Já temos muitos pedreiros preocupados em levantar parede e ferramentas, precisamos de engenheiros planejando construções, arquitetos olhando para o uso dessas construções. 
+
+As palavras chave IMO são cuidar e desenvolver outros, melhoria contínua, empatia, escuta ativa. *Os melhores líderes que tive tem essas caracteristicas, e eu sigo esses aprendizados. Quero ser o líder que foram para mim, que me acompanharam em momentos difíceis, que me apontaram para o caminho certo*. 
+
+'''
+
+### Dê seu _feedback_
+
+O que um líder precisa ter na sua opinião? Como estamos de bons líderes? Temos o suficiente? Você se vê como um líder? 😀
+
+Coloca um comentário aí embaixo, me mailto:adamatti@gmail.com[manda um email], manda mensagem em alguma rede. 
+
+'''
+
+### Links sobre o assunto
+
+* https://www.youtube.com/watch?v=RVmMeMcGc0Y[Amy Cuddy - Fake it Till You Make it]
+* https://www.youtube.com/watch?v=4KqL_1G8JD8[John Maxwel - The 5 Levels of Leadership]
+* https://www.youtube.com/watch?v=ReRcHdeUG9Y[Simon Sinek - Why Leaders Eat Last]
+* https://www.youtube.com/watch?v=kVR2ZQxZIMw[Luiz Parzianello - Liderança para a Nova Economia]
+* https://www.linkedin.com/feed/update/urn:li:activity:6458090687379443712/[Dell - What Makes a Great Boss?]
+* https://www.ted.com/talks/brene_brown_on_vulnerability[Brene Brown - on vulnerability]
+* https://www.thoughtworks.com/insights/blog/what-learned-while-becoming-tech-lead[What I Learned While Becoming a Tech Lead]. Keywords: cuidar dos outros, coach, relacionamentos, desenvolver outros.
+* https://www.linkedin.com/pulse/tr%C3%AAs-pilares-que-fazem-um-l%C3%ADder-ser-mais-completo-wyrvalski-duarte/[Três pilares que fazem um líder ser mais completo]
