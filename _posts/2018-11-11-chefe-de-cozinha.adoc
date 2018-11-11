@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Líder chefe de cozinha"
+date: 2018-11-11 00:00:00 -0300
+categories: leader
+summary: "Sobre delegar e garantir a qualidade"
+tags:
+  - leadership
+---
+
+image::https://russelservicos.com.br/wp-content/uploads/2017/05/chefe-de-cozinha.jpg[align=center]
+&nbsp;
+
+Na comunidade de TI muitas vezes usamos analogias para explicar um ponto de vista, sugerir um reflexão. Ok, talvez não só na TI, mas vejo muito isso acontecer para dev e usuários finais conseguirem falar a mesma língua.
+
+Em duas situações essa semana eu usei a analogia desse post. Logo, porque não compartilhar com mais pessoas? 😀
+
+Um https://twitter.com/ermathias[antigo gerente] costumava dizer que um bom líder técnico deveria ser como um chefe de cozinha: 
+
+* ele deveria saber ele mesmo preparar os cardápios;
+* não necessariamente ele deveria lavar os pratos, descascar legumes / verduras;
+* mas que no momento que o prato saísse da cozinha, era o nome dele que estava em jogo. O prato deveria ter a qualidade que o chefe de cozinha exige
+
+Interessante, não? 
+
+Entendo aqui que:
+
+* devemos aprender a delegar mais, pedir ajuda
+* seja um mentor para as pessoas a sua volta
+* implantar processos que garantam melhoria da qualidade: 
+** seja ela técnica (ex: _review_ de código, testes, momentos de estudo )
+** seja ela de time (ex: _pair programming_, retrospectivas, ambiente seguro)
+* ter a visão do todo
+* é necessário estar presente e ver a "máquina" funcionando
+
+*E você leitor? O que achou dessa analogia? Agradeço qualquer comentário ou _feedback_!*
+
+#### Outras referências:
+
+* https://forbes.uol.com.br/carreira/2017/11/10-licoes-de-um-chef-de-cozinha-para-melhorar-suas-habilidades-de-lideranca[10 lições de um chef de cozinha para melhorar suas habilidades de liderança]
+* https://exame.abril.com.br/carreira/o-que-os-chefs-de-cozinha-tem-a-ensinar-sobre-lideranca[O que os chefs de cozinha têm a ensinar sobre liderança] 
