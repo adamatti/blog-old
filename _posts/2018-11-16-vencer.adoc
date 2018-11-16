@@ -1,0 +1,60 @@
+---
+layout: post
+title: "Vencer é um trabalho interno"
+date: 2018-11-16 00:00:00 -0300
+categories: leader
+summary: "Sobre como ser um profissional melhor"
+tags:
+  - leadership
+---
+
+image::https://globalbookclub.s3.amazonaws.com/resources/1070987/winning_is_an_inside_job/cover.jpg[align=center,width=150]
+
+Gosto muito de aproveitar o tempo no transito com podcasts (mencionado no link:/blog/learn/2017/09/01/learn.html[post sobre aprendizado]). 
+
+
+Boa parte dos podcasts são sobre livros (ou resumo dos mesmos), como o https://blog.keeplearning.school/guncast/projeto-revoal-183[projeto Revoal do Murilo Gun], https://www.resumocast.com.br/[Resumo Cast], ou mesmo do https://www.audible.com/[Audible da Amazon]
+
+Um dos caras que eu curto é o https://www.johnmaxwell.com/[John Maxwell] (falo dele em link:/blog/tag/leadership.html[alguns posts sobre liderança]).
+
+Deixo aqui algumas notas/resumo sobre o podcast https://johnmaxwellleadershippodcast.com/episodes/winning-is-an-inside-job/[_Winning is an inside job_], disponível aqui abaixo: 
+
+'''
+
+++++
+<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/6747014/height/90/theme/custom/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/direction/backward/render-playlist/no/custom-color/60cae6/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+++++
+
+'''
+
+*Meu resumo:*
+
+Grandes vencedores competem contra si mesmos, querem ser melhores a cada dia. A lista do John é composta de 13 itens que qualquer pessoa pode seguir;
+
+1. Cresça, seja responsável por você mesmo: não culpe os outros, não culpe o ambiente. faça você as coisas acontecerem. Se essa regra não for seguinda, nem siga em frente nos outros items;
+2. Estude e aprenda com outras pessoas de sucesso: preste atenção no comprometimento, exelencia, integridade, gerencia de tempo, atitude, relacionamentos, prioridades, energia, paz dessas pessoas
+3. Ame o que você faz
+4. Aprenda com seus erros
+5. Não tente ser perfeito (diga não ao perfeccionismo): 
+* isso impede algumas pessoas de começarem (ficam paralizados analizando fatos)
+* impede de ser produtivo
+* distrai do propósito
+* perfeccionismo é inalcançável
+* perfeccionismo leva ao desapontamento
+6. Mude agora antes que você seja obrigado a mudar. Aqui é feita a analogia do cavalo morto mencionado no link:/blog/leader/2018/11/03/leader.html[post anterior]
+7. entregue o que você promete. 
+* Sem integridade não há confiança
+* Sem confiança não há liderança
+* Sem liderança não há progresso
+8. Não invente desculpas
+9. Tenha controle sobre sua vida, gerencie seu tempo. Veja onde você bota seu tempo (ex: netflix, jogos)
+10. Trabalhe em horários que as pessoas não vejam. Aqui não é sobre ser https://www.significados.com.br/workaholic/[_workaholic_] e fazer horas extras, mas aproveitar alguns momentos para "afiar o machado" (talvez escutar podcast no transito? 😝)
+11. Planeje e priorize
+12. Acredite em você mesmo (http://somatorio.org/talks/sindrome-impostor[Síndrome do Impostor?])
+13. Dê mais aos outros do que você recebe
+
+'''
+
+Certamente alguns itens ficaram de fora (ex: saber dizer não, https://www.google.com.br/search?q=roda+da+vida[equilibrar pontos de sua vida], etc), mas ainda assim acho bem completo os pontos, valendo a reflexão.
+
+O que você achou do podcast? Do resumo? Comente aí abaixo, mande a sua mensagem em alguma das redes sociais 👍
