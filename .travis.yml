@@ -5,7 +5,8 @@ branches:
   - jekyll
 rvm:
 - 2.6
-before_install:
+cache: bundler
+install:
   - gem install bundler -v 2.1.4
   - gem install jekyll -v 4.1.0
 env:
