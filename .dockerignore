@@ -1,0 +1,11 @@
+_site/
+.jekyll-cache/
+
+.editorconfig
+.gitignore
+.jekyll-metadata
+.travis.yml
+build.sh
+docker-compose.yml
+Dockerfile
+Makefile

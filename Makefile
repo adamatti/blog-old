@@ -28,8 +28,11 @@ all: clean install build run
 dc-build:
 	@docker-compose build
 
-dc-run: dc-build
+dc-sh: dc-build
 	@docker-compose run app /bin/sh
+
+dc-run: dc-build
+	@docker-compose up
 
 .PHONY: help
 help: ## show this help
