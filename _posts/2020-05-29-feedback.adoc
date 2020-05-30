@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Usando o feedback canvas"
+date: 2020-05-29 00:00:00 -0300
+categories:
+summary: "Conversa com Daniel Wildt sobre feedback"
+tags:
+  - feedback
+  - "1:1"
+---
+
++++
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nckULqKkYzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
++++
+
+Primeiro Webinar! 
+
+Segue alguns links sobre a talk.
+
+#### Referencias / Links
+
+* Sobre o Feedback Canvas
+** https://medium.com/liferay-engineering-brazil/feedback-canvas-4df3ee3b86b[Post Matheus Haddad] (criador do Feedback Canvas)
+** https://www.youtube.com/watch?v=_HmhfFTYUSo[Entrevista Daniel Wildt e Matheus Haddad]
+** https://medium.com/creditas-tech/como-fazer-feedback-em-time-47ebc4e08b6e[Post Creditas]
+* Sobre a http://bit.ly/CreditasGist[Creditas]
+** https://www.linkedin.com/pulse/os-valores-da-creditas-e-experi%C3%AAncia-dos-nossos-do-1-sarmanho-lima/[Post sobre valores]
+** Talks do Leo Andreucci sobre 1:1 no https://www.infoq.com/br/presentations/one-on-ones-aumentando-o-desempenho-uma-pessoa-de-cada-vez[QCon] e https://www.eventials.com/Globalcode/tdc-sp-2017-stadium-sexta-9/[TDC]
+* Sobre o Adamatti
+** http://bit.ly/adamattiReadme[Sobre minha visão de Team Lead]
+** https://gist.githubusercontent.com/adamatti/287323a3e9c4a4d341ada1f9a2b58136/raw/101e6a7f63abb28cf562cbc839d39170b5d24c05/4_SELF_KNOWLEDGE.adoc[Auto Avaliações]
+* Sobre Feedback
+** https://medium.com/guma-rs/cuidados-para-um-feedback-efetivo-83fd1ffd3b11[Post do Guma / Émerson Hernandez]
+** http://agilecoffee.com/toolkit/nvc/[Comunicação Não Violenta]
+** https://www.radicalcandor.com/[Radical Candor]
+** https://medium.com/@luisfernandolaimer/an-honest-view-around-feedbacks-186442959d0b[Post do Luis Laimer]
+** https://www.youtube.com/watch?v=-oRKr5xA9N0[SBI - situation / behavior / impact]
+** https://openviewpartners.com/blog/how-to-give-effective-performance-feedback-frameworks-and-best-practices/#.XrmLhh-YXeQ[Best Practices]
+** https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect[Dunning Kruger]
+* Ferramentas que usamos para o feedback canvas
+** Notas: https://www.mentimeter.com/[Mentimeter]
+** Canvas: https://www.groupmap.com[GroupMap]
+
+Curtiu? Comentários? Feedbacks? Deixa aí sua mensagem!

@@ -1,6 +1,6 @@
 _site
 .sass-cache
+.jekyll-cache/
 .jekyll-metadata
 .deploy_key
-Gemfile.lock
 asciidoc-pygments.css
