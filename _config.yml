@@ -15,18 +15,14 @@ minima:
 asciidoctor:
   attributes:
     - source-highlighter=pygments
+
 tag_page_layout: tag_page
 tag_page_dir: tag
 
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
   - jekyll-asciidoc
   - pygments.rb
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - Rakefile

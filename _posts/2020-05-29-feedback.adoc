@@ -6,7 +6,6 @@ categories:
 summary: "Conversa com Daniel Wildt sobre feedback"
 tags:
   - feedback
-  - "1:1"
 ---
 
 +++

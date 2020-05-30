@@ -1,17 +1,35 @@
 .DEFAULT_GOAL := help
 
+.PHONY: clean
+clean:
+	@rm -rf _site
+	@rm -rf .jekyll-cache
+	@rm -f .jekyll-metadata
+	@rm -f asciidoc-pygments.css
+	@rm -f Gemfile.lock
+
 setup: ## initial setup (e.g. install jekyll, bundler)
-	gem install jekyll bundler
+	gem install jekyll bundler --verbose
+
+install:
 	bundle install
 
 .PHONY: build
 build: ## build site (e.g. generate html files)
 	#jekyll build
-	bundle exec jekyll build
+	JEKYLL_ENV=production bundle exec jekyll build --trace
 
 .PHONY: run
 run: ## run app on local box
-	bundle exec jekyll serve --watch --incremental
+	JEKYLL_ENV=production bundle exec jekyll serve --watch --incremental
+
+all: clean install build run
+
+dc-build:
+	@docker-compose build
+
+dc-run: dc-build
+	@docker-compose run app /bin/sh
 
 .PHONY: help
 help: ## show this help
