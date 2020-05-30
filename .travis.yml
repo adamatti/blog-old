@@ -6,9 +6,8 @@ branches:
 rvm:
 - 2.6
 cache: bundler
-install:
+before_install:
   - gem install bundler -v 2.1.4
-  - gem install jekyll -v 4.1.0
 env:
   global:
     - JEKYLL_ENV: production
