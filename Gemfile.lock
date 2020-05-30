@@ -90,7 +90,7 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 RUBY VERSION
-   ruby 2.6.5p114
+   ruby 2.6.5
 
 BUNDLED WITH
    2.1.4
