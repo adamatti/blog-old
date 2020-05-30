@@ -11,7 +11,7 @@ set -e
 
 # build site with jekyll, by default to `_site' folder
 #jekyll build
-bundle exec jekyll build
+bundle exec jekyll build --trace
 
 # cleanup
 rm -rf ../workdir
