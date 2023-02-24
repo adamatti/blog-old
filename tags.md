@@ -11,7 +11,7 @@ permalink: /tags/
   {% assign keyValue = hash | split: '#' %}
   {% capture tag_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
   <li class="list-group-item">
-    <a href="{{ site.baseurl}}blog-old/tag/{{ tag_word | downcase }}.html">
+    <a href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag_word | downcase }}.html">
       {{ tag_word }}
     </a>
     <span class="badge pull-right">( {{ site.tags[tag_word].size }} )</span>

@@ -49,8 +49,7 @@ docker-sh: docker-build
 	docker run -it --rm --entrypoint /bin/sh -w /app -v $(PWD):/source $(DOCKER_TAG)
 
 docker-cp: docker-build
-	rm -rf ./_site	
-
+	rm -rf ./_site
 	docker run -it --rm -w /app -v $(PWD):/source $(DOCKER_TAG) /bin/cp -R /app/_site /source
 
 release: docker-cp
