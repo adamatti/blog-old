@@ -1,1399 +1,1399 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="https://adamatti.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adamatti.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-05-30T20:42:11-03:00</updated><id>https://adamatti.github.io/blog/feed.xml</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
-</subtitle><entry><title type="html">Usando o feedback canvas</title><link href="https://adamatti.github.io/blog/2020/05/29/feedback.html" rel="alternate" type="text/html" title="Usando o feedback canvas" /><published>2020-05-29T00:00:00-03:00</published><updated>2020-05-29T00:00:00-03:00</updated><id>https://adamatti.github.io/blog/2020/05/29/feedback</id><content type="html" xml:base="https://adamatti.github.io/blog/2020/05/29/feedback.html">&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;
-&lt;center&gt;
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/nckULqKkYzU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Primeiro Webinar!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Segue alguns links sobre a talk.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;referencias-links&quot;&gt;Referencias / Links&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Sobre o Feedback Canvas&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://medium.com/liferay-engineering-brazil/feedback-canvas-4df3ee3b86b&quot;&gt;Post Matheus Haddad&lt;/a&gt; (criador do Feedback Canvas)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_HmhfFTYUSo&quot;&gt;Entrevista Daniel Wildt e Matheus Haddad&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://medium.com/creditas-tech/como-fazer-feedback-em-time-47ebc4e08b6e&quot;&gt;Post Creditas&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sobre a &lt;a href=&quot;http://bit.ly/CreditasGist&quot;&gt;Creditas&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/os-valores-da-creditas-e-experi%C3%AAncia-dos-nossos-do-1-sarmanho-lima/&quot;&gt;Post sobre valores&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Talks do Leo Andreucci sobre 1:1 no &lt;a href=&quot;https://www.infoq.com/br/presentations/one-on-ones-aumentando-o-desempenho-uma-pessoa-de-cada-vez&quot;&gt;QCon&lt;/a&gt; e &lt;a href=&quot;https://www.eventials.com/Globalcode/tdc-sp-2017-stadium-sexta-9/&quot;&gt;TDC&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sobre o Adamatti&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/adamattiReadme&quot;&gt;Sobre minha visão de Team Lead&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://gist.githubusercontent.com/adamatti/287323a3e9c4a4d341ada1f9a2b58136/raw/101e6a7f63abb28cf562cbc839d39170b5d24c05/4_SELF_KNOWLEDGE.adoc&quot;&gt;Auto Avaliações&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sobre Feedback&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://medium.com/guma-rs/cuidados-para-um-feedback-efetivo-83fd1ffd3b11&quot;&gt;Post do Guma / Émerson Hernandez&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://agilecoffee.com/toolkit/nvc/&quot;&gt;Comunicação Não Violenta&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.radicalcandor.com/&quot;&gt;Radical Candor&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@luisfernandolaimer/an-honest-view-around-feedbacks-186442959d0b&quot;&gt;Post do Luis Laimer&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=-oRKr5xA9N0&quot;&gt;SBI - situation / behavior / impact&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://openviewpartners.com/blog/how-to-give-effective-performance-feedback-frameworks-and-best-practices/#.XrmLhh-YXeQ&quot;&gt;Best Practices&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect&quot;&gt;Dunning Kruger&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ferramentas que usamos para o feedback canvas&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Notas: &lt;a href=&quot;https://www.mentimeter.com/&quot;&gt;Mentimeter&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Canvas: &lt;a href=&quot;https://www.groupmap.com&quot;&gt;GroupMap&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Curtiu? Comentários? Feedbacks? Deixa aí sua mensagem!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="feedback" /><category term="1on1" /><summary type="html"></summary></entry><entry><title type="html">Vencer é um trabalho interno</title><link href="https://adamatti.github.io/blog/leader/2018/11/16/vencer.html" rel="alternate" type="text/html" title="Vencer é um trabalho interno" /><published>2018-11-16T01:00:00-02:00</published><updated>2018-11-16T01:00:00-02:00</updated><id>https://adamatti.github.io/blog/leader/2018/11/16/vencer</id><content type="html" xml:base="https://adamatti.github.io/blog/leader/2018/11/16/vencer.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://globalbookclub.s3.amazonaws.com/resources/1070987/winning_is_an_inside_job/cover.jpg&quot; alt=&quot;cover&quot; width=&quot;150&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Gosto muito de aproveitar o tempo no transito com podcasts (mencionado no &lt;a href=&quot;/blog/learn/2017/09/01/learn.html&quot;&gt;post sobre aprendizado&lt;/a&gt;).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Boa parte dos podcasts são sobre livros (ou resumo dos mesmos), como o &lt;a href=&quot;https://blog.keeplearning.school/guncast/projeto-revoal-183&quot;&gt;projeto Revoal do Murilo Gun&lt;/a&gt;, &lt;a href=&quot;https://www.resumocast.com.br/&quot;&gt;Resumo Cast&lt;/a&gt;, ou mesmo do &lt;a href=&quot;https://www.audible.com/&quot;&gt;Audible da Amazon&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Um dos caras que eu curto é o &lt;a href=&quot;https://www.johnmaxwell.com/&quot;&gt;John Maxwell&lt;/a&gt; (falo dele em &lt;a href=&quot;/blog/tag/leadership.html&quot;&gt;alguns posts sobre liderança&lt;/a&gt;).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Deixo aqui algumas notas/resumo sobre o podcast &lt;a href=&quot;https://johnmaxwellleadershippodcast.com/episodes/winning-is-an-inside-job/&quot;&gt;&lt;em&gt;Winning is an inside job&lt;/em&gt;&lt;/a&gt;, disponível aqui abaixo:&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;iframe style=&quot;border: none&quot; src=&quot;//html5-player.libsyn.com/embed/episode/id/6747014/height/90/theme/custom/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/direction/backward/render-playlist/no/custom-color/60cae6/&quot; height=&quot;90&quot; width=&quot;100%&quot; scrolling=&quot;no&quot;  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen&gt;&lt;/iframe&gt;
-&lt;hr&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Meu resumo:&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Grandes vencedores competem contra si mesmos, querem ser melhores a cada dia. A lista do John é composta de 13 itens que qualquer pessoa pode seguir;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Cresça, seja responsável por você mesmo: não culpe os outros, não culpe o ambiente. faça você as coisas acontecerem. Se essa regra não for seguinda, nem siga em frente nos outros items;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Estude e aprenda com outras pessoas de sucesso: preste atenção no comprometimento, exelencia, integridade, gerencia de tempo, atitude, relacionamentos, prioridades, energia, paz dessas pessoas&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ame o que você faz&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Aprenda com seus erros&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Não tente ser perfeito (diga não ao perfeccionismo):&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;isso impede algumas pessoas de começarem (ficam paralizados analizando fatos)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;impede de ser produtivo&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;distrai do propósito&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;perfeccionismo é inalcançável&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;perfeccionismo leva ao desapontamento&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Mude agora antes que você seja obrigado a mudar. Aqui é feita a analogia do cavalo morto mencionado no &lt;a href=&quot;/blog/leader/2018/11/03/leader.html&quot;&gt;post anterior&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;entregue o que você promete.&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Sem integridade não há confiança&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sem confiança não há liderança&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sem liderança não há progresso&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Não invente desculpas&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Tenha controle sobre sua vida, gerencie seu tempo. Veja onde você bota seu tempo (ex: netflix, jogos)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Trabalhe em horários que as pessoas não vejam. Aqui não é sobre ser &lt;a href=&quot;https://www.significados.com.br/workaholic/&quot;&gt;&lt;em&gt;workaholic&lt;/em&gt;&lt;/a&gt; e fazer horas extras, mas aproveitar alguns momentos para &quot;afiar o machado&quot; (talvez escutar podcast no transito? 😝)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Planeje e priorize&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Acredite em você mesmo (&lt;a href=&quot;http://somatorio.org/talks/sindrome-impostor&quot;&gt;Síndrome do Impostor?&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dê mais aos outros do que você recebe&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Certamente alguns itens ficaram de fora (ex: saber dizer não, &lt;a href=&quot;https://www.google.com.br/search?q=roda+da+vida&quot;&gt;equilibrar pontos de sua vida&lt;/a&gt;, etc), mas ainda assim acho bem completo os pontos, valendo a reflexão.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;O que você achou do podcast? Do resumo? Comente aí abaixo, mande a sua mensagem em alguma das redes sociais 👍&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="leader" /><category term="leadership" /><summary type="html"></summary></entry><entry><title type="html">Líder chefe de cozinha</title><link href="https://adamatti.github.io/blog/leader/2018/11/11/chefe-de-cozinha.html" rel="alternate" type="text/html" title="Líder chefe de cozinha" /><published>2018-11-11T01:00:00-02:00</published><updated>2018-11-11T01:00:00-02:00</updated><id>https://adamatti.github.io/blog/leader/2018/11/11/chefe-de-cozinha</id><content type="html" xml:base="https://adamatti.github.io/blog/leader/2018/11/11/chefe-de-cozinha.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://russelservicos.com.br/wp-content/uploads/2017/05/chefe-de-cozinha.jpg&quot; alt=&quot;chefe de cozinha&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Na comunidade de TI muitas vezes usamos analogias para explicar um ponto de vista, sugerir um reflexão. Ok, talvez não só na TI, mas vejo muito isso acontecer para dev e usuários finais conseguirem falar a mesma língua.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Em duas situações essa semana eu usei a analogia desse post. Logo, porque não compartilhar com mais pessoas? 😀&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Um &lt;a href=&quot;https://twitter.com/ermathias&quot;&gt;antigo gerente&lt;/a&gt; costumava dizer que um bom líder técnico deveria ser como um chefe de cozinha:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;ele deveria saber ele mesmo preparar os cardápios;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;não necessariamente ele deveria lavar os pratos, descascar legumes / verduras;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;mas que no momento que o prato saísse da cozinha, era o nome dele que estava em jogo. O prato deveria ter a qualidade que o chefe de cozinha exige&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Interessante, não?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Entendo aqui que:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;devemos aprender a delegar mais, pedir ajuda&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;seja um mentor para as pessoas a sua volta&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;implantar processos que garantam melhoria da qualidade:&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;seja ela técnica (ex: &lt;em&gt;review&lt;/em&gt; de código, testes, momentos de estudo )&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;seja ela de time (ex: &lt;em&gt;pair programming&lt;/em&gt;, retrospectivas, ambiente seguro)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;ter a visão do todo&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;é necessário estar presente e ver a &quot;máquina&quot; funcionando&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;E você leitor? O que achou dessa analogia? Agradeço qualquer comentário ou &lt;em&gt;feedback&lt;/em&gt;!&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;outras-referências&quot;&gt;Outras referências:&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://forbes.uol.com.br/carreira/2017/11/10-licoes-de-um-chef-de-cozinha-para-melhorar-suas-habilidades-de-lideranca&quot;&gt;10 lições de um chef de cozinha para melhorar suas habilidades de liderança&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://exame.abril.com.br/carreira/o-que-os-chefs-de-cozinha-tem-a-ensinar-sobre-lideranca&quot;&gt;O que os chefs de cozinha têm a ensinar sobre liderança&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="leader" /><category term="leadership" /><summary type="html">&amp;nbsp;</summary></entry><entry><title type="html">Salve o líder, salve o mundo</title><link href="https://adamatti.github.io/blog/leader/2018/11/03/leader.html" rel="alternate" type="text/html" title="Salve o líder, salve o mundo" /><published>2018-11-03T00:00:00-03:00</published><updated>2018-11-03T00:00:00-03:00</updated><id>https://adamatti.github.io/blog/leader/2018/11/03/leader</id><content type="html" xml:base="https://adamatti.github.io/blog/leader/2018/11/03/leader.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://docs.google.com/presentation/d/17MKUQiaB4QcOkb_en7T2ZorMbdVLwtppp7lKb-OlKUk/edit?usp=sharing&quot;&gt;&lt;img src=&quot;https://orig00.deviantart.net/6f4b/f/2015/012/2/6/heroes__save_the_cheerleader____save_the_world____by_goldennightfall2-d8dpqj5.jpg&quot; alt=&quot;heroes  save the cheerleader    save the world    by goldennightfall2 d8dpqj5&quot; width=&quot;400&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Está ficando recorrente nas minhas conversas de café / almoço o papel do líder, e o que eu espero de um líder. Eu espero mais de um líder, e acho que todas as pessoas deveriam buscar ser mais líder.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Mas o que é um líder? O que é liderança? O que esperar do mesmo? Eu fiz &lt;a href=&quot;https://docs.google.com/presentation/d/17MKUQiaB4QcOkb_en7T2ZorMbdVLwtppp7lKb-OlKUk/edit?usp=sharing&quot;&gt;uma apresentação para alguns colegas sobre o tema&lt;/a&gt; em Nov/2016, mas os &lt;em&gt;slides&lt;/em&gt; não tem todas as informações, logo, pretendo nesse &lt;em&gt;post&lt;/em&gt; falar mais sobre esse temas.&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;the-60-second-leader&quot;&gt;&lt;em&gt;The 60 Second Leader&lt;/em&gt;&lt;/h3&gt;
-&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://www.amazon.com/60-Second-Leader-Everything-Leadership/dp/1841127450&quot;&gt;&lt;img src=&quot;https://books.google.com.br/books/content?id=geDxCjBAUCsC&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;imgtk=AFLRE716-D-hx5QqtfhLc1CttsZsoeD9Ra_4ms3qAP1PQM7h53RCJV2jMUzw24OJj8JLj69woNKFbvGauKjRDeVLmw8lFmrfk0IEUJsUAcBAoQWAyjAa-RXFJRCEVdrJBRCcZbtHj4rr&quot; alt=&quot;content?id=geDxCjBAUCsC&amp;amp;printsec=frontcover&amp;amp;img=1&amp;amp;zoom=1&amp;amp;edge=curl&amp;amp;imgtk=AFLRE716 D hx5QqtfhLc1CttsZsoeD9Ra 4ms3qAP1PQM7h53RCJV2jMUzw24OJj8JLj69woNKFbvGauKjRDeVLmw8lFmrfk0IEUJsUAcBAoQWAyjAa RXFJRCEVdrJBRCcZbtHj4rr&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Por volta de 2007, eu era um desenvolvedor 200% focado em código. Lidava muito bem com código, mas pouco com pessoas (ex: outros devs, testadores, analistas de negócio).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Fiz um trabalho de &lt;em&gt;mentoring&lt;/em&gt; com um líder técnico (eu era o mentorado), e como atividade debatíamos os tópicos do livro &lt;a href=&quot;https://www.amazon.com/60-Second-Leader-Everything-Leadership/dp/1841127450&quot;&gt;&lt;em&gt;The 60 Second Leader&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Em resumo (tradução livre):&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&quot;&quot;
-Faça uma lista de todas as coisas que te aborrece&lt;br&gt;
-NÃO FAÇA ISSO AOS OUTROS, NUNCA.&lt;br&gt;
-Fala uma outra lista com coisas que você gosta&lt;br&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://adamatti.github.io/blog-old/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adamatti.github.io/blog-old/" rel="alternate" type="text/html" /><updated>2023-02-24T17:49:57+00:00</updated><id>https://adamatti.github.io/blog-old/feed.xml</id><title type="html">Adamatti - blog pessoal</title><subtitle>Espaço para compartilhar conhecimento, minhas opiniões, notícias que eu considero relevante.
+</subtitle><entry><title type="html">Usando o feedback canvas</title><link href="https://adamatti.github.io/blog-old/2020/05/29/feedback.html" rel="alternate" type="text/html" title="Usando o feedback canvas" /><published>2020-05-29T03:00:00+00:00</published><updated>2020-05-29T03:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/2020/05/29/feedback</id><content type="html" xml:base="https://adamatti.github.io/blog-old/2020/05/29/feedback.html"><![CDATA[<div class="paragraph">
+<p>
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nckULqKkYzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+</p>
+</div>
+<div class="paragraph">
+<p>Primeiro Webinar!</p>
+</div>
+<div class="paragraph">
+<p>Segue alguns links sobre a talk.</p>
+</div>
+<div class="sect3">
+<h4 id="referencias-links">Referencias / Links</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Sobre o Feedback Canvas</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://medium.com/liferay-engineering-brazil/feedback-canvas-4df3ee3b86b">Post Matheus Haddad</a> (criador do Feedback Canvas)</p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=_HmhfFTYUSo">Entrevista Daniel Wildt e Matheus Haddad</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/creditas-tech/como-fazer-feedback-em-time-47ebc4e08b6e">Post Creditas</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sobre a <a href="http://bit.ly/CreditasGist">Creditas</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.linkedin.com/pulse/os-valores-da-creditas-e-experi%C3%AAncia-dos-nossos-do-1-sarmanho-lima/">Post sobre valores</a></p>
+</li>
+<li>
+<p>Talks do Leo Andreucci sobre 1:1 no <a href="https://www.infoq.com/br/presentations/one-on-ones-aumentando-o-desempenho-uma-pessoa-de-cada-vez">QCon</a> e <a href="https://www.eventials.com/Globalcode/tdc-sp-2017-stadium-sexta-9/">TDC</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sobre o Adamatti</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://bit.ly/adamattiReadme">Sobre minha visão de Team Lead</a></p>
+</li>
+<li>
+<p><a href="https://gist.githubusercontent.com/adamatti/287323a3e9c4a4d341ada1f9a2b58136/raw/101e6a7f63abb28cf562cbc839d39170b5d24c05/4_SELF_KNOWLEDGE.adoc">Auto Avaliações</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sobre Feedback</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://medium.com/guma-rs/cuidados-para-um-feedback-efetivo-83fd1ffd3b11">Post do Guma / Émerson Hernandez</a></p>
+</li>
+<li>
+<p><a href="http://agilecoffee.com/toolkit/nvc/">Comunicação Não Violenta</a></p>
+</li>
+<li>
+<p><a href="https://www.radicalcandor.com/">Radical Candor</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@luisfernandolaimer/an-honest-view-around-feedbacks-186442959d0b">Post do Luis Laimer</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=-oRKr5xA9N0">SBI - situation / behavior / impact</a></p>
+</li>
+<li>
+<p><a href="https://openviewpartners.com/blog/how-to-give-effective-performance-feedback-frameworks-and-best-practices/#.XrmLhh-YXeQ">Best Practices</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning Kruger</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Ferramentas que usamos para o feedback canvas</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Notas: <a href="https://www.mentimeter.com/">Mentimeter</a></p>
+</li>
+<li>
+<p>Canvas: <a href="https://www.groupmap.com">GroupMap</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Curtiu? Comentários? Feedbacks? Deixa aí sua mensagem!</p>
+</div>
+</div>]]></content><author><name></name></author><category term="feedback" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Vencer é um trabalho interno</title><link href="https://adamatti.github.io/blog-old/leader/2018/11/16/vencer.html" rel="alternate" type="text/html" title="Vencer é um trabalho interno" /><published>2018-11-16T03:00:00+00:00</published><updated>2018-11-16T03:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/leader/2018/11/16/vencer</id><content type="html" xml:base="https://adamatti.github.io/blog-old/leader/2018/11/16/vencer.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<img src="https://globalbookclub.s3.amazonaws.com/resources/1070987/winning_is_an_inside_job/cover.jpg" alt="cover" width="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Gosto muito de aproveitar o tempo no transito com podcasts (mencionado no <a href="/blog/learn/2017/09/01/learn.html">post sobre aprendizado</a>).</p>
+</div>
+<div class="paragraph">
+<p>Boa parte dos podcasts são sobre livros (ou resumo dos mesmos), como o <a href="https://blog.keeplearning.school/guncast/projeto-revoal-183">projeto Revoal do Murilo Gun</a>, <a href="https://www.resumocast.com.br/">Resumo Cast</a>, ou mesmo do <a href="https://www.audible.com/">Audible da Amazon</a></p>
+</div>
+<div class="paragraph">
+<p>Um dos caras que eu curto é o <a href="https://www.johnmaxwell.com/">John Maxwell</a> (falo dele em <a href="/blog/tag/leadership.html">alguns posts sobre liderança</a>).</p>
+</div>
+<div class="paragraph">
+<p>Deixo aqui algumas notas/resumo sobre o podcast <a href="https://johnmaxwellleadershippodcast.com/episodes/winning-is-an-inside-job/"><em>Winning is an inside job</em></a>, disponível aqui abaixo:</p>
+</div>
+<hr>
+<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/6747014/height/90/theme/custom/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/direction/backward/render-playlist/no/custom-color/60cae6/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<hr>
+<div class="paragraph">
+<p><strong>Meu resumo:</strong></p>
+</div>
+<div class="paragraph">
+<p>Grandes vencedores competem contra si mesmos, querem ser melhores a cada dia. A lista do John é composta de 13 itens que qualquer pessoa pode seguir;</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Cresça, seja responsável por você mesmo: não culpe os outros, não culpe o ambiente. faça você as coisas acontecerem. Se essa regra não for seguinda, nem siga em frente nos outros items;</p>
+</li>
+<li>
+<p>Estude e aprenda com outras pessoas de sucesso: preste atenção no comprometimento, exelencia, integridade, gerencia de tempo, atitude, relacionamentos, prioridades, energia, paz dessas pessoas</p>
+</li>
+<li>
+<p>Ame o que você faz</p>
+</li>
+<li>
+<p>Aprenda com seus erros</p>
+</li>
+<li>
+<p>Não tente ser perfeito (diga não ao perfeccionismo):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>isso impede algumas pessoas de começarem (ficam paralizados analizando fatos)</p>
+</li>
+<li>
+<p>impede de ser produtivo</p>
+</li>
+<li>
+<p>distrai do propósito</p>
+</li>
+<li>
+<p>perfeccionismo é inalcançável</p>
+</li>
+<li>
+<p>perfeccionismo leva ao desapontamento</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Mude agora antes que você seja obrigado a mudar. Aqui é feita a analogia do cavalo morto mencionado no <a href="/blog/leader/2018/11/03/leader.html">post anterior</a></p>
+</li>
+<li>
+<p>entregue o que você promete.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sem integridade não há confiança</p>
+</li>
+<li>
+<p>Sem confiança não há liderança</p>
+</li>
+<li>
+<p>Sem liderança não há progresso</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Não invente desculpas</p>
+</li>
+<li>
+<p>Tenha controle sobre sua vida, gerencie seu tempo. Veja onde você bota seu tempo (ex: netflix, jogos)</p>
+</li>
+<li>
+<p>Trabalhe em horários que as pessoas não vejam. Aqui não é sobre ser <a href="https://www.significados.com.br/workaholic/"><em>workaholic</em></a> e fazer horas extras, mas aproveitar alguns momentos para "afiar o machado" (talvez escutar podcast no transito? 😝)</p>
+</li>
+<li>
+<p>Planeje e priorize</p>
+</li>
+<li>
+<p>Acredite em você mesmo (<a href="http://somatorio.org/talks/sindrome-impostor">Síndrome do Impostor?</a>)</p>
+</li>
+<li>
+<p>Dê mais aos outros do que você recebe</p>
+</li>
+</ol>
+</div>
+<hr>
+<div class="paragraph">
+<p>Certamente alguns itens ficaram de fora (ex: saber dizer não, <a href="https://www.google.com.br/search?q=roda+da+vida">equilibrar pontos de sua vida</a>, etc), mas ainda assim acho bem completo os pontos, valendo a reflexão.</p>
+</div>
+<div class="paragraph">
+<p>O que você achou do podcast? Do resumo? Comente aí abaixo, mande a sua mensagem em alguma das redes sociais 👍</p>
+</div>]]></content><author><name></name></author><category term="leader" /><category term="leadership" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Líder chefe de cozinha</title><link href="https://adamatti.github.io/blog-old/leader/2018/11/11/chefe-de-cozinha.html" rel="alternate" type="text/html" title="Líder chefe de cozinha" /><published>2018-11-11T03:00:00+00:00</published><updated>2018-11-11T03:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/leader/2018/11/11/chefe-de-cozinha</id><content type="html" xml:base="https://adamatti.github.io/blog-old/leader/2018/11/11/chefe-de-cozinha.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<img src="https://russelservicos.com.br/wp-content/uploads/2017/05/chefe-de-cozinha.jpg" alt="chefe de cozinha">
+</div>
+</div>
+<div class="paragraph">
+<p>&nbsp;</p>
+</div>
+<div class="paragraph">
+<p>Na comunidade de TI muitas vezes usamos analogias para explicar um ponto de vista, sugerir um reflexão. Ok, talvez não só na TI, mas vejo muito isso acontecer para dev e usuários finais conseguirem falar a mesma língua.</p>
+</div>
+<div class="paragraph">
+<p>Em duas situações essa semana eu usei a analogia desse post. Logo, porque não compartilhar com mais pessoas? 😀</p>
+</div>
+<div class="paragraph">
+<p>Um <a href="https://twitter.com/ermathias">antigo gerente</a> costumava dizer que um bom líder técnico deveria ser como um chefe de cozinha:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ele deveria saber ele mesmo preparar os cardápios;</p>
+</li>
+<li>
+<p>não necessariamente ele deveria lavar os pratos, descascar legumes / verduras;</p>
+</li>
+<li>
+<p>mas que no momento que o prato saísse da cozinha, era o nome dele que estava em jogo. O prato deveria ter a qualidade que o chefe de cozinha exige</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Interessante, não?</p>
+</div>
+<div class="paragraph">
+<p>Entendo aqui que:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>devemos aprender a delegar mais, pedir ajuda</p>
+</li>
+<li>
+<p>seja um mentor para as pessoas a sua volta</p>
+</li>
+<li>
+<p>implantar processos que garantam melhoria da qualidade:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>seja ela técnica (ex: <em>review</em> de código, testes, momentos de estudo )</p>
+</li>
+<li>
+<p>seja ela de time (ex: <em>pair programming</em>, retrospectivas, ambiente seguro)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>ter a visão do todo</p>
+</li>
+<li>
+<p>é necessário estar presente e ver a "máquina" funcionando</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>E você leitor? O que achou dessa analogia? Agradeço qualquer comentário ou <em>feedback</em>!</strong></p>
+</div>
+<div class="sect3">
+<h4 id="outras-referências">Outras referências:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://forbes.uol.com.br/carreira/2017/11/10-licoes-de-um-chef-de-cozinha-para-melhorar-suas-habilidades-de-lideranca">10 lições de um chef de cozinha para melhorar suas habilidades de liderança</a></p>
+</li>
+<li>
+<p><a href="https://exame.abril.com.br/carreira/o-que-os-chefs-de-cozinha-tem-a-ensinar-sobre-lideranca">O que os chefs de cozinha têm a ensinar sobre liderança</a></p>
+</li>
+</ul>
+</div>
+</div>]]></content><author><name></name></author><category term="leader" /><category term="leadership" /><summary type="html"><![CDATA[&nbsp;]]></summary></entry><entry><title type="html">Salve o líder, salve o mundo</title><link href="https://adamatti.github.io/blog-old/leader/2018/11/03/leader.html" rel="alternate" type="text/html" title="Salve o líder, salve o mundo" /><published>2018-11-03T03:00:00+00:00</published><updated>2018-11-03T03:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/leader/2018/11/03/leader</id><content type="html" xml:base="https://adamatti.github.io/blog-old/leader/2018/11/03/leader.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="https://docs.google.com/presentation/d/17MKUQiaB4QcOkb_en7T2ZorMbdVLwtppp7lKb-OlKUk/edit?usp=sharing"><img src="https://orig00.deviantart.net/6f4b/f/2015/012/2/6/heroes__save_the_cheerleader____save_the_world____by_goldennightfall2-d8dpqj5.jpg" alt="heroes  save the cheerleader    save the world    by goldennightfall2 d8dpqj5" width="400"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>&nbsp;</p>
+</div>
+<div class="paragraph">
+<p>Está ficando recorrente nas minhas conversas de café / almoço o papel do líder, e o que eu espero de um líder. Eu espero mais de um líder, e acho que todas as pessoas deveriam buscar ser mais líder.</p>
+</div>
+<div class="paragraph">
+<p>Mas o que é um líder? O que é liderança? O que esperar do mesmo? Eu fiz <a href="https://docs.google.com/presentation/d/17MKUQiaB4QcOkb_en7T2ZorMbdVLwtppp7lKb-OlKUk/edit?usp=sharing">uma apresentação para alguns colegas sobre o tema</a> em Nov/2016, mas os <em>slides</em> não tem todas as informações, logo, pretendo nesse <em>post</em> falar mais sobre esse temas.</p>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="the-60-second-leader"><em>The 60 Second Leader</em></h3>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="https://www.amazon.com/60-Second-Leader-Everything-Leadership/dp/1841127450"><img src="https://books.google.com.br/books/content?id=geDxCjBAUCsC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE716-D-hx5QqtfhLc1CttsZsoeD9Ra_4ms3qAP1PQM7h53RCJV2jMUzw24OJj8JLj69woNKFbvGauKjRDeVLmw8lFmrfk0IEUJsUAcBAoQWAyjAa-RXFJRCEVdrJBRCcZbtHj4rr" alt="content?id=geDxCjBAUCsC&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;imgtk=AFLRE716 D hx5QqtfhLc1CttsZsoeD9Ra 4ms3qAP1PQM7h53RCJV2jMUzw24OJj8JLj69woNKFbvGauKjRDeVLmw8lFmrfk0IEUJsUAcBAoQWAyjAa RXFJRCEVdrJBRCcZbtHj4rr"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Por volta de 2007, eu era um desenvolvedor 200% focado em código. Lidava muito bem com código, mas pouco com pessoas (ex: outros devs, testadores, analistas de negócio).</p>
+</div>
+<div class="paragraph">
+<p>Fiz um trabalho de <em>mentoring</em> com um líder técnico (eu era o mentorado), e como atividade debatíamos os tópicos do livro <a href="https://www.amazon.com/60-Second-Leader-Everything-Leadership/dp/1841127450"><em>The 60 Second Leader</em></a>.</p>
+</div>
+<div class="paragraph">
+<p>Em resumo (tradução livre):</p>
+</div>
+<div class="paragraph">
+<p>""
+Faça uma lista de todas as coisas que te aborrece<br>
+NÃO FAÇA ISSO AOS OUTROS, NUNCA.<br>
+Fala uma outra lista com coisas que você gosta<br>
 FAÇA ISSO AOS OUTROS. SEMPRE!
-&quot;&quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Há vários &lt;em&gt;insights&lt;/em&gt; nesse livro para ser um líder melhor, dentre eles:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Falha / resiliência&lt;/strong&gt;: melhoria continua. Você vai tropeçar no meio do caminho, mas o que importa é se você vai se levantar, e o que fazer para não cometer o mesmo erro. (parece o &lt;a href=&quot;https://www.youtube.com/watch?v=_J0Ahh3UxbM&quot;&gt;discurso do Rocky&lt;/a&gt; isso?)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Decisão&lt;/strong&gt;: conhece a história da pequena &lt;a href=&quot;https://www.google.com.br/search?q=tilly+tsunami&quot;&gt;Tilly e do Tsunami&lt;/a&gt;? Uma criança de 10 anos sabendo do padrão de ondas do mar durante o Tsunami &lt;strong&gt;salvou&lt;/strong&gt; várias pessoas da catástrofe.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Conexões&lt;/strong&gt;: dos maiores medos da humanidade (segundo uma pesquisa do NY times), a morte vem em terceiro. Andar numa sala lotada vem em segundo. Falar em público em vem primeiro lugar.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Sorte&lt;/strong&gt;: faça esse &lt;a href=&quot;https://www.youtube.com/watch?v=IGQmdoK_ZfY&quot;&gt;teste do gorila&lt;/a&gt;. A sorte as vezes nada mais é de perceber a oportunidade que outros não perceberam&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Otimismo&lt;/strong&gt;: pq ninguem quer trabalhar para pessimistas&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Estratégia&lt;/strong&gt;: diz a sabedoria tribal de Dakota, &quot;se você descobre que está montado em um cavalo morto, a melhor estratégia é desmontar. Claro, tem outras opções: mudar rios, montar um comitê para estudar cavalo morto&amp;#8230;&amp;#8203; estudar como outras empresas montam cavalos mortos&amp;#8230;&amp;#8203; mas depois de tudo isso você terá de desmontar&quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Competição&lt;/strong&gt;: aqui o livro fala sobre &lt;a href=&quot;https://www.google.com.br/search?q=oceano+azul+e+vermelho&quot;&gt;oceano azul e vermelho&lt;/a&gt;, sobre inovar x competir.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Ação&lt;/strong&gt;: como natação, liderança não se aprende em livros (&lt;a href=&quot;https://www.youtube.com/watch?v=71zNr6F6t2U&quot;&gt;John Wayne&lt;/a&gt; tem um ótimo método)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Execução&lt;/strong&gt;: Auguste Rodin, quando perguntado como fazia cavalos em mármore, respondeu: &quot;1) pegue um pedaço de mármore, 2) pegue suas ferramentas, 3) tire do mármore tudo aquilo q não parece com um cavalo&quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Gerenciamento&lt;/strong&gt;: Líder x Gerente, plano x visão, controle x inspiração&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Mudança&lt;/strong&gt;: ver sobre a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Teoria_das_janelas_quebradas&quot;&gt;teoria das janelas quebradas&lt;/a&gt;, sobre como atuar nas pequenas coisas para passar uma melhor visão;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Questões&lt;/strong&gt;: sobre a importância do questionar x fazer. Simon Sinek faz isso muito bem no &lt;a href=&quot;https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action&quot;&gt;Start with Why&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Atenção&lt;/strong&gt;: você consegue atenção &lt;strong&gt;dando&lt;/strong&gt; atenção.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Motivação&lt;/strong&gt;: dizem os consultores McKinsey, pessoas querem acreditar nos seus chefes, querem ser necessários e riscos (não me dê tarefas, deixe-me tomar decisões)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Alvos&lt;/strong&gt;: a importancia de métricas&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;O livro ainda fala sobre inovação, cultura, Ego, humildade, medo, amor (falam muito do Disney aqui), presença, legado (não crie seguidores, crie líderes).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;O que me caiu a ficha aqui é q há uma infinidade de &lt;em&gt;soft skills&lt;/em&gt; a serem trabalhadas por um líder. Que temos muitos chefes, e poucos líderes.&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;líderança-e-pirulitos&quot;&gt;Líderança e Pirulitos&lt;/h3&gt;
-&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;/blog/leadership/2017/09/20/lollipop.html&quot;&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5KOQoHeRHXfS-SkcyYK0jQ.png&quot; alt=&quot;1*5KOQoHeRHXfS SkcyYK0jQ&quot; width=&quot;300&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Basicamente o que foi falado no post &lt;a href=&quot;/blog/leadership/2017/09/20/lollipop.html&quot;&gt;Liderança e Pirulitos&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Poucas pessoas se consideram líderes!&lt;/strong&gt; Eu vejo pessoas puxando grandes iniciativas dentro da empresa, sendo chamadas para tantas outras que não fazem parte da sua &quot;função&quot; e ainda assim elas não se consideram líderes!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Vejo a mesma coisa de pessoas que sabem muito, falam bem, mas não querem ser palestrantes. Pessoal acha que essas &lt;em&gt;skills&lt;/em&gt; são 0 ou 1, não vêem que isso são coisas que devem ser praticadas e evoluídas. &lt;a href=&quot;https://www.youtube.com/watch?v=RVmMeMcGc0Y&quot;&gt;Fake it Till You Make it&lt;/a&gt;!&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;e-o-que-são-esses-níveis&quot;&gt;E o que são esses níveis?&lt;/h3&gt;
-&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://psychologyformarketers.com/5-levels-leadership-john-maxwell/&quot;&gt;&lt;img src=&quot;http://psychologyformarketers.com/wp-content/uploads/2014/05/5-levels-of-leadership1.jpg&quot; alt=&quot;5 levels of leadership1&quot; width=&quot;200&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Gosto muito da explicação do &lt;a href=&quot;https://www.youtube.com/watch?v=4KqL_1G8JD8&quot;&gt;John Maxwel&lt;/a&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;No nível 1, a pessoa é só chefe. É onde se consegue a menor energia do time, e se faz várias coisas pessoais no horário de serviço&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;No nível 2, as pessoas querem seguir esse líder. Ele escuta, absorve, aprende. Eles sabem como servir e gostam de servir&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;No nível 3, ele é um líder efetivo. É como um guia turístico: &quot;é melhor ir por aqui&quot;, cria &lt;em&gt;momentum&lt;/em&gt;/impulso (diferença entre um trem embalado e um parado enfrentando uma muralha)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;No nível 4, ele forma outros líderes&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;No nível 5, ele é respeitado por todos. E já esteve no nível 4 por muito tempo.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=4KqL_1G8JD8&quot;&gt;John Maxwel&lt;/a&gt; fecha o vídeo dizendo: &quot;você deve estar se perguntando, qual nível eu estou? &quot;, e explica que esses níveis são a cada relação líder x liderado, com cada pessoa.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;E que em resumo, liderança é &lt;strong&gt;influência&lt;/strong&gt; .&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;e-pq-os-líderes-comem-por-último-ou-a-biologia-do-líder&quot;&gt;E pq os líderes comem por último (ou: a biologia do líder)&lt;/h3&gt;
-&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://startwithwhy.com/product/leaders-eat-last/&quot;&gt;&lt;img src=&quot;https://3idx493qtj7e1jj23a311nfo-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/LEL-Cover-HighRes-600x903.jpg&quot; alt=&quot;LEL Cover HighRes 600x903&quot; width=&quot;150&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;A melhor definição de líder IMO vem do Simon Sinek, da talk &lt;a href=&quot;https://www.youtube.com/watch?v=ReRcHdeUG9Y&quot;&gt;Why Leaders Eat Last&lt;/a&gt;, onde ele fala sobre enzimas, biologia do líder, historia e pq no exército soldados estão dispostos a pular sobre uma bomba para salvar seu time.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Em resumo ele fala de:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Endorfina&lt;/strong&gt;: quer se sentir bem com seu corpo? vá fazer exercício;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Dopamina&lt;/strong&gt;: a satisfação de completar tarefas. Mas cuidado, Dopamina é extremamente viciante;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Serotonina&lt;/strong&gt;: a enzima dos líderes. Faça as pessoas da sua volta ter orgulho de você, tenha orgulho das pessoas da sua volta&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Ocitocina&lt;/strong&gt;: o hormônio da empatia, e pq precisamos mais apertos de mão e contato&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Cortisol&lt;/strong&gt;: o hormônio do stress. Quando você está estressado, seu corpo libera Cortisol para preparar seu corpo para o perigo. Mas algumas funções do corpo são desligadas ao liberar Cortisol, como crescer cabelos / unhas ou anticorpos. Em outras palavras, chefes estressantes &quot;matam&quot; pessoas.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&quot;&quot;
+""</p>
+</div>
+<div class="paragraph">
+<p>Há vários <em>insights</em> nesse livro para ser um líder melhor, dentre eles:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Falha / resiliência</strong>: melhoria continua. Você vai tropeçar no meio do caminho, mas o que importa é se você vai se levantar, e o que fazer para não cometer o mesmo erro. (parece o <a href="https://www.youtube.com/watch?v=_J0Ahh3UxbM">discurso do Rocky</a> isso?)</p>
+</li>
+<li>
+<p><strong>Decisão</strong>: conhece a história da pequena <a href="https://www.google.com.br/search?q=tilly+tsunami">Tilly e do Tsunami</a>? Uma criança de 10 anos sabendo do padrão de ondas do mar durante o Tsunami <strong>salvou</strong> várias pessoas da catástrofe.</p>
+</li>
+<li>
+<p><strong>Conexões</strong>: dos maiores medos da humanidade (segundo uma pesquisa do NY times), a morte vem em terceiro. Andar numa sala lotada vem em segundo. Falar em público em vem primeiro lugar.</p>
+</li>
+<li>
+<p><strong>Sorte</strong>: faça esse <a href="https://www.youtube.com/watch?v=IGQmdoK_ZfY">teste do gorila</a>. A sorte as vezes nada mais é de perceber a oportunidade que outros não perceberam</p>
+</li>
+<li>
+<p><strong>Otimismo</strong>: pq ninguem quer trabalhar para pessimistas</p>
+</li>
+<li>
+<p><strong>Estratégia</strong>: diz a sabedoria tribal de Dakota, "se você descobre que está montado em um cavalo morto, a melhor estratégia é desmontar. Claro, tem outras opções: mudar rios, montar um comitê para estudar cavalo morto&#8230;&#8203; estudar como outras empresas montam cavalos mortos&#8230;&#8203; mas depois de tudo isso você terá de desmontar"</p>
+</li>
+<li>
+<p><strong>Competição</strong>: aqui o livro fala sobre <a href="https://www.google.com.br/search?q=oceano+azul+e+vermelho">oceano azul e vermelho</a>, sobre inovar x competir.</p>
+</li>
+<li>
+<p><strong>Ação</strong>: como natação, liderança não se aprende em livros (<a href="https://www.youtube.com/watch?v=71zNr6F6t2U">John Wayne</a> tem um ótimo método)</p>
+</li>
+<li>
+<p><strong>Execução</strong>: Auguste Rodin, quando perguntado como fazia cavalos em mármore, respondeu: "1) pegue um pedaço de mármore, 2) pegue suas ferramentas, 3) tire do mármore tudo aquilo q não parece com um cavalo"</p>
+</li>
+<li>
+<p><strong>Gerenciamento</strong>: Líder x Gerente, plano x visão, controle x inspiração</p>
+</li>
+<li>
+<p><strong>Mudança</strong>: ver sobre a <a href="https://pt.wikipedia.org/wiki/Teoria_das_janelas_quebradas">teoria das janelas quebradas</a>, sobre como atuar nas pequenas coisas para passar uma melhor visão;</p>
+</li>
+<li>
+<p><strong>Questões</strong>: sobre a importância do questionar x fazer. Simon Sinek faz isso muito bem no <a href="https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action">Start with Why</a></p>
+</li>
+<li>
+<p><strong>Atenção</strong>: você consegue atenção <strong>dando</strong> atenção.</p>
+</li>
+<li>
+<p><strong>Motivação</strong>: dizem os consultores McKinsey, pessoas querem acreditar nos seus chefes, querem ser necessários e riscos (não me dê tarefas, deixe-me tomar decisões)</p>
+</li>
+<li>
+<p><strong>Alvos</strong>: a importancia de métricas</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>O livro ainda fala sobre inovação, cultura, Ego, humildade, medo, amor (falam muito do Disney aqui), presença, legado (não crie seguidores, crie líderes).</p>
+</div>
+<div class="paragraph">
+<p><strong>O que me caiu a ficha aqui é q há uma infinidade de <em>soft skills</em> a serem trabalhadas por um líder. Que temos muitos chefes, e poucos líderes.</strong></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="líderança-e-pirulitos">Líderança e Pirulitos</h3>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="/blog/leadership/2017/09/20/lollipop.html"><img src="https://cdn-images-1.medium.com/max/800/1*5KOQoHeRHXfS-SkcyYK0jQ.png" alt="1*5KOQoHeRHXfS SkcyYK0jQ" width="300"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Basicamente o que foi falado no post <a href="/blog/leadership/2017/09/20/lollipop.html">Liderança e Pirulitos</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Poucas pessoas se consideram líderes!</strong> Eu vejo pessoas puxando grandes iniciativas dentro da empresa, sendo chamadas para tantas outras que não fazem parte da sua "função" e ainda assim elas não se consideram líderes!</p>
+</div>
+<div class="paragraph">
+<p>Vejo a mesma coisa de pessoas que sabem muito, falam bem, mas não querem ser palestrantes. Pessoal acha que essas <em>skills</em> são 0 ou 1, não vêem que isso são coisas que devem ser praticadas e evoluídas. <a href="https://www.youtube.com/watch?v=RVmMeMcGc0Y">Fake it Till You Make it</a>!</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="e-o-que-são-esses-níveis">E o que são esses níveis?</h3>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="http://psychologyformarketers.com/5-levels-leadership-john-maxwell/"><img src="http://psychologyformarketers.com/wp-content/uploads/2014/05/5-levels-of-leadership1.jpg" alt="5 levels of leadership1" width="200"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Gosto muito da explicação do <a href="https://www.youtube.com/watch?v=4KqL_1G8JD8">John Maxwel</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>No nível 1, a pessoa é só chefe. É onde se consegue a menor energia do time, e se faz várias coisas pessoais no horário de serviço</p>
+</li>
+<li>
+<p>No nível 2, as pessoas querem seguir esse líder. Ele escuta, absorve, aprende. Eles sabem como servir e gostam de servir</p>
+</li>
+<li>
+<p>No nível 3, ele é um líder efetivo. É como um guia turístico: "é melhor ir por aqui", cria <em>momentum</em>/impulso (diferença entre um trem embalado e um parado enfrentando uma muralha)</p>
+</li>
+<li>
+<p>No nível 4, ele forma outros líderes</p>
+</li>
+<li>
+<p>No nível 5, ele é respeitado por todos. E já esteve no nível 4 por muito tempo.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://www.youtube.com/watch?v=4KqL_1G8JD8">John Maxwel</a> fecha o vídeo dizendo: "você deve estar se perguntando, qual nível eu estou? ", e explica que esses níveis são a cada relação líder x liderado, com cada pessoa.</p>
+</div>
+<div class="paragraph">
+<p>E que em resumo, liderança é <strong>influência</strong> .</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="e-pq-os-líderes-comem-por-último-ou-a-biologia-do-líder">E pq os líderes comem por último (ou: a biologia do líder)</h3>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="https://startwithwhy.com/product/leaders-eat-last/"><img src="https://3idx493qtj7e1jj23a311nfo-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/LEL-Cover-HighRes-600x903.jpg" alt="LEL Cover HighRes 600x903" width="150"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>A melhor definição de líder IMO vem do Simon Sinek, da talk <a href="https://www.youtube.com/watch?v=ReRcHdeUG9Y">Why Leaders Eat Last</a>, onde ele fala sobre enzimas, biologia do líder, historia e pq no exército soldados estão dispostos a pular sobre uma bomba para salvar seu time.</p>
+</div>
+<div class="paragraph">
+<p>Em resumo ele fala de:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Endorfina</strong>: quer se sentir bem com seu corpo? vá fazer exercício;</p>
+</li>
+<li>
+<p><strong>Dopamina</strong>: a satisfação de completar tarefas. Mas cuidado, Dopamina é extremamente viciante;</p>
+</li>
+<li>
+<p><strong>Serotonina</strong>: a enzima dos líderes. Faça as pessoas da sua volta ter orgulho de você, tenha orgulho das pessoas da sua volta</p>
+</li>
+<li>
+<p><strong>Ocitocina</strong>: o hormônio da empatia, e pq precisamos mais apertos de mão e contato</p>
+</li>
+<li>
+<p><strong>Cortisol</strong>: o hormônio do stress. Quando você está estressado, seu corpo libera Cortisol para preparar seu corpo para o perigo. Mas algumas funções do corpo são desligadas ao liberar Cortisol, como crescer cabelos / unhas ou anticorpos. Em outras palavras, chefes estressantes "matam" pessoas.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>""
 Liderança não é uma posição, não é um cargo. Liderança é uma decisão, uma escolha. Se você se importa com as pessoas da sua volta você se tornou um líder.
-&quot;&quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;liderança-no-mundo-ágil&quot;&gt;Liderança no mundo ágil&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;
-&lt;center&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kVR2ZQxZIMw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;O Luiz Parzianello cita 6 tipos de líder no vídeo acima (sendo os 3 primeiros não recomendados):&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Tradicional / coercitiva: o chefão que manda&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Modelador: deixa que eu faço que eu faço melhor&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Afiliativo: o gerente que não entra em conflitos&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Visionário: os que inspiram a mudança&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Coach / servidor&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Participativa&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Ele ainda fala no vídeo sobre fatores de motivação:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Propósito: encantar o funcionário com o que tem q ser feito&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Possibilidade de desenvolver maestria&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Autonomia&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;E que o líder precisa:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Capacidade de inspirar pessoas&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Capacidade de transformação, agente de mudança&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Confiança: confiar no time e ser confiável&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fazer a diferença&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ser exemplo de tudo isso&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ir além&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;em-resumo&quot;&gt;Em resumo&lt;/h3&gt;
-&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://fijisun.com.fj/2016/09/17/how-to-become-an-inspirational-leader/&quot;&gt;&lt;img src=&quot;http://fijisun.com.fj/wp-content/uploads/2016/09/Leader-680x365.jpg&quot; alt=&quot;Leader 680x365&quot; width=&quot;200&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Concordo com &lt;a href=&quot;http://www.paraoaltoeavante.com.br/supercast-23-arquitetos/&quot;&gt;a visão do Pedro Superti&lt;/a&gt;, que precisamos de mais arquitetos. Já temos muitos pedreiros preocupados em levantar parede e ferramentas, precisamos de engenheiros planejando construções, arquitetos olhando para o uso dessas construções.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;As palavras chave IMO são cuidar e desenvolver outros, melhoria contínua, empatia, escuta ativa. &lt;strong&gt;Os melhores líderes que tive tem essas caracteristicas, e eu sigo esses aprendizados. Quero ser o líder que foram para mim, que me acompanharam em momentos difíceis, que me apontaram para o caminho certo&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;dê-seu-feedback&quot;&gt;Dê seu &lt;em&gt;feedback&lt;/em&gt;&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;O que um líder precisa ter na sua opinião? Como estamos de bons líderes? Temos o suficiente? Você se vê como um líder? 😀&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Coloca um comentário aí embaixo, me &lt;a href=&quot;mailto:adamatti@gmail.com&quot;&gt;manda um email&lt;/a&gt;, manda mensagem em alguma rede.&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;links-sobre-o-assunto&quot;&gt;Links sobre o assunto&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=RVmMeMcGc0Y&quot;&gt;Amy Cuddy - Fake it Till You Make it&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=4KqL_1G8JD8&quot;&gt;John Maxwel - The 5 Levels of Leadership&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ReRcHdeUG9Y&quot;&gt;Simon Sinek - Why Leaders Eat Last&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=kVR2ZQxZIMw&quot;&gt;Luiz Parzianello - Liderança para a Nova Economia&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/feed/update/urn:li:activity:6458090687379443712/&quot;&gt;Dell - What Makes a Great Boss?&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.ted.com/talks/brene_brown_on_vulnerability&quot;&gt;Brene Brown - on vulnerability&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.thoughtworks.com/insights/blog/what-learned-while-becoming-tech-lead&quot;&gt;What I Learned While Becoming a Tech Lead&lt;/a&gt;. Keywords: cuidar dos outros, coach, relacionamentos, desenvolver outros.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/tr%C3%AAs-pilares-que-fazem-um-l%C3%ADder-ser-mais-completo-wyrvalski-duarte/&quot;&gt;Três pilares que fazem um líder ser mais completo&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="leader" /><category term="leadership" /><summary type="html">&amp;nbsp;</summary></entry><entry><title type="html">Microservices</title><link href="https://adamatti.github.io/blog/microservices/2018/08/01/microservices.html" rel="alternate" type="text/html" title="Microservices" /><published>2018-08-01T00:00:00-03:00</published><updated>2018-08-01T00:00:00-03:00</updated><id>https://adamatti.github.io/blog/microservices/2018/08/01/microservices</id><content type="html" xml:base="https://adamatti.github.io/blog/microservices/2018/08/01/microservices.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://3.bp.blogspot.com/-ti55Je60LRk/WzozswNM73I/AAAAAAAA2OI/vzUQe7rU0sEVICsGCzN2khr-9RdXiTRJQCLcBGAs/s1600/Microservices_Mindmap.jpg&quot; alt=&quot;Microservices Mindmap&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Um amigo solicitou algum material para aprender mais sobre micro serviços e eu acabei prometendo um &lt;em&gt;post&lt;/em&gt;&amp;#8230;&amp;#8203; aqui está, fiz um &lt;em&gt;dump&lt;/em&gt; dos meus favoritos e notas 🙂&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Esses são os &lt;em&gt;links&lt;/em&gt; que eu gostaria de saber no meu inicio com micro serviços:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Para uma visão geral, vale dar uma olhada nesse &lt;a href=&quot;http://rogervdkimmenade.blogspot.com/2018/06/microservices-mindmap.html&quot;&gt;&lt;em&gt;mindmap&lt;/em&gt;&lt;/a&gt;, ou essa &lt;a href=&quot;https://medium.com/microservices-in-practice/microservices-in-practice-7a3e85b6624c&quot;&gt;introdução&lt;/a&gt;, ou &lt;a href=&quot;https://www.javacodegeeks.com/2015/07/the-real-success-story-of-microservices-architectures.html&quot;&gt;casos de sucesso&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Livros: &lt;a href=&quot;https://blog.jordanrobinson.co.uk/building-microservices&quot;&gt;&lt;em&gt;Building Microservices&lt;/em&gt;&lt;/a&gt;, do &lt;a href=&quot;https://samnewman.io&quot;&gt;Sam Newman&lt;/a&gt; é o principal&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Artigos dos &quot;papas&quot; da programação: &lt;a href=&quot;https://martinfowler.com/articles/microservices.html&quot;&gt;Martin Fowler&lt;/a&gt;, &lt;a href=&quot;https://sites.google.com/site/unclebobconsultingllc/&quot;&gt;Uncle Bob&lt;/a&gt;, &lt;a href=&quot;https://samnewman.io&quot;&gt;Sam Newman&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Acompanhar nas redes sociais: &lt;a href=&quot;https://twitter.com/unclebobmartin&quot;&gt;Uncle Bob&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/martinfowler&quot;&gt;Martin Fowler&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/samnewman&quot;&gt;Sam Newman&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/morvanabonin&quot;&gt;Morvana&lt;/a&gt; (coordenadora da &lt;a href=&quot;/blog/microservices/2018/07/29/tdc-microservices.html&quot;&gt;trilha de micro serviços&lt;/a&gt; no TDC)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Meetups e eventos: &lt;a href=&quot;https://www.meetup.com/pt-BR/Arquitetura-de-TI-Porto-Alegre&quot;&gt;ArqTI-POA&lt;/a&gt;, &lt;a href=&quot;https://www.meetup.com/pt-BR/Microservices-Porto-Alegre&quot;&gt;microservices&lt;/a&gt;, &lt;a href=&quot;https://www.meetup.com/pt-BR/Docker-Porto-Alegre&quot;&gt;docker&lt;/a&gt;, &lt;a href=&quot;https://www.meetup.com/pt-BR/kubepoa/&quot;&gt;kubernetes&lt;/a&gt; são alguns dos que eu participo&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;apis&quot;&gt;APIs&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://marcelo-cure.blogspot.com/2016/05/versioning-apis.html&quot;&gt;Versionamento de APIs&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://marcelo-cure.blogspot.com/2016/09/rest-anti-patterns.html&quot;&gt;&lt;em&gt;Anti patterns&lt;/em&gt;&lt;/a&gt; / &lt;a href=&quot;https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/&quot;&gt;&lt;em&gt;best practices&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://jsonapi.org&quot;&gt;Padrão JSON API&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Consumir dados para o &lt;em&gt;frontend&lt;/em&gt; (multiplos serviços)? &lt;a href=&quot;https://graphql.org&quot;&gt;GraphQL&lt;/a&gt; (&lt;a href=&quot;https://www.howtographql.com&quot;&gt;&lt;em&gt;how to&lt;/em&gt;&lt;/a&gt;) / &lt;a href=&quot;http://restql.b2w.io&quot;&gt;RestQL&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;REST x RPC [
-&lt;a href=&quot;https://apihandyman.io/do-you-really-know-why-you-prefer-rest-over-rpc&quot;&gt;&lt;em&gt;Do you really know why you prefer REST over RPC?&lt;/em&gt;&lt;/a&gt; |
-&lt;a href=&quot;https://apigility.org/documentation/api-primer/what-is-an-api&quot;&gt;&lt;em&gt;what is an API&lt;/em&gt;&lt;/a&gt;
-]&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;testes&quot;&gt;Testes&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@diogo.lucas/system-tests-in-a-microservice-architecture-17f96ba20c41&quot;&gt;&lt;em&gt;System tests in a microservice architecture&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fun: &lt;a href=&quot;https://9gag.com/gag/aW12yy2&quot;&gt;Debug de micro serviços&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;ferramentas-conceitos&quot;&gt;Ferramentas / conceitos&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/ATWEXZkYgek?t=1h30m4s&quot;&gt;Palestra: &lt;em&gt;Event Sourcing&lt;/em&gt;&lt;/a&gt;, no &lt;em&gt;meetup&lt;/em&gt; de node&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;/blog/docker/2017/07/03/docker.html&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;/blog/tag/continuousdelivery.html&quot;&gt;CI/CD&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-cards=&quot;hidden&quot; data-lang=&quot;pt&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;2014 - We must adopt &lt;a href=&quot;https://twitter.com/hashtag/microservices?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#microservices&lt;/a&gt; to solve all problems with monoliths&lt;br&gt;2016 - We must adopt &lt;a href=&quot;https://twitter.com/hashtag/docker?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#docker&lt;/a&gt; to solve all problems with microservices&lt;br&gt;2018 - We must adopt &lt;a href=&quot;https://twitter.com/hashtag/kubernetes?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#kubernetes&lt;/a&gt; to solve all problems with docker &lt;a href=&quot;https://t.co/J8U1IUIECt&quot;&gt;pic.twitter.com/J8U1IUIECt&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bluecoders (@bluecoders) &lt;a href=&quot;https://twitter.com/bluecoders/status/1022048897525587968?ref_src=twsrc%5Etfw&quot;&gt;25 de julho de 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;palestras&quot;&gt;Palestras&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=X0tjziAQfNQ&quot;&gt;&lt;em&gt;10 Tips for failing badly at Microservices&lt;/em&gt;&lt;/a&gt;, uma das melhores &lt;em&gt;talks&lt;/em&gt; sobre problemas em usar micro serviços. Muito de usar várias linguagens / &lt;em&gt;frameworks&lt;/em&gt; (coisas que parecem vantagens a primeira vista), monolitos, &lt;a href=&quot;https://en.wikipedia.org/wiki/Conway%27s_law&quot;&gt;lei de Conway&lt;/a&gt;, falta de versionamento, compartilhamento de banco&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;O palestrante (David Schmitz) é muito bom na condução da palestra, na ironia, piadas sobre EJB, &lt;em&gt;buzz words&lt;/em&gt;, entre outras&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/papodesysadmin/videos/1724773310950527/&quot;&gt;Palestra do Nubank&lt;/a&gt; no &lt;a href=&quot;https://www.meetup.com/pt-BR/Arquitetura-de-TI-Porto-Alegre&quot;&gt;ArqTI-POA&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;problemas&quot;&gt;Problemas&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://dzone.com/articles/understanding-the-8-fallacies-of-distributed-syste&quot;&gt;&lt;em&gt;Understanding the 8 Fallacies of Distributed Systems&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.eduardopires.net.br/2018/07/microservices-por-que-voce-nao-deveria-ainda-utilizar&quot;&gt;Microservices – Por que você não deveria (ainda) utilizar?&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Já assisti palestras onde foi recomendado não começar por micro serviços, mas sim monolitos com módulos bem definidos. Ví isso na palestra do &lt;a href=&quot;http://www.elemarjr.com/pt/&quot;&gt;Elemar Jr&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/@gutomcosta&quot;&gt;Luiz Costa&lt;/a&gt; (anotei alguns &lt;em&gt;highlights&lt;/em&gt; do TDC &lt;a href=&quot;/blog/microservices/2018/07/29/tdc-microservices.html&quot;&gt;aqui&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;pt&quot;&gt;
-&lt;p lang=&quot;pt&quot; dir=&quot;ltr&quot;&gt;Microservices não surgiu para resolver um problema técnico, e sim de pessoas. Netflix quando começou a fazer microservices estava pensando como resolver o problema de delivery e organizações de times. Os ganhos técnicos são secundários.&lt;/p&gt;&amp;mdash; Weliff Lima (@weliff) &lt;a href=&quot;https://twitter.com/weliff/status/1020792041780006914?ref_src=twsrc%5Etfw&quot;&gt;21 de julho de 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;outros-links-relacionados&quot;&gt;Outros links relacionados&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/zalando/tailor&quot;&gt;Tailor&lt;/a&gt;: micro serviços no &lt;em&gt;frontend&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Conway%27s_law&quot;&gt;lei de Conway&lt;/a&gt;, como a organização dos times afeta os micro serviços. Bonus: &lt;a href=&quot;https://www.thoughtworks.com/pt/insights/blog/demystifying-conways-law&quot;&gt;Demystifying Conway&amp;#8217;s law&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Aceito contribuição de links / artigos / vídeos ou &lt;em&gt;feedbacks&lt;/em&gt; dos aqui postados 🙂&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="microservices" /><category term="microservices" /><summary type="html">&amp;nbsp;</summary></entry><entry><title type="html">Modelo de aprendizado 70/20/10</title><link href="https://adamatti.github.io/blog/learn/2018/07/31/10-20-70.html" rel="alternate" type="text/html" title="Modelo de aprendizado 70/20/10" /><published>2018-07-31T13:00:00-03:00</published><updated>2018-07-31T13:00:00-03:00</updated><id>https://adamatti.github.io/blog/learn/2018/07/31/10-20-70</id><content type="html" xml:base="https://adamatti.github.io/blog/learn/2018/07/31/10-20-70.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://caputconsultoria.com.br/2016/wp-content/uploads/2014/11/70-20-10.jpg&quot; alt=&quot;70 20 10&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Comentei hoje com alguns colegas uma pérola de sabedoria de &lt;a href=&quot;https://twitter.com/ermathias&quot;&gt;um antigo gerente&lt;/a&gt;, sobre o &lt;a href=&quot;https://caputconsultoria.com.br/modelo-de-aprendizagem-702010/&quot;&gt;10/20/70&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Diz esse estudo que, aprendemos no máximo &lt;strong&gt;10%&lt;/strong&gt; com treinamento formal (ex: leitura), &lt;strong&gt;20%&lt;/strong&gt; vendo / falando com pessoas que sabem sobre o assunto e &lt;strong&gt;70%&lt;/strong&gt; fazendo.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Logo, se você não tentar por sí (estou pensando em programação aqui, em testar novos &lt;em&gt;frameworks&lt;/em&gt; / libs / linguagens / ferramentas ) você pode aprender no máximo 30% de algum conteúdo.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Espero que essa informação seja útil 👍&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="learn" /><category term="learn" /><summary type="html"></summary></entry><entry><title type="html">TDC SP 2018 - Trilha Microservices</title><link href="https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html" rel="alternate" type="text/html" title="TDC SP 2018 - Trilha Microservices" /><published>2018-07-29T13:00:00-03:00</published><updated>2018-07-29T13:00:00-03:00</updated><id>https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices</id><content type="html" xml:base="https://adamatti.github.io/blog/microservices/2018/07/29/tdc-microservices.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://s3-sa-east-1.amazonaws.com/globalcodesp/tdc/2015/img/logo/logo-tdc-horizontal.svg&quot; alt=&quot;logo tdc horizontal&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&quot;&quot;
+""</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="liderança-no-mundo-ágil">Liderança no mundo ágil</h3>
+<div class="paragraph">
+<p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kVR2ZQxZIMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+</p>
+</div>
+<div class="paragraph">
+<p>O Luiz Parzianello cita 6 tipos de líder no vídeo acima (sendo os 3 primeiros não recomendados):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tradicional / coercitiva: o chefão que manda</p>
+</li>
+<li>
+<p>Modelador: deixa que eu faço que eu faço melhor</p>
+</li>
+<li>
+<p>Afiliativo: o gerente que não entra em conflitos</p>
+</li>
+<li>
+<p>Visionário: os que inspiram a mudança</p>
+</li>
+<li>
+<p>Coach / servidor</p>
+</li>
+<li>
+<p>Participativa</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ele ainda fala no vídeo sobre fatores de motivação:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Propósito: encantar o funcionário com o que tem q ser feito</p>
+</li>
+<li>
+<p>Possibilidade de desenvolver maestria</p>
+</li>
+<li>
+<p>Autonomia</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>E que o líder precisa:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Capacidade de inspirar pessoas</p>
+</li>
+<li>
+<p>Capacidade de transformação, agente de mudança</p>
+</li>
+<li>
+<p>Confiança: confiar no time e ser confiável</p>
+</li>
+<li>
+<p>Fazer a diferença</p>
+</li>
+<li>
+<p>Ser exemplo de tudo isso</p>
+</li>
+<li>
+<p>Ir além</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="em-resumo">Em resumo</h3>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="http://fijisun.com.fj/2016/09/17/how-to-become-an-inspirational-leader/"><img src="http://fijisun.com.fj/wp-content/uploads/2016/09/Leader-680x365.jpg" alt="Leader 680x365" width="200"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Concordo com <a href="http://www.paraoaltoeavante.com.br/supercast-23-arquitetos/">a visão do Pedro Superti</a>, que precisamos de mais arquitetos. Já temos muitos pedreiros preocupados em levantar parede e ferramentas, precisamos de engenheiros planejando construções, arquitetos olhando para o uso dessas construções.</p>
+</div>
+<div class="paragraph">
+<p>As palavras chave IMO são cuidar e desenvolver outros, melhoria contínua, empatia, escuta ativa. <strong>Os melhores líderes que tive tem essas caracteristicas, e eu sigo esses aprendizados. Quero ser o líder que foram para mim, que me acompanharam em momentos difíceis, que me apontaram para o caminho certo</strong>.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="dê-seu-feedback">Dê seu <em>feedback</em></h3>
+<div class="paragraph">
+<p>O que um líder precisa ter na sua opinião? Como estamos de bons líderes? Temos o suficiente? Você se vê como um líder? 😀</p>
+</div>
+<div class="paragraph">
+<p>Coloca um comentário aí embaixo, me <a href="mailto:adamatti@gmail.com">manda um email</a>, manda mensagem em alguma rede.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="links-sobre-o-assunto">Links sobre o assunto</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=RVmMeMcGc0Y">Amy Cuddy - Fake it Till You Make it</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=4KqL_1G8JD8">John Maxwel - The 5 Levels of Leadership</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=ReRcHdeUG9Y">Simon Sinek - Why Leaders Eat Last</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=kVR2ZQxZIMw">Luiz Parzianello - Liderança para a Nova Economia</a></p>
+</li>
+<li>
+<p><a href="https://www.linkedin.com/feed/update/urn:li:activity:6458090687379443712/">Dell - What Makes a Great Boss?</a></p>
+</li>
+<li>
+<p><a href="https://www.ted.com/talks/brene_brown_on_vulnerability">Brene Brown - on vulnerability</a></p>
+</li>
+<li>
+<p><a href="https://www.thoughtworks.com/insights/blog/what-learned-while-becoming-tech-lead">What I Learned While Becoming a Tech Lead</a>. Keywords: cuidar dos outros, coach, relacionamentos, desenvolver outros.</p>
+</li>
+<li>
+<p><a href="https://www.linkedin.com/pulse/tr%C3%AAs-pilares-que-fazem-um-l%C3%ADder-ser-mais-completo-wyrvalski-duarte/">Três pilares que fazem um líder ser mais completo</a></p>
+</li>
+</ul>
+</div>
+</div>]]></content><author><name></name></author><category term="leader" /><category term="leadership" /><summary type="html"><![CDATA[&nbsp;]]></summary></entry><entry><title type="html">Microservices</title><link href="https://adamatti.github.io/blog-old/microservices/2018/08/01/microservices.html" rel="alternate" type="text/html" title="Microservices" /><published>2018-08-01T03:00:00+00:00</published><updated>2018-08-01T03:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/microservices/2018/08/01/microservices</id><content type="html" xml:base="https://adamatti.github.io/blog-old/microservices/2018/08/01/microservices.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<img src="https://3.bp.blogspot.com/-ti55Je60LRk/WzozswNM73I/AAAAAAAA2OI/vzUQe7rU0sEVICsGCzN2khr-9RdXiTRJQCLcBGAs/s1600/Microservices_Mindmap.jpg" alt="Microservices Mindmap">
+</div>
+</div>
+<div class="paragraph">
+<p>&nbsp;</p>
+</div>
+<div class="paragraph">
+<p>Um amigo solicitou algum material para aprender mais sobre micro serviços e eu acabei prometendo um <em>post</em>&#8230;&#8203; aqui está, fiz um <em>dump</em> dos meus favoritos e notas 🙂</p>
+</div>
+<div class="paragraph">
+<p>Esses são os <em>links</em> que eu gostaria de saber no meu inicio com micro serviços:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Para uma visão geral, vale dar uma olhada nesse <a href="http://rogervdkimmenade.blogspot.com/2018/06/microservices-mindmap.html"><em>mindmap</em></a>, ou essa <a href="https://medium.com/microservices-in-practice/microservices-in-practice-7a3e85b6624c">introdução</a>, ou <a href="https://www.javacodegeeks.com/2015/07/the-real-success-story-of-microservices-architectures.html">casos de sucesso</a></p>
+</li>
+<li>
+<p>Livros: <a href="https://blog.jordanrobinson.co.uk/building-microservices"><em>Building Microservices</em></a>, do <a href="https://samnewman.io">Sam Newman</a> é o principal</p>
+</li>
+<li>
+<p>Artigos dos "papas" da programação: <a href="https://martinfowler.com/articles/microservices.html">Martin Fowler</a>, <a href="https://sites.google.com/site/unclebobconsultingllc/">Uncle Bob</a>, <a href="https://samnewman.io">Sam Newman</a></p>
+</li>
+<li>
+<p>Acompanhar nas redes sociais: <a href="https://twitter.com/unclebobmartin">Uncle Bob</a>, <a href="https://twitter.com/martinfowler">Martin Fowler</a>, <a href="https://twitter.com/samnewman">Sam Newman</a>, <a href="https://twitter.com/morvanabonin">Morvana</a> (coordenadora da <a href="/blog/microservices/2018/07/29/tdc-microservices.html">trilha de micro serviços</a> no TDC)</p>
+</li>
+<li>
+<p>Meetups e eventos: <a href="https://www.meetup.com/pt-BR/Arquitetura-de-TI-Porto-Alegre">ArqTI-POA</a>, <a href="https://www.meetup.com/pt-BR/Microservices-Porto-Alegre">microservices</a>, <a href="https://www.meetup.com/pt-BR/Docker-Porto-Alegre">docker</a>, <a href="https://www.meetup.com/pt-BR/kubepoa/">kubernetes</a> são alguns dos que eu participo</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="apis">APIs</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://marcelo-cure.blogspot.com/2016/05/versioning-apis.html">Versionamento de APIs</a></p>
+</li>
+<li>
+<p><a href="http://marcelo-cure.blogspot.com/2016/09/rest-anti-patterns.html"><em>Anti patterns</em></a> / <a href="https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/"><em>best practices</em></a></p>
+</li>
+<li>
+<p><a href="http://jsonapi.org">Padrão JSON API</a></p>
+</li>
+<li>
+<p>Consumir dados para o <em>frontend</em> (multiplos serviços)? <a href="https://graphql.org">GraphQL</a> (<a href="https://www.howtographql.com"><em>how to</em></a>) / <a href="http://restql.b2w.io">RestQL</a></p>
+</li>
+<li>
+<p>REST x RPC [
+<a href="https://apihandyman.io/do-you-really-know-why-you-prefer-rest-over-rpc"><em>Do you really know why you prefer REST over RPC?</em></a> |
+<a href="https://apigility.org/documentation/api-primer/what-is-an-api"><em>what is an API</em></a>
+]</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="testes">Testes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://medium.com/@diogo.lucas/system-tests-in-a-microservice-architecture-17f96ba20c41"><em>System tests in a microservice architecture</em></a></p>
+</li>
+<li>
+<p>Fun: <a href="https://9gag.com/gag/aW12yy2">Debug de micro serviços</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ferramentas-conceitos">Ferramentas / conceitos</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://youtu.be/ATWEXZkYgek?t=1h30m4s">Palestra: <em>Event Sourcing</em></a>, no <em>meetup</em> de node</p>
+</li>
+<li>
+<p><a href="/blog/docker/2017/07/03/docker.html">Docker</a></p>
+</li>
+<li>
+<p><a href="/blog/tag/continuousdelivery.html">CI/CD</a></p>
+</li>
+</ul>
+</div>
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="pt"><p lang="en" dir="ltr">2014 - We must adopt <a href="https://twitter.com/hashtag/microservices?src=hash&amp;ref_src=twsrc%5Etfw">#microservices</a> to solve all problems with monoliths<br>2016 - We must adopt <a href="https://twitter.com/hashtag/docker?src=hash&amp;ref_src=twsrc%5Etfw">#docker</a> to solve all problems with microservices<br>2018 - We must adopt <a href="https://twitter.com/hashtag/kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#kubernetes</a> to solve all problems with docker <a href="https://t.co/J8U1IUIECt">pic.twitter.com/J8U1IUIECt</a></p>&mdash; Bluecoders (@bluecoders) <a href="https://twitter.com/bluecoders/status/1022048897525587968?ref_src=twsrc%5Etfw">25 de julho de 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div class="sect2">
+<h3 id="palestras">Palestras</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=X0tjziAQfNQ"><em>10 Tips for failing badly at Microservices</em></a>, uma das melhores <em>talks</em> sobre problemas em usar micro serviços. Muito de usar várias linguagens / <em>frameworks</em> (coisas que parecem vantagens a primeira vista), monolitos, <a href="https://en.wikipedia.org/wiki/Conway%27s_law">lei de Conway</a>, falta de versionamento, compartilhamento de banco</p>
+<div class="ulist">
+<ul>
+<li>
+<p>O palestrante (David Schmitz) é muito bom na condução da palestra, na ironia, piadas sobre EJB, <em>buzz words</em>, entre outras</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="https://www.facebook.com/papodesysadmin/videos/1724773310950527/">Palestra do Nubank</a> no <a href="https://www.meetup.com/pt-BR/Arquitetura-de-TI-Porto-Alegre">ArqTI-POA</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="problemas">Problemas</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://dzone.com/articles/understanding-the-8-fallacies-of-distributed-syste"><em>Understanding the 8 Fallacies of Distributed Systems</em></a></p>
+</li>
+<li>
+<p><a href="http://www.eduardopires.net.br/2018/07/microservices-por-que-voce-nao-deveria-ainda-utilizar">Microservices – Por que você não deveria (ainda) utilizar?</a></p>
+</li>
+<li>
+<p>Já assisti palestras onde foi recomendado não começar por micro serviços, mas sim monolitos com módulos bem definidos. Ví isso na palestra do <a href="http://www.elemarjr.com/pt/">Elemar Jr</a> e <a href="https://twitter.com/@gutomcosta">Luiz Costa</a> (anotei alguns <em>highlights</em> do TDC <a href="/blog/microservices/2018/07/29/tdc-microservices.html">aqui</a>)</p>
+</li>
+</ul>
+</div>
+<blockquote class="twitter-tweet" data-lang="pt">
+<p lang="pt" dir="ltr">Microservices não surgiu para resolver um problema técnico, e sim de pessoas. Netflix quando começou a fazer microservices estava pensando como resolver o problema de delivery e organizações de times. Os ganhos técnicos são secundários.</p>&mdash; Weliff Lima (@weliff) <a href="https://twitter.com/weliff/status/1020792041780006914?ref_src=twsrc%5Etfw">21 de julho de 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div class="sect2">
+<h3 id="outros-links-relacionados">Outros links relacionados</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/zalando/tailor">Tailor</a>: micro serviços no <em>frontend</em></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Conway%27s_law">lei de Conway</a>, como a organização dos times afeta os micro serviços. Bonus: <a href="https://www.thoughtworks.com/pt/insights/blog/demystifying-conways-law">Demystifying Conway&#8217;s law</a></p>
+</li>
+</ul>
+</div>
+<hr>
+<div class="paragraph">
+<p>Aceito contribuição de links / artigos / vídeos ou <em>feedbacks</em> dos aqui postados 🙂</p>
+</div>
+</div>]]></content><author><name></name></author><category term="microservices" /><category term="microservices" /><summary type="html"><![CDATA[&nbsp;]]></summary></entry><entry><title type="html">Modelo de aprendizado 70/20/10</title><link href="https://adamatti.github.io/blog-old/learn/2018/07/31/10-20-70.html" rel="alternate" type="text/html" title="Modelo de aprendizado 70/20/10" /><published>2018-07-31T16:00:00+00:00</published><updated>2018-07-31T16:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/learn/2018/07/31/10-20-70</id><content type="html" xml:base="https://adamatti.github.io/blog-old/learn/2018/07/31/10-20-70.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<img src="https://caputconsultoria.com.br/2016/wp-content/uploads/2014/11/70-20-10.jpg" alt="70 20 10">
+</div>
+</div>
+<div class="paragraph">
+<p>Comentei hoje com alguns colegas uma pérola de sabedoria de <a href="https://twitter.com/ermathias">um antigo gerente</a>, sobre o <a href="https://caputconsultoria.com.br/modelo-de-aprendizagem-702010/">10/20/70</a>.</p>
+</div>
+<div class="paragraph">
+<p>Diz esse estudo que, aprendemos no máximo <strong>10%</strong> com treinamento formal (ex: leitura), <strong>20%</strong> vendo / falando com pessoas que sabem sobre o assunto e <strong>70%</strong> fazendo.</p>
+</div>
+<div class="paragraph">
+<p>Logo, se você não tentar por sí (estou pensando em programação aqui, em testar novos <em>frameworks</em> / libs / linguagens / ferramentas ) você pode aprender no máximo 30% de algum conteúdo.</p>
+</div>
+<div class="paragraph">
+<p>Espero que essa informação seja útil 👍</p>
+</div>]]></content><author><name></name></author><category term="learn" /><category term="learn" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">TDC SP 2018 - Trilha Microservices</title><link href="https://adamatti.github.io/blog-old/microservices/2018/07/29/tdc-microservices.html" rel="alternate" type="text/html" title="TDC SP 2018 - Trilha Microservices" /><published>2018-07-29T16:00:00+00:00</published><updated>2018-07-29T16:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/microservices/2018/07/29/tdc-microservices</id><content type="html" xml:base="https://adamatti.github.io/blog-old/microservices/2018/07/29/tdc-microservices.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<img src="https://s3-sa-east-1.amazonaws.com/globalcodesp/tdc/2015/img/logo/logo-tdc-horizontal.svg" alt="logo tdc horizontal">
+</div>
+</div>
+<div class="paragraph">
+<p>&nbsp;</p>
+</div>
+<div class="paragraph">
+<p>""
 Microservices não é para qualquer um, mas se você tem o problema certo, esta arquitetura pode ser uma ótima solução
-&quot;&quot;
-&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Dia 20/07 aconteceu &lt;a href=&quot;http://www.thedevelopersconference.com.br/tdc/2018/saopaulo/trilha-microservices&quot;&gt;a trilha de microservices&lt;/a&gt; no TDC SP 2018. Acompanhamos a mesma pela transmissão online (tks TDC! tks &lt;a href=&quot;https://www.zenvia.com/&quot;&gt;Zenvia&lt;/a&gt;!).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Parabéns a coordenação pela seleção de palestras (&lt;a href=&quot;https://twitter.com/morvanabonin&quot;&gt;Morvana&lt;/a&gt; / &lt;a href=&quot;https://twitter.com/@yanaga&quot;&gt;Yanaga&lt;/a&gt; / &lt;a href=&quot;https://twitter.com/@lazaropj&quot;&gt;Lazaro&lt;/a&gt;).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Este &lt;em&gt;post&lt;/em&gt; é para compartilhar minhas notas sobre as palestras.&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;modular-monoliths-como-é-possível-organizar-sua-aplicação-para-habilitar-uma-arquitetura-distribuída&quot;&gt;Modular Monoliths - Como é possível organizar sua aplicação para habilitar uma arquitetura distribuída&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Melhor palestra do dia IMO, parabéns ao &lt;a href=&quot;https://twitter.com/@gutomcosta&quot;&gt;Luiz Costa&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Vai ao encontro da descrição da trilha (&quot;microservices não é para qualquer um&quot;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;narrativa muito similar a uma &lt;em&gt;talk&lt;/em&gt; do &lt;a href=&quot;http://www.elemarjr.com/pt/&quot;&gt;Elemar Jr&lt;/a&gt; (outro baita palestrante), que também fala da importancia de módulos e DDD&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ótimas menções a &lt;a href=&quot;https://twitter.com/simonbrown/status/573072777147777024&quot;&gt;Simon Brown&lt;/a&gt;, &lt;a href=&quot;https://www.martinfowler.com/bliki/FirstLaw.html&quot;&gt;Martin Fowler&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/unclebobmartin/status/118403913937453056&quot;&gt;Uncle Bob&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Bons exemplos e caso de uso de DDD, separação de contexto&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Outros &lt;em&gt;links&lt;/em&gt; que foram mencionados (e debatemos na empresa): &lt;a href=&quot;https://8thlight.com/blog/uncle-bob/2011/11/22/Clean-Architecture.html&quot;&gt;&lt;em&gt;Clean Architecture&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://martinfowler.com/bliki/MonolithFirst.html&quot;&gt;&lt;em&gt;Monolith First&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://martinfowler.com/articles/dont-start-monolith.html&quot;&gt;&lt;em&gt;Don&amp;#8217;t start a monolith&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Slides disponíveis &lt;a href=&quot;https://www.slideshare.net/gutomcosta/modular-monoliths-como-possvel-organizar-sua-aplicao-para-habilitar-uma-arquitetura-distribuda&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;consistência-de-dados-entre-microservices-é-possível&quot;&gt;Consistência de dados entre microservices: é possível?&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra do &lt;a href=&quot;https://twitter.com/elderjava&quot;&gt;Elder Moraes&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Menção a &lt;a href=&quot;https://en.wikipedia.org/wiki/Conway%27s_law&quot;&gt;Conway&amp;#8217;s law&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Falou sobre Transação de compensação, &lt;em&gt;Event Sourcing&lt;/em&gt;, &lt;a href=&quot;https://medium.com/@carlosaugustograhl/transa%C3%A7%C3%B5es-distribu%C3%ADdas-em-micro-servi%C3%A7os-70568b378d77&quot;&gt;Sagas&lt;/a&gt;, &lt;a href=&quot;http://fnproject.io/&quot;&gt;Fn project&lt;/a&gt; (&lt;em&gt;serveless&lt;/em&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Conclusão: questiono se estamos preparados para &lt;em&gt;serveless&lt;/em&gt; 😊&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Slides disponíveis &lt;a href=&quot;https://speakerdeck.com/eldermoraes/consistencia-de-dados-entre-microservices-e-possivel&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;telemetria-de-microsserviços&quot;&gt;Telemetria de microsserviços&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra do &lt;a href=&quot;https://twitter.com/jfelipe90&quot;&gt;Felipe Oliveira&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra introdutória sobre telemetria, já usamos &lt;a href=&quot;https://www.influxdata.com/&quot;&gt;influx&lt;/a&gt; / &lt;a href=&quot;https://grafana.com/&quot;&gt;grafana&lt;/a&gt; / &lt;a href=&quot;https://www.zabbix.com/&quot;&gt;zabbix&lt;/a&gt; na empresa.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Slides disponíveis &lt;a href=&quot;http://slides.com/jfelipe90/telemetria_microservices&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;introdução-a-service-mesh-com-istio&quot;&gt;Introdução a Service Mesh com Istio&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra do &lt;a href=&quot;https://twitter.com/@jwendell&quot;&gt;Jonh Wendell&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Foi na trilha stadium. IMO, não teve muita preparação do palestrante, que parecia perdido nos slides.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Eu já conhecia o &lt;a href=&quot;https://istio.io&quot;&gt;Istio&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pessoal foi ao delirio com &lt;a href=&quot;https://twitter.com/dqo/status/584057756958728193&quot;&gt;essa imagem&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;desafios-de-segurança-em-arquitetura-de-microsserviços&quot;&gt;Desafios de segurança em arquitetura de microsserviços&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra da &lt;a href=&quot;https://twitter.com/@ThaiiBraga&quot;&gt;Thaiane&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/@amandasv__&quot;&gt;Amanda&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Peguei a palestra na metade (demora no retorno do almoço). E sim, temos de falar mais sobre segurança, diversidade e minorias 👍&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;kiali-microservices-como-você-nunca-viu-antes&quot;&gt;Kiali: Microservices como você nunca viu antes&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra do &lt;a href=&quot;https://github.com/gbaufake&quot;&gt;Guilherme&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/@cfcosta_&quot;&gt;Cainã&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Muito legal o &lt;a href=&quot;https://github.com/kiali/kiali&quot;&gt;Kiali&lt;/a&gt; massa a visão gráfica dos serviços.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Muito parecido com o &lt;a href=&quot;http://actional.com&quot;&gt;actional&lt;/a&gt;, atualmente &lt;a href=&quot;https://www.aurea.com/our-solutions/experience-solutions/cx-monitor/&quot;&gt;cx-monitor&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Necessita o &lt;a href=&quot;https://istio.io&quot;&gt;Istio&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;ci-com-microsserviços&quot;&gt;CI com Microsserviços&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra do &lt;a href=&quot;https://twitter.com/@_staticvoid&quot;&gt;Lucas&lt;/a&gt; (achei original &lt;a href=&quot;https://lsantos.me/&quot;&gt;a página dele&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Falado sobre o &lt;a href=&quot;http://www.wercker.com&quot;&gt;Wercker&lt;/a&gt; (ainda prefiro o &lt;a href=&quot;https://jenkins.io/&quot;&gt;Jenkins&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Valeu muito por conhecer o plugin &lt;a href=&quot;https://gitlens.amod.io/&quot;&gt;GitLens&lt;/a&gt; para o vscode&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Slides &lt;a href=&quot;https://speakerdeck.com/khaosdoctor/ci-com-microsservicos&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;como-bff-backend-for-frontend-pode-ser-seu-melhor-amigo-para-lidar-com-diferentes-frontends&quot;&gt;Como BFF (&lt;em&gt;Backend for Frontend&lt;/em&gt;) pode ser seu melhor amigo para lidar com diferentes &lt;em&gt;frontends&lt;/em&gt;&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra do &lt;a href=&quot;https://twitter.com/deividhf&quot;&gt;Deivid&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/@crisaltmann&quot;&gt;Altmann&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Muito legal a &lt;em&gt;talk&lt;/em&gt;, mas por lidar mais com &lt;em&gt;backend&lt;/em&gt; ainda não tive essa necessidade. Mas vejo valor em usar BFF.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;sincronizando-dados-entre-microserviços-usando-o-debezium-e-apache-kafka&quot;&gt;Sincronizando dados entre microserviços usando o Debezium e Apache Kafka&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra do &lt;a href=&quot;https://twitter.com/japoneizo&quot;&gt;Eizo&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://debezium.io&quot;&gt;Debezium&lt;/a&gt; parece resolver o mesmo problema que o &lt;a href=&quot;http://www.oracle.com/technetwork/middleware/goldengate/overview/index.html&quot;&gt;Golden Gate&lt;/a&gt; (ok, usando kafka e permitindo outros usos)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Talvez seja útil para uma implementação de &lt;a href=&quot;https://www.w3schools.com/htmL/html5_serversentevents.asp&quot;&gt;SSE&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;como-a-olx-ganha-dinheiro-com-microservices&quot;&gt;Como a OLX ganha dinheiro com Microservices&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Palestra do Sinval e &lt;a href=&quot;https://twitter.com/@diogok&quot;&gt;Diogo&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Cases são sempre legais, é massa ver o problema/oportunidades/desafios dos outros 😊&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="microservices" /><category term="microservices" /><summary type="html">&amp;nbsp;</summary></entry><entry><title type="html">Métricas de código com gradle</title><link href="https://adamatti.github.io/blog/metricas/2018/07/28/metrics.html" rel="alternate" type="text/html" title="Métricas de código com gradle" /><published>2018-07-28T13:00:00-03:00</published><updated>2018-07-28T13:00:00-03:00</updated><id>https://adamatti.github.io/blog/metricas/2018/07/28/metrics</id><content type="html" xml:base="https://adamatti.github.io/blog/metricas/2018/07/28/metrics.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://www.extradigital.co.uk/marketing-assets/articles/articles-l/metrics-lg.png&quot; alt=&quot;metrics lg&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;motivação&quot;&gt;Motivação&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Buscar algo simples, rápido e automatizado que mostre possíveis pontos de melhoria no código.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Não entrei a fundo em todas as ferramentas, era mais um &lt;a href=&quot;https://www.scaledagileframework.com/spikes/&quot;&gt;&lt;em&gt;spike&lt;/em&gt;&lt;/a&gt; para ver o que as ferramentas oferecem com as configurações padrões, e qual delas é mais interessante dedicar mais tempo.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;o-que-foi-feito&quot;&gt;O que foi feito&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Peguei como base esse &lt;a href=&quot;https://github.com/dwildt/badCodeDojoJavaProblems&quot;&gt;código de dojo&lt;/a&gt; do &lt;a href=&quot;https://blog.danielwildt.com&quot;&gt;Daniel&lt;/a&gt; e segui &lt;a href=&quot;https://dzone.com/articles/code-analysis-with-gradle&quot;&gt;alguns artigos&lt;/a&gt; de como obter métricas usando &lt;a href=&quot;https://gradle.org&quot;&gt;Gradle&lt;/a&gt;. O resultado está &lt;a href=&quot;https://github.com/adamatti/badCodeDojoJavaProblems/tree/metrics&quot;&gt;nesse &lt;em&gt;fork&lt;/em&gt;, no &lt;em&gt;branch metrics&lt;/em&gt;&lt;/a&gt;. Foco especial no &lt;a href=&quot;https://raw.githubusercontent.com/adamatti/badCodeDojoJavaProblems/metrics/build.gradle&quot;&gt;build.gradle&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;como-rodar-o-projeto&quot;&gt;Como rodar o projeto&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.docker.com&quot;&gt;docker&lt;/a&gt; / &lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;docker-compose&lt;/a&gt; (opcional): para rodar o &lt;a href=&quot;https://www.sonarqube.org&quot;&gt;Sonar&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://gradle.org&quot;&gt;Gradle&lt;/a&gt;: para rodar as analises&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;pygments highlight&quot;&gt;&lt;code data-lang=&quot;bash&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;tok-c1&quot;&gt;# Baixar o projeto&lt;/span&gt;
+""
+&nbsp;</p>
+</div>
+<div class="paragraph">
+<p>Dia 20/07 aconteceu <a href="http://www.thedevelopersconference.com.br/tdc/2018/saopaulo/trilha-microservices">a trilha de microservices</a> no TDC SP 2018. Acompanhamos a mesma pela transmissão online (tks TDC! tks <a href="https://www.zenvia.com/">Zenvia</a>!).</p>
+</div>
+<div class="paragraph">
+<p>Parabéns a coordenação pela seleção de palestras (<a href="https://twitter.com/morvanabonin">Morvana</a> / <a href="https://twitter.com/@yanaga">Yanaga</a> / <a href="https://twitter.com/@lazaropj">Lazaro</a>).</p>
+</div>
+<div class="paragraph">
+<p>Este <em>post</em> é para compartilhar minhas notas sobre as palestras.</p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="modular-monoliths-como-é-possível-organizar-sua-aplicação-para-habilitar-uma-arquitetura-distribuída">Modular Monoliths - Como é possível organizar sua aplicação para habilitar uma arquitetura distribuída</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Melhor palestra do dia IMO, parabéns ao <a href="https://twitter.com/@gutomcosta">Luiz Costa</a>.</p>
+</li>
+<li>
+<p>Vai ao encontro da descrição da trilha ("microservices não é para qualquer um")</p>
+</li>
+<li>
+<p>narrativa muito similar a uma <em>talk</em> do <a href="http://www.elemarjr.com/pt/">Elemar Jr</a> (outro baita palestrante), que também fala da importancia de módulos e DDD</p>
+</li>
+<li>
+<p>Ótimas menções a <a href="https://twitter.com/simonbrown/status/573072777147777024">Simon Brown</a>, <a href="https://www.martinfowler.com/bliki/FirstLaw.html">Martin Fowler</a>, <a href="https://twitter.com/unclebobmartin/status/118403913937453056">Uncle Bob</a></p>
+</li>
+<li>
+<p>Bons exemplos e caso de uso de DDD, separação de contexto</p>
+</li>
+<li>
+<p>Outros <em>links</em> que foram mencionados (e debatemos na empresa): <a href="https://8thlight.com/blog/uncle-bob/2011/11/22/Clean-Architecture.html"><em>Clean Architecture</em></a>, <a href="https://martinfowler.com/bliki/MonolithFirst.html"><em>Monolith First</em></a>, <a href="https://martinfowler.com/articles/dont-start-monolith.html"><em>Don&#8217;t start a monolith</em></a></p>
+</li>
+<li>
+<p>Slides disponíveis <a href="https://www.slideshare.net/gutomcosta/modular-monoliths-como-possvel-organizar-sua-aplicao-para-habilitar-uma-arquitetura-distribuda">aqui</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="consistência-de-dados-entre-microservices-é-possível">Consistência de dados entre microservices: é possível?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/elderjava">Elder Moraes</a></p>
+</li>
+<li>
+<p>Menção a <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway&#8217;s law</a></p>
+</li>
+<li>
+<p>Falou sobre Transação de compensação, <em>Event Sourcing</em>, <a href="https://medium.com/@carlosaugustograhl/transa%C3%A7%C3%B5es-distribu%C3%ADdas-em-micro-servi%C3%A7os-70568b378d77">Sagas</a>, <a href="http://fnproject.io/">Fn project</a> (<em>serveless</em>)</p>
+</li>
+<li>
+<p>Conclusão: questiono se estamos preparados para <em>serveless</em> 😊</p>
+</li>
+<li>
+<p>Slides disponíveis <a href="https://speakerdeck.com/eldermoraes/consistencia-de-dados-entre-microservices-e-possivel">aqui</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="telemetria-de-microsserviços">Telemetria de microsserviços</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/jfelipe90">Felipe Oliveira</a></p>
+</li>
+<li>
+<p>Palestra introdutória sobre telemetria, já usamos <a href="https://www.influxdata.com/">influx</a> / <a href="https://grafana.com/">grafana</a> / <a href="https://www.zabbix.com/">zabbix</a> na empresa.</p>
+</li>
+<li>
+<p>Slides disponíveis <a href="http://slides.com/jfelipe90/telemetria_microservices">aqui</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="introdução-a-service-mesh-com-istio">Introdução a Service Mesh com Istio</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/@jwendell">Jonh Wendell</a></p>
+</li>
+<li>
+<p>Foi na trilha stadium. IMO, não teve muita preparação do palestrante, que parecia perdido nos slides.</p>
+</li>
+<li>
+<p>Eu já conhecia o <a href="https://istio.io">Istio</a></p>
+</li>
+<li>
+<p>Pessoal foi ao delirio com <a href="https://twitter.com/dqo/status/584057756958728193">essa imagem</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="desafios-de-segurança-em-arquitetura-de-microsserviços">Desafios de segurança em arquitetura de microsserviços</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra da <a href="https://twitter.com/@ThaiiBraga">Thaiane</a> e <a href="https://twitter.com/@amandasv__">Amanda</a></p>
+</li>
+<li>
+<p>Peguei a palestra na metade (demora no retorno do almoço). E sim, temos de falar mais sobre segurança, diversidade e minorias 👍</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="kiali-microservices-como-você-nunca-viu-antes">Kiali: Microservices como você nunca viu antes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://github.com/gbaufake">Guilherme</a> e <a href="https://twitter.com/@cfcosta_">Cainã</a></p>
+</li>
+<li>
+<p>Muito legal o <a href="https://github.com/kiali/kiali">Kiali</a> massa a visão gráfica dos serviços.</p>
+</li>
+<li>
+<p>Muito parecido com o <a href="http://actional.com">actional</a>, atualmente <a href="https://www.aurea.com/our-solutions/experience-solutions/cx-monitor/">cx-monitor</a></p>
+</li>
+<li>
+<p>Necessita o <a href="https://istio.io">Istio</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="ci-com-microsserviços">CI com Microsserviços</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/@_staticvoid">Lucas</a> (achei original <a href="https://lsantos.me/">a página dele</a>)</p>
+</li>
+<li>
+<p>Falado sobre o <a href="http://www.wercker.com">Wercker</a> (ainda prefiro o <a href="https://jenkins.io/">Jenkins</a>)</p>
+</li>
+<li>
+<p>Valeu muito por conhecer o plugin <a href="https://gitlens.amod.io/">GitLens</a> para o vscode</p>
+</li>
+<li>
+<p>Slides <a href="https://speakerdeck.com/khaosdoctor/ci-com-microsservicos">aqui</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="como-bff-backend-for-frontend-pode-ser-seu-melhor-amigo-para-lidar-com-diferentes-frontends">Como BFF (<em>Backend for Frontend</em>) pode ser seu melhor amigo para lidar com diferentes <em>frontends</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/deividhf">Deivid</a> e <a href="https://twitter.com/@crisaltmann">Altmann</a></p>
+</li>
+<li>
+<p>Muito legal a <em>talk</em>, mas por lidar mais com <em>backend</em> ainda não tive essa necessidade. Mas vejo valor em usar BFF.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="sincronizando-dados-entre-microserviços-usando-o-debezium-e-apache-kafka">Sincronizando dados entre microserviços usando o Debezium e Apache Kafka</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do <a href="https://twitter.com/japoneizo">Eizo</a></p>
+</li>
+<li>
+<p><a href="http://debezium.io">Debezium</a> parece resolver o mesmo problema que o <a href="http://www.oracle.com/technetwork/middleware/goldengate/overview/index.html">Golden Gate</a> (ok, usando kafka e permitindo outros usos)</p>
+</li>
+<li>
+<p>Talvez seja útil para uma implementação de <a href="https://www.w3schools.com/htmL/html5_serversentevents.asp">SSE</a></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="como-a-olx-ganha-dinheiro-com-microservices">Como a OLX ganha dinheiro com Microservices</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Palestra do Sinval e <a href="https://twitter.com/@diogok">Diogo</a></p>
+</li>
+<li>
+<p>Cases são sempre legais, é massa ver o problema/oportunidades/desafios dos outros 😊</p>
+</li>
+</ul>
+</div>
+</div>]]></content><author><name></name></author><category term="microservices" /><category term="microservices" /><summary type="html"><![CDATA[&nbsp;]]></summary></entry><entry><title type="html">Métricas de código com gradle</title><link href="https://adamatti.github.io/blog-old/metricas/2018/07/28/metrics.html" rel="alternate" type="text/html" title="Métricas de código com gradle" /><published>2018-07-28T16:00:00+00:00</published><updated>2018-07-28T16:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/metricas/2018/07/28/metrics</id><content type="html" xml:base="https://adamatti.github.io/blog-old/metricas/2018/07/28/metrics.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<img src="https://www.extradigital.co.uk/marketing-assets/articles/articles-l/metrics-lg.png" alt="metrics lg">
+</div>
+</div>
+<div class="sect3">
+<h4 id="motivação">Motivação</h4>
+<div class="paragraph">
+<p>Buscar algo simples, rápido e automatizado que mostre possíveis pontos de melhoria no código.</p>
+</div>
+<div class="paragraph">
+<p>Não entrei a fundo em todas as ferramentas, era mais um <a href="https://www.scaledagileframework.com/spikes/"><em>spike</em></a> para ver o que as ferramentas oferecem com as configurações padrões, e qual delas é mais interessante dedicar mais tempo.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="o-que-foi-feito">O que foi feito</h4>
+<div class="paragraph">
+<p>Peguei como base esse <a href="https://github.com/dwildt/badCodeDojoJavaProblems">código de dojo</a> do <a href="https://blog.danielwildt.com">Daniel</a> e segui <a href="https://dzone.com/articles/code-analysis-with-gradle">alguns artigos</a> de como obter métricas usando <a href="https://gradle.org">Gradle</a>. O resultado está <a href="https://github.com/adamatti/badCodeDojoJavaProblems/tree/metrics">nesse <em>fork</em>, no <em>branch metrics</em></a>. Foco especial no <a href="https://raw.githubusercontent.com/adamatti/badCodeDojoJavaProblems/metrics/build.gradle">build.gradle</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="como-rodar-o-projeto">Como rodar o projeto</h4>
+<div class="paragraph">
+<p><strong>Requisitos</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.docker.com">docker</a> / <a href="https://docs.docker.com/compose/">docker-compose</a> (opcional): para rodar o <a href="https://www.sonarqube.org">Sonar</a></p>
+</li>
+<li>
+<p><a href="https://gradle.org">Gradle</a>: para rodar as analises</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-c1"># Baixar o projeto</span>
 git clone https://github.com/adamatti/badCodeDojoJavaProblems.git
-&lt;span class=&quot;tok-nb&quot;&gt;cd&lt;/span&gt; badCodeDojoJavaProblems
+<span class="tok-nb">cd</span> badCodeDojoJavaProblems
 
-&lt;span class=&quot;tok-c1&quot;&gt;# Mudar para o branch metrics&lt;/span&gt;
+<span class="tok-c1"># Mudar para o branch metrics</span>
 git checkout metrics
 
-&lt;span class=&quot;tok-c1&quot;&gt;# Iniciar o sonar (opcional)&lt;/span&gt;
+<span class="tok-c1"># Iniciar o sonar (opcional)</span>
 docker-compose -f docker-compose.yml up -d
 
-&lt;span class=&quot;tok-c1&quot;&gt;# Rodar as verificações&lt;/span&gt;
-gradle check jacocoTestReport sonar&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Os relatórios html estarão disponíveis na pasta &lt;code&gt;build/reports&lt;/code&gt;, ou no Sonar (&lt;a href=&quot;http://localhost:9000&quot; class=&quot;bare&quot;&gt;http://localhost:9000&lt;/a&gt;, default &lt;code&gt;admin/admin&lt;/code&gt;).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Você pode entrar no &lt;em&gt;marketplace&lt;/em&gt; do sonar (&lt;a href=&quot;http://localhost:9000/admin/marketplace&quot; class=&quot;bare&quot;&gt;http://localhost:9000/admin/marketplace&lt;/a&gt;) e instalar plugins adicionais (recomendados: &lt;a href=&quot;http://checkstyle.sourceforge.net&quot;&gt;CheckStyle&lt;/a&gt;, &lt;a href=&quot;http://findbugs.sourceforge.net/&quot;&gt;FindBugs&lt;/a&gt;, Groovy - para o codenarc, PMD)&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;considerações-sobre-as-ferramentas&quot;&gt;Considerações sobre as ferramentas&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://checkstyle.sourceforge.net&quot;&gt;CheckStyle&lt;/a&gt; / &lt;a href=&quot;https://pmd.github.io&quot;&gt;PMD&lt;/a&gt;: Regras e relatórios precisam ser configurados. Não vejo valor em quebrar um build se&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Faltar um javadoc&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Arquivo contem tab&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Arquivo &lt;code&gt;package-info.java&lt;/code&gt; ausente&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Arquivo não termina com nova linha&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;É, não curto muito &lt;a href=&quot;https://en.wikipedia.org/wiki/Lint_(software)&quot;&gt;lint&lt;/a&gt;, não acho que isso agrega valor.
-Achei poucas regras interessantes, dentre elas linha muito longa e &lt;em&gt;magic numbers&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://codenarc.sourceforge.net&quot;&gt;CodeNarc&lt;/a&gt;: só consegui fazer funcionar a validação em arquivos groovy. Necessita de mais tempo para uma configuração melhor.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://checkstyle.sourceforge.net&quot;&gt;CheckStyle&lt;/a&gt; / &lt;a href=&quot;https://spotbugs.github.io&quot;&gt;SpotBugs&lt;/a&gt;: acharam apenas 7 &lt;em&gt;warnings&lt;/em&gt;, nenhum significativo&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.eclemma.org/jacoco/&quot;&gt;Jacoco&lt;/a&gt;: Relatório muito completo e detalhado, mostrando cobertura por linha, métodos, classes&amp;#8230;&amp;#8203; Ainda que o exemplo usado não tenha testes.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.sonarqube.org&quot;&gt;Sonar&lt;/a&gt;: é uma baita ferramenta! Dentre os pontos fortes:&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;muita informação e de forma organizada&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;bugs&lt;/em&gt; priorizados&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;fácil navegação entre o código e os &lt;em&gt;bugs&lt;/em&gt; / &lt;em&gt;warnings&lt;/em&gt; / &lt;em&gt;code smells&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;comparação entre analises&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Mostra uma das métricas mais importantes(IMO): &lt;a href=&quot;https://blog.sonarsource.com/cognitive-complexity-because-testability-understandability&quot;&gt;&lt;em&gt;cognitive complexity&lt;/em&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;ferramentas-usadas&quot;&gt;Ferramentas usadas:&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.eclemma.org/jacoco/&quot;&gt;Jacoco&lt;/a&gt;: cobertura de testes&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://checkstyle.sourceforge.net&quot;&gt;CheckStyle&lt;/a&gt;: estão disponíveis as configurações do &lt;a href=&quot;https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml&quot;&gt;google&lt;/a&gt; e antiga &lt;a href=&quot;https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/sun_checks.xml&quot;&gt;Sun&lt;/a&gt;. Tive problemas com a primeira (não investi tempo suficiente para entender / resolver), acabei usando a segunda&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://pmd.github.io&quot;&gt;PMD&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://findbugs.sourceforge.net/&quot;&gt;FindBugs&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://spotbugs.github.io&quot;&gt;SpotBugs&lt;/a&gt;: é uma continuação do [FindBugs], produziu os mesmos resultados. Mesmo assim, os dois estão habilitados no projeto (&lt;a href=&quot;http://findbugs.sourceforge.net&quot;&gt;FindBugs&lt;/a&gt; e &lt;a href=&quot;https://spotbugs.github.io&quot;&gt;SpotBugs&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://codenarc.sourceforge.net&quot;&gt;CodeNarc&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.sonarqube.org&quot;&gt;Sonar&lt;/a&gt;: para publicação dos resultados&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;ferramentas-não-usadas-nesse-momento&quot;&gt;Ferramentas não usadas nesse momento&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://emma.sourceforge.net&quot;&gt;Emma&lt;/a&gt; / &lt;a href=&quot;http://cobertura.github.io/cobertura&quot;&gt;Cobertura&lt;/a&gt;: o &lt;a href=&quot;https://www.eclemma.org/jacoco&quot;&gt;Jacoco&lt;/a&gt; está gerando esse relatório&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://scan.coverity.com&quot;&gt;Coverity&lt;/a&gt;: apenas para projetos &lt;em&gt;Open Source&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/clarkware/jdepend&quot;&gt;JDepend&lt;/a&gt;: por hora não é prioridade validar as dependencias&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://support.roguewave.com/documentation/klocwork/en/2018&quot;&gt;Klocwork&lt;/a&gt;: não parece trivial de plugar no projeto (ver por exemplo o &lt;a href=&quot;https://support.roguewave.com/documentation/klocwork/en/current/kwgradlew&quot;&gt;kwgradlew&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;ferramentas-pagas-não-avaliadas&quot;&gt;Ferramentas pagas não avaliadas&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;div class=&quot;title&quot;&gt;.mas disponíveis aqui se alguem quiser tentar:&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.veracode.com&quot;&gt;Veracode&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.checkmarx.com&quot;&gt;Checkmarx&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.ibm.com/security/application-security/appscan&quot;&gt;IBM appscan&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://software.microfocus.com/pt-br/products/static-code-analysis-sast/overview&quot;&gt;Fortify&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.sonatype.com&quot;&gt;Sonatype&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.blackducksoftware.com/technology/integrations&quot;&gt;Blackduck&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://snyk.io/docs/snyk-for-java&quot;&gt;Snyk&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;próximos-passos&quot;&gt;Próximos passos&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Avaliar outras ferramentas&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Configurar melhor as ferramentas usadas&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Procurar ferramentas similares para Javascript&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Evoluir o &lt;a href=&quot;https://github.com/dclucas/metrics-tracker&quot;&gt;metrics-tracker&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;concluindo&quot;&gt;Concluindo&amp;#8230;&amp;#8203;&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Métricas automatizadas são &quot;interessantes&quot;, e podem apontar partes de código mais complexas, apontar onde possívelmente tenha mais problemas. Mas não vão resolver problemas de &lt;em&gt;design&lt;/em&gt;, qualidade, entrega de valor. Dito isso, eu focaria:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Ver opções de formatação automática, tipo &lt;a href=&quot;https://editorconfig.org/&quot;&gt;editor config&lt;/a&gt; (ou mesmo configurações de &lt;em&gt;IDE&lt;/em&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sessões de &lt;em&gt;design&lt;/em&gt; / arquitetura / planejamento&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Melhores &lt;em&gt;code reviews&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Convenções do time (ex: usar ou não &lt;a href=&quot;https://en.wikipedia.org/wiki/Lint_(software)&quot;&gt;lint&lt;/a&gt;? &lt;a href=&quot;http://www.annotatiomania.com/&quot;&gt;Anotações&lt;/a&gt;?)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Estudos de &lt;a href=&quot;https://www.goodreads.com/book/show/3735293-clean-code&quot;&gt;&lt;em&gt;clean code&lt;/em&gt;&lt;/a&gt;, DDD, organização de código / classes&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Testes funcionais: para garantir que as funcionalidades estão ok. Parece obvio, mas vejo muita gente focando só em teste unitário, considerando a &quot;unidade&quot; métodos.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Estudo de TDD. Só esse ponto já dá outro &lt;em&gt;post&lt;/em&gt;. Acredito muito &lt;a href=&quot;https://builttoadapt.io/why-tdd-489fdcdda05e&quot;&gt;nessa visão &lt;em&gt;#goFastForever&lt;/em&gt;&lt;/a&gt;, fazer certo da primeira vez. &lt;a href=&quot;https://martinfowler.com/bliki/DesignStaminaHypothesis.html&quot;&gt;Esse gráfico do Martin Fowler&lt;/a&gt; também diz isso.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;E você leitor? Alguma verificação automatizada? Recomenda alguma métrica para focar? Como garantir qualidade de código para todos os níveis? Agradeço qualquer &lt;em&gt;feedback&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="metricas" /><category term="metricas" /><category term="gradle" /><summary type="html"></summary></entry><entry><title type="html">Vertx: Minhas impressões</title><link href="https://adamatti.github.io/blog/groovy/vertx/2018/06/16/vertx.html" rel="alternate" type="text/html" title="Vertx: Minhas impressões" /><published>2018-06-16T13:00:00-03:00</published><updated>2018-06-16T13:00:00-03:00</updated><id>https://adamatti.github.io/blog/groovy/vertx/2018/06/16/vertx</id><content type="html" xml:base="https://adamatti.github.io/blog/groovy/vertx/2018/06/16/vertx.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Vert.x_Logo.svg/220px-Vert.x_Logo.svg.png&quot; alt=&quot;220px Vert.x Logo.svg&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Aproveitei a noite fria de sábado (tá 5°C em &lt;a href=&quot;http://www.portoalegre.rs.gov.br&quot;&gt;Porto Alegre&lt;/a&gt;) para brincar com o &lt;em&gt;lib&lt;/em&gt; &lt;a href=&quot;https://vertx.io&quot;&gt;VertX&lt;/a&gt;. Temos alguns microserviços na empresa usando essa &lt;em&gt;lib&lt;/em&gt;, e vários &lt;a href=&quot;https://www.techempower.com/benchmarks&quot;&gt;&lt;em&gt;brenchmarks&lt;/em&gt;&lt;/a&gt; apontam que ele é muito rápido.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Para quem não conhece&lt;/strong&gt;: &lt;a href=&quot;https://vertx.io&quot;&gt;VertX&lt;/a&gt; é uma &lt;em&gt;lib&lt;/em&gt; para criar aplicações reativas, ou como dizem alguns colegas, &quot;ele faz aquela coisa lá que tem no node&quot; :-)&lt;br&gt;
-Foi criado em 2011, é descrito no &lt;a href=&quot;https://vertx.io&quot;&gt;site&lt;/a&gt; como &lt;em&gt;event driven&lt;/em&gt;, &lt;em&gt;non blocking&lt;/em&gt;, poliglota (JVM, JavaScript) e &quot;divertido&quot;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&quot;&quot;
-Os exemplos que eu criei estão disponíveis no &lt;a href=&quot;https://github.com/adamatti/LearnVertx&quot;&gt;github&lt;/a&gt;.
-&quot;&quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;minhas-impressões&quot;&gt;Minhas Impressões:&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;É parecido com o &lt;a href=&quot;https://spring.io&quot;&gt;Spring&lt;/a&gt; em propósito, já que facilita integrações com outros &lt;em&gt;frameworks/libs&lt;/em&gt;/serviços, como &lt;a href=&quot;https://kafka.apache.org&quot;&gt;Kafka&lt;/a&gt;, &lt;a href=&quot;https://www.mongodb.com&quot;&gt;Mongo&lt;/a&gt;, &lt;a href=&quot;https://redis.io&quot;&gt;Redis&lt;/a&gt;, etc. Veja a quantidade de módulos no &lt;a href=&quot;https://mvnrepository.com/artifact/io.vertx&quot;&gt;maven repository&lt;/a&gt; já criados.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;Quick start&lt;/em&gt; é bem simples. Veja esses exemplos na &lt;a href=&quot;https://en.wikipedia.org/wiki/Vert.x&quot;&gt;wikipedia&lt;/a&gt;. Um exemplo de servidor web se resume a:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;pygments highlight&quot;&gt;&lt;code data-lang=&quot;java&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;tok-kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;tok-nn&quot;&gt;io.vertx.core.AbstractVerticle&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;;&lt;/span&gt;
+<span class="tok-c1"># Rodar as verificações</span>
+gradle check jacocoTestReport sonar</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Os relatórios html estarão disponíveis na pasta <code>build/reports</code>, ou no Sonar (<a href="http://localhost:9000" class="bare">http://localhost:9000</a>, default <code>admin/admin</code>).</p>
+</div>
+<div class="paragraph">
+<p>Você pode entrar no <em>marketplace</em> do sonar (<a href="http://localhost:9000/admin/marketplace" class="bare">http://localhost:9000/admin/marketplace</a>) e instalar plugins adicionais (recomendados: <a href="http://checkstyle.sourceforge.net">CheckStyle</a>, <a href="http://findbugs.sourceforge.net/">FindBugs</a>, Groovy - para o codenarc, PMD)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="considerações-sobre-as-ferramentas">Considerações sobre as ferramentas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://checkstyle.sourceforge.net">CheckStyle</a> / <a href="https://pmd.github.io">PMD</a>: Regras e relatórios precisam ser configurados. Não vejo valor em quebrar um build se</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Faltar um javadoc</p>
+</li>
+<li>
+<p>Arquivo contem tab</p>
+</li>
+<li>
+<p>Arquivo <code>package-info.java</code> ausente</p>
+</li>
+<li>
+<p>Arquivo não termina com nova linha</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>É, não curto muito <a href="https://en.wikipedia.org/wiki/Lint_(software)">lint</a>, não acho que isso agrega valor.
+Achei poucas regras interessantes, dentre elas linha muito longa e <em>magic numbers</em>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://codenarc.sourceforge.net">CodeNarc</a>: só consegui fazer funcionar a validação em arquivos groovy. Necessita de mais tempo para uma configuração melhor.</p>
+</li>
+<li>
+<p><a href="http://checkstyle.sourceforge.net">CheckStyle</a> / <a href="https://spotbugs.github.io">SpotBugs</a>: acharam apenas 7 <em>warnings</em>, nenhum significativo</p>
+</li>
+<li>
+<p><a href="https://www.eclemma.org/jacoco/">Jacoco</a>: Relatório muito completo e detalhado, mostrando cobertura por linha, métodos, classes&#8230;&#8203; Ainda que o exemplo usado não tenha testes.</p>
+</li>
+<li>
+<p><a href="https://www.sonarqube.org">Sonar</a>: é uma baita ferramenta! Dentre os pontos fortes:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>muita informação e de forma organizada</p>
+</li>
+<li>
+<p><em>bugs</em> priorizados</p>
+</li>
+<li>
+<p>fácil navegação entre o código e os <em>bugs</em> / <em>warnings</em> / <em>code smells</em></p>
+</li>
+<li>
+<p>comparação entre analises</p>
+</li>
+<li>
+<p><strong>Mostra uma das métricas mais importantes(IMO): <a href="https://blog.sonarsource.com/cognitive-complexity-because-testability-understandability"><em>cognitive complexity</em></a></strong></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ferramentas-usadas">Ferramentas usadas:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.eclemma.org/jacoco/">Jacoco</a>: cobertura de testes</p>
+</li>
+<li>
+<p><a href="http://checkstyle.sourceforge.net">CheckStyle</a>: estão disponíveis as configurações do <a href="https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml">google</a> e antiga <a href="https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/sun_checks.xml">Sun</a>. Tive problemas com a primeira (não investi tempo suficiente para entender / resolver), acabei usando a segunda</p>
+</li>
+<li>
+<p><a href="https://pmd.github.io">PMD</a></p>
+</li>
+<li>
+<p><a href="http://findbugs.sourceforge.net/">FindBugs</a></p>
+</li>
+<li>
+<p><a href="https://spotbugs.github.io">SpotBugs</a>: é uma continuação do [FindBugs], produziu os mesmos resultados. Mesmo assim, os dois estão habilitados no projeto (<a href="http://findbugs.sourceforge.net">FindBugs</a> e <a href="https://spotbugs.github.io">SpotBugs</a>)</p>
+</li>
+<li>
+<p><a href="http://codenarc.sourceforge.net">CodeNarc</a></p>
+</li>
+<li>
+<p><a href="https://www.sonarqube.org">Sonar</a>: para publicação dos resultados</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ferramentas-não-usadas-nesse-momento">Ferramentas não usadas nesse momento</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://emma.sourceforge.net">Emma</a> / <a href="http://cobertura.github.io/cobertura">Cobertura</a>: o <a href="https://www.eclemma.org/jacoco">Jacoco</a> está gerando esse relatório</p>
+</li>
+<li>
+<p><a href="https://scan.coverity.com">Coverity</a>: apenas para projetos <em>Open Source</em></p>
+</li>
+<li>
+<p><a href="https://github.com/clarkware/jdepend">JDepend</a>: por hora não é prioridade validar as dependencias</p>
+</li>
+<li>
+<p><a href="https://support.roguewave.com/documentation/klocwork/en/2018">Klocwork</a>: não parece trivial de plugar no projeto (ver por exemplo o <a href="https://support.roguewave.com/documentation/klocwork/en/current/kwgradlew">kwgradlew</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ferramentas-pagas-não-avaliadas">Ferramentas pagas não avaliadas</h4>
+<div class="ulist">
+<div class="title">.mas disponíveis aqui se alguem quiser tentar:</div>
+<ul>
+<li>
+<p><a href="https://www.veracode.com">Veracode</a></p>
+</li>
+<li>
+<p><a href="https://www.checkmarx.com">Checkmarx</a></p>
+</li>
+<li>
+<p><a href="https://www.ibm.com/security/application-security/appscan">IBM appscan</a></p>
+</li>
+<li>
+<p><a href="https://software.microfocus.com/pt-br/products/static-code-analysis-sast/overview">Fortify</a></p>
+</li>
+<li>
+<p><a href="https://www.sonatype.com">Sonatype</a></p>
+</li>
+<li>
+<p><a href="https://www.blackducksoftware.com/technology/integrations">Blackduck</a></p>
+</li>
+<li>
+<p><a href="https://snyk.io/docs/snyk-for-java">Snyk</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="próximos-passos">Próximos passos</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Avaliar outras ferramentas</p>
+</li>
+<li>
+<p>Configurar melhor as ferramentas usadas</p>
+</li>
+<li>
+<p>Procurar ferramentas similares para Javascript</p>
+</li>
+<li>
+<p>Evoluir o <a href="https://github.com/dclucas/metrics-tracker">metrics-tracker</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="concluindo">Concluindo&#8230;&#8203;</h4>
+<div class="paragraph">
+<p>Métricas automatizadas são "interessantes", e podem apontar partes de código mais complexas, apontar onde possívelmente tenha mais problemas. Mas não vão resolver problemas de <em>design</em>, qualidade, entrega de valor. Dito isso, eu focaria:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ver opções de formatação automática, tipo <a href="https://editorconfig.org/">editor config</a> (ou mesmo configurações de <em>IDE</em>)</p>
+</li>
+<li>
+<p>Sessões de <em>design</em> / arquitetura / planejamento</p>
+</li>
+<li>
+<p>Melhores <em>code reviews</em></p>
+</li>
+<li>
+<p>Convenções do time (ex: usar ou não <a href="https://en.wikipedia.org/wiki/Lint_(software)">lint</a>? <a href="http://www.annotatiomania.com/">Anotações</a>?)</p>
+</li>
+<li>
+<p>Estudos de <a href="https://www.goodreads.com/book/show/3735293-clean-code"><em>clean code</em></a>, DDD, organização de código / classes</p>
+</li>
+<li>
+<p>Testes funcionais: para garantir que as funcionalidades estão ok. Parece obvio, mas vejo muita gente focando só em teste unitário, considerando a "unidade" métodos.</p>
+</li>
+<li>
+<p>Estudo de TDD. Só esse ponto já dá outro <em>post</em>. Acredito muito <a href="https://builttoadapt.io/why-tdd-489fdcdda05e">nessa visão <em>#goFastForever</em></a>, fazer certo da primeira vez. <a href="https://martinfowler.com/bliki/DesignStaminaHypothesis.html">Esse gráfico do Martin Fowler</a> também diz isso.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>E você leitor? Alguma verificação automatizada? Recomenda alguma métrica para focar? Como garantir qualidade de código para todos os níveis? Agradeço qualquer <em>feedback</em>.</p>
+</div>
+</div>]]></content><author><name></name></author><category term="metricas" /><category term="metricas" /><category term="gradle" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Vertx: Minhas impressões</title><link href="https://adamatti.github.io/blog-old/groovy/vertx/2018/06/16/vertx.html" rel="alternate" type="text/html" title="Vertx: Minhas impressões" /><published>2018-06-16T16:00:00+00:00</published><updated>2018-06-16T16:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/groovy/vertx/2018/06/16/vertx</id><content type="html" xml:base="https://adamatti.github.io/blog-old/groovy/vertx/2018/06/16/vertx.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Vert.x_Logo.svg/220px-Vert.x_Logo.svg.png" alt="220px Vert.x Logo.svg">
+</div>
+</div>
+<div class="paragraph">
+<p>Aproveitei a noite fria de sábado (tá 5°C em <a href="http://www.portoalegre.rs.gov.br">Porto Alegre</a>) para brincar com o <em>lib</em> <a href="https://vertx.io">VertX</a>. Temos alguns microserviços na empresa usando essa <em>lib</em>, e vários <a href="https://www.techempower.com/benchmarks"><em>brenchmarks</em></a> apontam que ele é muito rápido.</p>
+</div>
+<div class="paragraph">
+<p><strong>Para quem não conhece</strong>: <a href="https://vertx.io">VertX</a> é uma <em>lib</em> para criar aplicações reativas, ou como dizem alguns colegas, "ele faz aquela coisa lá que tem no node" :-)<br>
+Foi criado em 2011, é descrito no <a href="https://vertx.io">site</a> como <em>event driven</em>, <em>non blocking</em>, poliglota (JVM, JavaScript) e "divertido".</p>
+</div>
+<div class="paragraph">
+<p>""
+Os exemplos que eu criei estão disponíveis no <a href="https://github.com/adamatti/LearnVertx">github</a>.
+""</p>
+</div>
+<div class="sect2">
+<h3 id="minhas-impressões">Minhas Impressões:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>É parecido com o <a href="https://spring.io">Spring</a> em propósito, já que facilita integrações com outros <em>frameworks/libs</em>/serviços, como <a href="https://kafka.apache.org">Kafka</a>, <a href="https://www.mongodb.com">Mongo</a>, <a href="https://redis.io">Redis</a>, etc. Veja a quantidade de módulos no <a href="https://mvnrepository.com/artifact/io.vertx">maven repository</a> já criados.</p>
+</li>
+<li>
+<p><em>Quick start</em> é bem simples. Veja esses exemplos na <a href="https://en.wikipedia.org/wiki/Vert.x">wikipedia</a>. Um exemplo de servidor web se resume a:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kn">import</span> <span class="tok-nn">io.vertx.core.AbstractVerticle</span><span class="tok-p">;</span>
 
-&lt;span class=&quot;tok-kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;tok-kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;tok-nc&quot;&gt;Server&lt;/span&gt; &lt;span class=&quot;tok-kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;AbstractVerticle&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;tok-kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;tok-kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;tok-nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;tok-n&quot;&gt;vertx&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;createHttpServer&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;requestHandler&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;tok-n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;putHeader&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;content-type&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;tok-s&quot;&gt;&amp;quot;text/plain&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;Hello from Vert.x!&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;tok-o&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-mi&quot;&gt;8080&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;tok-o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;tok-o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Os &lt;a href=&quot;https://github.com/adamatti/LearnVertx&quot;&gt;exemplos que criei&lt;/a&gt; ficaram entre 20-60 linhas.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Possui vários exemplos no &lt;a href=&quot;https://github.com/vert-x3/vertx-examples&quot;&gt;github deles&lt;/a&gt;. O &lt;a href=&quot;https://vertx.io/blog/posts/introduction-to-vertx.html&quot;&gt;blog&lt;/a&gt; também aponta para exemplos interessantes&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dependendo do codificador, podemos ter o &lt;a href=&quot;http://callbackhell.com/&quot;&gt;callback hell&lt;/a&gt;: veja &lt;a href=&quot;https://github.com/vert-x3/vertx-examples/blob/master/mongo-examples/src/main/java/io/vertx/examples/mongo/MongoClientVerticle.java#L40&quot;&gt;esse exemplo com mongo&lt;/a&gt;:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;pygments highlight&quot;&gt;&lt;code data-lang=&quot;java&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;tok-n&quot;&gt;mongoClient&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;products&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;product1&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;tok-n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;Inserted id: &amp;quot;&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;());&lt;/span&gt;
+<span class="tok-kd">public</span> <span class="tok-kd">class</span> <span class="tok-nc">Server</span> <span class="tok-kd">extends</span> <span class="tok-n">AbstractVerticle</span> <span class="tok-p">{</span>
+  <span class="tok-kd">public</span> <span class="tok-kt">void</span> <span class="tok-nf">start</span><span class="tok-p">()</span> <span class="tok-p">{</span>
+    <span class="tok-n">vertx</span><span class="tok-p">.</span><span class="tok-na">createHttpServer</span><span class="tok-p">().</span><span class="tok-na">requestHandler</span><span class="tok-p">(</span><span class="tok-n">req</span> <span class="tok-o">-&gt;</span> <span class="tok-p">{</span>
+      <span class="tok-n">req</span><span class="tok-p">.</span><span class="tok-na">response</span><span class="tok-p">()</span>
+        <span class="tok-p">.</span><span class="tok-na">putHeader</span><span class="tok-p">(</span><span class="tok-s">&quot;content-type&quot;</span><span class="tok-p">,</span> <span class="tok-s">&quot;text/plain&quot;</span><span class="tok-p">)</span>
+        <span class="tok-p">.</span><span class="tok-na">end</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello from Vert.x!&quot;</span><span class="tok-p">);</span>
+    <span class="tok-p">}).</span><span class="tok-na">listen</span><span class="tok-p">(</span><span class="tok-mi">8080</span><span class="tok-p">);</span>
+  <span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Os <a href="https://github.com/adamatti/LearnVertx">exemplos que criei</a> ficaram entre 20-60 linhas.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Possui vários exemplos no <a href="https://github.com/vert-x3/vertx-examples">github deles</a>. O <a href="https://vertx.io/blog/posts/introduction-to-vertx.html">blog</a> também aponta para exemplos interessantes</p>
+</li>
+<li>
+<p>Dependendo do codificador, podemos ter o <a href="http://callbackhell.com/">callback hell</a>: veja <a href="https://github.com/vert-x3/vertx-examples/blob/master/mongo-examples/src/main/java/io/vertx/examples/mongo/MongoClientVerticle.java#L40">esse exemplo com mongo</a>:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">mongoClient</span><span class="tok-p">.</span><span class="tok-na">save</span><span class="tok-p">(</span><span class="tok-s">&quot;products&quot;</span><span class="tok-p">,</span> <span class="tok-n">product1</span><span class="tok-p">,</span> <span class="tok-n">id</span> <span class="tok-o">-&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Inserted id: &quot;</span> <span class="tok-o">+</span> <span class="tok-n">id</span><span class="tok-p">.</span><span class="tok-na">result</span><span class="tok-p">());</span>
 
-    &lt;span class=&quot;tok-n&quot;&gt;mongoClient&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;products&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;tok-k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;JsonObject&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;itemId&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;tok-s&quot;&gt;&amp;quot;12345&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;tok-n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;Name is &amp;quot;&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;));&lt;/span&gt;
+    <span class="tok-n">mongoClient</span><span class="tok-p">.</span><span class="tok-na">find</span><span class="tok-p">(</span><span class="tok-s">&quot;products&quot;</span><span class="tok-p">,</span> <span class="tok-k">new</span> <span class="tok-n">JsonObject</span><span class="tok-p">().</span><span class="tok-na">put</span><span class="tok-p">(</span><span class="tok-s">&quot;itemId&quot;</span><span class="tok-p">,</span> <span class="tok-s">&quot;12345&quot;</span><span class="tok-p">),</span> <span class="tok-n">res</span> <span class="tok-o">-&gt;</span> <span class="tok-p">{</span>
+        <span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Name is &quot;</span> <span class="tok-o">+</span> <span class="tok-n">res</span><span class="tok-p">.</span><span class="tok-na">result</span><span class="tok-p">().</span><span class="tok-na">get</span><span class="tok-p">(</span><span class="tok-mi">0</span><span class="tok-p">).</span><span class="tok-na">getString</span><span class="tok-p">(</span><span class="tok-s">&quot;name&quot;</span><span class="tok-p">));</span>
 
-        &lt;span class=&quot;tok-n&quot;&gt;mongoClient&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;products&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;tok-k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;JsonObject&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;itemId&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;tok-s&quot;&gt;&amp;quot;12345&amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;tok-n&quot;&gt;rs&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;tok-k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;succeeded&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;tok-o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;tok-n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;tok-na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;tok-s&quot;&gt;&amp;quot;Product removed &amp;quot;&lt;/span&gt;&lt;span class=&quot;tok-o&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;tok-o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;tok-o&quot;&gt;});&lt;/span&gt;
-    &lt;span class=&quot;tok-o&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;tok-o&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Entre o &lt;a href=&quot;https://github.com/vert-x3/vertx-examples/blob/master/web-client-examples/src/main/java/io/vertx/example/webclient/simple/Client.java&quot;&gt;Http Client &quot;Simple&quot;&lt;/a&gt; do VertX e o &lt;a href=&quot;https://github.com/jgritman/httpbuilder&quot;&gt;HttpBuilder&lt;/a&gt;, eu sigo com o segundo.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Achei o &lt;a href=&quot;https://github.com/vert-x3/vertx-examples/blob/master/web-examples/src/main/java/io/vertx/example/web/helloworld/Server.java&quot;&gt;Http Server&lt;/a&gt; muito complexo comparado com o &lt;a href=&quot;http://sparkjava.com&quot;&gt;Spark Java&lt;/a&gt; e &lt;a href=&quot;https://ratpack.io&quot;&gt;Ratpack&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;conclusão&quot;&gt;Conclusão&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Tirando a questão &lt;a href=&quot;https://www.techempower.com/benchmarks&quot;&gt;&lt;em&gt;performance&lt;/em&gt;&lt;/a&gt; que é muito forte, eu ainda criaria microserviços usando outras opções (ex: &lt;a href=&quot;http://groovy-lang.org&quot;&gt;Groovy&lt;/a&gt; + &lt;a href=&quot;https://spring.io&quot;&gt;Spring&lt;/a&gt;, &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node&lt;/a&gt;).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Não me entenda mal, eu curto sistemas reativos, &lt;a href=&quot;https://slides.com/adamatti/decks/eventsourcing&quot;&gt;falo sobre &lt;em&gt;event sourcing&lt;/em&gt;&lt;/a&gt;&amp;#8230;&amp;#8203; Mas no caso do &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node&lt;/a&gt; toda a linguagem e ecosistema estão preparados para isso. E já sairam do &lt;em&gt;callback&lt;/em&gt;, foram para &lt;a href=&quot;http://bluebirdjs.com/docs/getting-started.html&quot;&gt;Promises&lt;/a&gt; e estão no &lt;a href=&quot;https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/await&quot;&gt;async/await&lt;/a&gt;, tornando sintaxe e sistemas reativos por natureza.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Programar reativo em java com &lt;em&gt;callback&lt;/em&gt; parece quase como &quot;programador java programando funcional em scala&quot;, onde o resultado quase sempre não é programação funcional. É preciso uma mudança de paradigma (funcional x OO), e não só sintaxe.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Enfim, cada caso é um caso, cada problema exige uma solução diferente.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&quot;&quot;
-E você leitor? Qual sua opinião sobre o &lt;a href=&quot;https://vertx.io&quot;&gt;VertX&lt;/a&gt;?
-&quot;&quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;outras-referencias&quot;&gt;Outras referencias&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://escoffier.me/vertx-hol&quot;&gt;Vert.x - From zero to (micro)-hero&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.cubrid.org/blog/inside-vertx-comparison-with-nodejs&quot;&gt;Inside VertX Comparison with Node.js&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/vertx/&quot;&gt;Vertx no Reddit&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/vert-x3/vertx-awesome&quot;&gt;Awesome list&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="groovy" /><category term="vertx" /><category term="reactive" /><summary type="html"></summary></entry><entry><title type="html">GUTS-RS: evento de setembro</title><link href="https://adamatti.github.io/blog/devops/2017/09/24/guts.html" rel="alternate" type="text/html" title="GUTS-RS: evento de setembro" /><published>2017-09-24T13:00:00-03:00</published><updated>2017-09-24T13:00:00-03:00</updated><id>https://adamatti.github.io/blog/devops/2017/09/24/guts</id><content type="html" xml:base="https://adamatti.github.io/blog/devops/2017/09/24/guts.html">&lt;div class=&quot;imageblock text-center&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://4.bp.blogspot.com/-nG45nd81jss/WRNducIxHmI/AAAAAAAAHQE/yr6AYSmwcTceEGgT2E540pOQbg2Sj6XaQCK4B/s196/Facebook%2BLogo.PNG&quot; alt=&quot;Facebook%2BLogo&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Dia 13 de setembro eu palestrei no &lt;a href=&quot;https://www.facebook.com/gudetestes/&quot;&gt;GUTS-RS&lt;/a&gt; com o tema CI/CD. Muito legal ver auditório cheio com pessoas interessadas com o tema.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Agradecimento em especial para a coordenação que registrou um resumo no &lt;a href=&quot;http://guts-rs.blogspot.com.br/2017/09/saiba-o-que-rolou-no-evento-de.html&quot;&gt;&lt;em&gt;blog&lt;/em&gt;&lt;/a&gt; e &lt;a href=&quot;https://www.facebook.com/pg/gudetestes/photos/?tab=album&amp;amp;album_id=1518444338215040&quot;&gt;fotos&lt;/a&gt;. E ao público que avaliou todos os quesitos com média acima de 4 (era de 1 a 5).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Eu já havia falado sobre o tema no &lt;a href=&quot;/blog/devops/2017/07/27/ci-cd.html&quot;&gt;&lt;em&gt;meetup&lt;/em&gt; de docker + microserviços&lt;/a&gt; e &lt;a href=&quot;/blog/devops/2017/08/05/devopsdaypoa.html&quot;&gt;DevopsDays POA&lt;/a&gt;, as referências estão disponíveis nos &lt;em&gt;posts&lt;/em&gt; anteriores.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Seguem os &lt;em&gt;slides&lt;/em&gt; usados no evento:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;
-&lt;center&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/3PuVmMhMc9PNWx&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/GUTS-RS/gutsrs-evento-setembro-2017-continuous-integration-delivery-e-deployment-o-que-so-e-o-que-isso-tem-a-ver-com-devops&quot; title=&quot;[GUTS-RS] Evento Setembro 2017 - Continuous Integration, Delivery e Deployment, o que são e o que isso tem a ver com DevOps?&quot; target=&quot;_blank&quot;&gt;[GUTS-RS] Evento Setembro 2017 - Continuous Integration, Delivery e Deployment, o que são e o que isso tem a ver com DevOps?&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/GUTS-RS&quot; target=&quot;_blank&quot;&gt;GUTS-RS &lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-&lt;/center&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;referências-adicionais&quot;&gt;Referências adicionais&lt;/h3&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://dev.to/apium_hub/some-devops-metrics-to-keep-an-eye-on&quot;&gt;&lt;em&gt;Some devops metrics to keep an eye on&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@diogo.lucas/pipelines-and-tests-dc6942d839e2&quot;&gt;&lt;em&gt;Pipelines and tests&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="devops" /><category term="devops" /><category term="eventos" /><summary type="html"></summary></entry></feed>
+        <span class="tok-n">mongoClient</span><span class="tok-p">.</span><span class="tok-na">remove</span><span class="tok-p">(</span><span class="tok-s">&quot;products&quot;</span><span class="tok-p">,</span> <span class="tok-k">new</span> <span class="tok-n">JsonObject</span><span class="tok-p">().</span><span class="tok-na">put</span><span class="tok-p">(</span><span class="tok-s">&quot;itemId&quot;</span><span class="tok-p">,</span> <span class="tok-s">&quot;12345&quot;</span><span class="tok-p">),</span> <span class="tok-n">rs</span> <span class="tok-o">-&gt;</span> <span class="tok-p">{</span>
+            <span class="tok-k">if</span> <span class="tok-p">(</span><span class="tok-n">rs</span><span class="tok-p">.</span><span class="tok-na">succeeded</span><span class="tok-p">())</span> <span class="tok-p">{</span>
+            <span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Product removed &quot;</span><span class="tok-p">);</span>
+            <span class="tok-p">}</span>
+        <span class="tok-p">});</span>
+    <span class="tok-p">});</span>
+<span class="tok-p">});</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Entre o <a href="https://github.com/vert-x3/vertx-examples/blob/master/web-client-examples/src/main/java/io/vertx/example/webclient/simple/Client.java">Http Client "Simple"</a> do VertX e o <a href="https://github.com/jgritman/httpbuilder">HttpBuilder</a>, eu sigo com o segundo.</p>
+</li>
+<li>
+<p>Achei o <a href="https://github.com/vert-x3/vertx-examples/blob/master/web-examples/src/main/java/io/vertx/example/web/helloworld/Server.java">Http Server</a> muito complexo comparado com o <a href="http://sparkjava.com">Spark Java</a> e <a href="https://ratpack.io">Ratpack</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="conclusão">Conclusão</h3>
+<div class="paragraph">
+<p>Tirando a questão <a href="https://www.techempower.com/benchmarks"><em>performance</em></a> que é muito forte, eu ainda criaria microserviços usando outras opções (ex: <a href="http://groovy-lang.org">Groovy</a> + <a href="https://spring.io">Spring</a>, <a href="https://nodejs.org/en/">Node</a>).</p>
+</div>
+<div class="paragraph">
+<p>Não me entenda mal, eu curto sistemas reativos, <a href="https://slides.com/adamatti/decks/eventsourcing">falo sobre <em>event sourcing</em></a>&#8230;&#8203; Mas no caso do <a href="https://nodejs.org/en/">Node</a> toda a linguagem e ecosistema estão preparados para isso. E já sairam do <em>callback</em>, foram para <a href="http://bluebirdjs.com/docs/getting-started.html">Promises</a> e estão no <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/await">async/await</a>, tornando sintaxe e sistemas reativos por natureza.</p>
+</div>
+<div class="paragraph">
+<p>Programar reativo em java com <em>callback</em> parece quase como "programador java programando funcional em scala", onde o resultado quase sempre não é programação funcional. É preciso uma mudança de paradigma (funcional x OO), e não só sintaxe.</p>
+</div>
+<div class="paragraph">
+<p>Enfim, cada caso é um caso, cada problema exige uma solução diferente.</p>
+</div>
+<div class="paragraph">
+<p>""
+E você leitor? Qual sua opinião sobre o <a href="https://vertx.io">VertX</a>?
+""</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="outras-referencias">Outras referencias</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://escoffier.me/vertx-hol">Vert.x - From zero to (micro)-hero</a></p>
+</li>
+<li>
+<p><a href="https://www.cubrid.org/blog/inside-vertx-comparison-with-nodejs">Inside VertX Comparison with Node.js</a></p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/vertx/">Vertx no Reddit</a></p>
+</li>
+<li>
+<p><a href="https://github.com/vert-x3/vertx-awesome">Awesome list</a></p>
+</li>
+</ul>
+</div>
+</div>]]></content><author><name></name></author><category term="groovy" /><category term="vertx" /><category term="reactive" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">GUTS-RS: evento de setembro</title><link href="https://adamatti.github.io/blog-old/devops/2017/09/24/guts.html" rel="alternate" type="text/html" title="GUTS-RS: evento de setembro" /><published>2017-09-24T16:00:00+00:00</published><updated>2017-09-24T16:00:00+00:00</updated><id>https://adamatti.github.io/blog-old/devops/2017/09/24/guts</id><content type="html" xml:base="https://adamatti.github.io/blog-old/devops/2017/09/24/guts.html"><![CDATA[<div class="imageblock text-center">
+<div class="content">
+<img src="http://4.bp.blogspot.com/-nG45nd81jss/WRNducIxHmI/AAAAAAAAHQE/yr6AYSmwcTceEGgT2E540pOQbg2Sj6XaQCK4B/s196/Facebook%2BLogo.PNG" alt="Facebook%2BLogo">
+</div>
+</div>
+<div class="paragraph">
+<p>Dia 13 de setembro eu palestrei no <a href="https://www.facebook.com/gudetestes/">GUTS-RS</a> com o tema CI/CD. Muito legal ver auditório cheio com pessoas interessadas com o tema.</p>
+</div>
+<div class="paragraph">
+<p>Agradecimento em especial para a coordenação que registrou um resumo no <a href="http://guts-rs.blogspot.com.br/2017/09/saiba-o-que-rolou-no-evento-de.html"><em>blog</em></a> e <a href="https://www.facebook.com/pg/gudetestes/photos/?tab=album&amp;album_id=1518444338215040">fotos</a>. E ao público que avaliou todos os quesitos com média acima de 4 (era de 1 a 5).</p>
+</div>
+<div class="paragraph">
+<p>Eu já havia falado sobre o tema no <a href="/blog/devops/2017/07/27/ci-cd.html"><em>meetup</em> de docker + microserviços</a> e <a href="/blog/devops/2017/08/05/devopsdaypoa.html">DevopsDays POA</a>, as referências estão disponíveis nos <em>posts</em> anteriores.</p>
+</div>
+<div class="paragraph">
+<p>Seguem os <em>slides</em> usados no evento:</p>
+</div>
+<div class="paragraph">
+<p>
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/3PuVmMhMc9PNWx" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/GUTS-RS/gutsrs-evento-setembro-2017-continuous-integration-delivery-e-deployment-o-que-so-e-o-que-isso-tem-a-ver-com-devops" title="[GUTS-RS] Evento Setembro 2017 - Continuous Integration, Delivery e Deployment, o que são e o que isso tem a ver com DevOps?" target="_blank">[GUTS-RS] Evento Setembro 2017 - Continuous Integration, Delivery e Deployment, o que são e o que isso tem a ver com DevOps?</a> </strong> from <strong><a href="//www.slideshare.net/GUTS-RS" target="_blank">GUTS-RS </a></strong> </div>
+</center>
+</p>
+</div>
+<div class="sect2">
+<h3 id="referências-adicionais">Referências adicionais</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://dev.to/apium_hub/some-devops-metrics-to-keep-an-eye-on"><em>Some devops metrics to keep an eye on</em></a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@diogo.lucas/pipelines-and-tests-dc6942d839e2"><em>Pipelines and tests</em></a></p>
+</li>
+</ul>
+</div>
+</div>]]></content><author><name></name></author><category term="devops" /><category term="devops" /><category term="eventos" /><summary type="html"><![CDATA[]]></summary></entry></feed>
