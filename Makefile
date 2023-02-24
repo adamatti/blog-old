@@ -1,3 +1,7 @@
+DOCKER_TAG=blog:local
+DEPLOY_DIR=blog-old-deploy
+RELEASE_TAG:=$(shell date -u +%Y%m%dT%H%M%SZ)
+
 .DEFAULT_GOAL := help
 
 .PHONY: clean
@@ -37,3 +41,24 @@ dc-run: dc-build
 .PHONY: help
 help: ## show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+
+docker-build:
+	docker build -t $(DOCKER_TAG) .
+
+docker-sh: docker-build
+	docker run -it --rm --entrypoint /bin/sh -w /app -v $(PWD):/source $(DOCKER_TAG)
+
+docker-cp: docker-build
+	rm -rf ./_site	
+
+	docker run -it --rm -w /app -v $(PWD):/source $(DOCKER_TAG) /bin/cp -R /app/_site /source
+
+release: docker-cp
+	rm -rf ../$(DEPLOY_DIR)
+	git clone -b gh-pages git@github.com:adamatti/blog-old.git ../$(DEPLOY_DIR)
+	cp -R _site/* ../$(DEPLOY_DIR)	
+	cd ../$(DEPLOY_DIR) && git add -A .
+	cd ../$(DEPLOY_DIR) && git commit -a -m "Deploy $(RELEASE_TAG)"
+	cd ../$(DEPLOY_DIR) && git push --quiet origin gh-pages
+	rm -rf ../$(DEPLOY_DIR)
+

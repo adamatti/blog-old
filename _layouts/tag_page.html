@@ -4,7 +4,7 @@ layout: default
 <h2>{{ page.tag }}</h2>
 <ul>
 {% for post in page.posts %}
-  <li><a href="/blog{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
+  <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
 {% endfor %}
 </ul>
 
@@ -17,7 +17,7 @@ layout: default
   {% assign keyValue = hash | split: '#' %}
   {% capture tag_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
   <li class="list-group-item">
-    <a href="/blog/tag/{{ tag_word | downcase }}.html">
+    <a href="{{ site.baseurl}}/tag/{{ tag_word | downcase }}.html">
       {{ tag_word }}
     </a>
     <span class="badge pull-right">( {{ site.tags[tag_word].size }} )</span>

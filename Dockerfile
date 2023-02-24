@@ -1,8 +1,7 @@
-FROM "ruby:2.6.5"
+FROM ruby:3.2.1
 
 USER root
-RUN gem install public_suffix -v '4.0.5'
-RUN gem install jekyll bundler
+RUN gem install public_suffix sass-embedded jekyll bundler
 
 WORKDIR /app
 
